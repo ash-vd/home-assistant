@@ -71,7 +71,7 @@ recorder:
   db_url: !secret recorder_url
 
 automation: !include_dir_merge_list automation
-group: !include_dir_merge_list group
+group: !include_dir_merge_named group
 sensor: !include_dir_merge_list sensor
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_list scripts

@@ -1,4 +1,4 @@
-- name: Livingroom - Lights - Night
+- name: livingroom_lights_night
   entities:
     light.zigbee_e14_1:
       state: on
