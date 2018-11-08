@@ -1,0 +1,6 @@
+default_view:
+  view: yes
+  name: Home
+  icon: mdi:home-outline
+  entities:
+    - group.livingroom
