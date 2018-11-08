@@ -1,0 +1,11 @@
+- name: Livingroom - Lights - Night
+  entities:
+    light.zigbee_e14_1:
+      state: on
+      brightness: 20
+    light.zigbee_e27_1:
+      state: on
+      brightness: 10
+    light.zigbee_e27_2:
+      state: on
+      brightness: 10

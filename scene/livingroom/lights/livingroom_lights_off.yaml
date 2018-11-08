@@ -1,0 +1,5 @@
+- name: Livingroom - Lights - Off
+  entities:
+    light.zigbee_e14_1: off
+    light.zigbee_e27_1: off
+    light.zigbee_e27_2: off
