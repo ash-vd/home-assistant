@@ -1,0 +1,11 @@
+- name: livingroom_lights_normal
+  entities:
+    light.zigbee_e14_1:
+      state: on
+      brightness: 140
+    light.zigbee_e27_1:
+      state: on
+      brightness: 90
+    light.zigbee_e27_2:
+      state: on
+      brightness: 90
