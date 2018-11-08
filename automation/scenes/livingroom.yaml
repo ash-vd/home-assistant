@@ -13,7 +13,7 @@
       data_template:
         entity_id: >
           {% if is_state("input_select.livingroom_scene", "Aan") %}
-            scene.livingroom_lights_on
+            scene.livingroom_lights_full
           {% elif is_state("input_select.livingroom_scene", "Normaal") %}
             scene.livingroom_lights_normal
           {% elif is_state("input_select.livingroom_scene", "Nacht") %}
