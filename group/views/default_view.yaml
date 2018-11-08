@@ -4,3 +4,4 @@ default_view:
   icon: mdi:home-outline
   entities:
     - group.livingroom
+    - group.bedroom
