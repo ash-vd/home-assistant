@@ -17,7 +17,7 @@
           {% elif is_state("input_select.livingroom_scene", "Normaal") %}
             scene.livingroom_lights_normal
           {% elif is_state("input_select.livingroom_scene", "Nacht") %}
-            scene.livingroom__lights__night
+            scene.livingroom_lights_night
           {% elif is_state("input_select.livingroom_scene", "Uit") %}
-            scene.livingroom__lights_off
+            scene.livingroom_lights_off
           {% endif %}
