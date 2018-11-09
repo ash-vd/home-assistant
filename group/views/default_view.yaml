@@ -5,3 +5,4 @@ default_view:
   entities:
     - group.livingroom
     - group.bedroom
+    - group.kitchen

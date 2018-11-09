@@ -1,0 +1,7 @@
+sensors_kitchen:
+  name: Keuken
+  control: hidden
+  entities:
+    - sensor.zigbee_temp_3_temperature
+    - sensor.zigbee_temp_3_humidity
+    - sensor.zigbee_temp_3_pressure

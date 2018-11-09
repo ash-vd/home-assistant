@@ -1,0 +1,9 @@
+sensors_livingroom:
+  name: Woonkamer
+  control: hidden
+  entities:
+    - input_boolean.livingroom_presence
+    - binary_sensor.zigbee_contact_1
+    - sensor.zigbee_temp_2_temperature
+    - sensor.zigbee_temp_2_humidity
+    - sensor.zigbee_temp_2_pressure

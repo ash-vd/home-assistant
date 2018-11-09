@@ -1,0 +1,8 @@
+sensors_view:
+  view: yes
+  name: Home
+  icon: mdi:home-outline
+  entities:
+    - group.livingroom_sensors
+    - group.bedroom_sensors
+    - group.kitchen_sensors
