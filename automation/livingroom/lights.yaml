@@ -5,10 +5,10 @@
       entity_id: input_boolean.livingroom_presence
       to: "on"
 
-    - platform: state
-      # change of room-scene
-      entity_id: input_select.livingroom_scene
-      to: "Automatisch"
+    # - platform: state
+    #   # change of room-scene
+    #   entity_id: input_select.livingroom_scene
+    #   to: "Automatisch"
 
   # - platform: state
   #   entity_id: binary_sensor.livingroom_dark
