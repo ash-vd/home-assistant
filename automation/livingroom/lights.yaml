@@ -2,7 +2,7 @@
 - alias: Lightning - Livingroom - On
   trigger:
     - platform: state
-      entity_id: group.livingroom_presence
+      entity_id: input_boolean.livingroom_presence
       to: "on"
 
     - platform: state
@@ -23,9 +23,9 @@
       #   entity_id: input_select.mode
       #   state: 'Normaal'
 
-      - condition: state
-        entity_id: input_boolean.livingroom_presence
-        state: "on"
+      # - condition: state
+      #   entity_id: input_boolean.livingroom_presence
+      #   state: "on"
 
       # - condition: state
       #   entity_id: binary_sensor.livingroom_dark
