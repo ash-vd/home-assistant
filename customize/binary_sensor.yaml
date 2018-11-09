@@ -1,0 +1,2 @@
+binary_sensor.zigbee_contact_1:
+  friendly_name: Deur
