@@ -1,3 +1,2 @@
 livingroom_presence:
   entities:
-    - binary_sensor.zigbee_contact_1
