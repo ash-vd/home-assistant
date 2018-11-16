@@ -1,0 +1,5 @@
+kitchen_main_light:
+  name: Keuken
+  entities:
+    - sensor.zigbee_gu10_1
+    - sensor.zigbee_gu10_2
