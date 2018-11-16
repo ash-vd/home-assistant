@@ -3,3 +3,4 @@ kitchen:
   control: hidden
   entities:
     - sensor.zigbee_temp_3_temperature
+    - group.kitchen_main_light
