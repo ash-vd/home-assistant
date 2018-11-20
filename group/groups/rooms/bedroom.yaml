@@ -3,3 +3,4 @@ bedroom:
   control: hidden
   entities:
     - sensor.zigbee_temp_1_temperature
+    - group.bedroom_sink_light

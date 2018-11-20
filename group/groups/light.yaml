@@ -3,3 +3,9 @@ kitchen_main_light:
   entities:
     - light.zigbee_gu10_1
     - light.zigbee_gu10_2
+
+bedroom_sink_light:
+  name: Wasbak
+  entities:
+    - light.zigbee_gu10_3
+    - light.zigbee_gu10_4
