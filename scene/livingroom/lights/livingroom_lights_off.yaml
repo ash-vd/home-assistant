@@ -2,4 +2,5 @@
   entities:
     light.zigbee_e14_1: off
     light.zigbee_e27_1: off
-    light.zigbee_e27_2: off
+    light.zigbee_e27c_1: off
+    light.zigbee_e27c_2: off

@@ -8,3 +8,4 @@ livingroom:
     - light.zigbee_e14_1
     - light.zigbee_e27_1
     - light.zigbee_e27c_1
+    - light.zigbee_e27c_2

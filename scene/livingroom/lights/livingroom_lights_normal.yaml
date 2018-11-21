@@ -5,7 +5,7 @@
       brightness: 140
     light.zigbee_e27_1:
       state: on
-      brightness: 90
-    light.zigbee_e27_2:
+      brightness: 1100
+    light.zigbee_e27c_1:
       state: on
-      brightness: 90
+      brightness: 130
