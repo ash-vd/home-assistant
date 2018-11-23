@@ -1,7 +1,7 @@
 livingroom_scene:
   name: Scene
   icon: mdi:alarm
-  initial: Automatisch
+  initial: Uit
   options:
     - Automatisch
     - Aan
