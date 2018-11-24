@@ -1,0 +1,3 @@
+washroom_presence:
+  name: washroom_presence
+  initial: off
