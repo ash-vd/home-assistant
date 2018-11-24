@@ -1,0 +1,5 @@
+sensors_washroom:
+  name: Washok
+  control: hidden
+  entities:
+    - binary_sensor.zigbee_contact_3

@@ -6,3 +6,4 @@ sensors_view:
     - group.sensors_livingroom
     - group.sensors_bedroom
     - group.sensors_kitchen
+    - group.sensors_washroom
