@@ -1,2 +1,5 @@
 input_boolean.livingroom_presence:
   friendly_name: Aanwezig
+
+input_boolean.washroom_presence:
+  friendly_name: Aanwezig
