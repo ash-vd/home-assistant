@@ -1,2 +1,8 @@
 binary_sensor.zigbee_contact_1:
   friendly_name: Deur
+
+binary_sensor.zigbee_contact_2:
+  friendly_name: Deur
+
+binary_sensor.zigbee_contact_3:
+  friendly_name: Deur
