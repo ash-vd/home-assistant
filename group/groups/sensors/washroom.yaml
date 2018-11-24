@@ -2,5 +2,5 @@ sensors_washroom:
   name: Washok
   control: hidden
   entities:
-    - input_boolean.livingroom_presence
+    - input_boolean.washroom_presence
     - binary_sensor.zigbee_contact_3
