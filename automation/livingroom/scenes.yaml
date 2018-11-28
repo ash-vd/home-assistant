@@ -16,6 +16,8 @@
             scene.livingroom_lights_full
           {% elif is_state("input_select.livingroom_scene", "Normaal") %}
             scene.livingroom_lights_normal
+          {% elif is_state("input_select.livingroom_scene", "Theater") %}
+            scene.livingroom_lights_theater
           {% elif is_state("input_select.livingroom_scene", "Nacht") %}
             scene.livingroom_lights_night
           {% elif is_state("input_select.livingroom_scene", "Uit") %}

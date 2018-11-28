@@ -10,9 +10,9 @@
     light.zigbee_e27c_1:
       state: on
       brightness: 10
-      kelvin: 2400
+      kelvin: 2350
 
     light.zigbee_e27c_2:
       state: on
       brightness: 10
-      kelvin: 2400
+      kelvin: 2350
