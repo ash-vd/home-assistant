@@ -81,6 +81,7 @@ automation: !include_dir_merge_list automation
 group: !include_dir_merge_named group
 input_boolean: !include_dir_merge_named input_boolean
 input_select: !include_dir_merge_named input_select
+light: !include_dir_merge_list light
 sensor: !include_dir_merge_list sensor
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_list scripts
