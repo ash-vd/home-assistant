@@ -1,0 +1,5 @@
+- platform: group
+  name: Wasbak
+  entities:
+    - light.zigbee_gu10_3
+    - light.zigbee_gu10_4
