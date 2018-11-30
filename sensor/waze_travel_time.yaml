@@ -1,17 +1,17 @@
 - platform: waze_travel_time
-  name: ANWB naar thuis
+  name: ANWB naar Azaleastraat
   origin: zone.anwb
   destination: zone.home
   region: "EU"
 
 - platform: waze_travel_time
-  name: Thuis naar ANWB
+  name: Azaleastraat naar ANWB
   origin: zone.home
   destination: zone.anwb
   region: "EU"
 
 - platform: waze_travel_time
-  name: Ashwin naar thuis
+  name: Ashwin naar Azaleastraat
   origin: device_tracker.ashwiphone
   destination: zone.home
   region: "EU"
