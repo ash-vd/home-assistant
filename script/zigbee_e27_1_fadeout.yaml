@@ -1,9 +1,9 @@
 zigbee_e27_1_fadeout:
   sequence:
     - service: light.turn_on
-      entity_id: light.zigbee_27_1
+      entity_id: light.zigbee_e27_1
       data:
         brightness: 1
 
     - service: light.turn_off
-      entity_id: light.zigbee_27_1
+      entity_id: light.zigbee_e27_1
