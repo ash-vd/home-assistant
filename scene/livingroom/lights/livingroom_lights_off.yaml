@@ -1,6 +1,7 @@
 - name: livingroom_lights_off
   entities:
     light.zigbee_e14_1: off
-    script.zigbee_e27_1_fadeout: on
     light.zigbee_e27c_1: off
     light.zigbee_e27c_2: off
+    light.zigbee_e27c_3: off
+    switch.livingroom_ball: off
