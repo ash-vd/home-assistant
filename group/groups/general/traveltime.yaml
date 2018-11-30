@@ -1,0 +1,5 @@
+tautulli:
+  name: Tautulli
+  entities:
+    - sensor.thuis_naar_anwb
+    - sensor.anwb_naar_thuis
