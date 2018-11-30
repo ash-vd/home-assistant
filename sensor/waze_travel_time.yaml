@@ -9,3 +9,9 @@
   origin: zone.home
   destination: zone.anwb
   region: "EU"
+
+- platform: waze_travel_time
+  name: Ashwin naar thuis
+  origin: device_tracker.ashwiphone
+  destination: zone.home
+  region: "EU"
