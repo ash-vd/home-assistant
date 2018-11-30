@@ -1,11 +1,11 @@
 - platform: waze_travel_time
   name: ANWB naar thuis
-  origin: zone.ANWB
+  origin: zone.anwb
   destination: zone.home
   region: "EU"
 
 - platform: waze_travel_time
   name: Thuis naar ANWB
   origin: zone.home
-  destination: zone.ANWB
+  destination: zone.anwb
   region: "EU"
