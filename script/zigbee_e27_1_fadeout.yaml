@@ -6,7 +6,7 @@ zigbee_e27_1_fadeout:
         brightness: 1
         transition: 15
 
-    - delay: "00:00:15"
+    - delay: "00:01:00"
 
     - service: light.turn_off
       entity_id: light.zigbee_e27_1
