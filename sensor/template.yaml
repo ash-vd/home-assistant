@@ -1,0 +1,11 @@
+- platform: template
+  sensors:
+    tautulli_stream_count:
+      friendly_name: "Streams"
+      unit_of_measurement: "streams"
+      value_template: "{{ state_attr('sensor.tautulli', 'stream_count') }}"
+
+    tautulli_wan_bandwidth:
+      friendly_name: "Bandbreedte"
+      unit_of_measurement: ""
+      value_template: "{{ state_attr('sensor.tautulli', 'wan_bandwidth') }}"
