@@ -1,5 +1,5 @@
 - platform: group
-  name: Wasbak
+  name: bedroom_sink
   entities:
     - light.zigbee_gu10_3
     - light.zigbee_gu10_4
