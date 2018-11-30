@@ -85,4 +85,4 @@ light: !include_dir_merge_list light
 sensor: !include_dir_merge_list sensor
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_named script
-zone: !include_dir_merge_named zone
+zone: !include_dir_merge_list zone
