@@ -5,5 +5,7 @@ zigbee_e27_1_fadeout:
       data:
         brightness: 1
 
+    - delay: "00:00:01"
+
     - service: light.turn_off
       entity_id: light.zigbee_e27_1
