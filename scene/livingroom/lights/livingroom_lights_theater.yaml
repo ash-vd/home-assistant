@@ -5,9 +5,7 @@
       brightness: 1
       transition: 30
 
-    light.zigbee_e27_1:
-      state: off
-      transition: 30
+    script.zigbee_e27_1_fadeout: on
 
     light.zigbee_e27c_1:
       state: on
