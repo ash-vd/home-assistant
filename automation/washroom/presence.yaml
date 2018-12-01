@@ -19,3 +19,15 @@
   action:
     service: homeassistant.turn_off
     entity_id: input_boolean.washroom_presence
+
+- alias: Presence - Washroom - Fallback
+  trigger:
+    platform: state
+    entity_id: input_boolean.washroom_presence
+    to: "on"
+    for:
+      minutes: 5
+
+  action:
+    service: homeassistant.turn_off
+    entity_id: input_boolean.washroom_presence
