@@ -6,3 +6,5 @@ default_view:
     - group.livingroom
     - group.bedroom
     - group.kitchen
+    - group.tautulli
+    - group.traveltime
