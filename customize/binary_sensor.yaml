@@ -6,3 +6,6 @@ binary_sensor.zigbee_contact_2:
 
 binary_sensor.zigbee_contact_3:
   friendly_name: Deur
+
+binary_sensor.zigbee_contact_4:
+  friendly_name: Brievenbus
