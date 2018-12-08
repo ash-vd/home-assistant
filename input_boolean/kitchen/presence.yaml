@@ -1,0 +1,3 @@
+kitchen_presence:
+  name: kitchen_presence
+  initial: off

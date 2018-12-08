@@ -2,4 +2,5 @@ sensors_entrance:
   name: Entree
   control: hidden
   entities:
+    - binary_sensor.entrance_presence
     - binary_sensor.zigbee_contact_4

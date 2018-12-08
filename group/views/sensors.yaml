@@ -7,4 +7,5 @@ sensors_view:
     - group.sensors_bedroom
     - group.sensors_kitchen
     - group.sensors_washroom
+    - group.sensors_bathroom
     - group.sensors_entrance

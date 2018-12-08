@@ -2,6 +2,7 @@ sensors_bedroom:
   name: Slaapkamer
   control: hidden
   entities:
+    - binary_sensor.bedroom_presence
     - binary_sensor.zigbee_contact_2
     - sensor.zigbee_temp_1_temperature
     - sensor.zigbee_temp_1_humidity

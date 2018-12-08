@@ -1,0 +1,3 @@
+bathroom_presence:
+  name: bathroom_presence
+  initial: off
