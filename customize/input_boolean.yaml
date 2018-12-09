@@ -3,3 +3,15 @@ input_boolean.livingroom_presence:
 
 input_boolean.washroom_presence:
   friendly_name: Aanwezig
+
+input_boolean.bathroom_presence:
+  friendly_name: Aanwezig
+
+input_boolean.entrance_presence:
+  friendly_name: Aanwezig
+
+input_boolean.kitchen_presence:
+  friendly_name: Aanwezig
+
+input_boolean.bedroom_presence:
+  friendly_name: Aanwezig
