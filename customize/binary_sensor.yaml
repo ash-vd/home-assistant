@@ -10,3 +10,6 @@ binary_sensor.zigbee_contact_3:
 binary_sensor.zigbee_contact_4:
   friendly_name: Brievenbus
   icon: mdi:email-outline
+
+binary_sensor.zigbee_contact_5:
+  friendly_name: Deur
