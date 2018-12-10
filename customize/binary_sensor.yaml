@@ -13,3 +13,6 @@ binary_sensor.zigbee_contact_4:
 
 binary_sensor.zigbee_contact_5:
   friendly_name: Deur
+
+binary_sensor.zigbee_contact_6:
+  friendly_name: Deur

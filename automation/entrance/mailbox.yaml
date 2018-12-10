@@ -1,0 +1,10 @@
+- alias: Brievenbus - Entree
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.zigbee_contact_4
+      to: "on"
+
+  action:
+    service: notify.ios_ashwiphone
+    data:
+      message: "Er is post!"
