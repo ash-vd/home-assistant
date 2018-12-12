@@ -77,6 +77,11 @@ hue:
   bridges:
     - host: 10.10.1.3
 
+remote:
+  - platform: harmony
+    name: Woonkamer
+    host: 10.10.1.10
+
 automation: !include_dir_merge_list automation
 group: !include_dir_merge_named group
 input_boolean: !include_dir_merge_named input_boolean

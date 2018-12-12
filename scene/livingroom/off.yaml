@@ -1,0 +1,4 @@
+- name: livingroom_off
+  entities:
+    scene.livingroom_media_off: on
+    scene.livingroom_lights_off: on
