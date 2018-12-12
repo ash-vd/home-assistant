@@ -84,8 +84,6 @@ remote:
 
 homekit:
   filter:
-    include_domains:
-      - input_boolean
     include_entities:
       - input_boolean.homekit_livingroom
 
