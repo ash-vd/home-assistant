@@ -84,8 +84,10 @@ remote:
 
 homekit:
   filter:
+    include_domains:
+      - input_boolean
     include_entities:
-      - demo.demo
+      - input_boolean.homekit_livingroom
 
 automation: !include_dir_merge_list automation
 group: !include_dir_merge_named group
