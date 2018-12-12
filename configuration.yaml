@@ -87,6 +87,7 @@ homekit:
     include_entities:
       - input_boolean.homekit_livingroom
       - switch.livingroom_ball
+      - light.zigbee_e27c_3
 
 automation: !include_dir_merge_list automation
 group: !include_dir_merge_named group

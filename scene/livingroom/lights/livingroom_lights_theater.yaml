@@ -24,3 +24,6 @@
       transition: 15
 
     switch.livingroom_ball: off
+
+    input_select.livingroom_scene:
+      option: "Theater"

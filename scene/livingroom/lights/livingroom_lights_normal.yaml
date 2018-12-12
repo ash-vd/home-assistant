@@ -24,3 +24,7 @@
       transition: 1
 
     switch.livingroom_ball: on
+
+    input_boolean.homekit_livingroom: on
+    input_select.livingroom_scene:
+      option: "Normaal"

@@ -24,3 +24,6 @@
       transition: 1
 
     switch.livingroom_ball: off
+
+    input_select.livingroom_scene:
+      option: "Nacht"
