@@ -82,6 +82,15 @@ remote:
     name: Livingroom
     host: 10.10.1.10
 
+homekit:
+  filter:
+    include_domains:
+      - scene
+      - media_player
+  entity_config:
+    scene.livingroom_lights_normal:
+      name: Woonkamer
+
 automation: !include_dir_merge_list automation
 group: !include_dir_merge_named group
 input_boolean: !include_dir_merge_named input_boolean
