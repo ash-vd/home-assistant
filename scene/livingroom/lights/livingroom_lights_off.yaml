@@ -5,4 +5,5 @@
     light.zigbee_e27c_2: off
     light.zigbee_e27c_3: off
     switch.livingroom_ball: off
-    input_select.livingroom_scene: "Uit"
+    input_select.livingroom_scene:
+      option: "Uit"
