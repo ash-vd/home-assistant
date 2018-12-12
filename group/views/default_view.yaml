@@ -3,6 +3,7 @@ default_view:
   name: Home
   icon: mdi:home-outline
   entities:
+    - group.house
     - group.livingroom
     - group.bedroom
     - group.kitchen

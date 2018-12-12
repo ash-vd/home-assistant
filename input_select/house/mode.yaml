@@ -1,0 +1,7 @@
+house_mode:
+  name: Mode
+  initial: Normaal
+  options:
+    - Normaal
+    - Nacht
+    - Vakantie
