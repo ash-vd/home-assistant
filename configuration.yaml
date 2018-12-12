@@ -79,7 +79,7 @@ hue:
 
 remote:
   - platform: harmony
-    name: Woonkamer
+    name: Livingroom
     host: 10.10.1.10
 
 automation: !include_dir_merge_list automation
