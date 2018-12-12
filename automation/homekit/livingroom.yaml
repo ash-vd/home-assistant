@@ -1,0 +1,19 @@
+- alias: Homekit - Woonkamer - Aan
+  trigger:
+    - platform: state
+      entity_id: input_boolean.homekit_livingroom
+      to: "on"
+
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.livingroom_lights_normal
+
+- alias: Homekit - Woonkamer - Uit
+  trigger:
+    platform: state
+    entity_id: input_boolean.homekit_livingroom
+    to: "off"
+
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.livingroom_lights_off

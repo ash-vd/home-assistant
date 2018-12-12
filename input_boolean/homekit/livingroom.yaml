@@ -1,0 +1,3 @@
+homekit_livingroom:
+  name: homekit_livingroom
+  initial: off
