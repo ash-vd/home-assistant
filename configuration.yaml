@@ -83,7 +83,6 @@ remote:
     host: 10.10.1.10
 
 homekit:
-  auto_start: False
   filter:
     include_entities:
       - input_boolean.homekit_livingroom
@@ -93,6 +92,12 @@ homekit:
   entity_config:
     light.bedroom_sink:
       name: Wastafel
+    light.zigbee_e27c_3:
+      name: Groot
+    input_boolean.homekit_livingroom:
+      name: Woonkamer
+    switch.livingroom_ball:
+      name: Lamp op het kastje
 
 automation: !include_dir_merge_list automation
 group: !include_dir_merge_named group
