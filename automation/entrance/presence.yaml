@@ -6,16 +6,16 @@
 
   action:
     service: homeassistant.turn_on
-    entity_id: input_boolean.livingroom_presence
+    entity_id: input_boolean.entrance_presence
 
 - alias: Aanwezigheid - Entree - Uit
   trigger:
     platform: state
-    entity_id: group.livingroom_presence
+    entity_id: group.entrance_presence
     to: "off"
     for:
       minutes: 3
 
   action:
     service: homeassistant.turn_off
-    entity_id: input_boolean.livingroom_presence
+    entity_id: input_boolean.entrance_presence
