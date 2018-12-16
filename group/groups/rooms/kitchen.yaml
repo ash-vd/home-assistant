@@ -2,5 +2,5 @@ kitchen:
   name: Keuken
   control: hidden
   entities:
-    - sensor.zigbee_temp_3_temperature
+    - sensor.zigbee_climate_3_temperature
     - group.kitchen_main_light

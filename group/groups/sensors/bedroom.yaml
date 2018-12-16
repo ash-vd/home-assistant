@@ -4,6 +4,6 @@ sensors_bedroom:
   entities:
     - input_boolean.bedroom_presence
     - binary_sensor.zigbee_contact_2_contact
-    - sensor.zigbee_temp_1_temperature
-    - sensor.zigbee_temp_1_humidity
-    - sensor.zigbee_temp_1_pressure
+    - sensor.zigbee_climate_1_temperature
+    - sensor.zigbee_climate_1_humidity
+    - sensor.zigbee_climate_1_pressure
