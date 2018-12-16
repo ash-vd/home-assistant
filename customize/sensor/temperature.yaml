@@ -1,26 +1,26 @@
-# sensor.zigbee_temp_1_temperature:
-#   friendly_name: Temperatuur
+sensor.zigbee_climate_1_temperature:
+  friendly_name: Temperatuur
 
-# sensor.zigbee_temp_1_humidity:
-#   friendly_name: Luchtvochtigheid
+sensor.zigbee_climate_1_humidity:
+  friendly_name: Luchtvochtigheid
 
-# sensor.zigbee_temp_1_pressure:
-#   friendly_name: Luchtdruk
+sensor.zigbee_climate_1_pressure:
+  friendly_name: Luchtdruk
 
-# sensor.zigbee_temp_2_temperature:
-#   friendly_name: Temperatuur
+sensor.zigbee_climate_2_temperature:
+  friendly_name: Temperatuur
 
-# sensor.zigbee_temp_2_humidity:
-#   friendly_name: Luchtvochtigheid
+sensor.zigbee_climate_2_humidity:
+  friendly_name: Luchtvochtigheid
 
-# sensor.zigbee_temp_2_pressure:
-#   friendly_name: Luchtdruk
+sensor.zigbee_climate_2_pressure:
+  friendly_name: Luchtdruk
 
-# sensor.zigbee_temp_3_temperature:
-#   friendly_name: Temperatuur
+sensor.zigbee_climate_3_temperature:
+  friendly_name: Temperatuur
 
-# sensor.zigbee_temp_3_humidity:
-#   friendly_name: Luchtvochtigheid
+sensor.zigbee_climate_3_humidity:
+  friendly_name: Luchtvochtigheid
 
-# sensor.zigbee_temp_3_pressure:
-#   friendly_name: Luchtdruk
+sensor.zigbee_climate_3_pressure:
+  friendly_name: Luchtdruk
