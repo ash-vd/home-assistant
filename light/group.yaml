@@ -1,5 +1,5 @@
 - platform: group
   name: bedroom_sink
   entities:
-    - light.zigbee_gu10_3
-    - light.zigbee_gu10_4
+    - light.zigbee_gu10_3_light
+    - light.zigbee_gu10_4_light
