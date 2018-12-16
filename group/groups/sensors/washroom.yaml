@@ -3,4 +3,4 @@ sensors_washroom:
   control: hidden
   entities:
     - input_boolean.washroom_presence
-    - binary_sensor.zigbee_contact_3
+    - binary_sensor.zigbee_contact_3_contact

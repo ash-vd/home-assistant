@@ -5,8 +5,8 @@ livingroom:
     - input_select.livingroom_scene
     - sensor.zigbee_temp_2_temperature
     - media_player.chromecast_livingroom
-    - light.zigbee_e14_1
-    - light.zigbee_e27c_1
-    - light.zigbee_e27c_2
-    - light.zigbee_e27c_3
+    - light.zigbee_e14_1_light
+    - light.zigbee_e27c_1_light
+    - light.zigbee_e27c_2_light
+    - light.zigbee_e27c_3_light
     - switch.livingroom_ball

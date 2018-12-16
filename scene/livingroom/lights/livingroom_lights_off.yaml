@@ -1,9 +1,9 @@
 - name: livingroom_lights_off
   entities:
-    light.zigbee_e14_1: off
-    light.zigbee_e27c_1: off
-    light.zigbee_e27c_2: off
-    light.zigbee_e27c_3: off
+    light.zigbee_e14_1_light: off
+    light.zigbee_e27c_1_light: off
+    light.zigbee_e27c_2_light: off
+    light.zigbee_e27c_3_light: off
     switch.livingroom_ball: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:

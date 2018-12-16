@@ -1,18 +1,18 @@
-binary_sensor.zigbee_contact_1:
+binary_sensor.zigbee_contact_1_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_2:
+binary_sensor.zigbee_contact_2_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_3:
+binary_sensor.zigbee_contact_3_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_4:
+binary_sensor.zigbee_contact_4_contact:
   friendly_name: Brievenbus
   icon: mdi:email-outline
 
-binary_sensor.zigbee_contact_5:
+binary_sensor.zigbee_contact_5_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_6:
+binary_sensor.zigbee_contact_6_contact:
   friendly_name: Deur

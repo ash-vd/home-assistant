@@ -1,23 +1,23 @@
 - name: livingroom_lights_normal
   entities:
-    light.zigbee_e14_1:
+    light.zigbee_e14_1_light:
       state: on
       brightness: 140
       transition: 1
 
-    light.zigbee_e27c_1:
+    light.zigbee_e27c_1_light:
       state: on
       brightness: 180
       kelvin: 2350
       transition: 1
 
-    light.zigbee_e27c_2:
+    light.zigbee_e27c_2_light:
       state: on
       brightness: 200
       kelvin: 2350
       transition: 1
 
-    light.zigbee_e27c_3:
+    light.zigbee_e27c_3_light:
       state: on
       brightness: 120
       kelvin: 2350

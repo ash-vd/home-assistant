@@ -1,16 +1,16 @@
-light.zigbee_e14_1:
+light.zigbee_e14_1_light:
   friendly_name: TV
 
-light.zigbee_e27_2:
+light.zigbee_e27_2_light:
   friendly_name: Licht
 
-light.zigbee_e27c_1:
+light.zigbee_e27c_1_light:
   friendly_name: Bol (Hoek)
 
-light.zigbee_e27c_2:
+light.zigbee_e27c_2_light:
   friendly_name: Bol (Raam)
 
-light.zigbee_e27c_3:
+light.zigbee_e27c_3_light:
   friendly_name: Groot
 
 light.bedroom_sink:

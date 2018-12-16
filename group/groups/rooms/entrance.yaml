@@ -2,4 +2,4 @@ entrance:
   name: Entree
   control: hidden
   entities:
-    - binary_sensor.zigbee_contact_4
+    - binary_sensor.zigbee_contact_4_contact

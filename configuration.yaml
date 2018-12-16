@@ -87,12 +87,12 @@ homekit:
     include_entities:
       - input_boolean.homekit_livingroom
       - switch.livingroom_ball
-      - light.zigbee_e27c_3
+      - light.zigbee_e27c_3_light
       - light.bedroom_sink
   entity_config:
     light.bedroom_sink:
       name: Wastafel
-    light.zigbee_e27c_3:
+    light.zigbee_e27c_3_light:
       name: Groot
     input_boolean.homekit_livingroom:
       name: Woonkamer

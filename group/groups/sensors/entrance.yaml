@@ -3,5 +3,5 @@ sensors_entrance:
   control: hidden
   entities:
     - input_boolean.entrance_presence
-    - binary_sensor.zigbee_contact_6
-    - binary_sensor.zigbee_contact_4
+    - binary_sensor.zigbee_contact_6_contact
+    - binary_sensor.zigbee_contact_4_contact

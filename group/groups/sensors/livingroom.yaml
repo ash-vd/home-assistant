@@ -3,7 +3,7 @@ sensors_livingroom:
   control: hidden
   entities:
     - input_boolean.livingroom_presence
-    - binary_sensor.zigbee_contact_1
+    - binary_sensor.zigbee_contact_1_contact
     - sensor.zigbee_temp_2_temperature
     - sensor.zigbee_temp_2_humidity
     - sensor.zigbee_temp_2_pressure
