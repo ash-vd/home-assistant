@@ -1,0 +1,5 @@
+- name: house_off
+  entities:
+    scene.livingroom_off: on
+    scene.bedroom_off: on
+    scene.bathroom_off: on

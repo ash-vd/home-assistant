@@ -14,4 +14,4 @@ light.zigbee_e27c_3_light:
   friendly_name: Groot
 
 light.bedroom_sink:
-  friendly_name: Wasbak
+  friendly_name: Wastafel

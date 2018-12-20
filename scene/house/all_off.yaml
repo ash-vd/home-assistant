@@ -1,3 +1,0 @@
-- name: house_all_off
-  entities:
-    scene.livingroom_off: on
