@@ -1,4 +1,5 @@
 - name: bedroom_off
   entities:
+    input_boolean.bedroom_presence: off
     scene.bedroom_lights_off: on
     scene.bedroom_climate_off: on

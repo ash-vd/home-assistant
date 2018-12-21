@@ -1,0 +1,4 @@
+- name: washroom_off
+  entities:
+    input_boolean.washroom_presence: off
+    scene.washroom_lights_off: on

@@ -1,0 +1,3 @@
+- name: washroom_lights_off
+  entities:
+    light.zigbee_e27_2_light: off
