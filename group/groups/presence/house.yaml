@@ -1,0 +1,5 @@
+house_presence:
+  entities:
+    - binary_sensor.livingroom_presence
+    - binary_sensor.entrance_presence
+    - binary_sensor.bedroom_presence

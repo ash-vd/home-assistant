@@ -1,0 +1,19 @@
+- alias: House - Presence - On
+  trigger:
+    - platform: state
+      entity_id: group.house_presence
+      to: "on"
+
+  action:
+    service: homeassistant.turn_on
+    entity_id: script.home
+
+- alias: House - Presence - Off
+  trigger:
+    - platform: state
+      entity_id: group.house_presence
+      to: "off"
+
+  action:
+    service: homeassistant.turn_on
+    entity_id: script.away

@@ -1,0 +1,4 @@
+bedroom_climate_off:
+  sequence:
+    - service: homeassistant.turn_on
+      entity_id: scene.house_off
