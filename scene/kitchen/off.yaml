@@ -1,3 +1,2 @@
 - name: kitchen_off
   entities:
-    input_boolean.kitchen_presence: off

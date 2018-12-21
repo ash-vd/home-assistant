@@ -1,5 +1,4 @@
 - name: livingroom_off
   entities:
-    input_boolean.livingroom_presence: off
     scene.livingroom_media_off: on
     scene.livingroom_lights_off: on
