@@ -1,0 +1,4 @@
+home:
+  sequence:
+    - service: climate.set_operation_mode
+      entity_id: climate.slaapkamer
