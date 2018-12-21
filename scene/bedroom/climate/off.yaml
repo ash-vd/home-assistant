@@ -1,0 +1,4 @@
+- name: bedroom_climate_off
+  entities:
+    climate.slaapkamer:
+      temperature: 14

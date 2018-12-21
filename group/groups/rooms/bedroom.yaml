@@ -2,5 +2,5 @@ bedroom:
   name: Slaapkamer
   control: hidden
   entities:
-    - sensor.zigbee_climate_1_temperature
+    - climate.slaapkamer
     - light.bedroom_sink

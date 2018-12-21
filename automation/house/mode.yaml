@@ -1,0 +1,35 @@
+- alias: House - Mode -  Night
+  trigger:
+    platform: time
+    at: "00:30:00"
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Normaal"
+
+  action:
+    service: input_select.select_option
+    data:
+      entity_id: input_select.house_mode
+      option: "Nacht"
+
+- alias: House - Mode - Normal
+  trigger:
+    platform: time
+    at: "7:30:00"
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Nacht"
+
+  action:
+    service: input_select.select_option
+    data:
+      entity_id: input_select.house_mode
+      option: "Normaal"
