@@ -3,7 +3,7 @@ bedroom_climate_off:
     - service: climate.set_temperature
       entity_id: climate.slaapkamer
       data:
-        temperature: 14
+        temperature: 15
     - service: climate.set_operation_mode
       entity_id: climate.slaapkamer
       data:
