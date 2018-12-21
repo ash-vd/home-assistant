@@ -6,7 +6,7 @@
 
   action:
     service: homeassistant.turn_on
-    entity_id: script.home
+    entity_id: scene.house_on
 
 - alias: House - Presence - Off
   trigger:
@@ -16,4 +16,4 @@
 
   action:
     service: homeassistant.turn_on
-    entity_id: script.away
+    entity_id: scene.house_off

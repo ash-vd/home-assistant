@@ -1,6 +1,0 @@
-home:
-  sequence:
-    - service: climate.set_operation_mode
-      data:
-        entity_id: climate.slaapkamer
-        operation_mode: "Smart schedule"

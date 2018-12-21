@@ -1,4 +1,0 @@
-away:
-  sequence:
-    - service: homeassistant.turn_on
-      entity_id: scene.house_off
