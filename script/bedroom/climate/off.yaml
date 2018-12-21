@@ -1,8 +1,8 @@
 bedroom_climate_off:
   sequence:
-    - service: climate.set_operation_mode
-      data:
-        operation_mode: "Manual"
     - service: climate.set_temperature
       data:
         temperature: 14
+    - service: climate.set_operation_mode
+      data:
+        operation_mode: "Manual"
