@@ -1,0 +1,8 @@
+livingroom_remote:
+  name: Scene
+  icon: mdi:alarm
+  initial: Uit
+  options:
+    - Chromecast
+    - PS4
+    - Uit
