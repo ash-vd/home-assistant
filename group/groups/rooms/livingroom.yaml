@@ -3,6 +3,7 @@ livingroom:
   control: hidden
   entities:
     - input_select.livingroom_scene
+    - input_select.livingroom_remote
     - sensor.zigbee_climate_2_temperature
     - media_player.chromecast_livingroom
     - light.zigbee_e14_1_light
