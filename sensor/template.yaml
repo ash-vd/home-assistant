@@ -9,3 +9,6 @@
       friendly_name: "Bandbreedte"
       unit_of_measurement: ""
       value_template: "{{ state_attr('sensor.tautulli', 'wan_bandwidth') }}"
+
+    livingroom_remote:
+      value_template: "{{ state_attr('remote.livingroom', 'current_activity') }}"

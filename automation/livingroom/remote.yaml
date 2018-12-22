@@ -7,7 +7,7 @@
   action:
     - service: remote.turn_on
       data_template:
-        entity_id: "remote.livingroom"
+        entity_id: remote.livingroom
         activity: >
           {% if is_state("input_select.livingroom_remote", "PS4") %}
             "PS4"
@@ -21,17 +21,17 @@
   initial_state: "on"
   trigger:
     platform: state
-    entity_id: remote.livingroom
+    entity_id: sensor.livingroom_remote
 
   action:
     - service: input_select.set_option
       data_template:
-        entity_id: "input_select.livingroom.remote"
+        entity_id: input_select.livingroom.remote
         option: >
-          {% if is_state("input_select.livingroom_remote", "PS4") %}
+          {% if is_state("sensor.livingroom_remote", "PS4") %}
             "PS4"
-          {% elif is_state("input_select.livingroom_remote", "Chromecast") %}
+          {% elif is_state("sensor.livingroom_remote", "Chromecast") %}
             "Chromecast"
-          {% elif is_state("input_select.livingroom_remote", "PowerOff") %}
+          {% elif is_state("sensor.livingroom_remote", "PowerOff") %}
             "Uit"
           {% endif %}
