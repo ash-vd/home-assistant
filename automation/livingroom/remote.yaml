@@ -10,11 +10,11 @@
         entity_id: remote.livingroom
         activity: >
           {% if is_state("input_select.livingroom_remote", "PS4") %}
-            "PS4"
+            PS4
           {% elif is_state("input_select.livingroom_remote", "Chromecast") %}
-            "Chromecast"
+            Chromecast
           {% elif is_state("input_select.livingroom_remote", "Uit") %}
-            "PowerOff"
+            PowerOff
           {% endif %}
 
 - alias: Woonkamer - Afstandsbediening sync
@@ -24,14 +24,14 @@
     entity_id: sensor.livingroom_remote
 
   action:
-    - service: input_select.set_option
+    - service: input_select.select_option
       data_template:
         entity_id: input_select.livingroom.remote
         option: >
           {% if is_state("sensor.livingroom_remote", "PS4") %}
-            "PS4"
+            PS4
           {% elif is_state("sensor.livingroom_remote", "Chromecast") %}
-            "Chromecast"
+            Chromecast
           {% elif is_state("sensor.livingroom_remote", "PowerOff") %}
-            "Uit"
+            Uit
           {% endif %}
