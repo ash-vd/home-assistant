@@ -1,6 +1,6 @@
 livingroom_remote:
-  name: Scene
-  icon: mdi:alarm
+  name: Media
+  icon: mdi:video-vintage
   initial: Uit
   options:
     - Chromecast
