@@ -26,7 +26,7 @@
   action:
     - service: input_select.select_option
       data_template:
-        entity_id: input_select.livingroom.remote
+        entity_id: input_select.livingroom_remote
         option: >
           {% if is_state("sensor.livingroom_remote", "PS4") %}
             PS4
