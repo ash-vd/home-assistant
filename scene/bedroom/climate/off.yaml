@@ -1,3 +1,4 @@
 - name: bedroom_climate_off
   entities:
-    script.bedroom_climate_off: on
+    climate.slaapkamer:
+      temperature: 15
