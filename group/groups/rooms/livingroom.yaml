@@ -2,6 +2,7 @@ livingroom:
   name: Woonkamer
   control: hidden
   entities:
+    - climate.woonkamer
     - input_select.livingroom_scene
     - input_select.livingroom_remote
     - sensor.zigbee_climate_2_temperature
