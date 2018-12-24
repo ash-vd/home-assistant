@@ -6,3 +6,4 @@
     scene.kitchen_off: on
     scene.entrance_off: on
     scene.washroom_off: on
+    script.climate_off: on

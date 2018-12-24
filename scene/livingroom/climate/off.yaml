@@ -1,4 +1,3 @@
 - name: livingroom_climate_off
   entities:
-    climate.woonkamer:
-      temperature: 15
+    # script.livingroom_climate_off: on
