@@ -4,6 +4,7 @@ livingroom_climate_off:
       entity_id: climate.woonkamer
       data:
         temperature: 15
+    - delay: "00:00:05"
     - service: climate.set_operation_mode
       entity_id: climate.woonkamer
       data:
