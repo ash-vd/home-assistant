@@ -1,0 +1,4 @@
+- name: livingroom_climate_on
+  entities:
+    climate.woonkamer:
+      operation_mode: "Smart schedule"
