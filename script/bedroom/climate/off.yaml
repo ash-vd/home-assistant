@@ -4,7 +4,7 @@ bedroom_climate_off:
       entity_id: climate.slaapkamer
       data:
         temperature: 15
-    - delay: "00:00:05"
+    - delay: "00:00:01"
     - service: climate.set_operation_mode
       entity_id: climate.slaapkamer
       data:
