@@ -1,0 +1,5 @@
+hallway:
+  name: Gang
+  control: hidden
+  entities:
+    - switch.hallway_light

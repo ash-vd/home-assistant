@@ -1,3 +1,7 @@
 switch.livingroom_ball:
   friendly_name: Bol (Kastje)
   icon: mdi:lightbulb
+
+switch.hallway_light:
+  friendly_name: Lamp
+  icon: mdi:lightbulb
