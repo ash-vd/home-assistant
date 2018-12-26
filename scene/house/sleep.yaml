@@ -6,3 +6,4 @@
     scene.kitchen_lights_off: on
     scene.entrance_lights_off: on
     scene.washroom_lights_off: on
+    scene.hallway_lights_off: on
