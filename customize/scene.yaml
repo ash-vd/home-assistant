@@ -1,2 +1,5 @@
 scene.house_off:
   friendly_name: Uit
+
+scene.house_sleep:
+  friendly_name: Slapen

@@ -1,0 +1,8 @@
+- name: house_sleep
+  entities:
+    scene.livingroom_lights_off: on
+    scene.bedroom_lights_off: on
+    scene.bathroom_lights_off: on
+    scene.kitchen_lights_off: on
+    scene.entrance_lights_off: on
+    scene.washroom_lights_off: on
