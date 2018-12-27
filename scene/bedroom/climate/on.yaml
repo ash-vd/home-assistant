@@ -1,4 +1,0 @@
-- name: bedroom_climate_on
-  entities:
-    climate.slaapkamer:
-      operation_mode: "Smart schedule"

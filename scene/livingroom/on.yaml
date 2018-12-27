@@ -1,3 +1,0 @@
-- name: livingroom_on
-  entities:
-    scene.livingroom_climate_on: on

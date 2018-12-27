@@ -1,4 +1,0 @@
-- name: house_on
-  entities:
-    scene.bedroom_on: on
-    scene.livingroom_on: on

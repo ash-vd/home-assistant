@@ -1,4 +1,3 @@
 - name: bedroom_off
   entities:
     scene.bedroom_lights_off: on
-    # scene.bedroom_climate_off: on
