@@ -6,7 +6,7 @@
 
   action:
     - service: light.turn_on
-      entity_id: light.zigbee_e27_2_light
+      entity_id: light.zigbee_e27c_4
       data:
         brightness: 255
 
@@ -18,4 +18,4 @@
 
   action:
     - service: light.turn_off
-      entity_id: light.zigbee_e27_2_light
+      entity_id: light.zigbee_e27c_4
