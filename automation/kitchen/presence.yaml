@@ -1,4 +1,4 @@
-- alias: Aanwezigheid - Woonkamer - Aan
+- alias: Aanwezigheid - Keuken - Aan
   trigger:
     - platform: state
       entity_id: binary_sensor.occupancy_kitchen
@@ -8,7 +8,7 @@
     service: homeassistant.turn_on
     entity_id: input_boolean.kitchen_presence
 
-- alias: Aanwezigheid - Woonkamer - Uit
+- alias: Aanwezigheid - Keuken - Uit
   trigger:
     platform: state
     entity_id: binary_sensor.occupancy_kitchen
