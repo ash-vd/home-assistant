@@ -7,13 +7,12 @@
   action:
     service: homeassistant.turn_on
     entity_id: scene.house_on
+# - alias: House - Presence - Off
+#   trigger:
+#     - platform: state
+#       entity_id: group.house_presence
+#       to: "off"
 
-- alias: House - Presence - Off
-  trigger:
-    - platform: state
-      entity_id: group.house_presence
-      to: "off"
-
-  action:
-    service: homeassistant.turn_on
-    entity_id: scene.house_off
+#   action:
+#     service: homeassistant.turn_on
+#     entity_id: scene.house_off
