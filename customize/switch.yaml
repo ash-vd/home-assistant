@@ -5,3 +5,7 @@ switch.livingroom_ball:
 switch.hallway_light:
   friendly_name: Lamp
   icon: mdi:lightbulb
+
+switch.neo_coolcam_power_plug_12a_switch_3:
+  friendly_name: Staand
+  icon: mdi:lightbulb

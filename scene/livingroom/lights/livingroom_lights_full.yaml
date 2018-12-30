@@ -25,5 +25,7 @@
 
     switch.livingroom_ball: on
 
+    switch.neo_coolcam_power_plug_12a_switch_3: on
+
     input_select.livingroom_scene:
       option: "Aan"

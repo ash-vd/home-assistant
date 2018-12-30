@@ -5,6 +5,7 @@
     light.zigbee_e27c_2_light: off
     light.zigbee_e27c_3_light: off
     switch.livingroom_ball: off
+    switch.neo_coolcam_power_plug_12a_switch_3: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:
       option: "Uit"
