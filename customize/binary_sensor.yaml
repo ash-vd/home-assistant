@@ -16,3 +16,15 @@ binary_sensor.zigbee_contact_5_contact:
 
 binary_sensor.zigbee_contact_6_contact:
   friendly_name: Deur
+
+binary_sensor.zigbee_occupancy_1_occupancy:
+  friendly_name: Beweging
+
+binary_sensor.zigbee_occupancy_2_occupancy:
+  friendly_name: Beweging
+
+binary_sensor.zigbee_occupancy_3_occupancy:
+  friendly_name: Beweging
+
+binary_sensor.zigbee_occupancy_4_occupancy:
+  friendly_name: Beweging
