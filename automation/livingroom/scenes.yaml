@@ -4,9 +4,9 @@
     platform: state
     entity_id: input_select.livingroom_scene
 
-  condition:
-    condition: template
-    value_template: "{{ trigger.to_state.state != 'Automatisch' }}"
+  # condition:
+  #   condition: template
+  #   value_template: "{{ trigger.to_state.state != 'Automatisch' }}"
 
   action:
     - service: homeassistant.turn_on

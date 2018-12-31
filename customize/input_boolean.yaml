@@ -1,3 +1,6 @@
+input_boolean.livingroom_auto:
+  friendly_name: Automatisch
+
 input_boolean.livingroom_presence:
   friendly_name: Aanwezig
 

@@ -3,6 +3,7 @@ sensors_livingroom:
   control: hidden
   entities:
     - input_boolean.livingroom_presence
+    - input_boolean.livingroom_auto
     - binary_sensor.zigbee_contact_1_contact
     - binary_sensor.zigbee_occupancy_2_occupancy
     - binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor

@@ -7,7 +7,7 @@
 
     # - platform: state
     #   # change of room-scene
-    #   entity_id: input_select.livingroom_scene
+    #   entity_id: input_boolean.livingroom_auto
     #   to: "Automatisch"
 
   # - platform: state
@@ -34,7 +34,7 @@
       #     minutes: 3
 
       - condition: state
-        entity_id: input_select.livingroom_scene
+        entity_id: input_boolean.livingroom_auto
         state: "Automatisch"
 
   action:
@@ -50,7 +50,7 @@
 
     # - platform: state
     #   # change of room-scene
-    #   entity_id: input_select.livingroom_scene
+    #   entity_id: input_boolean.livingroom_auto
     #   to: "Automatisch"
 
   # - platform: state
@@ -77,7 +77,7 @@
       #     minutes: 3
 
       - condition: state
-        entity_id: input_select.livingroom_scene
+        entity_id: input_boolean.livingroom_auto
         state: "Automatisch"
 
   action:
