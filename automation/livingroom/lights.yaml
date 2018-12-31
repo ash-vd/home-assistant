@@ -38,7 +38,7 @@
         state: "Automatisch"
 
   action:
-    - service: scene.turn_on
+    - service: homeassistant.turn_on
       entity_id: scene.livingroom_lights_normal
 
 # --- Normal mode --- #
@@ -81,5 +81,5 @@
         state: "Automatisch"
 
   action:
-    - service: scene.turn_on
+    - service: homeassistant.turn_on
       entity_id: scene.livingroom_lights_off
