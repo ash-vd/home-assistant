@@ -89,6 +89,7 @@ homekit:
       - switch.livingroom_ball
       - light.zigbee_e27c_3_light
       - light.bedroom_sink
+      - switch.hallway_light
   entity_config:
     light.bedroom_sink:
       name: Wastafel
@@ -98,6 +99,8 @@ homekit:
       name: Woonkamer
     switch.livingroom_ball:
       name: Lamp op het kastje
+    switch.hallway_light:
+      name: Gang
 
 tado:
   username: !secret tado_user
