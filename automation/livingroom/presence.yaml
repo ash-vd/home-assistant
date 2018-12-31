@@ -14,7 +14,7 @@
     entity_id: group.livingroom_presence
     to: "off"
     for:
-      minutes: 30
+      minutes: 15
 
   action:
     service: homeassistant.turn_off
