@@ -5,6 +5,7 @@ sensors_livingroom:
     - input_boolean.livingroom_presence
     - binary_sensor.zigbee_contact_1_contact
     - binary_sensor.zigbee_occupancy_2_occupancy
+    - binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor
     - sensor.zigbee_occupancy_2_illuminance
     - sensor.zigbee_climate_2_temperature
     - sensor.zigbee_climate_2_humidity
