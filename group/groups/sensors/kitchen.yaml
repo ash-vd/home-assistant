@@ -3,7 +3,7 @@ sensors_kitchen:
   control: hidden
   entities:
     - input_boolean.kitchen_presence
-    - binary_sensor.occupancy_kitchen
+    - binary_sensor.zigbee_occupancy_1_occupancy
     - sensor.zigbee_climate_3_temperature
     - sensor.zigbee_climate_3_humidity
     - sensor.zigbee_climate_3_pressure
