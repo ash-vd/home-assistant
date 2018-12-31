@@ -35,7 +35,7 @@
 
       - condition: state
         entity_id: input_boolean.livingroom_auto
-        state: "Automatisch"
+        state: "on"
 
   action:
     - service: homeassistant.turn_on
@@ -78,7 +78,7 @@
 
       - condition: state
         entity_id: input_boolean.livingroom_auto
-        state: "Automatisch"
+        state: "on"
 
   action:
     - service: homeassistant.turn_on
