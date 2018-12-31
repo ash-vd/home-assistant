@@ -3,3 +3,4 @@ livingroom_presence:
     - binary_sensor.zigbee_occupancy_2_occupancy
     - binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor
     - binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_2
+    - binary_sensor.livingroom_media_on

@@ -1,0 +1,5 @@
+- platform: template
+  sensors:
+    livingroom_media_on:
+      value_template: >-
+        {{ states.remote.livingroom != PowerOff }}
