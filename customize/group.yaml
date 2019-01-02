@@ -2,4 +2,4 @@ group.livingroom_presence:
   friendly_name: Beweging
 
 group.livingroom_dark_display:
-  friendly_name: Donker
+  friendly_name: Lichtsterkte
