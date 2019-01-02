@@ -82,7 +82,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: scene.livingroom_lights_normal
+      entity_id: scene.livingroom_lights_night
 
 # --- Global - OFF -- #
 - alias: Lightning - Livingroom - Off
