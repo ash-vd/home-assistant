@@ -9,6 +9,7 @@ sensors_livingroom:
     # - binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor
     # - binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_2
     - group.livingroom_presence
+    - group.livingroom_dark_display
     - binary_sensor.livingroom_dark
     - sensor.zigbee_climate_2_temperature
     - sensor.zigbee_climate_2_humidity

@@ -36,3 +36,6 @@ binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor:
 binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_2:
   friendly_name: Beweging (Raam)
   device_class: motion
+
+binary_sensor.livingroom_dark:
+  friendly_name: Donker
