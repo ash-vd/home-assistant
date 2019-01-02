@@ -14,4 +14,4 @@
       value_template: "{{ state_attr('remote.livingroom', 'current_activity') }}"
 
     livingroom_dark:
-      value_template: "{{ (states('sensor.zigbee_occupancy_2_illuminance') | float + states('sensor.neo_coolcam_battery_powered_pir_sensor_luminance_3') | float + states('sensor.neo_coolcam_battery_powered_pir_sensor_luminance_4') | float) / 3 < 40 }}"
+      value_template: "{{ (states('sensor.zigbee_occupancy_2_illuminance') | float + states('sensor.neo_coolcam_battery_powered_pir_sensor_luminance_3') | float + states('sensor.neo_coolcam_battery_powered_pir_sensor_luminance_4') | float) / 3 }}"
