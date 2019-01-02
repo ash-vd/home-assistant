@@ -10,8 +10,8 @@ sensor.zigbee_occupancy_3_illuminance:
 sensor.zigbee_occupancy_4_illuminance:
   friendly_name: Lichtsterkte
 
-sensor.sensor.neo_coolcam_battery_powered_pir_sensor_luminance_3:
+sensor.neo_coolcam_battery_powered_pir_sensor_luminance_3:
   friendly_name: Lichtsterkte (TV)
 
-sensor.sensor.neo_coolcam_battery_powered_pir_sensor_luminance_4:
+sensor.neo_coolcam_battery_powered_pir_sensor_luminance_4:
   friendly_name: Lichtsterkte (Raam)
