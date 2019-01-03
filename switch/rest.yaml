@@ -1,0 +1,9 @@
+- platform: rest
+  name: thermostat_home
+  method: get
+  resource: http://localhost:8124/home
+
+- platform: rest
+  name: thermostat_away
+  method: get
+  resource: http://localhost:8124/away
