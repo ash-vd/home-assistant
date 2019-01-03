@@ -1,21 +1,21 @@
 - alias: Aanwezigheid - Badkamer - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_6_contact, group.entrance_presence
+      entity_id: binary_sensor.zigbee_contact_5_contact, group.entrance_presence
       to: "on"
 
   action:
     service: homeassistant.turn_on
-    entity_id: input_boolean.livingroom_presence
+    entity_id: input_boolean.bathroom_presence
 
 - alias: Aanwezigheid - Badkamer - Uit
   trigger:
     platform: state
-    entity_id: group.livingroom_presence
+    entity_id: group.bathroom_presence
     to: "off"
     for:
       minutes: 5
 
   action:
     service: homeassistant.turn_off
-    entity_id: input_boolean.livingroom_presence
+    entity_id: input_boolean.bathroom_presence
