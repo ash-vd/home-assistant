@@ -20,7 +20,7 @@
     condition: and
     conditions:
       - condition: state
-        entity_id: input_select.mode
+        entity_id: input_select.house_mode
         state: "Normaal"
 
       - condition: state
@@ -63,7 +63,7 @@
     condition: and
     conditions:
       - condition: state
-        entity_id: input_select.mode
+        entity_id: input_select.house_mode
         state: "Nacht"
 
       - condition: state
