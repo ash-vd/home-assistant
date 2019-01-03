@@ -118,13 +118,11 @@ script: !include_dir_merge_named script
 # switch: !include_dir_merge_list switch
 zone: !include_dir_merge_list zone
 
-switch:
-  - platform: rest
-    name: thermostat_home
-    method: get
-    resource: http://localhost:8124/home
-
-  - platform: rest
-    name: thermostat_away
-    method: get
-    resource: http://localhost:8124/away
+rest_command:
+  tado_home:
+    url: !secret tado_geo_url
+    method: PUT
+    headers:
+      accept: "application/json, text/html"
+    payload: '{"geolocation":{"latitude":51.942821, "longitude": 4.472988 },"timestamp":"2019-01-03T11:29:30+01:00","accuracy":32}'
+    content_type: "application/json; charset=utf-8"
