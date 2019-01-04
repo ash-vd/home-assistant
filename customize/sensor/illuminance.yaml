@@ -1,14 +1,18 @@
 sensor.zigbee_occupancy_1_illuminance:
   friendly_name: Lichtsterkte
+  unit_of_measurement: lux
 
 sensor.zigbee_occupancy_2_illuminance:
   friendly_name: Lichtsterkte (Meterkast)
+  unit_of_measurement: lux
 
 sensor.zigbee_occupancy_3_illuminance:
   friendly_name: Lichtsterkte
+  unit_of_measurement: lux
 
 sensor.zigbee_occupancy_4_illuminance:
   friendly_name: Lichtsterkte
+  unit_of_measurement: lux
 
 sensor.neo_coolcam_battery_powered_pir_sensor_luminance_3:
   friendly_name: Lichtsterkte (TV)
