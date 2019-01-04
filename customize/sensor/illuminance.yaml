@@ -21,3 +21,7 @@ sensor.neo_coolcam_battery_powered_pir_sensor_luminance_3:
 sensor.neo_coolcam_battery_powered_pir_sensor_luminance_4:
   friendly_name: Lichtsterkte (Raam)
   device_class: illuminance
+
+sensor.neo_coolcam_battery_powered_pir_sensor_luminance_5:
+  friendly_name: Lichtsterkte
+  device_class: illuminance
