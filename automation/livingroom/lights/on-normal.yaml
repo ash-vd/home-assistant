@@ -15,9 +15,9 @@
       for:
         minutes: 3
 
-    - platform: state
-      entity_id: binary_sensor.livingroom_tv_on
-      to: "off"
+    # - platform: state
+    #   entity_id: binary_sensor.livingroom_tv_on
+    #   to: "off"
 
   condition:
     condition: and
