@@ -2,11 +2,11 @@
   sensors:
     livingroom_media_on:
       value_template: >-
-        {{ states('sensor.livingroom_remote') != PowerOff }}
+        {{ states('sensor.livingroom_remote') != "PowerOff" }}
 
     livingroom_tv_on:
       value_template: >-
-        {{ states('sensor.livingroom_remote') == TV or states('sensor.livingroom_remote') == PS4 or states('sensor.livingroom_remote') == Chromecast }}
+        {{ states('sensor.livingroom_remote') == "TV" or states('sensor.livingroom_remote') == "PS4" or states('sensor.livingroom_remote') == "Chromecast" }}
 
     livingroom_dark:
       value_template: >-
