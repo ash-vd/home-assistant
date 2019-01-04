@@ -4,7 +4,7 @@
       entity_id: binary_sensor.livingroom_tv_on
       to: "on"
       for:
-        seconds: 30
+        seconds: 15
 
     - platform: state
       # change of room-mode
@@ -23,8 +23,6 @@
       - condition: state
         entity_id: binary_sensor.livingroom_tv_on
         state: "on"
-        for:
-          seconds: 30
 
       - condition: state
         entity_id: binary_sensor.livingroom_dark
@@ -38,4 +36,4 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: scene.livingroom_lights_night
+      entity_id: scene.livingroom_lights_theater
