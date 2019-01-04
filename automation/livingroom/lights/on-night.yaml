@@ -1,0 +1,41 @@
+- alias: Lightning - Livingroom - Night - On
+  trigger:
+    - platform: state
+      entity_id: input_boolean.livingroom_presence
+      to: "on"
+
+    - platform: state
+      # change of room-mode
+      entity_id: input_boolean.livingroom_auto
+      to: "on"
+
+    - platform: state
+      entity_id: binary_sensor.livingroom_dark
+      to: "on"
+      for:
+        minutes: 3
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Nacht"
+
+      - condition: state
+        entity_id: input_boolean.livingroom_presence
+        state: "on"
+
+      - condition: state
+        entity_id: binary_sensor.livingroom_dark
+        state: "on"
+        for:
+          minutes: 3
+
+      - condition: state
+        entity_id: input_boolean.livingroom_auto
+        state: "on"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: scene.livingroom_lights_night

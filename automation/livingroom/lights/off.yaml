@@ -1,0 +1,33 @@
+- alias: Lightning - Livingroom - Off
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.livingroom_dark
+      to: "off"
+      for:
+        minutes: 5
+
+    - platform: state
+      entity_id: input_boolean.livingroom_presence
+      to: "off"
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.livingroom_auto
+        state: "on"
+
+      - condition: or
+        conditions:
+          - condition: state
+            entity_id: input_boolean.livingroom_presence
+            state: "off"
+          - condition: state
+            entity_id: binary_sensor.livingroom_dark
+            state: "off"
+            for:
+              minutes: 5
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: scene.livingroom_lights_off

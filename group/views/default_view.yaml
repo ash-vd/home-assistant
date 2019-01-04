@@ -8,5 +8,4 @@ default_view:
     - group.bedroom
     - group.kitchen
     - group.hallway
-    - group.tautulli
     - group.traveltime
