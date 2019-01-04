@@ -4,4 +4,4 @@ group.livingroom_presence:
 
 group.livingroom_dark_display:
   friendly_name: Lichtsterkte
-  icon: mdi-brightness-5
+  icon: mdi:brightness-5
