@@ -1,8 +1,10 @@
 - alias: Lightning - Livingroom - Theater - On
   trigger:
     - platform: state
-      entity_id: sensor.livingroom_remote
+      entity_id: binary_sensor.livingroom_tv_on
       to: "on"
+      for:
+        seconds: 30
 
     - platform: state
       # change of room-mode
@@ -18,9 +20,11 @@
   condition:
     condition: and
     conditions:
-      - platform: state
-        entity_id: sensor.livingroom_remote
-        to: "on"
+      - condition: state
+        entity_id: binary_sensor.livingroom_tv_on
+        state: "on"
+        for:
+          seconds: 30
 
       - condition: state
         entity_id: binary_sensor.livingroom_dark

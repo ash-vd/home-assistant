@@ -36,6 +36,12 @@
         entity_id: input_boolean.livingroom_auto
         state: "on"
 
+      - condition: state
+        entity_id: binary_sensor.livingroom_tv_on
+        state: "on"
+        for:
+          seconds: 30
+
   action:
     - service: homeassistant.turn_on
       entity_id: scene.livingroom_lights_night

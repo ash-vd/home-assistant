@@ -1,0 +1,47 @@
+- alias: Lightning - Livingroom - Normal - On
+  trigger:
+    - platform: state
+      entity_id: input_boolean.livingroom_presence
+      to: "on"
+
+    - platform: state
+      # change of room-mode
+      entity_id: input_boolean.livingroom_auto
+      to: "on"
+
+    - platform: state
+      entity_id: binary_sensor.livingroom_dark
+      to: "on"
+      for:
+        minutes: 3
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Normaal"
+
+      - condition: state
+        entity_id: input_boolean.livingroom_presence
+        state: "on"
+
+      - condition: state
+        entity_id: binary_sensor.livingroom_dark
+        state: "on"
+        for:
+          minutes: 3
+
+      - condition: state
+        entity_id: input_boolean.livingroom_auto
+        state: "on"
+
+      - condition: state
+        entity_id: binary_sensor.livingroom_tv_on
+        state: "on"
+        for:
+          seconds: 30
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: scene.livingroom_lights_normal
