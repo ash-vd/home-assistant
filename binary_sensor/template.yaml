@@ -6,7 +6,7 @@
 
     livingroom_tv_on:
       value_template: >-
-        {{ state_attr('media_player.chromecast_livingroom', 'media_content_type') == "movie" }}
+        {{ states('media_player.chromecast_livingroom') == 'playing' and state_attr('media_player.chromecast_livingroom', 'media_content_type') == "movie" }}
 
     livingroom_dark:
       value_template: >-
