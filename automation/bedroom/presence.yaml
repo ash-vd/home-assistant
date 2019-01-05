@@ -1,0 +1,21 @@
+- alias: Aanwezigheid - Slaapkamer - Aan
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.zigbee_contact_2_contact, binary_sensor.aeotec_zw100_multisensor_6_sensor
+      to: "on"
+
+  action:
+    service: homeassistant.turn_on
+    entity_id: input_boolean.bedroom_presence
+
+- alias: Aanwezigheid - Slaapkamer - Uit
+  trigger:
+    platform: state
+    entity_id: binary_sensor.aeotec_zw100_multisensor_6_sensor
+    to: "off"
+    for:
+      minutes: 3
+
+  action:
+    service: homeassistant.turn_off
+    entity_id: input_boolean.bedroom_presence
