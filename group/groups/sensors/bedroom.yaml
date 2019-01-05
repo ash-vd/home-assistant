@@ -5,6 +5,7 @@ sensors_bedroom:
     - input_boolean.bedroom_presence
     - binary_sensor.zigbee_contact_2_contact
     - binary_sensor.aeotec_zw100_multisensor_6_sensor
+    - sensor.aeotec_zw100_multisensor_6_luminance
     - sensor.zigbee_climate_1_temperature
     - sensor.zigbee_climate_1_humidity
     - sensor.zigbee_climate_1_pressure
