@@ -6,7 +6,7 @@
 
     livingroom_tv_on:
       value_template: >-
-        {{ states('sensor.livingroom_remote') == "TV" or states('sensor.livingroom_remote') == "PS4" or states('sensor.livingroom_remote') == "Chromecast" }}
+        {{ state_attr('media_player.chromecast_livingroom', 'media_content_type') == "movie" }}
 
     livingroom_dark:
       value_template: >-

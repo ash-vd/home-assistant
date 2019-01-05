@@ -3,8 +3,6 @@
     - platform: state
       entity_id: binary_sensor.livingroom_tv_on
       to: "on"
-      for:
-        seconds: 15
 
     - platform: state
       # change of room-mode
@@ -15,7 +13,7 @@
       entity_id: binary_sensor.livingroom_dark
       to: "on"
       for:
-        minutes: 3
+        minutes: 2
 
   condition:
     condition: and
@@ -28,7 +26,7 @@
         entity_id: binary_sensor.livingroom_dark
         state: "on"
         for:
-          minutes: 3
+          minutes: 2
 
       - condition: state
         entity_id: input_boolean.livingroom_auto
