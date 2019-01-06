@@ -4,7 +4,7 @@
       entity_id: binary_sensor.livingroom_dark
       to: "off"
       for:
-        minutes: 5
+        minutes: 8
 
     - platform: state
       entity_id: input_boolean.livingroom_presence
@@ -26,7 +26,7 @@
             entity_id: binary_sensor.livingroom_dark
             state: "off"
             for:
-              minutes: 5
+              minutes: 8
 
   action:
     - service: homeassistant.turn_on

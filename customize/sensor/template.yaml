@@ -1,3 +1,4 @@
 sensor.livingroom_dark:
   friendly_name: Lichtsterkte (Gemiddeld)
   unit_of_measurement: lux
+  icon: mdi:brightness-5
