@@ -5,6 +5,10 @@
       to: "on"
 
     - platform: state
+      entity_id: input_boolean.livingroom_presence
+      to: "on"
+
+    - platform: state
       # change of room-mode
       entity_id: input_boolean.livingroom_auto
       to: "on"
@@ -30,6 +34,10 @@
 
       - condition: state
         entity_id: input_boolean.livingroom_auto
+        state: "on"
+
+      - condition: state
+        entity_id: input_boolean.livingroom_presence
         state: "on"
 
   action:
