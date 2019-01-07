@@ -2,26 +2,26 @@
   entities:
     light.zigbee_e14_1_light:
       state: on
-      brightness: 40
-      transition: 12
+      brightness: 30
+      transition: 6
 
     light.zigbee_e27c_1_light:
       state: on
       brightness: 45
       kelvin: 2200
-      transition: 10
+      transition: 5
 
     light.zigbee_e27c_2_light:
       state: on
-      brightness: 150
+      brightness: 160
       kelvin: 2200
-      transition: 10
+      transition: 5
 
     light.zigbee_e27c_3_light:
       state: on
-      brightness: 50
+      brightness: 45
       kelvin: 2350
-      transition: 10
+      transition: 5
 
     switch.livingroom_ball: off
 
