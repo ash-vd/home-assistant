@@ -1,0 +1,26 @@
+- alias: Lightning - Kitchen - On
+  trigger:
+    - platform: state
+      entity_id: input_boolean.kitchen_presence
+      to: "on"
+
+  condition:
+    condition: numeric_state
+    entity_id: sensor.zigbee_occupancy_1_illuminance
+    below: 50
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.kitchen
+      data:
+        brightness: 255
+
+- alias: Lightning - Kitchen - Off
+  trigger:
+    - platform: state
+      entity_id: input_boolean.kitchen_presence
+      to: "off"
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.kitchen
