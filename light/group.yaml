@@ -3,3 +3,9 @@
   entities:
     - light.zigbee_gu10_3_light
     - light.zigbee_gu10_4_light
+
+- platform: group
+  name: kitchen
+  entities:
+    - light.zigbee_gu10_1_light
+    - light.zigbee_gu10_2_light
