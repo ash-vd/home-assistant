@@ -1,5 +1,5 @@
 zigbee2mqtt_log_level:
-  name: Zigbee2mqtt Log Level
+  name: Log Level
   options:
     - debug
     - info

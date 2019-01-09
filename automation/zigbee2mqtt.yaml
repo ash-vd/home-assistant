@@ -17,7 +17,7 @@
     - service: mqtt.publish
       data:
         payload_template: "{{ states('input_select.zigbee2mqtt_log_level') }}"
-        topic: zigbee2mqtt/bridge/config/log_level
+        topic: zigbee/bridge/config/log_level
 
 - id: enable_zigbee_join
   alias: Enable Zigbee joining
@@ -29,7 +29,7 @@
   action:
     - service: mqtt.publish
       data:
-        topic: zigbee2mqtt/bridge/config/permit_join
+        topic: zigbee/bridge/config/permit_join
         payload: "true"
     - service: timer.start
       data:
@@ -45,7 +45,7 @@
   action:
     - data:
         payload: "false"
-        topic: zigbee2mqtt/bridge/config/permit_join
+        topic: zigbee/bridge/config/permit_join
       service: mqtt.publish
     - data:
         entity_id: timer.zigbee_permit_join
@@ -62,7 +62,7 @@
   action:
     - service: mqtt.publish
       data:
-        topic: zigbee2mqtt/bridge/config/permit_join
+        topic: zigbee/bridge/config/permit_join
         payload: "false"
     - service: input_boolean.turn_off
       data:
