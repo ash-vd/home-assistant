@@ -7,7 +7,4 @@ zigbee2mqtt:
     - timer.zigbee_permit_join
     - sensor.zigbee2mqtt_bridge_state
     - switch.zigbee2mqtt_main_join
-    - automation.enable_zigbee_joining
-    - automation.disable_zigbee_joining
-    - automation.disable_zigbee_joining_by_timer
     - input_select.zigbee2mqtt_log_level
