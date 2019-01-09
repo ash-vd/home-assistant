@@ -102,6 +102,11 @@ homekit:
     switch.hallway_light:
       name: Gang
 
+timer:
+  zigbee_permit_join:
+    name: Time remaining
+    duration: 120
+
 tado:
   username: !secret tado_user
   password: !secret tado_password
