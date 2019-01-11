@@ -1,0 +1,3 @@
+- name: kitchen_lights_away
+  entities:
+    light.kitchen: off

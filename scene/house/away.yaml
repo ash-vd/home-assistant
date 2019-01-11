@@ -1,3 +1,10 @@
 - name: house_away
   entities:
     rest_command.tado_away: on
+    scene.bedroom_away: on
+    scene.livingroom_away: on
+    scene.bathroom_away: on
+    scene.entrance_away: on
+    scene.hallway_away: on
+    scene.kitchen_away: on
+    scene.washroom_away: on
