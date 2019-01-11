@@ -1,0 +1,3 @@
+tado_away:
+  sequence:
+    - service: rest_command.tado_home

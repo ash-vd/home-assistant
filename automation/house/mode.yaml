@@ -19,7 +19,7 @@
 - alias: House - Mode - Normal
   trigger:
     platform: time
-    at: "7:30:00"
+    at: "6:30:00"
 
   condition:
     condition: and
