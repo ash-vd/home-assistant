@@ -1,3 +1,3 @@
-- name: hallway_lights_off
+- name: hallway_lights_away
   entities:
     switch.hallway_light: off

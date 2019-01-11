@@ -1,5 +1,5 @@
-scene.house_off:
-  friendly_name: Uit
+scene.house_away:
+  friendly_name: Weg
 
 scene.house_sleep:
   friendly_name: Slapen

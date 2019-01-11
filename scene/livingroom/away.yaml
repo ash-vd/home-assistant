@@ -1,0 +1,5 @@
+- name: livingroom_away
+  entities:
+    scene.livingroom_lights_off: on
+    scene.livingroom_media_away: on
+    scene.livingroom_climate_away: on

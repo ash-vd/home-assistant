@@ -3,9 +3,9 @@
     - platform: state
       entity_id: group.house_presence
       to: "on"
-
   action:
-    - service: rest_command.tado_home
+    - service: homeassistant.turn_on
+      entity_id: scene.house_home
 
 - alias: House - Presence - Off
   trigger:
@@ -14,4 +14,5 @@
       to: "off"
 
   action:
-    - service: rest_command.tado_away
+    - service: homeassistant.turn_on
+      entity_id: scene.house_away

@@ -1,7 +1,6 @@
 - alias: Aanwezigheid - Woonkamer - Aan
   trigger:
     - platform: state
-      #   binary_sensor.zigbee_contact_1_contact,
       entity_id: binary_sensor.zigbee_contact_1_contact, group.livingroom_presence
       to: "on"
 

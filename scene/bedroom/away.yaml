@@ -1,0 +1,4 @@
+- name: bedroom_away
+  entities:
+    scene.bedroom_lights_away: on
+    scene.bedroom_climate_away: on

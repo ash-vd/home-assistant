@@ -1,4 +1,4 @@
-- name: bedroom_climate_off
+- name: bedroom_climate_away
   entities:
     climate.slaapkamer:
       temperature: 15
