@@ -5,7 +5,6 @@
       to: "on"
 
     - platform: state
-      # change of room-mode
       entity_id: input_boolean.livingroom_auto
       to: "on"
 
@@ -15,9 +14,9 @@
       for:
         minutes: 2
 
-    - platform: state
-      entity_id: binary_sensor.livingroom_tv_on
-      to: "off"
+    # - platform: state
+    #   entity_id: binary_sensor.livingroom_tv_on
+    #   to: "off"
 
   condition:
     condition: and
@@ -34,15 +33,15 @@
         entity_id: binary_sensor.livingroom_dark
         state: "on"
         for:
-          minutes: 2
+          minutes: 3
 
       - condition: state
         entity_id: input_boolean.livingroom_auto
         state: "on"
 
-      - condition: state
-        entity_id: binary_sensor.livingroom_tv_on
-        state: "off"
+      # - condition: state
+      #   entity_id: binary_sensor.livingroom_tv_on
+      #   state: "off"
 
   action:
     - service: homeassistant.turn_on
