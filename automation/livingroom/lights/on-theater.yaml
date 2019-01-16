@@ -1,8 +1,9 @@
 - alias: Lightning - Livingroom - Theater - On
+  initial_state: "off"
   trigger:
-    # - platform: state
-    #   entity_id: binary_sensor.livingroom_tv_on
-    #   to: "on"
+    - platform: state
+      entity_id: binary_sensor.livingroom_tv_on
+      to: "on"
 
     - platform: state
       entity_id: input_boolean.livingroom_presence
@@ -22,9 +23,9 @@
   condition:
     condition: and
     conditions:
-      # - condition: state
-      #   entity_id: binary_sensor.livingroom_tv_on
-      #   state: "on"
+      - condition: state
+        entity_id: binary_sensor.livingroom_tv_on
+        state: "on"
 
       - condition: state
         entity_id: binary_sensor.livingroom_dark
