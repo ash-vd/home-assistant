@@ -138,3 +138,13 @@ rest_command:
       accept: "application/json, text/html"
     payload: '{"geolocation":{"latitude": 24.626895, "longitude": -77.938657 },"timestamp":"{{ now().isoformat() }}","accuracy":32}'
     content_type: "application/json; charset=utf-8"
+
+webhook:
+
+zigbee2mqtt_networkmap:
+
+panel_iframe:
+  networkmap:
+    title: "Zigbee Map"
+    url: "/local/zigbee2mqtt_networkmap/map.html"
+    icon: "mdi:graphql"
