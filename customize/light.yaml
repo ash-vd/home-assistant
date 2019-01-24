@@ -15,3 +15,6 @@ light.zigbee_e27c_3_light:
 
 light.bedroom_sink:
   friendly_name: Wastafel
+
+light.kitchen:
+  friendly_name: Licht
