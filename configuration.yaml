@@ -148,7 +148,3 @@ panel_iframe:
     title: "Zigbee Map"
     url: "/local/zigbee2mqtt_networkmap/map.html"
     icon: "mdi:graphql"
-
-resources:
-  - url: /local/simple-thermostat/simple-thermostat.js?v=1
-    type: module
