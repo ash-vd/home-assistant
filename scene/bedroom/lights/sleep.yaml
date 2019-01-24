@@ -1,0 +1,5 @@
+- name: bedroom_lights_sleep
+  entities:
+    light.bedroom_sink:
+      state: on
+      brightness: 40

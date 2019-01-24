@@ -1,3 +1,4 @@
 - name: bedroom_sleep
   entities:
     scene.bedroom_climate_sleep: on
+    scene.bedroom_lights_sleep: on

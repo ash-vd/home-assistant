@@ -2,7 +2,7 @@
   entities:
     script.tado_away: on
     scene.bedroom_sleep: on
-    scene.livingroom_off: on
+    scene.livingroom_sleep: on
     scene.bathroom_off: on
     scene.entrance_off: on
     scene.hallway_off: on
