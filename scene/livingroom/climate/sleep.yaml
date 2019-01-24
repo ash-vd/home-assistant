@@ -1,4 +1,0 @@
-- name: livingroom_climate_sleep
-  entities:
-    climate.woonkamer:
-      temperature: 15

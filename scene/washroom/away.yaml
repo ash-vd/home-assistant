@@ -1,3 +1,3 @@
-- name: washroom_away
+- name: washroom_off
   entities:
     scene.washroom_lights_away: on

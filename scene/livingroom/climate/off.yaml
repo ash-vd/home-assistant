@@ -1,0 +1,4 @@
+- name: livingroom_climate_off
+  entities:
+    climate.woonkamer:
+      temperature: 14
