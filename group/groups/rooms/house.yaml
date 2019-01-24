@@ -4,3 +4,4 @@ house:
   entities:
     - input_select.house_mode
     - scene.house_away
+    - scene.house_sleep
