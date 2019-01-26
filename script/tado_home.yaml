@@ -1,7 +1,3 @@
 tado_home:
   sequence:
     - service: rest_command.tado_home
-    - service: climate.set_operation_mode
-      data:
-        entity_id: climate.woonkamer, climate.slaapkamer
-        operation_mode: "Smart schedule"
