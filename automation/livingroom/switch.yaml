@@ -1,0 +1,8 @@
+- alias: Lightning - Switch - Double
+  trigger:
+    platform: mqtt
+    topic: shelly_1/double_click
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: scene.house_sleep

@@ -1,6 +1,6 @@
 - name: house_sleep
   entities:
-    script.tado_away: on
+    script.tado_sleep: on
     scene.bedroom_sleep: on
     scene.livingroom_sleep: on
     scene.bathroom_off: on

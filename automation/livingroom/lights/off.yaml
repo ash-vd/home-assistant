@@ -31,12 +31,3 @@
   action:
     - service: homeassistant.turn_on
       entity_id: scene.livingroom_lights_off
-
-- alias: Lightning - Livingroom - Manual off
-  trigger:
-    platform: mqtt
-    topic: shelly_1/double_click
-
-  action:
-    - service: homeassistant.turn_on
-      entity_id: scene.livingroom_lights_off

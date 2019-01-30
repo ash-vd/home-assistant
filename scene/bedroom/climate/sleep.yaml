@@ -1,4 +1,0 @@
-- name: bedroom_climate_sleep
-  entities:
-    climate.slaapkamer:
-      temperature: 14
