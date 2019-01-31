@@ -15,11 +15,25 @@
       data:
         brightness: 255
 
+- alias: Lightning - Kitchen - Standby
+  trigger:
+    - platform: state
+      entity_id: input_boolean.kitchen_presence
+      to: "off"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.kitchen
+      data:
+        brightness: 40
+
 - alias: Lightning - Kitchen - Off
   trigger:
     - platform: state
       entity_id: input_boolean.kitchen_presence
       to: "off"
+      for:
+        minutes: 5
 
   action:
     - service: homeassistant.turn_off
