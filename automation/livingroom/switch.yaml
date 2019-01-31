@@ -5,4 +5,13 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: scene.house_sleep
+      entity_id: scene.livingroom_off
+
+- alias: Lightning - Switch - Triple
+  trigger:
+    platform: mqtt
+    topic: shelly_1/triple_click
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: scene.house_off
