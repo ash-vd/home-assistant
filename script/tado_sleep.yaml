@@ -1,4 +1,4 @@
-tado_away:
+tado_sleep:
   sequence:
     - service: climate.set_temperature
       data:
