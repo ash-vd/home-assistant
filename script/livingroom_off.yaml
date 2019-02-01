@@ -4,7 +4,7 @@ livingroom_off:
       data:
         entity_id: scene.livingroom_off
     - delay:
-      seconds: 5
+        seconds: 5
     - service: homeassistant.turn_off
       data:
         entity_id: input_boolean.livingroom_presence
