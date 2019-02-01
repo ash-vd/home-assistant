@@ -33,7 +33,7 @@
       entity_id: input_boolean.kitchen_presence
       to: "off"
       for:
-        minutes: 6
+        minutes: 5
 
   action:
     - service: homeassistant.turn_off
