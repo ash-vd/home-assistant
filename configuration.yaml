@@ -143,10 +143,6 @@ webhook:
 
 zigbee2mqtt_networkmap:
 
-weather:
-  - platform: darksky
-    api_key: !secret darksky_api_key
-
 panel_iframe:
   networkmap:
     title: "Zigbee Map"
