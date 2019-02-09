@@ -1,4 +1,4 @@
-- alias: Bedroom - Switch - Double
+- alias: Bedroom - Switch 1 - Double
   trigger:
     platform: mqtt
     topic: shelly_2/double_click
@@ -7,7 +7,7 @@
     - service: homeassistant.turn_on
       entity_id: scene.bedroom_off
 
-- alias: Bedroom - Switch - Triple
+- alias: Bedroom - Switch 1 - Triple
   trigger:
     platform: mqtt
     topic: shelly_2/triple_click
@@ -16,7 +16,7 @@
     - service: homeassistant.turn_on
       entity_id: scene.house_off
 
-- alias: Bedroom - Switch - Long
+- alias: Bedroom - Switch 1 - Long
   trigger:
     platform: mqtt
     topic: shelly_2/long_click
@@ -24,3 +24,30 @@
   action:
     - service: homeassistant.toggle
       entity_id: light.bedroom_sink
+
+- alias: Bedroom - Switch 2 - Single
+  trigger:
+    platform: mqtt
+    topic: shelly_3/click
+
+  action:
+    - service: homeassistant.toggle
+      entity_id: light.bedroom_sink
+
+- alias: Bedroom - Switch 2 - Double
+  trigger:
+    platform: mqtt
+    topic: shelly_3/double_click
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: scene.bedroom_off
+
+- alias: Bedroom - Switch 2 - Triple
+  trigger:
+    platform: mqtt
+    topic: shelly_2/triple_click
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: scene.house_off
