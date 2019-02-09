@@ -86,7 +86,7 @@ homekit:
   filter:
     include_entities:
       - input_boolean.homekit_livingroom
-      - switch.ball
+      - switch.livingroom_ball
       - light.zigbee_e27c_3_light
       - light.bedroom_sink
       - switch.hallway_light
@@ -97,7 +97,7 @@ homekit:
       name: Groot
     input_boolean.homekit_livingroom:
       name: Woonkamer
-    switch.ball:
+    switch.livingroom_ball:
       name: Lamp op het kastje
     switch.hallway_light:
       name: Gang

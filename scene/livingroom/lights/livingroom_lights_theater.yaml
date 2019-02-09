@@ -23,7 +23,7 @@
       kelvin: 2350
       transition: 5
 
-    switch.ball: off
+    switch.livingroom_ball: off
 
     switch.neo_coolcam_power_plug_12a_switch_3: off
 
