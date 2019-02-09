@@ -8,7 +8,7 @@ sensor.zigbee_climate_1_pressure:
   friendly_name: Luchtdruk
 
 sensor.zigbee_climate_2_temperature:
-  friendly_name: Temperatuur
+  friendly_name: Koelkast
 
 sensor.zigbee_climate_2_humidity:
   friendly_name: Luchtvochtigheid
