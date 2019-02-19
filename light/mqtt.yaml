@@ -1,0 +1,20 @@
+- platform: mqtt
+  name: shelly_1
+  state_topic: shelly_1/light/shelly_1/state
+  command_topic: shelly_1/light/shelly_1/command
+  availability_topic: shelly_1/status
+  schema: json
+
+- platform: mqtt
+  name: shelly_2
+  state_topic: shelly_2/light/shelly_2/state
+  command_topic: shelly_2/light/shelly_2/command
+  availability_topic: shelly_2/status
+  schema: json
+
+- platform: mqtt
+  name: shelly_3
+  state_topic: shelly_3/light/shelly_3/state
+  command_topic: shelly_3/light/shelly_3/command
+  availability_topic: shelly_3/status
+  schema: json
