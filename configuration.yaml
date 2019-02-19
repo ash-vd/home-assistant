@@ -60,6 +60,8 @@ tts:
 
 ios:
 
+system_health:
+
 mqtt:
   broker: 10.10.1.1
   port: 1883
