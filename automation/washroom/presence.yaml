@@ -13,8 +13,7 @@
     - platform: state
       entity_id: binary_sensor.zigbee_contact_3_contact
       to: "off"
-      for:
-        seconds: 5
+
     - platform: state
       entity_id: input_boolean.washroom_presence
       to: "on"
