@@ -18,3 +18,9 @@
   command_topic: shelly_3/light/shelly_3/command
   availability_topic: shelly_3/status
   schema: json
+
+- platform: mqtt
+  name: kitchen_light
+  command_topic: "zigbee2mqtt/kitchen_light/set"
+  state_topic: "zigbee2mqtt/kitchen_light/set"
+  schema: json
