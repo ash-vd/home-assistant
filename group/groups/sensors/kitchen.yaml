@@ -8,3 +8,4 @@ sensors_kitchen:
     - sensor.zigbee_climate_3_temperature
     - sensor.zigbee_climate_3_humidity
     - sensor.zigbee_climate_3_pressure
+    - sensor.zigbee_climate_2_temperature
