@@ -14,7 +14,7 @@
       entity_id: light.kitchen
       data:
         brightness: 255
-        transition: 2
+        transition: 1
 
 - alias: Lightning - Kitchen - Standby
   trigger:
@@ -41,6 +41,12 @@
       to: "off"
       for:
         minutes: 5
+
+    - platform: numeric_state
+      entity_id: sensor.zigbee_occupancy_1_illuminance
+      above: 50
+      for:
+        minutes: 3
 
   action:
     - service: homeassistant.turn_off
