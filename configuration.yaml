@@ -64,7 +64,8 @@ system_health:
 
 person:
   - name: Ashwin
-    id: 8de1646184bb444fba567e084ba52b77
+    id: ashwin
+    user_id: 8de1646184bb444fba567e084ba52b77
     device_trackers:
       - device_tracker.ashwiphone
 
