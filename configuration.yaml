@@ -62,6 +62,12 @@ ios:
 
 system_health:
 
+person:
+  - name: Ashwin
+    id: 8de1646184bb444fba567e084ba52b77
+    device_trackers:
+      - device_tracker.ashwiphone
+
 mqtt:
   broker: 10.10.1.1
   port: 1883
