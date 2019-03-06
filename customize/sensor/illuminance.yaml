@@ -14,7 +14,7 @@ sensor.zigbee_occupancy_4_illuminance:
   friendly_name: Lichtsterkte (TV)
   unit_of_measurement: lux
 
-sensor.neo_coolcam_battery_powered_pir_sensor_luminance_4:
+sensor.zigbee_occupancy_5_illuminance:
   friendly_name: Lichtsterkte (Raam)
   device_class: illuminance
 

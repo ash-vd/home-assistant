@@ -32,7 +32,7 @@
       entity_id: light.kitchen
       data:
         brightness: 25
-        transition: 10
+        transition: 15
 
 - alias: Lightning - Kitchen - Off
   trigger:
