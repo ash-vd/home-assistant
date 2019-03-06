@@ -29,9 +29,8 @@ binary_sensor.zigbee_occupancy_3_occupancy:
 binary_sensor.zigbee_occupancy_4_occupancy:
   friendly_name: Beweging (TV)
 
-binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_2:
+binary_sensor.zigbee_occupancy_5_occupancy:
   friendly_name: Beweging (Raam)
-  device_class: motion
 
 binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_3:
   friendly_name: Beweging
