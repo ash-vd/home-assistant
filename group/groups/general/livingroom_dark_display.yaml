@@ -4,5 +4,5 @@ livingroom_dark_display:
     - binary_sensor.livingroom_dark
     - sensor.livingroom_dark
     - sensor.zigbee_occupancy_2_illuminance
-    - sensor.neo_coolcam_battery_powered_pir_sensor_luminance_3
+    - sensor.zigbee_occupancy_4_illuminance
     - sensor.neo_coolcam_battery_powered_pir_sensor_luminance_4
