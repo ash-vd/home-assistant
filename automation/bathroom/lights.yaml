@@ -1,0 +1,19 @@
+- alias: Lightning - Bathroom - On
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bathroom_presence
+      to: "on"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_4
+
+- alias: Lightning - Bathroom - Off
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bathroom_presence
+      to: "off"
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.shelly_4
