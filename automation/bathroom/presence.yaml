@@ -14,7 +14,7 @@
     entity_id: binary_sensor.aeotec_zw100_multisensor_6_sensor
     to: "off"
     for:
-      minutes: 5
+      minutes: 1
 
   action:
     service: homeassistant.turn_off
