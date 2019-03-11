@@ -14,7 +14,7 @@
     entity_id: binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_3
     to: "off"
     for:
-      minutes: 3
+      minutes: 15
 
   action:
     service: homeassistant.turn_off

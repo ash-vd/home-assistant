@@ -12,6 +12,8 @@
     - platform: state
       entity_id: group.house_presence
       to: "off"
+      for:
+        minutes: 10
 
   action:
     - service: homeassistant.turn_on

@@ -46,7 +46,7 @@
 - alias: Bedroom - Switch 2 - Triple
   trigger:
     platform: mqtt
-    topic: shelly_2/triple_click
+    topic: shelly_3/triple_click
 
   action:
     - service: homeassistant.turn_on
