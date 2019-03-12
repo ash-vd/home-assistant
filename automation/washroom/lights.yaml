@@ -1,4 +1,5 @@
 - alias: Lightning - Washroom - On
+  initial_state: off
   trigger:
     - platform: state
       entity_id: input_boolean.washroom_presence
@@ -11,6 +12,7 @@
         brightness: 255
 
 - alias: Lightning - Washroom - Off
+  initial_state: off
   trigger:
     - platform: state
       entity_id: input_boolean.washroom_presence
