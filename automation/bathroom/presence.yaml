@@ -1,4 +1,5 @@
 - alias: Aanwezigheid - Badkamer - Aan
+  initial_state: off
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_contact_5_contact, binary_sensor.aeotec_zw100_multisensor_6_sensor
@@ -9,6 +10,7 @@
     entity_id: input_boolean.bathroom_presence
 
 - alias: Aanwezigheid - Badkamer - Uit
+  initial_state: off
   trigger:
     platform: state
     entity_id: binary_sensor.aeotec_zw100_multisensor_6_sensor
