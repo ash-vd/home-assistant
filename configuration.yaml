@@ -159,11 +159,19 @@ panel_iframe:
     icon: "mdi:graphql"
 
 entity_controller:
-  washroom:
+  - washroom:
     sensor:
       - binary_sensor.zigbee_contact_3_contact
     entity:
       - light.washok
+    delay: 300
+
+  - bathroom:
+    sensor:
+      - binary_sensor.zigbee_contact_5_contact
+      - binary_sensor.aeotec_zw100_multisensor_6_sensor
+    entity:
+      - light.shelly_4
     delay: 300
   # livingroom:
   #   sensor:
