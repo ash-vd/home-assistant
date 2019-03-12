@@ -159,13 +159,13 @@ panel_iframe:
     icon: "mdi:graphql"
 
 entity_controller:
-  motion_washroom:
+  washroom:
     sensor:
       - binary_sensor.zigbee_contact_3_contact
     entity:
       - light.washok
     delay: 300
-  # motion_livingroom:
+  # livingroom:
   #   sensor:
   #     - binary_sensor.zigbee_occupancy_2_occupancy
   #     - binary_sensor.zigbee_occupancy_4_occupancy
