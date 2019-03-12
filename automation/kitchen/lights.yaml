@@ -7,7 +7,7 @@
   condition:
     condition: numeric_state
     entity_id: sensor.zigbee_occupancy_1_illuminance
-    below: 50
+    below: 65
 
   action:
     - service: homeassistant.turn_on
@@ -44,7 +44,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_1_illuminance
-      above: 50
+      above: 65
       for:
         minutes: 3
 
