@@ -157,32 +157,31 @@ panel_iframe:
     title: "Zigbee Map"
     url: "/local/zigbee2mqtt_networkmap/map.html"
     icon: "mdi:graphql"
+# entity_controller:
+#   washroom:
+#     sensor:
+#       - binary_sensor.zigbee_contact_3_contact
+#     entity:
+#       - light.washok
+#     delay: 300
 
-entity_controller:
-  washroom:
-    sensor:
-      - binary_sensor.zigbee_contact_3_contact
-    entity:
-      - light.washok
-    delay: 300
-
-  bathroom:
-    sensor:
-      - binary_sensor.zigbee_contact_5_contact
-      - binary_sensor.aeotec_zw100_multisensor_6_sensor
-    entity:
-      - light.shelly_4
-    delay: 300
-  # livingroom:
-  #   sensor:
-  #     - binary_sensor.zigbee_occupancy_2_occupancy
-  #     - binary_sensor.zigbee_occupancy_4_occupancy
-  #     - binary_sensor.zigbee_occupancy_5_occupancy
-  #   state_entities:
-  #     - light.zigbee_e27c_1_light
-  #     - light.zigbee_e27c_2_light
-  #     - light.zigbee_e27c_3_light
-  #   entity_on: scene.livingroom_lights_normal
-  #   entity_off: scene.livingroom_lights_off
-  #   delay: 600
-  #   overrides:
+#   bathroom:
+#     sensor:
+#       - binary_sensor.zigbee_contact_5_contact
+#       - binary_sensor.aeotec_zw100_multisensor_6_sensor
+#     entity:
+#       - light.shelly_4
+#     delay: 300
+# livingroom:
+#   sensor:
+#     - binary_sensor.zigbee_occupancy_2_occupancy
+#     - binary_sensor.zigbee_occupancy_4_occupancy
+#     - binary_sensor.zigbee_occupancy_5_occupancy
+#   state_entities:
+#     - light.zigbee_e27c_1_light
+#     - light.zigbee_e27c_2_light
+#     - light.zigbee_e27c_3_light
+#   entity_on: scene.livingroom_lights_normal
+#   entity_off: scene.livingroom_lights_off
+#   delay: 600
+#   overrides:

@@ -1,5 +1,4 @@
 - alias: Lightning - Bathroom - On
-  initial_state: off
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence
@@ -10,7 +9,6 @@
       entity_id: light.shelly_4
 
 - alias: Lightning - Bathroom - Off
-  initial_state: off
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence
