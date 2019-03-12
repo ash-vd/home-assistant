@@ -157,3 +157,16 @@ panel_iframe:
     title: "Zigbee Map"
     url: "/local/zigbee2mqtt_networkmap/map.html"
     icon: "mdi:graphql"
+
+entity_controller:
+  motion_livingroom:
+    sensor:
+      - binary_sensor.zigbee_occupancy_2_occupancy
+      - binary_sensor.zigbee_occupancy_4_occupancy
+      - binary_sensor.zigbee_occupancy_5_occupancy
+    entities:
+      - light.zigbee_e27c_1_light
+      - light.zigbee_e27c_2_light
+      - light.zigbee_e27c_3_light
+    entity_on: scene.livingroom_lights_normal
+    delay: 10
