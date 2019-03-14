@@ -1,5 +1,4 @@
 - alias: Presence - Washroom - On
-  initial_state: off
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_contact_3_contact
@@ -10,7 +9,6 @@
     entity_id: input_boolean.washroom_presence
 
 - alias: Presence - Washroom - Off
-  initial_state: off
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_contact_3_contact
