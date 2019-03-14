@@ -3,5 +3,5 @@ bedroom:
   control: hidden
   entities:
     - climate.slaapkamer
-    - light.shelly_2
+    - light.shelly_02
     - light.bedroom_sink

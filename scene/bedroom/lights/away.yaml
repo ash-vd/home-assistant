@@ -1,4 +1,4 @@
 - name: bedroom_lights_away
   entities:
-    light.bedroom_sink: off
-    light.shelly_2: off
+      light.bedroom_sink: off
+      light.shelly_02: off

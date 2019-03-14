@@ -1,22 +1,22 @@
 - platform: mqtt
-  name: shelly_1
-  state_topic: shelly_1/light/shelly_1/state
-  command_topic: shelly_1/light/shelly_1/command
-  availability_topic: shelly_1/status
+  name: shelly_01
+  state_topic: shelly_01/light/shelly_01/state
+  command_topic: shelly_01/light/shelly_01/command
+  availability_topic: shelly_01/status
   schema: json
 
 - platform: mqtt
-  name: shelly_2
-  state_topic: shelly_2/light/shelly_2/state
-  command_topic: shelly_2/light/shelly_2/command
-  availability_topic: shelly_2/status
+  name: shelly_02
+  state_topic: shelly_02/light/shelly_02/state
+  command_topic: shelly_02/light/shelly_02/command
+  availability_topic: shelly_02/status
   schema: json
 
 - platform: mqtt
-  name: shelly_3
-  state_topic: shelly_3/light/shelly_3/state
-  command_topic: shelly_3/light/shelly_3/command
-  availability_topic: shelly_3/status
+  name: shelly_03
+  state_topic: shelly_03/light/shelly_03/state
+  command_topic: shelly_03/light/shelly_03/command
+  availability_topic: shelly_03/status
   schema: json
 
 - platform: mqtt

@@ -1,7 +1,7 @@
 - alias: Bedroom - Switch 1 - Double
   trigger:
     platform: mqtt
-    topic: shelly_2/double_click
+    topic: shelly_02/double_click
 
   action:
     - service: homeassistant.turn_on
@@ -10,7 +10,7 @@
 - alias: Bedroom - Switch 1 - Triple
   trigger:
     platform: mqtt
-    topic: shelly_2/triple_click
+    topic: shelly_02/triple_click
 
   action:
     - service: homeassistant.turn_on
@@ -19,7 +19,7 @@
 - alias: Bedroom - Switch 1 - Long
   trigger:
     platform: mqtt
-    topic: shelly_2/long_click
+    topic: shelly_02/long_click
 
   action:
     - service: homeassistant.toggle
@@ -28,7 +28,7 @@
 - alias: Bedroom - Switch 2 - Single
   trigger:
     platform: mqtt
-    topic: shelly_3/click
+    topic: shelly_03/click
 
   action:
     - service: homeassistant.toggle
@@ -37,7 +37,7 @@
 - alias: Bedroom - Switch 2 - Double
   trigger:
     platform: mqtt
-    topic: shelly_3/double_click
+    topic: shelly_03/double_click
 
   action:
     - service: homeassistant.turn_on
@@ -46,7 +46,7 @@
 - alias: Bedroom - Switch 2 - Triple
   trigger:
     platform: mqtt
-    topic: shelly_3/triple_click
+    topic: shelly_03/triple_click
 
   action:
     - service: homeassistant.turn_on

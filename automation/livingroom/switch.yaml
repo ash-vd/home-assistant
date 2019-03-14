@@ -1,7 +1,7 @@
 - alias: Lightning - Switch - Double
   trigger:
     platform: mqtt
-    topic: shelly_1/double_click
+    topic: shelly_01/double_click
 
   action:
     - service: homeassistant.turn_on
@@ -10,7 +10,7 @@
 - alias: Lightning - Switch - Triple
   trigger:
     platform: mqtt
-    topic: shelly_1/triple_click
+    topic: shelly_01/triple_click
 
   action:
     - service: homeassistant.turn_on

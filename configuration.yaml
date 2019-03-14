@@ -170,7 +170,7 @@ panel_iframe:
 #       - binary_sensor.zigbee_contact_5_contact
 #       - binary_sensor.aeotec_zw100_multisensor_6_sensor
 #     entity:
-#       - light.shelly_4
+#       - light.shelly_04
 #     delay: 300
 # livingroom:
 #   sensor:
