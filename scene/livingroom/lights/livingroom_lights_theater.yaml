@@ -25,7 +25,7 @@
 
     switch.livingroom_ball: off
 
-    light.staand: off
+    switch.staand: off
 
     input_select.livingroom_scene:
       option: "Theater"

@@ -12,4 +12,4 @@ livingroom:
     - light.zigbee_e27c_2_light
     - light.zigbee_e27c_3_light
     - switch.livingroom_ball
-    - light.staand
+    - switch.staand

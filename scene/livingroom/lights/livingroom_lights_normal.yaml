@@ -25,7 +25,7 @@
 
     switch.livingroom_ball: on
 
-    light.staand: on
+    switch.staand: on
 
     input_boolean.homekit_livingroom: on
     input_select.livingroom_scene:
