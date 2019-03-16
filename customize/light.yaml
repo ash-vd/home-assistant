@@ -26,3 +26,7 @@ light.shelly_01:
 light.shelly_02:
   friendly_name: Plafond
   icon: mdi:lightbulb
+
+light.staand:
+  friendly_name: Staand
+  icon: mdi:lightbulb
