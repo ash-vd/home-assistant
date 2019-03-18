@@ -11,7 +11,7 @@
   region: "EU"
 
 - platform: waze_travel_time
-  name: Ashwin naar Azaleastraat
+  name: Ashwin naar Ashwin's huis
   origin: device_tracker.ashwiphone
   destination: zone.home
   region: "EU"
