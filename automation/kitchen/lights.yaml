@@ -1,4 +1,4 @@
-- alias: Lightning - Kitchen - On
+- alias: Verlichting - Keuken - Aan
   trigger:
     - platform: state
       entity_id: input_boolean.kitchen_presence
@@ -16,7 +16,7 @@
         brightness: 255
         transition: 1
 
-- alias: Lightning - Kitchen - Standby
+- alias: Verlichting - Keuken - Standby
   trigger:
     - platform: state
       entity_id: input_boolean.kitchen_presence
@@ -34,7 +34,7 @@
         brightness: 25
         transition: 15
 
-- alias: Lightning - Kitchen - Off
+- alias: Verlichting - Keuken - Uit
   trigger:
     - platform: state
       entity_id: input_boolean.kitchen_presence

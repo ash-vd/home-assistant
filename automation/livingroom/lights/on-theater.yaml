@@ -1,4 +1,4 @@
-- alias: Lightning - Livingroom - Theater - On
+- alias: Verlichting - Woonkamer - Theater - Aan
   initial_state: "off"
   trigger:
     - platform: state

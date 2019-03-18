@@ -1,4 +1,4 @@
-- alias: Lightning - Livingroom - Normal - On
+- alias: Verlichting - Woonkamer - Normaal - Aan
   trigger:
     - platform: state
       entity_id: input_boolean.livingroom_presence

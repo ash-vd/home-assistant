@@ -1,4 +1,4 @@
-- alias: Lightning - Livingroom - Night - On
+- alias: Verlichting - Woonkamer - Nacht - Aan
   trigger:
     - platform: state
       entity_id: input_boolean.livingroom_presence

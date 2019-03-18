@@ -1,4 +1,4 @@
-- alias: House - Presence - On
+- alias: House - Aanwezigheid - On
   trigger:
     - platform: state
       entity_id: group.house_presence
@@ -7,7 +7,7 @@
     - service: homeassistant.turn_on
       entity_id: scene.house_home
 
-- alias: House - Presence - Off
+- alias: House - Aanwezigheid - Off
   trigger:
     - platform: state
       entity_id: group.house_presence

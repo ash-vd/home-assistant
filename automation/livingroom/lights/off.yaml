@@ -1,4 +1,4 @@
-- alias: Lightning - Livingroom - Off
+- alias: Verlichting - Woonkamer - Uit
   trigger:
     - platform: state
       entity_id: binary_sensor.livingroom_dark

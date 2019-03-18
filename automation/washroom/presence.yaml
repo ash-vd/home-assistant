@@ -1,4 +1,4 @@
-- alias: Presence - Washroom - On
+- alias: Aanwezigheid - Washok - Aan
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_contact_3_contact
@@ -8,7 +8,7 @@
     service: homeassistant.turn_on
     entity_id: input_boolean.washroom_presence
 
-- alias: Presence - Washroom - Off
+- alias: Aanwezigheid - Washok - Uit
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_contact_3_contact

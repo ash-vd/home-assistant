@@ -1,4 +1,4 @@
-- alias: Lightning - Washroom - On
+- alias: Verlichting - Washok - Aan
   trigger:
     - platform: state
       entity_id: input_boolean.washroom_presence
@@ -10,7 +10,7 @@
       data:
         brightness: 255
 
-- alias: Lightning - Washroom - Off
+- alias: Verlichting - Washok - Uit
   trigger:
     - platform: state
       entity_id: input_boolean.washroom_presence
