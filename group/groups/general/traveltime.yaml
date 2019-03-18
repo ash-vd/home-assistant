@@ -1,6 +1,7 @@
 traveltime:
   name: Reistijden
   entities:
-    - sensor.ashwin_naar_azaleastraat
-    - sensor.azaleastraat_naar_anwb
-    - sensor.anwb_naar_azaleastraat
+    - sensor.ashwin_naar_ashwins_huis
+    - sensor.ashwin_naar_lilians_huis
+    - sensor.ashwins_huis_naar_anwb
+    - sensor.anwb_naar_ashwins_huis
