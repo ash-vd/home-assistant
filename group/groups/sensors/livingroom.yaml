@@ -7,6 +7,3 @@ sensors_livingroom:
     - binary_sensor.zigbee_contact_1_contact
     - group.livingroom_presence
     - group.livingroom_dark_display
-    - sensor.zigbee_climate_2_temperature
-    - sensor.zigbee_climate_2_humidity
-    - sensor.zigbee_climate_2_pressure
