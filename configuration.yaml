@@ -100,7 +100,7 @@ homekit:
       - switch.sonoff_01
       - light.zigbee_e27c_3_light
       - light.bedroom_sink
-      - switch.hallway_light
+      - switch.sonoff_02
   entity_config:
     light.bedroom_sink:
       name: Wastafel
@@ -110,7 +110,7 @@ homekit:
       name: Woonkamer
     switch.sonoff_01:
       name: Lamp op het kastje
-    switch.hallway_light:
+    switch.sonoff_02:
       name: Gang
 
 timer:

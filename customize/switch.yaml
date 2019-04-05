@@ -2,6 +2,6 @@ switch.sonoff_01:
   friendly_name: Bol (Kastje)
   icon: mdi:lightbulb
 
-switch.hallway_light:
+switch.sonoff_02:
   friendly_name: Lamp
   icon: mdi:lightbulb

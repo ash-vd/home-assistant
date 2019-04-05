@@ -25,7 +25,7 @@
 
     switch.sonoff_01: off
 
-    switch.staand: off
+    switch.sonoff_03: off
 
     input_select.livingroom_scene:
       option: "Theater"
