@@ -23,7 +23,7 @@
       kelvin: 2350
       transition: 1
 
-    switch.livingroom_ball: off
+    switch.sonoff_01: off
 
     input_select.livingroom_scene:
       option: "Nacht"

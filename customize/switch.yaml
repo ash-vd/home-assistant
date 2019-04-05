@@ -1,4 +1,4 @@
-switch.livingroom_ball:
+switch.sonoff_01:
   friendly_name: Bol (Kastje)
   icon: mdi:lightbulb
 

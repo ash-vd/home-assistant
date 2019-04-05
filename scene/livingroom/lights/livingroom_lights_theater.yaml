@@ -23,7 +23,7 @@
       kelvin: 2350
       transition: 5
 
-    switch.livingroom_ball: off
+    switch.sonoff_01: off
 
     switch.staand: off
 

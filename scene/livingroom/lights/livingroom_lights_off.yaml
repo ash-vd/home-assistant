@@ -5,7 +5,7 @@
     light.zigbee_e27c_1_light: off
     light.zigbee_e27c_2_light: off
     light.zigbee_e27c_3_light: off
-    switch.livingroom_ball: off
+    switch.sonoff_01: off
     switch.staand: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:
