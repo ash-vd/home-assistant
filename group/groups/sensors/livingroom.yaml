@@ -7,3 +7,4 @@ sensors_livingroom:
     - binary_sensor.zigbee_contact_1_contact
     - group.livingroom_presence
     - group.livingroom_dark_display
+    - binary_sensor.zigbee_smoke_1

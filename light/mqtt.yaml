@@ -1,25 +1,4 @@
 - platform: mqtt
-  name: shelly_01
-  state_topic: shelly_01/light/shelly_01/state
-  command_topic: shelly_01/light/shelly_01/command
-  availability_topic: shelly_01/status
-  schema: json
-
-- platform: mqtt
-  name: shelly_02
-  state_topic: shelly_02/light/shelly_02/state
-  command_topic: shelly_02/light/shelly_02/command
-  availability_topic: shelly_02/status
-  schema: json
-
-- platform: mqtt
-  name: shelly_03
-  state_topic: shelly_03/light/shelly_03/state
-  command_topic: shelly_03/light/shelly_03/command
-  availability_topic: shelly_03/status
-  schema: json
-
-- platform: mqtt
   name: kitchen
   command_topic: "zigbee/kitchen_light/set"
   state_topic: "zigbee/kitchen_light/set"
