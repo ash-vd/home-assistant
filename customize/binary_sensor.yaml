@@ -36,7 +36,7 @@ binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_3:
   friendly_name: Beweging
   device_class: motion
 
-binary_sensor.aeotec_zw100_multisensor_6_sensor:
+binary_sensor.multi_1_movement:
   friendly_name: Beweging
   device_class: motion
 

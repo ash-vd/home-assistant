@@ -4,5 +4,5 @@ sensors_bathroom:
   entities:
     - input_boolean.bathroom_presence
     - binary_sensor.zigbee_contact_5_contact
-    - binary_sensor.aeotec_zw100_multisensor_6_sensor
+    - binary_sensor.multi_1_movement
     - sensor.neo_coolcam_battery_powered_pir_sensor_luminance_5
