@@ -170,7 +170,7 @@ panel_iframe:
 #   bathroom:
 #     sensor:
 #       - binary_sensor.zigbee_contact_5_contact
-#       - binary_sensor.multi_1_movement
+#       - binary_sensor.multi_01_movement
 #     entity:
 #       - light.shelly_04
 #     delay: 300

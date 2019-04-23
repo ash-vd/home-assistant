@@ -1,7 +1,7 @@
 - alias: Aanwezigheid - Badkamer - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_5_contact, binary_sensor.multi_1_movement
+      entity_id: binary_sensor.zigbee_contact_5_contact, binary_sensor.multi_01_movement
       to: "on"
 
   action:
@@ -11,7 +11,7 @@
 - alias: Aanwezigheid - Badkamer - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.multi_1_movement
+    entity_id: binary_sensor.multi_01_movement
     to: "off"
     for:
       minutes: 3
