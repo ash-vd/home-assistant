@@ -1,0 +1,2 @@
+binary_sensor.zigbee_smoke_1:
+  friendly_name: Rookmelder

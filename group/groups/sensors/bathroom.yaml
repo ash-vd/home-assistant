@@ -5,4 +5,3 @@ sensors_bathroom:
     - input_boolean.bathroom_presence
     - binary_sensor.zigbee_contact_5_contact
     - binary_sensor.multi_01_movement
-    - sensor.neo_coolcam_battery_powered_pir_sensor_luminance_5
