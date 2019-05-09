@@ -1,13 +1,13 @@
 - platform: waze_travel_time
-  name: ANWB naar Ashwin's huis
-  origin: zone.anwb
+  name: HBR naar Ashwin's huis
+  origin: zone.hbr
   destination: zone.home
   region: "EU"
 
 - platform: waze_travel_time
-  name: Ashwin's huis naar ANWB
+  name: Ashwin's huis naar HBR
   origin: zone.home
-  destination: zone.anwb
+  destination: zone.hbr
   region: "EU"
 
 - platform: waze_travel_time
