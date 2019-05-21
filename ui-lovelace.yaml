@@ -2,5 +2,9 @@ views:
   - title: main
     icon: mdi:home-outline
     cards:
+      - type: glance
+        title: Verlichting
+        entities:
+          - light.shelly_01
       - type: media-control
         entity: media_player.chromecast_livingroom
