@@ -1,7 +1,0 @@
-entity_controller_view:
-  view: yes
-  name: Entity controller
-  icon: mdi:cogs
-  entities:
-    - entity_controller.bathroom
-    - entity_controller.washroom

@@ -1,7 +1,7 @@
 - name: house_away
   entities:
     script.tado_away: on
-    scene.bedroom_off: on
+    # scene.bedroom_off: on
     scene.livingroom_off: on
     scene.bathroom_off: on
     scene.entrance_off: on
