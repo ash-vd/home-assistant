@@ -9,7 +9,11 @@ views:
       - type: custom:waze-card
         entities:
           - entity: sensor.ashwin_s_huis_naar_hbr
+            zone: zone.home
+            name: Ashwin's huis naar HBR
           - entity: sensor.hbr_naar_ashwin_s_huis
+            zone: zone.hbr
+            name: HBR naar Ashwin's huis
 
       - type: glance
         title: Verlichting
