@@ -1,7 +1,16 @@
+resources:
+  - url: /local/waze-card/waze-card.js?v=2.0.0
+    type: js
+
 views:
   - title: main
     icon: mdi:home-outline
     cards:
+      - type: custom:waze-card
+        entities:
+          - entity: sensor.ashwin_s_huis_naar_hbr
+          - entity: sensor.hbr_naar_ashwin_s_huis
+
       - type: glance
         title: Verlichting
         entities:
