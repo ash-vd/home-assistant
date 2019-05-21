@@ -93,6 +93,9 @@ remote:
     name: Livingroom
     host: 10.10.1.10
 
+lovelace:
+  mode: yaml
+
 homekit:
   filter:
     include_entities:
