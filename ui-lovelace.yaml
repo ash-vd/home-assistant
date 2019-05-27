@@ -5,6 +5,8 @@ resources:
     type: js
   - url: /local/slider-entity-row.js
     type: js
+  - url: /local/group-card.js
+    type: js
 
 views:
   - title: main
@@ -98,8 +100,8 @@ views:
   - title: Sensoren
     icon: mdi:cogs
     cards:
-      - type: entities
-        title: Woonkamer
-        show_header_toggle: false
-        entities:
-          - group.sensors_livingroom
+      - type: custom:group-card
+        card:
+          type: entities
+          title: Woonkamer
+        group: group.sensors_livingroom
