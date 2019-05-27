@@ -1,5 +1,9 @@
 resources:
-  - url: /local/waze-card/waze-card.js?v=2.0.0
+  - url: /local/waze-card.js?v=2.0.0
+    type: js
+  - url: /local/mini-media-player-bundle.js
+    type: js
+  - url: /local/slider-entity-row.js
     type: js
 
 views:
@@ -15,9 +19,16 @@ views:
             zone: zone.home
             name: HBR naar Ashwin's huis
 
-      - type: glance
-        title: Verlichting
+      - type: entities
+        title: Woonkamer
+        show_header_toggle: false
         entities:
-          - light.shelly_01
-      - type: media-control
+          - input_number.slider
+
+          - type: section
+            label: Verlichting
+          - type: custom:slider-entity-row
+            entity: light.shelly_01
+
+      - type: custom:mini-media-player
         entity: media_player.chromecast_livingroom
