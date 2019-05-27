@@ -23,10 +23,25 @@ views:
         title: Woonkamer
         show_header_toggle: false
         entities:
+          - input_select.livingroom_scene
+          - input_select.livingroom_remote
+
+          - type: custom:mini-media-player
+            entity: media_player.chromecast_livingroom
+
           - type: section
             label: Verlichting
-          - type: custom:slider-entity-row
-            entity: light.shelly_01
 
-      - type: custom:mini-media-player
-        entity: media_player.chromecast_livingroom
+          - light.shelly_01
+
+          - type: custom:slider-entity-row
+            entity: light.zigbee_e14_1_light
+
+          - type: custom:slider-entity-row
+            entity: light.zigbee_e27c_2_light
+
+          - type: custom:slider-entity-row
+            entity: light.zigbee_e27c_3_light
+
+          - switch.sonoff_01
+          - switch.sonoff_03
