@@ -1,6 +1,6 @@
 livingroom_scene:
   name: Scene
-  icon: mdi:alarm
+  icon: mdi:buffer
   initial: Uit
   options:
     - Aan

@@ -10,15 +10,6 @@ views:
   - title: main
     icon: mdi:home-outline
     cards:
-      - type: custom:waze-card
-        entities:
-          - entity: sensor.ashwin_s_huis_naar_hbr
-            zone: zone.hbr
-            name: Ashwin's huis naar HBR
-          - entity: sensor.hbr_naar_ashwin_s_huis
-            zone: zone.home
-            name: HBR naar Ashwin's huis
-
       - type: entities
         title: Woonkamer
         show_header_toggle: false
