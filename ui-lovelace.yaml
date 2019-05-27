@@ -36,12 +36,59 @@ views:
 
           - type: custom:slider-entity-row
             entity: light.zigbee_e14_1_light
+            toggle: true
 
           - type: custom:slider-entity-row
             entity: light.zigbee_e27c_2_light
+            toggle: true
 
           - type: custom:slider-entity-row
             entity: light.zigbee_e27c_3_light
+            toggle: true
 
           - switch.sonoff_01
           - switch.sonoff_03
+
+      - type: entities
+        title: Keuken
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Verlichting
+
+          - type: custom:slider-entity-row
+            entity: light.kitchen
+            toggle: true
+
+      - type: entities
+        title: Badkamer
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Verlichting
+
+          - light.shelly_04
+
+      - type: entities
+        title: Gang
+        show_header_toggle: false
+
+        entities:
+          - type: section
+            label: Verlichting
+
+          - switch.sonoff_02
+
+      - type: entities
+        title: Slaapkamer
+        show_header_toggle: false
+
+        entities:
+          - type: section
+            label: Verlichting
+
+          - light.shelly_02
+
+          - type: custom:slider-entity-row
+            entity: light.bedroom_sink
+            toggle: true

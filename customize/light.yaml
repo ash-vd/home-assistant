@@ -27,6 +27,10 @@ light.shelly_02:
   friendly_name: Plafond
   icon: mdi:lightbulb
 
+light.shelly_04:
+  friendly_name: Licht
+  icon: mdi:lightbulb
+
 switch.sonoff_03:
   friendly_name: sonoff_03
   icon: mdi:lightbulb
