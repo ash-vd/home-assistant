@@ -105,3 +105,27 @@ views:
           type: entities
           title: Woonkamer
         group: group.sensors_livingroom
+
+      - type: custom:group-card
+        card:
+          type: entities
+          title: Keuken
+        group: group.sensors_kitchen
+
+      - type: custom:group-card
+        card:
+          type: entities
+          title: Badkamer
+        group: group.sensors_bathroom
+
+      - type: custom:group-card
+        card:
+          type: entities
+          title: Entree
+        group: group.sensors_entrance
+
+      - type: custom:group-card
+        card:
+          type: entities
+          title: Slaapkamer
+        group: group.sensors_bedroom
