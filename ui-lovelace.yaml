@@ -23,8 +23,6 @@ views:
         title: Woonkamer
         show_header_toggle: false
         entities:
-          - input_number.slider
-
           - type: section
             label: Verlichting
           - type: custom:slider-entity-row
