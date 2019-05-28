@@ -7,6 +7,8 @@ resources:
     type: js
   - url: /local/group-card.js
     type: js
+  - url: /local/simpel-thermostat.js
+    type: module
 
 views:
   - title: main
@@ -21,6 +23,9 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_livingroom
+
+          - type: custom:simple-thermostat
+            entity: climate.woonkamer
 
           - type: section
             label: Verlichting
@@ -88,6 +93,9 @@ views:
         show_header_toggle: false
 
         entities:
+          - type: custom:simple-thermostat
+            entity: climate.woonkamer
+
           - type: section
             label: Verlichting
 
