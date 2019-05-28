@@ -18,6 +18,8 @@ views:
         title: Woonkamer
         show_header_toggle: false
         entities:
+          - type: section
+
           - input_select.livingroom_scene
           - input_select.livingroom_remote
 
