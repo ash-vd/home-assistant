@@ -94,6 +94,8 @@ views:
         show_header_toggle: false
 
         entities:
+          - type: section
+
           - entity: climate.slaapkamer
 
           - type: section
