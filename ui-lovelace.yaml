@@ -20,15 +20,15 @@ views:
         entities:
           - type: section
 
+          - entity: climate.woonkamer
+
+          - type: section
+
           - input_select.livingroom_scene
           - input_select.livingroom_remote
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_livingroom
-
-          - type: section
-
-          - entity: climate.woonkamer
 
           - type: section
             label: Verlichting
