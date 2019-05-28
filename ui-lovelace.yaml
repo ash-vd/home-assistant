@@ -24,6 +24,8 @@ views:
           - type: custom:mini-media-player
             entity: media_player.chromecast_livingroom
 
+          - type: section
+
           - entity: climate.woonkamer
 
           - type: section
