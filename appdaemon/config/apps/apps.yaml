@@ -14,18 +14,18 @@ Occupancy Simulator:
   step_evening_off_name: Evening Off
   step_evening_off_relative: Night On
   step_evening_off_start_offset: 00:01:00
-  step_evening_off_end_offset: 00:05:00
+  step_evening_off_end_offset: 00:03:00
   step_evening_off_off_1: scene.livingroom_lights_off
 
   step_night_on_name: Night On
-  step_night_on_start: "22:15:00"
-  step_night_on_end: "23:30:00"
+  step_night_on_start: "22:20:00"
+  step_night_on_end: "23:55:00"
   step_night_on_on_1: light.bedroom_sink
 
   step_night_off_name: Night Off
   step_night_off_relative: Night On
-  step_night_off_start_offset: "- 00:03:00"
-  step_night_off_end_offset: " - 00:14:00"
+  step_night_off_start_offset: "00:03:00"
+  step_night_off_end_offset: "00:14:00"
   step_night_off_off_1: light.bedroom_sink
 
   random_kitchen_name: Kitchen
