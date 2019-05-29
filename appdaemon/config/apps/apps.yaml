@@ -1,4 +1,15 @@
-hello_world:
-  module: hello
-  class: HelloWorld
+Occupancy Simulator:
+  module: occusim
+  class: OccuSim
+  log: 1
+  enable: input_boolean.vacation,on
+  test: 1
+  dump_times: 1
 
+  step_bedtime_name: Bedtime
+  step_bedtime_start: 22:00:00
+  step_bedtime_end: 23:30:00
+  step_bedtime_on_1: light.bedroom_sink
+  step_bedtime_off_start_offset: 00:03:00
+  step_bedtime_off_end_offset: 00:14:00
+  step_bedtime_off_1: light.bedroom_sink
