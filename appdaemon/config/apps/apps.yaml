@@ -12,7 +12,7 @@ Occupancy Simulator:
   step_evening_on_on_1: scene.livingroom_lights_normal
 
   step_evening_off_name: Evening Off
-  step_evening_off_relative: Evening On
+  step_evening_off_relative: Night On
   step_evening_off_start_offset: 00:01:00
   step_evening_off_end_offset: 00:05:00
   step_evening_off_off_1: scene.livingroom_lights_off
