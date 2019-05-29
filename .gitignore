@@ -1,14 +1,18 @@
 *.conf
 *.txt
 *.log
+*.pyc
 .storage
 .cloud
 .google.token
+.homekit.state
 .uuid
 ip_bans.yaml
 secrets.yaml
 known_devices.yaml
 home-assistant_v2.db
 tts
+.HA_VERSION
+zwcfg*.xml
 
 .vscode
