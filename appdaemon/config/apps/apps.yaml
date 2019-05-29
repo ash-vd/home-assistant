@@ -24,8 +24,8 @@ Occupancy Simulator:
 
   step_night_off_name: Night Off
   step_night_off_relative: Night On
-  step_night_off_start_offset: "00:03:00"
-  step_night_off_end_offset: "00:14:00"
+  step_night_off_start_offset: "- 00:03:00"
+  step_night_off_end_offset: " - 00:14:00"
   step_night_off_off_1: light.bedroom_sink
 
   random_kitchen_name: Kitchen
