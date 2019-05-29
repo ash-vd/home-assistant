@@ -122,28 +122,33 @@ views:
         card:
           type: entities
           title: Woonkamer
+          show_header_toggle: false
         group: group.sensors_livingroom
 
       - type: custom:group-card
         card:
           type: entities
           title: Keuken
+          show_header_toggle: false
         group: group.sensors_kitchen
 
       - type: custom:group-card
         card:
           type: entities
           title: Badkamer
+          show_header_toggle: false
         group: group.sensors_bathroom
 
       - type: custom:group-card
         card:
           type: entities
           title: Entree
+          show_header_toggle: false
         group: group.sensors_entrance
 
       - type: custom:group-card
         card:
           type: entities
           title: Slaapkamer
+          show_header_toggle: false
         group: group.sensors_bedroom
