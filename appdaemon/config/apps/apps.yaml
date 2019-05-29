@@ -13,7 +13,7 @@ Occupancy Simulator:
   step_evening_off_relative: "Night"
   step_evening_off_1: scene.livingroom_lights_off
 
-  random_kitchen_name: Evening Office
+  random_kitchen_name: Kitchen
   random_kitchen_start: Evening
   random_kitchen_end: Night
   random_kitchen_minduration: 00:01:00
