@@ -10,7 +10,9 @@ Occupancy Simulator:
   step_evening_start: "sunset + 00:15:00"
   step_evening_end: "sunset + 00:45:00"
   step_evening_on_1: scene.livingroom_lights_normal
-  step_evening_off_relative: "Night"
+  step_evening_off_relative: Night
+  step_evening_off_start_offset: 00:01:00
+  step_evening_off_end_offset: 00:05:00
   step_evening_off_1: scene.livingroom_lights_off
 
   random_kitchen_name: Kitchen
@@ -18,7 +20,7 @@ Occupancy Simulator:
   random_kitchen_end: Night
   random_kitchen_minduration: 00:01:00
   random_kitchen_maxduration: 00:20:00
-  random_kitchen_number: 3
+  random_kitchen_number: 2
   random_kitchen_on_1: light.kitchen
   random_kitchen_off_1: light.kitchen
 
