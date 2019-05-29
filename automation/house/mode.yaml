@@ -4,11 +4,9 @@
     at: "00:30:00"
 
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: input_select.house_mode
-        state: "Normaal"
+    - condition: state
+      entity_id: input_select.house_mode
+      state: "Normaal"
 
   action:
     service: input_select.select_option
@@ -22,11 +20,9 @@
     at: "6:30:00"
 
   condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: input_select.house_mode
-        state: "Nacht"
+    - condition: state
+      entity_id: input_select.house_mode
+      state: "Nacht"
 
   action:
     service: input_select.select_option

@@ -2,8 +2,8 @@ Occupancy Simulator:
   module: occusim
   class: OccuSim
   log: "1"
-  enable: input_boolean.vacation,on
-  test: "1"
+  enable: input_select.house_mode,Vakantie
+  # test: "1"
   dump_times: "1"
 
   step_evening_on_name: Evening On
