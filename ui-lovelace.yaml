@@ -112,6 +112,11 @@ views:
   - title: Sensoren
     icon: mdi:cogs
     cards:
+      - type: entities
+        title: Huis
+        entities:
+          - input_select.house_mode
+
       - type: custom:group-card
         card:
           type: entities
