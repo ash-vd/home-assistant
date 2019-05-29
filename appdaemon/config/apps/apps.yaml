@@ -6,10 +6,26 @@ Occupancy Simulator:
   test: "1"
   dump_times: "1"
 
-  step_bedtime_name: Bedtime
-  step_bedtime_start: "22:00:00"
-  step_bedtime_end: "23:30:00"
-  step_bedtime_on_1: light.bedroom_sink
-  step_bedtime_off_start_offset: "00:03:00"
-  step_bedtime_off_end_offset: "00:14:00"
-  step_bedtime_off_1: light.bedroom_sink
+  step_evening_name: Evening
+  step_evening_start: "sunset + 00:15:00"
+  step_evening_end: "sunset + 00:45:00"
+  step_evening_on_1: scene.livingroom_lights_normal
+  step_evening_off_relative: "Night"
+  step_evening_off_1: scene.livingroom_lights_off
+
+  random_kitchen_name: Evening Office
+  random_kitchen_start: Evening
+  random_kitchen_end: Night
+  random_kitchen_minduration: 00:01:00
+  random_kitchen_maxduration: 00:20:00
+  random_kitchen_number: 3
+  random_kitchen_on_1: light.kitchen
+  random_kitchen_off_1: light.kitchen
+
+  step_night_name: Night
+  step_night_start: "22:15:00"
+  step_night_end: "23:30:00"
+  step_night_on_1: light.bedroom_sink
+  step_night_off_start_offset: "00:03:00"
+  step_night_off_end_offset: "00:14:00"
+  step_night_off_1: light.bedroom_sink
