@@ -8,7 +8,7 @@ Occupancy Simulator:
 
   step_evening_on_name: Evening On
   step_evening_on_start: "sunset + 00:15:00"
-  step_evening_on_end: "sunset + 00:45:00"
+  step_evening_on_end: "sunset + 01:00:00"
   step_evening_on_on_1: scene.livingroom_lights_normal
 
   step_evening_off_name: Evening Off
@@ -36,3 +36,12 @@ Occupancy Simulator:
   random_kitchen_number: 2
   random_kitchen_on_1: light.kitchen
   random_kitchen_off_1: light.kitchen
+
+  random_bathroom_name: Bathroom
+  random_bathroom_start: Evening On
+  random_bathroom_end: Evening Off
+  random_bathroom_minduration: 00:01:00
+  random_bathroom_maxduration: 00:15:00
+  random_bathroom_number: 1
+  random_bathroom_on_1: light.shelly_04
+  random_bathroom_off_1: light.shelly_04
