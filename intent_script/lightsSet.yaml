@@ -1,0 +1,5 @@
+lightsSet:
+  action:
+    - service: scene.turn_on
+      data_template:
+        entity_id: scene.{{ house_room | replace(" ","_") }}_speech_on
