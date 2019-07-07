@@ -92,6 +92,7 @@ hue:
 cast:
   media_player:
     - host: 10.10.15.3
+    - host: 10.10.15.4
 
 remote:
   - platform: harmony
