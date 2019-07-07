@@ -100,6 +100,9 @@ views:
 
           - entity: climate.slaapkamer
 
+          - type: custom:mini-media-player
+            entity: media_player.chromecast_livingroom
+
           - type: section
             label: Verlichting
 
