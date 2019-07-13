@@ -14,7 +14,7 @@
     entity_id: binary_sensor.multi_01_movement
     to: "off"
     for:
-      minutes: 1
+      minutes: 2
 
   action:
     service: homeassistant.turn_off
