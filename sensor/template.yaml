@@ -15,3 +15,11 @@
 
     livingroom_dark:
       value_template: "{{ ((states('sensor.zigbee_occupancy_2_illuminance') | float + states('sensor.zigbee_occupancy_4_illuminance') | float + states('sensor.zigbee_occupancy_5_illuminance') | float) / 3) | round() }}"
+
+    weekday_alarm_time:
+      friendly_name: Tijd
+      value_template: '{{ "%02d:%02d" | format(states("input_number.weekday_alarm_hour") | int, states("input_number.weekday_alarm_minutes") | int) }}'
+
+    weekend_alarm_time:
+      friendly_name: Tijd
+      value_template: '{{ "%02d:%02d" | format(states("input_number.weekend_alarm_hour") | int, states("input_number.weekend_alarm_minutes") | int) }}'
