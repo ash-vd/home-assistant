@@ -20,10 +20,23 @@ views:
         entities:
           - type: custom:mini-media-player
             entity: media_player.snapcast_group_all
+            source: full
             hide:
               power: true
               controls: true
               volume: true
+
+          - type: custom:mini-media-player
+            entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
+            hide:
+              power: true
+              controls: true
+
+          - type: custom:mini-media-player
+            entity: media_player.snapcast_client_00_13_ef_c0_00_12
+            hide:
+              power: true
+              controls: true
 
       - type: entities
         title: Woonkamer
@@ -40,12 +53,6 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_livingroom
-
-          - type: custom:mini-media-player
-            entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
-            hide:
-              power: true
-              controls: true
 
           - type: section
             label: Verlichting
@@ -119,12 +126,6 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_bedroom
-
-          - type: custom:mini-media-player
-            entity: media_player.snapcast_client_00_13_ef_c0_00_12
-            hide:
-              power: true
-              controls: true
 
           - type: section
             label: Verlichting
