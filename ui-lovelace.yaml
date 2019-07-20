@@ -21,9 +21,9 @@ views:
           - type: custom:mini-media-player
             entity: media_player.snapcast_group_all
             hide:
-              - power: true
-              - controls: true
-              - volume: true
+              power: true
+              controls: true
+              volume: true
 
       - type: entities
         title: Woonkamer
@@ -44,8 +44,8 @@ views:
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
             hide:
-              - power: true
-              - controls: true
+              power: true
+              controls: true
 
           - type: section
             label: Verlichting
@@ -123,8 +123,8 @@ views:
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_00_13_ef_c0_00_12
             hide:
-              - power: true
-              - controls: true
+              power: true
+              controls: true
 
           - type: section
             label: Verlichting
