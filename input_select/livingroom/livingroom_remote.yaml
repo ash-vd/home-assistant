@@ -4,5 +4,6 @@ livingroom_remote:
   initial: Uit
   options:
     - Chromecast
+    - Multiroom
     - PS4
     - Uit
