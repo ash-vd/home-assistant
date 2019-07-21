@@ -28,12 +28,14 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
+            group: true
             hide:
               power: true
               controls: true
 
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_00_13_ef_c0_00_12
+            group: true
             hide:
               power: true
               controls: true
