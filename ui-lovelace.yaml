@@ -58,6 +58,7 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_livingroom
+            artwork: cover
 
           - type: section
             label: Verlichting
@@ -131,6 +132,7 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_bedroom
+            artwork: cover
 
           - type: section
             label: Verlichting

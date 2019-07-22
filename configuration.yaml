@@ -94,10 +94,6 @@ cast:
     - host: 10.10.1.11
     - host: 10.10.1.12
 
-media_player:
-  - platform: snapcast
-    host: 10.10.2.5
-
 remote:
   - platform: harmony
     name: Livingroom
@@ -141,6 +137,7 @@ group: !include_dir_merge_named group
 input_boolean: !include_dir_merge_named input_boolean
 input_select: !include_dir_merge_named input_select
 light: !include_dir_merge_list light
+media_player: !include_dir_merge_list media_player
 sensor: !include_dir_merge_list sensor
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_named script
