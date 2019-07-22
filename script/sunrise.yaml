@@ -1,0 +1,16 @@
+sunrise:
+  sequence:
+    # light 1 dark red to medium warm orange
+    - service: homeassistant.turn_on
+      data:
+        entity_id: light.bedroom_sink
+        brightness: 1
+    - delay:
+        seconds: 1.00
+    - service: homeassistant.turn_on
+      data:
+        entity_id: light.bedroom_sink
+        brightness: 255
+        transition: 600
+    # - delay:
+    # seconds: 600

@@ -1,0 +1,46 @@
+- alias: "Weekday Sunrise"
+  initial_state: "on"
+  trigger:
+    - platform: time_pattern
+      minutes: "/1"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+    - condition: state
+      entity_id: input_boolean.weekday_sunrise
+      state: "on"
+    - condition: template
+      value_template: '{{ ((as_timestamp(now())|int)|timestamp_custom("%H:%M"))  == states("sensor.weekday_alarm_time") }}'
+  action:
+    # - service: media_player.play_media
+    #   data:
+    #     entity_id: media_player.everywhere
+    #     media_content_id: https://149walnut.publicvm.com:8123/local/audio/circle-of-life.mp3
+    #     media_content_type: audio/mp3
+    # - delay: 3
+    - service: script.turn_on
+      entity_id: script.sunrise
+
+- alias: "Weekend Sunrise"
+  initial_state: "on"
+  trigger:
+    - platform: time_pattern
+      minutes: "/1"
+  condition:
+    - condition: time
+      weekday:
+        - sat
+        - sun
+    - condition: state
+      entity_id: input_boolean.weekend_sunrise
+      state: "on"
+    - condition: template
+      value_template: '{{ ((as_timestamp(now())|int)|timestamp_custom("%H:%M"))  == states("sensor.weekend_alarm_time") }}'
+  action:
+    - service: script.turn_on
+      entity_id: script.sunrise
