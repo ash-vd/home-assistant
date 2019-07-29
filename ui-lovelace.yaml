@@ -21,14 +21,19 @@ views:
         card:
           type: entities
           entities:
-            - type: custom:mini-media-player
-              entity: media_player.spotify
-              hide:
-                volume: true
-                power: false
+            - media_player.spo
 
       - type: entities
+        title: MultiRoom
+        show_header_toggle: false
         entities:
+          - type: custom:mini-media-player
+            entity: media_player.spotify
+            artwork: cover
+            hide:
+              volume: true
+              power: false
+
           - type: custom:mini-media-player
             entity: media_player.snapcast_group_all
             source: full
