@@ -14,15 +14,6 @@ views:
   - title: main
     icon: mdi:home-outline
     cards:
-      - type: conditional
-        conditions:
-          - entity: binary_sensor.lovelace_multiroom_spotify
-            state: "on"
-        card:
-          type: entities
-          entities:
-            - media_player.spo
-
       - type: entities
         title: MultiRoom
         show_header_toggle: false
