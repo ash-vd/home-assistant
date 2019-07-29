@@ -15,9 +15,3 @@
   origin: device_tracker.ashwiphone
   destination: zone.home
   region: "EU"
-
-- platform: waze_travel_time
-  name: Ashwin naar Lilian's huis
-  origin: device_tracker.ashwiphone
-  destination: zone.lilian
-  region: "EU"
