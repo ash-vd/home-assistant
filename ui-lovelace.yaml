@@ -19,7 +19,7 @@ views:
         artwork: cover
         hide:
           volume: true
-          power: false
+          power: true
 
       - type: entities
         title: MultiRoom
