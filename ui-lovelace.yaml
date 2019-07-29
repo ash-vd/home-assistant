@@ -21,6 +21,7 @@ views:
           - type: custom:mini-media-player
             entity: media_player.spotify
             artwork: cover
+            group: true
             hide:
               volume: true
               power: false
