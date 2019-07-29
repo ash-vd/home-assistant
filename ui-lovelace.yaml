@@ -14,38 +14,27 @@ views:
   - title: main
     icon: mdi:home-outline
     cards:
+      - type: custom:mini-media-player
+        entity: media_player.spotify
+        artwork: cover
+        group: true
+        hide:
+          volume: true
+          power: false
+
       - type: entities
         title: MultiRoom
         show_header_toggle: false
+
         entities:
           - type: custom:mini-media-player
-            entity: media_player.snapcast_group_all
-            source: full
+            entity: media_player.spotify
+            artwork: cover
             group: true
-            name: Bron
             hide:
-              icon: true
-              power: true
-              controls: true
               volume: true
+              power: false
 
-      - type: conditional
-        conditions:
-          - entity: binary_sensor.lovelace_multiroom_spotify
-            state: "on"
-        card:
-          type: entities
-          entities:
-            - type: custom:mini-media-player
-              entity: media_player.spotify
-              artwork: cover
-              group: true
-              hide:
-                volume: true
-                power: false
-
-      - type: entities
-        entities:
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
             group: true
