@@ -14,13 +14,6 @@ views:
   - title: main
     icon: mdi:home-outline
     cards:
-      - type: custom:mini-media-player
-        entity: media_player.spotify
-        artwork: cover
-        hide:
-          volume: true
-          power: true
-
       - type: entities
         title: MultiRoom
         show_header_toggle: false
@@ -39,6 +32,14 @@ views:
             hide:
               power: true
               controls: true
+
+      - type: custom:mini-media-player
+        entity: media_player.spotify
+        artwork: cover
+        hide_when_off: true
+        hide:
+          volume: true
+          power: true
 
       - type: entities
         title: Woonkamer
