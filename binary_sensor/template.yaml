@@ -11,3 +11,7 @@
     livingroom_dark:
       value_template: >-
         {{ states('sensor.livingroom_dark') | float < 50 }}
+
+    lovelace_multiroom_spotify:
+      value_template: >-
+        {{state_attr('media_player.snapcast_group_all', 'source') == 'Spotify'}}

@@ -29,6 +29,14 @@ views:
               controls: true
               volume: true
 
+          - type: conditional
+            conditions:
+              - entity: binary_sensor.lovelace_multiroom_spotify
+                state: "on"
+            card:
+              type: custom:mini-media-player
+              entity: media_player.spotify
+
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
             group: true
