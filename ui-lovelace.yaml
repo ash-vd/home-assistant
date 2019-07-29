@@ -17,7 +17,6 @@ views:
       - type: custom:mini-media-player
         entity: media_player.spotify
         artwork: cover
-        group: true
         hide:
           volume: true
           power: false
@@ -27,14 +26,6 @@ views:
         show_header_toggle: false
 
         entities:
-          - type: custom:mini-media-player
-            entity: media_player.spotify
-            artwork: cover
-            group: true
-            hide:
-              volume: true
-              power: false
-
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
             group: true
