@@ -19,14 +19,6 @@ views:
         show_header_toggle: false
         entities:
           - type: custom:mini-media-player
-            entity: media_player.spotify
-            artwork: cover
-            group: true
-            hide:
-              volume: true
-              power: false
-
-          - type: custom:mini-media-player
             entity: media_player.snapcast_group_all
             source: full
             group: true
@@ -37,6 +29,23 @@ views:
               controls: true
               volume: true
 
+      - type: conditional
+        conditions:
+          - entity: binary_sensor.lovelace_multiroom_spotify
+            state: "on"
+        card:
+          type: entities
+          entities:
+            - type: custom:mini-media-player
+              entity: media_player.spotify
+              artwork: cover
+              group: true
+              hide:
+                volume: true
+                power: false
+
+      - type: entities
+        entities:
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
             group: true
