@@ -67,6 +67,7 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_livingroom
+            group: true
             artwork: cover
 
           - type: section
@@ -141,6 +142,7 @@ views:
 
           - type: custom:mini-media-player
             entity: media_player.chromecast_bedroom
+            group: true
             artwork: cover
 
           - type: section
