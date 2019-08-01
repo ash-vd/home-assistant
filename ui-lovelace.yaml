@@ -31,14 +31,14 @@ views:
               volume: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_b8_27_eb_84_bc_6a
+            entity: media_player.snapcast_client_woonkamer
             group: true
             hide:
               power: true
               controls: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_00_13_ef_c0_00_12
+            entity: media_player.snapcast_client_slaapkamer
             group: true
             hide:
               power: true
