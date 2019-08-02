@@ -33,7 +33,7 @@
     - service: light.turn_on
       entity_id: light.bedroom_sink
 
-    - service: notify.mobile_app_ashwiphone
+    - service: notify.ios_ashwiphone
       data_template:
         title: "Alarm Clock"
         message: "Wakeup!"
