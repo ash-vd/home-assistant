@@ -1,22 +1,22 @@
-- wakeup_time:
+wakeup_time:
   name: "Wakeup Time"
   has_time: true
   has_date: false
   icon: mdi:clock-digital
 
-- wakeup_default_workday:
+wakeup_default_workday:
   name: "Workday Wakeup Time"
   has_time: true
   has_date: false
   icon: mdi:clock
 
-- wakeup_default_saturday_holiday:
+wakeup_default_saturday_holiday:
   name: "Saturday/Holiday Wakeup Time"
   has_time: true
   has_date: false
   icon: mdi:clock
 
-- wakeup_default_sunday:
+wakeup_default_sunday:
   name: "Sunday Wakeup Time"
   has_time: true
   has_date: false
