@@ -1,0 +1,7 @@
+- name: speech_on_livingroom_lights
+  entities:
+    scene.livingroom_lights_normal: on
+
+- name: speech_off_livingroom_lights
+  entities:
+    scene.livingroom_lights_off: on
