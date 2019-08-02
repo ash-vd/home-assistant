@@ -161,6 +161,7 @@ views:
         title: Wekker
         show_header_toggle: false
         entities:
+          - input_boolean.wakeup_enabled
           - input_datetime.wakeup_default_workday
           - input_datetime.wakeup_default_saturday_holiday
           - input_datetime.wakeup_default_sunday
