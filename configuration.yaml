@@ -59,7 +59,7 @@ tts:
 # Cloud
 #cloud:
 
-mobile_app:
+ios:
   push:
     categories:
       - name: "Alarm Clock"
@@ -70,6 +70,8 @@ mobile_app:
           - identifier: "SNOOZE"
             title: "Snooze"
             destructive: no
+
+mobile_app:
 
 system_health:
 
