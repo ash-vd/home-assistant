@@ -30,8 +30,17 @@
       entity_id: input_boolean.wakeup_enabled
       state: "on"
   action:
-    - service: scene.turn_on
+    - service: light.turn_on
       entity_id: light.bedroom_sink
+
+    - service: notify.ios_phones
+      data_template:
+        title: "Alarm Clock"
+        message: "Wakeup!"
+        data:
+          push:
+            category: "alarmclock"
+            badge: 0
 
 - alias: "Wakeup Snooze"
   id: wakeup_snooze
