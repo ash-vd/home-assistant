@@ -75,6 +75,8 @@ mobile_app:
 
 system_health:
 
+snips:
+
 person:
   - name: Ashwin
     id: ashwin
@@ -144,6 +146,7 @@ tado:
 automation: !include_dir_merge_list automation
 binary_sensor: !include_dir_merge_list binary_sensor
 group: !include_dir_merge_named group
+intent_script: !include_dir_merge_list intent_script
 input_boolean: !include_dir_merge_named input_boolean
 input_datetime: !include_dir_merge_named input_datetime
 input_select: !include_dir_merge_named input_select

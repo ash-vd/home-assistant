@@ -1,3 +1,0 @@
-- name: livingroom_lights_speech_on
-  entities:
-    scene.livingroom_lights_normal: on
