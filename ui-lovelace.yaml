@@ -154,6 +154,17 @@ views:
             entity: light.bedroom_sink
             toggle: true
 
+  - title: Wekker
+    icon: mdi:alarm
+    cards:
+      - type: entities
+        title: Wekker
+        show_header_toggle: false
+        entities:
+          - input_datetime.wakeup_default_workday
+          - input_datetime.wakeup_default_saturday_holiday
+          - input_datetime.wakeup_default_sunday
+
   - title: Sensoren
     icon: mdi:cogs
     cards:
