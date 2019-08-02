@@ -1,7 +1,3 @@
-weekday_sunrise:
-  name: weekday_sunrise
-  initial: off
-
-weekend_sunrise:
-  name: weekend_sunrise
-  initial: off
+wakeup_enabled:
+  name: "Wakeup Routine"
+  icon: mdi:alarm

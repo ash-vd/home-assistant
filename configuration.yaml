@@ -59,7 +59,17 @@ tts:
 # Cloud
 #cloud:
 
-# ios:
+ios:
+  push:
+    categories:
+      - name: "Alarm Clock"
+        identifier: "alarmclock"
+        actions:
+          - identifier: "AWAKE"
+            title: "Good Morning"
+          - identifier: "SNOOZE"
+            title: "Snooze"
+            destructive: no
 
 mobile_app:
 
@@ -135,6 +145,7 @@ automation: !include_dir_merge_list automation
 binary_sensor: !include_dir_merge_list binary_sensor
 group: !include_dir_merge_named group
 input_boolean: !include_dir_merge_named input_boolean
+input_datetime: !include_dir_merge_list input_datetime
 input_select: !include_dir_merge_named input_select
 light: !include_dir_merge_list light
 media_player: !include_dir_merge_list media_player
