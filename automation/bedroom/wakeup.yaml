@@ -39,7 +39,7 @@
         data:
           push:
             badge: 0
-            category: "alarmclock"
+            category: alarmclock
 
 - alias: "Wakeup Snooze"
   id: wakeup_snooze
