@@ -38,6 +38,13 @@ views:
               controls: true
 
           - type: custom:mini-media-player
+            entity: media_player.snapcast_client_keuken
+            group: true
+            hide:
+              power: true
+              controls: true
+
+          - type: custom:mini-media-player
             entity: media_player.snapcast_client_slaapkamer
             group: true
             hide:

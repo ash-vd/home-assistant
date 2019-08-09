@@ -5,6 +5,6 @@
       to: "on"
 
   action:
-    service: notify.ios_ashwiphone
+    service: notify.mobile_app_ashwiphone
     data:
       message: "Er is post!"
