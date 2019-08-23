@@ -51,6 +51,13 @@ views:
               power: true
               controls: true
 
+          - type: custom:mini-media-player
+            entity: media_player.snapcast_client_hal
+            group: true
+            hide:
+              power: true
+              controls: true
+
       - type: custom:mini-media-player
         entity: media_player.spotify
         artwork: cover
