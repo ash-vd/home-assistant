@@ -1,0 +1,12 @@
+livingroom_multiroom_on:
+  sequence:
+    - service: remote.turn_on
+      data:
+        entity_id: remote.livingroom
+        activity: MultiRoom
+
+livingroom_multiroom_off:
+  sequence:
+    - service: remote.turn_off
+      data:
+        entity_id: remote.livingroom
