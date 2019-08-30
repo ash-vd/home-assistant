@@ -9,6 +9,7 @@
       entity_id: light.zigbee_e27c_4_light
       data:
         brightness: 255
+        kelvin: 2800
 
 - alias: Verlichting - Washok - Uit
   trigger:
@@ -16,7 +17,7 @@
       entity_id: input_boolean.washroom_presence
       to: "off"
       for:
-        seconds: 5
+        seconds: 3
 
   action:
     - service: homeassistant.turn_off
