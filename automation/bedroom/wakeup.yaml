@@ -1,5 +1,6 @@
 - id: wakeup_reset
   alias: "Wakeup Reset Time"
+  initial_state: false
   trigger:
     - platform: template
       value_template: "{{ states('sensor.time') == ((states.input_datetime.wakeup_time.attributes.timestamp | int + 3600) | timestamp_custom('%H:%M', False)) }}" # Add 1 hour to the existing alarm for a time to setup the next one
@@ -22,6 +23,7 @@
 
 - id: wakeup_routine
   alias: "Wakeup Routine"
+  initial_state: false
   trigger:
     - platform: template
       value_template: "{{ states('sensor.time') == (states.input_datetime.wakeup_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
@@ -43,6 +45,7 @@
 
 - alias: "Wakeup Snooze"
   id: wakeup_snooze
+  initial_state: false
   trigger:
     - platform: event
       event_type: ios.notification_action_fired
