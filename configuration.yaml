@@ -36,7 +36,7 @@ updater:
 # Discover some devices automatically
 discovery:
   ignore:
-   - homekit
+    - homekit
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -144,6 +144,12 @@ timer:
 tado:
   username: !secret tado_user
   password: !secret tado_password
+
+emulated_roku:
+  servers:
+    - name: HASS
+      listen_port: 8060
+      host_ip: 10.10.1.1
 
 automation: !include_dir_merge_list automation
 binary_sensor: !include_dir_merge_list binary_sensor
