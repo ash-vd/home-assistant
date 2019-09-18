@@ -37,3 +37,27 @@
           {% elif is_state("sensor.livingroom_remote", "PowerOff") %}
             Uit
           {% endif %}
+
+- alias: Woonkamer - Emulated Roku - Pause
+  trigger:
+    - platform: event
+      event_type: roku_command
+      event_data:
+        source_name: HASS
+        type: keypress
+        key: Pause
+  action:
+    - service: media_player.media_pause
+      entity_id: media_player.chromecast_livingroom
+
+- alias: Woonkamer - Emulated Roku - Play
+  trigger:
+    - platform: event
+      event_type: roku_command
+      event_data:
+        source_name: HASS
+        type: keypress
+        key: Play
+  action:
+    - service: media_player.media_play
+      entity_id: media_player.chromecast_livingroom
