@@ -224,6 +224,13 @@ views:
       - type: custom:group-card
         card:
           type: entities
+          title: Gang (boven)
+          show_header_toggle: false
+        group: group.sensors_hall_upstairs
+
+      - type: custom:group-card
+        card:
+          type: entities
           title: Slaapkamer
           show_header_toggle: false
         group: group.sensors_bedroom

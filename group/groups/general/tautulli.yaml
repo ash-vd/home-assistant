@@ -1,5 +1,0 @@
-tautulli:
-  name: Tautulli
-  entities:
-    - sensor.tautulli_stream_count
-    - sensor.tautulli_wan_bandwidth

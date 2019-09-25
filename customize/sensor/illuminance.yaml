@@ -19,6 +19,21 @@ sensor.zigbee_occupancy_5_illuminance:
   device_class: illuminance
   unit_of_measurement: lux
 
+sensor.zigbee_occupancy_6_illuminance:
+  friendly_name: Lichtsterkte
+  device_class: illuminance
+  unit_of_measurement: lux
+
+sensor.zigbee_occupancy_7_illuminance:
+  friendly_name: Lichtsterkte
+  device_class: illuminance
+  unit_of_measurement: lux
+
+sensor.zigbee_occupancy_8_illuminance:
+  friendly_name: Lichtsterkte
+  device_class: illuminance
+  unit_of_measurement: lux
+
 sensor.neo_coolcam_battery_powered_pir_sensor_luminance_5:
   friendly_name: Lichtsterkte
   device_class: illuminance

@@ -1,0 +1,3 @@
+hallway_upstairs_presence:
+  name: hallway_upstairs_presence
+  initial: off

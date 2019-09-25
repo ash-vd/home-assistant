@@ -32,6 +32,15 @@ binary_sensor.zigbee_occupancy_4_occupancy:
 binary_sensor.zigbee_occupancy_5_occupancy:
   friendly_name: Beweging (Raam)
 
+binary_sensor.zigbee_occupancy_6_occupancy:
+  friendly_name: Beweging
+
+binary_sensor.zigbee_occupancy_7_occupancy:
+  friendly_name: Beweging
+
+binary_sensor.zigbee_occupancy_8_occupancy:
+  friendly_name: Beweging
+
 binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_3:
   friendly_name: Beweging
   device_class: motion
