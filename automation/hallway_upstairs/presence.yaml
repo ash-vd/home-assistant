@@ -1,7 +1,7 @@
-- alias: Aanwezigheid - Slaapkamer - Aan
+- alias: Aanwezigheid - Gang (boven) - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_2_contact, binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_3
+      entity_id: binary_sensor.zigbee_occupancy_7_occupancy
       to: "on"
 
   action:
@@ -11,10 +11,10 @@
 - alias: Aanwezigheid - Slaapkamer - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_3
+    entity_id: binary_sensor.zigbee_occupancy_7_occupancy
     to: "off"
     for:
-      minutes: 15
+      minutes: 10
 
   action:
     service: homeassistant.turn_off
