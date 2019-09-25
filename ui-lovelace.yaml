@@ -226,7 +226,7 @@ views:
           type: entities
           title: Gang (boven)
           show_header_toggle: false
-        group: group.sensors_hall_upstairs
+        group: group.sensors_hallway_upstairs
 
       - type: custom:group-card
         card:
