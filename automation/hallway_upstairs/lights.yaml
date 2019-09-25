@@ -11,10 +11,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.kitchen
-      data:
-        brightness: 255
-        transition: 1
+      entity_id: switch.sonoff_02
 
 - alias: Verlichting - Gang (boven) - Uit
   trigger:
