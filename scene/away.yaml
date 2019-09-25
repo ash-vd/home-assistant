@@ -5,6 +5,6 @@
     scene.livingroom_off: on
     scene.bathroom_off: on
     scene.entrance_off: on
-    scene.hallway_off: on
+    scene.hallway_upstairs_off: on
     scene.kitchen_off: on
     scene.washroom_off: on

@@ -7,6 +7,9 @@ input_boolean.livingroom_presence:
 input_boolean.washroom_presence:
   friendly_name: Aanwezig
 
+input_boolean.hallway_upstairs_presence:
+  friendly_name: Aanwezig
+
 input_boolean.bathroom_presence:
   friendly_name: Aanwezig
 

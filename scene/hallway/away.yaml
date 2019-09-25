@@ -1,3 +1,0 @@
-- name: hallway_off
-  entities:
-    scene.sonoff_02_away: on
