@@ -6,7 +6,7 @@
 
   action:
     service: homeassistant.turn_on
-    entity_id: hallway_upstairs_presence
+    entity_id: input_boolean.hallway_upstairs_presence
 
 - alias: Aanwezigheid - Slaapkamer - Uit
   trigger:
