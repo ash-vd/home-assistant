@@ -12,7 +12,7 @@
       entity_id: binary_sensor.livingroom_dark
       to: "on"
       for:
-        minutes: 1
+        minutes: 3
 
     # - platform: state
     #   entity_id: binary_sensor.livingroom_tv_on
@@ -32,8 +32,6 @@
       - condition: state
         entity_id: binary_sensor.livingroom_dark
         state: "on"
-        for:
-          minutes: 1
 
       - condition: state
         entity_id: input_boolean.livingroom_auto
