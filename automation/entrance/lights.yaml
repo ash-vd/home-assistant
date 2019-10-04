@@ -1,0 +1,19 @@
+- alias: Verlichting - Entree - Aan
+  trigger:
+    - platform: state
+      entity_id: input_boolean.entrance_presence
+      to: "on"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.sonoff
+
+- alias: Verlichting - Entree - Uit
+  trigger:
+    - platform: state
+      entity_id: input_boolean.entrance_presence
+      to: "off"
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.sonoff
