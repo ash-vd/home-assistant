@@ -132,7 +132,7 @@ views:
         entities:
           - type: section
 
-          - light.shelly_04
+          - light.bulb_01
 
       - type: entities
         title: Gang
