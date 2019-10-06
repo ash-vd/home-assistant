@@ -3,7 +3,7 @@ switch.sonoff_01:
   icon: mdi:lightbulb
 
 switch.sonoff_02:
-  friendly_name: Lamp
+  friendly_name: Licht
   icon: mdi:lightbulb
 
 switch.sonoff_03:
