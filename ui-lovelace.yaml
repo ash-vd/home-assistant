@@ -113,7 +113,6 @@ views:
         show_header_toggle: false
         entities:
           - type: section
-            label: Verlichting
 
           - type: custom:slider-entity-row
             entity: light.kitchen
@@ -124,7 +123,14 @@ views:
         show_header_toggle: false
         entities:
           - type: section
-            label: Verlichting
+
+          - light.shelly_04
+
+      - type: entities
+        title: Entree
+        show_header_toggle: false
+        entities:
+          - type: section
 
           - light.shelly_04
 
@@ -134,7 +140,6 @@ views:
 
         entities:
           - type: section
-            label: Verlichting
 
           - switch.sonoff_02
 
@@ -143,7 +148,6 @@ views:
         show_header_toggle: false
         entities:
           - type: section
-            label: Verlichting
 
           - type: custom:slider-entity-row
             entity: light.zigbee_e27c_4_light
@@ -171,18 +175,6 @@ views:
           - type: custom:slider-entity-row
             entity: light.bedroom_sink
             toggle: true
-
-  - title: Wekker
-    icon: mdi:alarm
-    cards:
-      - type: entities
-        title: Wekker
-        show_header_toggle: false
-        entities:
-          - input_boolean.wakeup_enabled
-          - input_datetime.wakeup_default_workday
-          - input_datetime.wakeup_default_saturday_holiday
-          - input_datetime.wakeup_default_sunday
 
   - title: Sensoren
     icon: mdi:cogs

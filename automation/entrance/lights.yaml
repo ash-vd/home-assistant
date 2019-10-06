@@ -6,7 +6,10 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.sonoff
+      entity_id: light.bulb_01
+      data:
+        brightness: 200
+        color_temp: 180
 
 - alias: Verlichting - Entree - Uit
   trigger:
@@ -16,4 +19,5 @@
 
   action:
     - service: homeassistant.turn_off
-      entity_id: light.sonoff
+
+      entity_id: light.bulb_01
