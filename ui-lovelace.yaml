@@ -132,7 +132,7 @@ views:
         entities:
           - type: section
 
-          - light.bulb_01
+          - light.wifi_e27cwww_01
 
       - type: entities
         title: Gang
