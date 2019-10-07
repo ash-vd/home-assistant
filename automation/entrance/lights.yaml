@@ -4,11 +4,34 @@
       entity_id: binary_sensor.zigbee_contact_6_contact, input_boolean.entrance_presence
       to: "on"
 
+  condition:
+    - condition: state
+      entity_id: input_select.house_mode
+      state: "Normaal"
+
   action:
     - service: homeassistant.turn_on
       entity_id: light.bulb_01
       data:
         brightness: 200
+        color_temp: 180
+
+- alias: Verlichting - Entree - Aan (Nacht)
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.zigbee_contact_6_contact, input_boolean.entrance_presence
+      to: "on"
+
+  condition:
+    - condition: state
+      entity_id: input_select.house_mode
+      state: "Nacht"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.bulb_01
+      data:
+        brightness: 80
         color_temp: 180
 
 - alias: Verlichting - Entree - Uit
@@ -19,5 +42,4 @@
 
   action:
     - service: homeassistant.turn_off
-
       entity_id: light.bulb_01
