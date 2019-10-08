@@ -25,8 +25,8 @@
 
     light.wifi_e27cwww_02:
       state: on
-      brightness: 140
-      kelvin: 2350
+      brightness: 180
+      kelvin: 3200
 
     switch.sonoff_03: on
 
