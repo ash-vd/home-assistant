@@ -120,7 +120,7 @@ homekit:
   filter:
     include_entities:
       - input_boolean.homekit_livingroom
-      - switch.sonoff_01
+      - light.wifi_e27cwww_02
       - light.zigbee_e27c_3_light
       - light.bedroom_sink
       - switch.sonoff_02
@@ -131,7 +131,7 @@ homekit:
       name: Groot
     input_boolean.homekit_livingroom:
       name: Woonkamer
-    switch.sonoff_01:
+    light.wifi_e27cwww_02:
       name: Lamp op het kastje
     switch.sonoff_02:
       name: Gang
