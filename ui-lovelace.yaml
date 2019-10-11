@@ -247,3 +247,4 @@ views:
           - input_boolean.washroom_presence
           - binary_sensor.zigbee_contact_3_contact
           - sensor.plug_02_power
+          - sensor.plug_03_power
