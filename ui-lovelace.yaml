@@ -195,12 +195,20 @@ views:
           show_header_toggle: false
         group: group.sensors_livingroom
 
-      - type: custom:group-card
-        card:
-          type: entities
-          title: Keuken
-          show_header_toggle: false
-        group: group.sensors_kitchen
+      - type: entities
+        title: Keuken
+        show_header_toggle: false
+        entities:
+          - type: section
+
+          - input_boolean.kitchen_presence
+          - binary_sensor.zigbee_occupancy_1_occupancy
+          - sensor.zigbee_occupancy_1_illuminance
+          - sensor.plug_01_power
+          - sensor.zigbee_climate_3_temperature
+          - sensor.zigbee_climate_3_humidity
+          - sensor.zigbee_climate_3_pressure
+          - sensor.zigbee_climate_2_temperature
 
       - type: custom:group-card
         card:
