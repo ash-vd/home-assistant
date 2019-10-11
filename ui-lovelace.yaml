@@ -230,9 +230,12 @@ views:
           show_header_toggle: false
         group: group.sensors_bedroom
 
-      - type: custom:group-card
-        card:
-          type: entities
-          title: Washok
-          show_header_toggle: false
-        group: group.sensors_washroom
+      - type: entities
+        title: Washok
+        show_header_toggle: false
+        entities:
+          - type: section
+
+          - input_boolean.washroom_presence
+          - binary_sensor.zigbee_contact_3_contact
+          - sensor.plug_02_power

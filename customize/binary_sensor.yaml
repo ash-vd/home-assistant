@@ -52,5 +52,5 @@ binary_sensor.multi_01_movement:
 binary_sensor.livingroom_dark:
   friendly_name: Donker
 
-binary_sensor.zigbee_smoke_1_smoke:
-  friendly_name: Rook
+binary_sensor.zigbee_smoke_1:
+  friendly_name: Rookmelder
