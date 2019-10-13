@@ -38,7 +38,7 @@
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_contact_6_contact, input_boolean.entrance_presence
-      to: "on"
+      to: "off"
 
   condition:
     - condition: state
