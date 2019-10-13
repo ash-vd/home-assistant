@@ -49,7 +49,7 @@
     - service: homeassistant.turn_on
       entity_id: light.wifi_e27cwww_01
       data:
-        brightness: 200
+        brightness: 80
         color_temp: 180
 
 - alias: Verlichting - Entree - Uit
