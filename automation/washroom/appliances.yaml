@@ -1,0 +1,54 @@
+- alias: "Appliances - Washing Room - Washing machine - Running"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.plug_02_power
+      above: 25
+      for:
+        minutes: 2
+
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.washingmachine_status
+        option: "Draait"
+
+- alias: "Appliances - Washing Room - Washing machine - Done"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.plug_02_power
+      below: 5
+      for:
+        minutes: 2
+
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.washingmachine_status
+        option: "Klaar"
+
+- alias: "Appliances - Washing Room - Tumble dryer - Running"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.plug_03_power
+      above: 25
+      for:
+        minutes: 2
+
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.tumbledryer_status
+        option: "Draait"
+
+- alias: "Appliances - Washing Room - Tumble dryer - Done"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.plug_03_power
+      below: 5
+      for:
+        minutes: 2
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.tumbledryer_status
+        option: "Klaar"

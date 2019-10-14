@@ -1,0 +1,15 @@
+washingmachine_status:
+  name: Wasmachine
+  icon: mdi:washing-machine
+  initial: Klaar
+  options:
+    - Draait
+    - Klaar
+
+tumbledryer_status:
+  name: Droger
+  icon: mdi:tumble-dryer
+  initial: Klaar
+  options:
+    - Draait
+    - Klaar

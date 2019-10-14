@@ -248,3 +248,36 @@ views:
           - binary_sensor.zigbee_contact_3_contact
           - sensor.plug_02_power
           - sensor.plug_03_power
+
+  - title: Apparaten
+    icon: mdi:washing-machine
+    cards:
+      - type: entities
+        title: Washok
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Status
+
+          - input_select.washingmachine_status
+          - input_select.tumbledryer_status
+
+          - type: section
+            label: Verbruk
+
+          - sensor.plug_02_power
+          - sensor.plug_03_power
+
+      - type: entities
+        title: Keuken
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Status
+
+          - input_select.dishwasher_status
+
+          - type: section
+            label: Verbruk
+
+          - sensor.plug_01_power
