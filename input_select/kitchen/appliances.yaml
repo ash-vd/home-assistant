@@ -1,0 +1,7 @@
+dishwasher_status:
+  name: Vaatwasser
+  icon: mdi:dishwasher
+  initial: Klaar
+  options:
+    - Draait
+    - Klaar

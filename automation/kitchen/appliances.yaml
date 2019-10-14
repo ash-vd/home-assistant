@@ -1,0 +1,27 @@
+- alias: "Appliances - Kitchen - Dishwasher - Running"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.plug_02_power
+      above: 25
+      for:
+        minutes: 2
+
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.dishwasher_status
+        option: "Draait"
+
+- alias: "Appliances - Kitchen - Dishwasher - Done"
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.plug_02_power
+      below: 5
+      for:
+        minutes: 2
+
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.dishwasher_status
+        option: "Klaar"
