@@ -263,7 +263,7 @@ views:
           - input_select.tumbledryer_status
 
           - type: section
-            label: Verbruk
+            label: Verbruik
 
           - sensor.plug_02_power
           - sensor.plug_03_power
@@ -278,6 +278,6 @@ views:
           - input_select.dishwasher_status
 
           - type: section
-            label: Verbruk
+            label: Verbruik
 
           - sensor.plug_01_power
