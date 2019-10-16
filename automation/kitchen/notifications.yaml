@@ -1,0 +1,11 @@
+- alias: Keuken - Notificaties - Vaatwasser
+  trigger:
+    - platform: state
+      entity_id: input_select.dishwasher_status
+      from: "Draait"
+      to: "Klaar"
+
+  action:
+    service: notify.mobile_app_ashwiphone
+    data:
+      message: "De vaatwasser is klaar"

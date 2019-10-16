@@ -1,0 +1,23 @@
+- alias: Washok - Notificaties - Wasmachine
+  trigger:
+    - platform: state
+      entity_id: input_select.washingmachine_status
+      from: "Draait"
+      to: "Klaar"
+
+  action:
+    service: notify.mobile_app_ashwiphone
+    data:
+      message: "De wasmachine is klaar"
+
+- alias: Washok - Notificaties - Droger
+  trigger:
+    - platform: state
+      entity_id: input_select.tumbledryer_status
+      from: "Draait"
+      to: "Klaar"
+
+  action:
+    service: notify.mobile_app_ashwiphone
+    data:
+      message: "De droger is klaar"
