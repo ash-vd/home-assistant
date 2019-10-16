@@ -13,7 +13,7 @@
       entity_id: group.house_presence
       to: "off"
       for:
-        minutes: 10
+        minutes: 5
 
   action:
     - service: homeassistant.turn_on

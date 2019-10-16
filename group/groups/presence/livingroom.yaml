@@ -3,4 +3,3 @@ livingroom_presence:
     - binary_sensor.zigbee_occupancy_2_occupancy
     - binary_sensor.zigbee_occupancy_4_occupancy
     - binary_sensor.zigbee_occupancy_5_occupancy
-    # - binary_sensor.livingroom_media_on
