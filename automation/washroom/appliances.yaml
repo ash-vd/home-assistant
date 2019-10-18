@@ -2,9 +2,9 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.plug_02_power
-      above: 25
+      above: 5
       for:
-        minutes: 2
+        minutes: 1
 
   action:
     - service: input_select.select_option
@@ -19,6 +19,11 @@
       below: 5
       for:
         minutes: 2
+
+  condition:
+    - condition: state
+      entity_id: input_select.washingmachine_status
+      state: "Draait"
 
   action:
     - service: input_select.select_option
