@@ -1,8 +1,8 @@
 - alias: "Appliances - Kitchen - Dishwasher - Running"
   trigger:
     - platform: numeric_state
-      entity_id: sensor.plug_02_power
-      above: 25
+      entity_id: sensor.plug_03_power
+      above: 10
       for:
         minutes: 2
 
@@ -15,10 +15,10 @@
 - alias: "Appliances - Kitchen - Dishwasher - Done"
   trigger:
     - platform: numeric_state
-      entity_id: sensor.plug_02_power
+      entity_id: sensor.plug_03_power
       below: 5
       for:
-        minutes: 2
+        minutes: 3
 
   action:
     - service: input_select.select_option

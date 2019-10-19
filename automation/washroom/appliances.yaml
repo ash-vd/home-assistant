@@ -18,7 +18,7 @@
       entity_id: sensor.plug_02_power
       below: 5
       for:
-        minutes: 2
+        minutes: 3
 
   condition:
     - condition: state
@@ -35,9 +35,9 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.plug_03_power
-      above: 25
+      above: 15
       for:
-        minutes: 2
+        minutes: 1
 
   action:
     - service: input_select.select_option
