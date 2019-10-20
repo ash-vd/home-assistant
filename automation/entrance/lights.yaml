@@ -64,3 +64,5 @@
   action:
     - service: homeassistant.turn_off
       entity_id: light.wifi_e27cwww_01
+      data:
+        transition: 30

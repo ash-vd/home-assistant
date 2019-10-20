@@ -82,4 +82,4 @@
     - service: homeassistant.turn_off
       entity_id: light.kitchen
       data:
-        transition: 5
+        transition: 30
