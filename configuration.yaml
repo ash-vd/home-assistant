@@ -170,6 +170,9 @@ ffmpeg:
 camera:
   - platform: onvif
     host: 10.10.15.61
+    username: admin
+    password: admin
+    port: 8080
 
 rest_command:
   tado_home:
