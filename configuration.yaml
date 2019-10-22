@@ -165,6 +165,10 @@ scene: !include_dir_merge_list scene
 script: !include_dir_merge_named script
 zone: !include_dir_merge_list zone
 
+camera:
+  - platform: onvif
+    host: 10.10.15.61
+
 rest_command:
   tado_home:
     url: !secret tado_geo_url

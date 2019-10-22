@@ -16,7 +16,7 @@
       entity_id: sensor.plug_01_power
       below: 3
       for:
-        minutes: 3
+        minutes: 20
 
   action:
     - service: input_select.select_option
