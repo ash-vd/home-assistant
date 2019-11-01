@@ -1,16 +1,4 @@
 - platform: waze_travel_time
-  name: HBR naar Ashwin's huis
-  origin: zone.hbr
-  destination: zone.home
-  region: "EU"
-
-- platform: waze_travel_time
-  name: Ashwin's huis naar HBR
-  origin: zone.home
-  destination: zone.hbr
-  region: "EU"
-
-- platform: waze_travel_time
   name: Ashwin naar Ashwin's huis
   origin: device_tracker.ashwiphone
   destination: zone.home
