@@ -8,5 +8,5 @@
     light.wifi_e27cwww_02: off
     switch.sonoff_03: off
     input_boolean.homekit_livingroom: off
-    input_select.livingroom_scene:
-      option: "Uit"
+    # input_select.livingroom_scene:
+    #   option: "Uit"

@@ -31,5 +31,5 @@
     switch.sonoff_03: on
 
     input_boolean.homekit_livingroom: on
-    input_select.livingroom_scene:
-      option: "Normaal"
+    # input_select.livingroom_scene:
+    #   option: "Normaal"

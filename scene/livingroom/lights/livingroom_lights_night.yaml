@@ -27,6 +27,5 @@
       state: on
       brightness: 50
       kelvin: 2350
-
-    input_select.livingroom_scene:
-      option: "Nacht"
+    # input_select.livingroom_scene:
+    #   option: "Nacht"
