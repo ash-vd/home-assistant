@@ -29,5 +29,6 @@
       kelvin: 3000
 
     switch.sonoff_03: off
+
     input_select.livingroom_scene:
       state: "Theater"

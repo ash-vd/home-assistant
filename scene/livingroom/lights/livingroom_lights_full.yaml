@@ -29,5 +29,6 @@
       kelvin: 6000
 
     switch.sonoff_03: on
-    # input_select.livingroom_scene:
-    #   option: "Aan"
+
+    input_select.livingroom_scene:
+      state: "Aan"
