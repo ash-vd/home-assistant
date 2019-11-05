@@ -30,4 +30,4 @@
 
     switch.sonoff_03: off
     input_select.livingroom_scene:
-      option: "Theater"
+      state: "Theater"
