@@ -1,0 +1,10 @@
+livingroom_scene:
+  name: Scene
+  icon: mdi:buffer
+  initial: Uit
+  options:
+    - Aan
+    - Normaal
+    - Theater
+    - Nacht
+    - Uit
