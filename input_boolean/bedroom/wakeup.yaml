@@ -1,4 +1,0 @@
-wakeup_enabled:
-  name: "Wakeup Routine"
-  icon: mdi:alarm
-  initial: off
