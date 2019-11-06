@@ -5,14 +5,14 @@
       to: "on"
 
   condition:
-    condition: or
+    condition: and
     conditions:
       - condition: state
         entity_id: input_boolean.bedroom_in_bed
         state: "off"
 
       - condition: template
-        value_template: "{{ states.input_select.house_mode.state != 'Night' }}"
+        value_template: "{{ states.input_select.house_mode.state != 'Nacht' }}"
 
   action:
     - service: homeassistant.turn_on
