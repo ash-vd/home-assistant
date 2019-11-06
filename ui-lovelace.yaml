@@ -230,19 +230,27 @@ views:
           show_header_toggle: false
         group: group.sensors_entrance
 
-      - type: custom:group-card
-        card:
-          type: entities
-          title: Gang (boven)
-          show_header_toggle: false
-        group: group.sensors_hallway_upstairs
+      - type: entities
+        title: Gang (boven)
+        show_header_toggle: false
+        entities:
+          - type: section
+          - input_boolean.hallway_upstairs_presence
+          - sensor.zigbee_occupancy_7_illuminance
+          - binary_sensor.zigbee_occupancy_7_occupancy
 
-      - type: custom:group-card
-        card:
-          type: entities
-          title: Slaapkamer
-          show_header_toggle: false
-        group: group.sensors_bedroom
+      - type: entities
+        title: Slaapkamer
+        show_header_toggle: false
+        entities:
+          - type: section
+
+          - input_boolean.bedroom_presence
+          - binary_sensor.zigbee_occupancy_6_occupancy
+          - binary_sensor.zigbee_contact_2_contact
+          - sensor.zigbee_climate_1_temperature
+          - sensor.zigbee_climate_1_humidity
+          - sensor.zigbee_climate_1_pressure
 
       - type: entities
         title: Washok

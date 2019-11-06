@@ -1,9 +1,0 @@
-sensors_bedroom:
-  name: Slaapkamer
-  control: hidden
-  entities:
-    - input_boolean.bedroom_presence
-    - binary_sensor.zigbee_contact_2_contact
-    - sensor.zigbee_climate_1_temperature
-    - sensor.zigbee_climate_1_humidity
-    - sensor.zigbee_climate_1_pressure
