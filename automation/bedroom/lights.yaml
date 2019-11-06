@@ -3,8 +3,9 @@
     - platform: state
       entity_id: input_boolean.bedroom_presence
       to: "on"
+
   condition:
-    condition: and
+    condition: or
     conditions:
       - condition: state
         entity_id: input_boolean.bedroom_in_bed
