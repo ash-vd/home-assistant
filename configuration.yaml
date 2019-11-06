@@ -124,6 +124,7 @@ homekit:
       - light.zigbee_e27c_3_light
       - light.bedroom_sink
       - switch.sonoff_02
+      - input_boolean.bedroom_in_bed
   entity_config:
     light.bedroom_sink:
       name: Wastafel
