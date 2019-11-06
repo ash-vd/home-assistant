@@ -135,6 +135,8 @@ homekit:
       name: Lamp op het kastje
     switch.sonoff_02:
       name: Gang
+    input_boolean.bedroom_in_bed:
+      name: In bed
 
 timer:
   zigbee_permit_join:
