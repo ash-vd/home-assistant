@@ -22,5 +22,5 @@ input_boolean.kitchen_presence:
 input_boolean.bedroom_presence:
   friendly_name: Aanwezig
 
-input_boolean.vacation:
+input_boolean.house_vacation:
   friendly_name: Vakantie
