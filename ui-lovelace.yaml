@@ -193,6 +193,7 @@ views:
         show_header_toggle: false
         entities:
           - input_select.house_mode
+          - input_boolean.house_vacation
 
       - type: custom:group-card
         card:
