@@ -142,7 +142,7 @@ homekit:
 timer:
   zigbee_permit_join:
     name: Time remaining
-    duration: 120
+    duration: 300
 
 tado:
   username: !secret tado_user
@@ -167,15 +167,6 @@ sensor: !include_dir_merge_list sensor
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_named script
 zone: !include_dir_merge_list zone
-
-ffmpeg:
-
-camera:
-  - platform: onvif
-    host: 10.10.15.61
-    username: admin
-    password: admin
-    port: 8080
 
 rest_command:
   tado_home:

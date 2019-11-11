@@ -1,25 +1,7 @@
 - platform: template
   sensors:
-    tautulli_stream_count:
-      friendly_name: "Streams"
-      unit_of_measurement: "streams"
-      value_template: "{{ state_attr('sensor.tautulli', 'stream_count') }}"
-
-    tautulli_wan_bandwidth:
-      friendly_name: "Bandbreedte"
-      unit_of_measurement: ""
-      value_template: "{{ state_attr('sensor.tautulli', 'wan_bandwidth') }}"
-
     livingroom_remote:
       value_template: "{{ state_attr('remote.livingroom', 'current_activity') }}"
 
     livingroom_dark:
       value_template: "{{ ((states('sensor.zigbee_occupancy_2_illuminance') | float + states('sensor.zigbee_occupancy_4_illuminance') | float + states('sensor.zigbee_occupancy_5_illuminance') | float) / 3) | round() }}"
-
-    weekday_alarm_time:
-      friendly_name: Tijd
-      value_template: '{{ "%02d:%02d" | format(states("input_number.weekday_alarm_hour") | int, states("input_number.weekday_alarm_minutes") | int) }}'
-
-    weekend_alarm_time:
-      friendly_name: Tijd
-      value_template: '{{ "%02d:%02d" | format(states("input_number.weekend_alarm_hour") | int, states("input_number.weekend_alarm_minutes") | int) }}'
