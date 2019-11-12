@@ -59,7 +59,7 @@
       entity_id: input_boolean.entrance_presence
       to: "off"
       for:
-        minutes: 6
+        minutes: 2
 
   action:
     - service: homeassistant.turn_off
