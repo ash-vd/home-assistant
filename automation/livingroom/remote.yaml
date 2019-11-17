@@ -38,22 +38,7 @@
             Uit
           {% endif %}
 
-- alias: Woonkamer - Emulated Roku - Pause
-  trigger:
-    - platform: event
-      event_type: roku_command
-      event_data:
-        source_name: HASS
-        type: keypress
-        key: Pause
-  action:
-    - service: media_player.media_pause
-      entity_id: media_player.chromecast_livingroom
-    - service: notify.mobile_app_ashwiphone
-      data:
-        message: "Pause"
-
-- alias: Woonkamer - Emulated Roku - Play
+- alias: Woonkamer - Emulated Roku - Play-Pause
   trigger:
     - platform: event
       event_type: roku_command
@@ -62,8 +47,8 @@
         type: keypress
         key: Play
   action:
-    - service: media_player.media_play
+    - service: media_player.media_play_pause
       entity_id: media_player.chromecast_livingroom
     - service: notify.mobile_app_ashwiphone
       data:
-        message: "Play"
+        message: "PlayPause"
