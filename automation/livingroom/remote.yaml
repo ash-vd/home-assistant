@@ -49,6 +49,9 @@
   action:
     - service: media_player.media_pause
       entity_id: media_player.chromecast_livingroom
+    - service: notify.mobile_app_ashwiphone
+      data:
+        message: "Pause"
 
 - alias: Woonkamer - Emulated Roku - Play
   trigger:
@@ -61,3 +64,6 @@
   action:
     - service: media_player.media_play
       entity_id: media_player.chromecast_livingroom
+    - service: notify.mobile_app_ashwiphone
+      data:
+        message: "Play"
