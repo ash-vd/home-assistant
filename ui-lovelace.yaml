@@ -296,3 +296,9 @@ views:
             label: Verbruik
 
           - sensor.plug_01_power
+
+  - title: Zigbee
+    panel: true
+    cards:
+      - type: custom:zigbee2mqtt-networkmap
+        entity: sensor.zigbee2mqtt_networkmap
