@@ -186,3 +186,12 @@ rest_command:
     content_type: "application/json; charset=utf-8"
 
 webhook:
+
+zigbee2mqtt_networkmap:
+  topic: zigbee
+
+panel_iframe:
+  networkmap:
+    title: "Zigbee Map"
+    url: "/local/community/zigbee2mqtt_networkmap/map.html"
+    icon: "mdi:graphql"
