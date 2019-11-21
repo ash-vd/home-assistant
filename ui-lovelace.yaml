@@ -9,6 +9,8 @@ resources:
     type: js
   - url: /local/simple-thermostat.js
     type: module
+  - url: /community_plugin/zigbee2mqtt-networkmap/zigbee2mqtt-networkmap.js
+    type: module
 
 views:
   - title: main
