@@ -41,6 +41,14 @@ views:
               source: true
 
           - type: custom:mini-media-player
+            entity: media_player.snapcast_client_woonkamer_2
+            group: true
+            hide:
+              power: true
+              controls: true
+              source: true
+
+          - type: custom:mini-media-player
             entity: media_player.snapcast_client_keuken
             group: true
             hide:
