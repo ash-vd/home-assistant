@@ -1,5 +1,0 @@
-livingroom_off:
-  sequence:
-    - service: scene.turn_on
-      data:
-        entity_id: scene.livingroom_off
