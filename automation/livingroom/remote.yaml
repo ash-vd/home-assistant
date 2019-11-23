@@ -49,6 +49,15 @@
   action:
     - service: media_player.media_play_pause
       entity_id: media_player.chromecast_livingroom
-    - service: notify.mobile_app_ashwiphone
-      data:
-        message: "PlayPause"
+
+- alias: Woonkamer - Emulated Roku - Play-Pause
+  trigger:
+    - platform: event
+      event_type: roku_command
+      event_data:
+        source_name: HASS
+        type: keypress
+        key: Sleep
+  action:
+    - service: media_player.media_stop
+      entity_id: media_player.chromecast_livingroom

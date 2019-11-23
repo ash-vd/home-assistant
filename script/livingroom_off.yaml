@@ -1,5 +1,5 @@
 livingroom_off:
   sequence:
-    - service: homeassistant.turn_on
+    - service: scene.apply
       data:
         entity_id: scene.livingroom_off
