@@ -1,3 +1,4 @@
 - name: livingroom_media_off
   entities:
-    remote.livingroom: off
+    remote.livingroom:
+      state: "Uit"
