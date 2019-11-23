@@ -2,5 +2,5 @@ livingroom_off:
   sequence:
     - service: scene.turn_on
       entity_id: scene.livingroom_lights_off
-    - service: remote.turn_off
-      entity_id: remote.livingroom
+    - service: script.turn_on
+      entity_id: script.livingroom_multiroom_off
