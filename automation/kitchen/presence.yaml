@@ -13,8 +13,8 @@
     platform: state
     entity_id: binary_sensor.zigbee_occupancy_1_occupancy
     to: "off"
-    # for:
-    #   minutes: 2
+    for:
+      minutes: 1
 
   action:
     service: homeassistant.turn_off

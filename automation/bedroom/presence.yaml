@@ -1,7 +1,7 @@
 - alias: Aanwezigheid - Slaapkamer - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_occupancy_6_occupancy
+      entity_id: binary_sensor.zigbee_contact_2_contact, binary_sensor.zigbee_occupancy_6_occupancy
       to: "on"
 
   action:

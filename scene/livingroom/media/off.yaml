@@ -1,4 +1,3 @@
 - name: livingroom_media_off
   entities:
-    remote.livingroom:
-      current_activity: "Uit"
+    script.livingroom_media_off: on
