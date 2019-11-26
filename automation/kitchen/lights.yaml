@@ -49,7 +49,7 @@
 - alias: Verlichting - Keuken - Standby
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_occupancy_1_occupancy, input_boolean.kitchen_presence
+      entity_id: input_boolean.kitchen_presence
       to: "off"
 
   condition:
