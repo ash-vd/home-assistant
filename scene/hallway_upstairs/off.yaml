@@ -1,0 +1,3 @@
+- name: hallway_upstairs_off
+  entities:
+    switch.sonoff_02: off

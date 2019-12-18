@@ -1,0 +1,5 @@
+- name: washroom_off
+  entities:
+    light.zigbee_e27c_4_light: off
+    # switch.plug_02_switch: off
+    # switch.plug_03_switch: off

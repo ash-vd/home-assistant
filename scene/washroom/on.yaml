@@ -1,0 +1,4 @@
+- name: washroom_on
+  entities:
+    switch.plug_02_switch: on
+    switch.plug_03_switch: on

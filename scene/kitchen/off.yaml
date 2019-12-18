@@ -1,0 +1,4 @@
+- name: kitchen_off
+  entities:
+    light.kitchen: off
+    # switch.plug_01_switch: off
