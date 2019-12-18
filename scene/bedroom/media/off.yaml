@@ -1,3 +1,0 @@
-- name: bedroom_media_off
-  entities:
-    script.bedroom_multiroom_off: on

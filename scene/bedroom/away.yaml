@@ -1,3 +1,0 @@
-- name: bedroom_off
-  entities:
-      scene.bedroom_lights_away: on

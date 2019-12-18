@@ -3,8 +3,8 @@ house_away:
     - service: rest_command.tado_away
     - service: scene.turn_on
       entity_id: scene.bedroom_off
-    - service: scene.turn_on
-      entity_id: scene.livingroom_off
+    - service: script.turn_on
+      entity_id: script.livingroom_off
     - service: scene.turn_on
       entity_id: scene.bathroom_off
     - service: scene.turn_on

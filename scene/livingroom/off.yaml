@@ -1,4 +1,4 @@
 - name: livingroom_off
   entities:
     scene.livingroom_lights_off: on
-    scene.livingroom_media_off: on
+    script.livingroom_media_off: on
