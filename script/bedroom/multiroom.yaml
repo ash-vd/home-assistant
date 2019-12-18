@@ -1,0 +1,13 @@
+bedroom_multiroom_on:
+  sequence:
+    - service: media_player.volume_mute
+      data:
+        entity_id: media_player.snapcast_client_slaapkamer
+        is_volume_muted: false
+
+bedroom_multiroom_off:
+  sequence:
+    - service: media_player.volume_mute
+      data:
+        entity_id: media_player.snapcast_client_slaapkamer
+        is_volume_muted: true
