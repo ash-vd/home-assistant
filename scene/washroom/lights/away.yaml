@@ -1,3 +1,0 @@
-- name: washroom_lights_away
-  entities:
-    light.zigbee_e27c_4_light: off
