@@ -1,4 +1,5 @@
 - name: bedroom_off
   entities:
-    scene.bedroom_lights_off: on
+    light.bedroom_sink: off
+    light.shelly_05: off
     script.bedroom_multiroom_off: on

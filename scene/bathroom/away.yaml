@@ -1,3 +1,0 @@
-- name: bathroom_away
-  entities:
-    scene.bathroom_lights_off: on

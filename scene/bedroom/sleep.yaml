@@ -1,3 +1,6 @@
 - name: bedroom_sleep
   entities:
-    scene.bedroom_lights_sleep: on
+    light.shelly_05: off
+    light.bedroom_sink:
+      state: on
+      brightness: 40

@@ -1,3 +1,0 @@
-- name: bathroom_lights_away
-  entities:
-    light.shelly_04: off

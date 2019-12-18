@@ -1,3 +1,0 @@
-- name: kitchen_off
-  entities:
-    scene.kitchen_lights_away: on
