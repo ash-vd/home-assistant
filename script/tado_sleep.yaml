@@ -3,4 +3,4 @@ tado_sleep:
     - service: climate.set_temperature
       data:
         entity_id: climate.woonkamer, climate.slaapkamer
-        temperature: 13
+        temperature: 14

@@ -1,3 +1,0 @@
-- name: house_home
-  entities:
-    script.tado_home: on

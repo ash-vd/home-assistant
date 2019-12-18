@@ -1,0 +1,17 @@
+house_away:
+  sequence:
+    - service: rest_command.tado_away
+    - service: scene.turn_on
+      entity_id: scene.bedroom_off
+    - service: scene.turn_on
+      entity_id: scene.livingroom_off
+    - service: scene.turn_on
+      entity_id: scene.bathroom_off
+    - service: scene.turn_on
+      entity_id: scene.entrance_off
+    - service: scene.turn_on
+      entity_id: scene.hallway_upstairs_off
+    - service: scene.turn_on
+      entity_id: scene.kitchen_off
+    - service: scene.turn_on
+      entity_id: scene.washroom_off
