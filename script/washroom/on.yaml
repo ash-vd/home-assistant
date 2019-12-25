@@ -1,0 +1,6 @@
+washingroom_on:
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.plug_02_switch
+    - service: switch.turn_on
+      entity_id: switch.plug_03_switch
