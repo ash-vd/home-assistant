@@ -140,7 +140,9 @@ views:
         show_header_toggle: false
         entities:
           - type: section
+          - entity: climate.badkamer
 
+          - type: section
           - light.shelly_04
 
       - type: entities
