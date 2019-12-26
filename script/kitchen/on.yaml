@@ -1,0 +1,4 @@
+kitchen_on:
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.plug_01_switch

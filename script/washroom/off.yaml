@@ -1,8 +1,8 @@
-washingroom_off:
+washroom_off:
   sequence:
     - service: light.turn_off
       entity_id: light.zigbee_e27c_4_light
     - service: script.turn_on
-      entity_id: script.tumbledryer_off
+      entity_id: script.washroom_tumbledryer_off
     - service: script.turn_on
-      entity_id: script.washingmachine_off
+      entity_id: script.washroom_washingmachine_off

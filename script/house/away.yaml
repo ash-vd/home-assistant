@@ -11,7 +11,7 @@ house_away:
       entity_id: scene.entrance_off
     - service: scene.turn_on
       entity_id: scene.hallway_upstairs_off
-    - service: scene.turn_on
-      entity_id: scene.kitchen_off
+    - service: script.turn_on
+      entity_id: script.kitchen_off
     - service: script.turn_on
       entity_id: script.washroom_off

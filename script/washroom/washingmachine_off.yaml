@@ -1,0 +1,7 @@
+washroom_washingmachine_off:
+  sequence:
+    - condition: state
+      entity_id: input_select.washingmachine_status
+      state: 'Klaar'
+    - service: switch.turn_off
+      entity_id: switch.plug_02_switch
