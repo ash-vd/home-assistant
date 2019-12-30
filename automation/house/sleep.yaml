@@ -1,0 +1,17 @@
+- alias: House - Sleep - On
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bedroom_in_bed
+      to: "on"
+  action:
+    - service: homeassistant.turn_on
+      entity_id: script.house_sleep
+
+- alias: House - Sleep - Off
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bedroom_in_bed
+      to: "off"
+  action:
+    - service: homeassistant.turn_on
+      entity_id: script.house_awake
