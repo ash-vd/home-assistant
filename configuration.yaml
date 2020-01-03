@@ -61,18 +61,6 @@ tts:
 # Cloud
 #cloud:
 
-ios:
-  push:
-    categories:
-      - name: "Alarm Clock"
-        identifier: "alarmclock"
-        actions:
-          - identifier: "AWAKE"
-            title: "Good Morning"
-          - identifier: "SNOOZE"
-            title: "Snooze"
-            destructive: no
-
 mobile_app:
 
 system_health:
