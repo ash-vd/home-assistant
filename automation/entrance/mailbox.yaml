@@ -4,6 +4,10 @@
       entity_id: binary_sensor.zigbee_contact_4_contact
       to: "on"
 
+  condition:
+    - condition: template
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.brievenbus_entree.attributes.last_triggered)) / 60) | int > 2 }}"
+
   action:
     service: notify.mobile_app_ashwiphone
     data:
