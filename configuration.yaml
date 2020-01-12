@@ -91,6 +91,7 @@ hue:
 
 camera:
   - platform: generic
+    name: Voordeur
     stream_source: 10.10.1.4:554/cam/realmonitor?channel=1&subtype=1
     username: !secret camera1_username
     password: !secret camera1_password
