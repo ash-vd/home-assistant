@@ -1,0 +1,8 @@
+
+tumbledryer_start:
+  has_date: true
+  has_time: true
+
+washingmachine_start:
+  has_date: true
+  has_time: true

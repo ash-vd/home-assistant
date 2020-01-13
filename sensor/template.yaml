@@ -5,3 +5,33 @@
 
     livingroom_dark:
       value_template: "{{ ((states('sensor.zigbee_occupancy_2_illuminance') | float + states('sensor.zigbee_occupancy_4_illuminance') | float + states('sensor.zigbee_occupancy_5_illuminance') | float) / 3) | round() }}"
+
+    tumbledryer_on_time:
+        value_template: >
+          {{ (as_timestamp(now())
+              - state_attr('input_datetime.tumbledryer_start', 'timestamp'))
+             |timestamp_custom('%H:%M:%S', false) }}
+
+    tumbledryer_on_time_complete:
+      friendly_name: Dryer on Timer
+      value_template: >
+          {% if is_state('input_select.tumbledryer_status', 'Bezig') %}
+            {{ states('sensor.dryer_on_time') }}
+          {% else %}
+            ---
+          {% endif %}
+
+    washing_machine_on_time:
+      value_template: >
+        {{ (as_timestamp(now())
+            - state_attr('input_datetime.washing_machine_start', 'timestamp'))
+            |timestamp_custom('%H:%M:%S', false) }}
+
+    washing_machine_on_time_complete:
+      friendly_name: Washer on Timer
+      value_template: >
+          {% if is_state('input_select.washingmachine_status', 'Bezig') %}
+            {{ states('sensor.washing_machine_on_time') }}
+          {% else %}
+            ---
+          {% endif %}
