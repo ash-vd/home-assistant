@@ -150,6 +150,9 @@ views:
         show_header_toggle: false
         entities:
           - type: section
+          - type: picture-entity
+            entity: camera.voordeur
+            camera_view: live
 
           - type: custom:slider-entity-row
             entity: light.wifi_e27cwww_01
