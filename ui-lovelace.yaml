@@ -297,9 +297,9 @@ views:
             label: Status
 
           - input_select.washingmachine_status
-          - sensor.washingmachine_on_time_complete
+          - sensor.washingmachine_on_time
           - input_select.tumbledryer_status
-          - sensor.tumbledryer_on_time_complete
+          - sensor.tumbledryer_on_time
 
           - type: section
             label: Verbruik
