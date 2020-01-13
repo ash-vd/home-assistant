@@ -9,18 +9,17 @@
     tumbledryer_on_time:
       friendly_name: Starttijd
       value_template: >
-          {% if is_state('input_select.tumbledryer_status', 'Draait') %}
-            {{ state_attr('input_datetime.tumbledryer_start', 'timestamp') | timestamp_custom('%H:%M:%S', True) }}
-          {% else %}
-            ---
-          {% endif %}
-
+        {% if is_state('input_select.tumbledryer_status', 'Draait') %}
+          {{ as_timestamp(state_attr('automation.appliances_washing_room_tumble_dryer_running', 'last_triggered')) | timestamp_custom('%H:%M:%S', True) }}
+        {% else %}
+          ---
+        {% endif %}
 
     washingmachine_on_time:
       friendly_name: Starttijd
       value_template: >
-          {% if is_state('input_select.washingmachine_status', 'Draait') %}
-            {{ state_attr('input_datetime.washingmachine_start', 'timestamp') | timestamp_custom('%H:%M:%S', True) }}
-          {% else %}
-            ---
-          {% endif %}
+        {% if is_state('input_select.washingmachine_status', 'Draait') %}
+          {{ as_timestamp(state_attr('automation.appliances_washing_room_washing_machine_running', 'last_triggered')) | timestamp_custom('%H:%M:%S', True) }}
+        {% else %}
+          ---
+        {% endif %}
