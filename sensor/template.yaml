@@ -16,7 +16,7 @@
       friendly_name: Dryer on Timer
       value_template: >
           {% if is_state('input_select.tumbledryer_status', 'Draait') %}
-            {{ states('sensor.dryer_on_time') }}
+            {{ states('sensor.tumbledryer_on_time') }}
           {% else %}
             ---
           {% endif %}
