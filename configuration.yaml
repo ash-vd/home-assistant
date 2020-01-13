@@ -95,7 +95,7 @@ stream:
 camera:
   - platform: generic
     name: Voordeur
-    still_image_url: rtsp://10.10.1.4:554/cam/realmonitor?channel=1&subtype=1
+    still_image_url: !secret camera1_stream
     stream_source: !secret camera1_stream
     username: !secret camera1_username
     password: !secret camera1_password
