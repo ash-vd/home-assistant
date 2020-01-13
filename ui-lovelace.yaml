@@ -300,14 +300,14 @@ views:
       - cards:
           - entity: sensor.washer_on_time_complete
             scale: 20px
-            style:
-              - text-transform: capitalize
+            # style:
+            #   - text-transform: capitalize
             title: Time elapsed
             type: 'custom:bignumber-card'
           - entity: sensor.dryer_on_time_complete
             scale: 20px
-            style:
-              - text-transform: capitalize
+            # style:
+              # - text-transform: capitalize
             title: Time elapsed
             type: 'custom:bignumber-card'
         type: horizontal-stack
@@ -315,7 +315,11 @@ views:
       border: true
       font_size: 24px
     title: Laundry
-type: 'custom:vertical-style-card'
+    type: 'custom:vertical-style-card'
+
+
+
+
     # cards:
     #   - type: entities
     #     title: Washok
