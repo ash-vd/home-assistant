@@ -1,6 +1,4 @@
 resources:
-  - url: /local/waze-card.js?v=2.0.0
-    type: js
   - url: /local/mini-media-player-bundle.js
     type: js
   - url: /local/slider-entity-row.js
@@ -10,6 +8,12 @@ resources:
   - url: /local/simple-thermostat.js
     type: module
   - url: /community_plugin/zigbee2mqtt-networkmap/zigbee2mqtt-networkmap.js
+    type: module
+  - url: /local/button-card.js
+    type: module
+  - url: /local/bignumber-card.js
+    type: module
+  - url: /local/vertical-style-card.js
     type: module
 
 views:
