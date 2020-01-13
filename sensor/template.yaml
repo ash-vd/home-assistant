@@ -10,7 +10,7 @@
       friendly_name: Dryer on Timer
       value_template: >
           {% if is_state('input_select.tumbledryer_status', 'Draait') %}
-            {{ state_attr('input_datetime.tumbledryer_start', 'timestamp')) | timestamp_custom('%H:%M:%S', false) }}
+            {{ state_attr('input_datetime.tumbledryer_start', 'timestamp') | timestamp_custom('%H:%M:%S', false) }}
           {% else %}
             ---
           {% endif %}
@@ -20,7 +20,7 @@
       friendly_name: Washer on Timer
       value_template: >
           {% if is_state('input_select.washingmachine_status', 'Draait') %}
-            {{ state_attr('input_datetime.washingmachine_start', 'timestamp')) | timestamp_custom('%H:%M:%S', false) }}
+            {{ state_attr('input_datetime.washingmachine_start', 'timestamp') | timestamp_custom('%H:%M:%S', false) }}
           {% else %}
             ---
           {% endif %}
