@@ -12,7 +12,7 @@
         entity_id: input_select.washingmachine_status
         option: "Draait"
     - service: input_datetime.set_datetime
-      entity_id: input_datetime.tumbledryer_start
+      entity_id: input_datetime.washingmachine_start
       data_template:
         datetime: "{{ now().strftime('%Y-%m-%d %H:%M:%S') }}"
 
