@@ -149,11 +149,11 @@ views:
         title: Entree
         show_header_toggle: false
         entities:
-          - type: section
           - type: picture-entity
             entity: camera.voordeur
             camera_view: live
 
+          - type: section
           - type: custom:slider-entity-row
             entity: light.wifi_e27cwww_01
             toggle: true
