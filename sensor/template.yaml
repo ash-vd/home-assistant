@@ -7,7 +7,7 @@
       value_template: "{{ ((states('sensor.zigbee_occupancy_2_illuminance') | float + states('sensor.zigbee_occupancy_4_illuminance') | float + states('sensor.zigbee_occupancy_5_illuminance') | float) / 3) | round() }}"
 
     tumbledryer_on_time:
-      friendly_name: Dryer on Timer
+      friendly_name: Starttijd
       value_template: >
           {% if is_state('input_select.tumbledryer_status', 'Draait') %}
             {{ state_attr('input_datetime.tumbledryer_start', 'timestamp') | timestamp_custom('%H:%M:%S', false) }}
@@ -17,7 +17,7 @@
 
 
     washingmachine_on_time:
-      friendly_name: Washer on Timer
+      friendly_name: Starttijd
       value_template: >
           {% if is_state('input_select.washingmachine_status', 'Draait') %}
             {{ state_attr('input_datetime.washingmachine_start', 'timestamp') | timestamp_custom('%H:%M:%S', false) }}

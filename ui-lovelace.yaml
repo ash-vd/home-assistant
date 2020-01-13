@@ -294,17 +294,17 @@ views:
         show_header_toggle: false
         entities:
           - type: section
-            label: Status
+            label: Wasmachine
 
           - input_select.washingmachine_status
           - sensor.washingmachine_on_time
-          - input_select.tumbledryer_status
-          - sensor.tumbledryer_on_time
+          - sensor.plug_02_power
 
           - type: section
-            label: Verbruik
+            label: Droger
 
-          - sensor.plug_02_power
+          - input_select.tumbledryer_status
+          - sensor.tumbledryer_on_time
           - sensor.plug_03_power
 
       - type: entities
