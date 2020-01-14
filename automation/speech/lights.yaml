@@ -7,6 +7,11 @@
       data_template:
         entity_id: "script.speech_{{trigger.event.data.room}}_lights_on"
 
-    - service: notify.mobile_app_ashwiphone
+- alias: Speech - SetLightOff
+  trigger:
+    platform: event
+    event_type: rhasspy_SetLightOff
+  action:
+    - service: script.turn_on
       data_template:
-        message: "Dag hoor"
+        entity_id: "script.speech_{{trigger.event.data.room}}_lights_off"
