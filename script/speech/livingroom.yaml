@@ -1,0 +1,4 @@
+speech_livingroom_lights_on:
+  sequence:
+    - service: homeassistant.turn_on
+      entity_id: scene.livingroom_lights_normal

@@ -1,0 +1,12 @@
+- alias: Speech - SetLightOn
+  trigger:
+    platform: event
+    event_type: rhasspy_SetLightOn
+  action:
+    - service: script.turn_on
+      data_template:
+        entity_id: "script.speech_{{trigger.event.data.room}}_lights_on"
+
+    - service: notify.mobile_app_ashwiphone
+      data_template:
+        message: "Dag hoor"
