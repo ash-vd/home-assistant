@@ -14,7 +14,7 @@
 - alias: Speech - IncreaseTemperature
   trigger:
     platform: event
-    event_type: rhasspy_SetTemperature
+    event_type: rhasspy_IncreaseTemperature
   action:
     - service: climate.set_temperature
       data_template:
