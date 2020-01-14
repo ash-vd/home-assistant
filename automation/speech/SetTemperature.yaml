@@ -1,0 +1,11 @@
+- alias: Speech - SetTemperature
+  trigger:
+    platform: event
+    event_type: rhasspy_SetTemperature
+    # event_data:
+    #   name: 'bedroom light'
+    #   color: 'blue'
+  action:
+    service: notify.mobile_app_ashwiphone
+    data_template:
+      message: "{{trigger.event.data.room}} op {{trigger.event.data.temperature}} graden"

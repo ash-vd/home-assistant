@@ -1,6 +1,0 @@
-zigbee2mqtt_view:
-  view: yes
-  name: Zigbee2mqtt
-  icon: mdi:router-wireless
-  entities:
-    - group.zigbee2mqtt
