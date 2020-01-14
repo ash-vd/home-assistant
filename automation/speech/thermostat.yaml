@@ -19,7 +19,7 @@
     - service: climate.set_temperature
       data_template:
         entity_id: "climate.{{trigger.event.data.room}}"
-        temperature: "{{state_attr('climate.~trigger.event.data.room', 'temperature') + 1 }}"
+        temperature: "{{state_attr('climate.'~trigger.event.data.room, 'temperature') + 1 }}"
     - service: notify.mobile_app_ashwiphone
       data_template:
-        message: "{{trigger.event.data.room}} op {{state_attr('climate.~trigger.event.data.room', 'temperature') + 1 }}"
+        message: "{{trigger.event.data.room}} op {{state_attr('climate.'~trigger.event.data.room, 'temperature') + 1 }}"
