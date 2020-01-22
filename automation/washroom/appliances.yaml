@@ -6,11 +6,17 @@
       for:
         minutes: 1
 
+  condition:
+    - condition: state
+      entity_id: input_select.washingmachine_status
+      state: "Klaar"
+
   action:
     - service: input_select.select_option
       data:
         entity_id: input_select.washingmachine_status
         option: "Draait"
+
     - service: input_datetime.set_datetime
       entity_id: input_datetime.washingmachine_start
       data_template:
@@ -22,7 +28,7 @@
       entity_id: sensor.plug_02_power
       below: 5
       for:
-        minutes: 3
+        minutes: 2
 
   condition:
     - condition: state
@@ -43,11 +49,17 @@
       for:
         minutes: 1
 
+  condition:
+    - condition: state
+      entity_id: input_select.tumbledryer_status
+      state: "Klaar"
+
   action:
     - service: input_select.select_option
       data:
         entity_id: input_select.tumbledryer_status
         option: "Draait"
+
     - service: input_datetime.set_datetime
       entity_id: input_datetime.tumbledryer_start
       data_template:
@@ -60,6 +72,7 @@
       below: 5
       for:
         minutes: 2
+
   action:
     - service: input_select.select_option
       data:
