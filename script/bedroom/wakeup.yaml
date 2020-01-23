@@ -9,3 +9,5 @@ bedroom_wakeup:
         entity_id: light.bedroom_sink
         transition: 1800
         brightness: 255
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.bedroom_in_bed

@@ -1,0 +1,9 @@
+bedroom_off:
+  sequence:
+    - condition: state
+      entity_id: input_boolean.bedroom_in_bed
+      state: "off"
+    - service: light.turn_off
+      entity_id:
+        - light.bedroom_sink
+        - light.shelly_05
