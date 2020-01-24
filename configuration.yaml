@@ -122,6 +122,7 @@ homekit:
       - light.bedroom_sink
       - switch.sonoff_02
       - input_boolean.bedroom_in_bed
+      - input_boolean.wakeup_enabled
   entity_config:
     light.bedroom_sink:
       name: Wastafel
@@ -135,6 +136,8 @@ homekit:
       name: Gang
     input_boolean.bedroom_in_bed:
       name: In bed
+    input_boolean.wakeup_enabled:
+      name: Wekker
 
 timer:
   zigbee_permit_join:
