@@ -287,7 +287,6 @@ views:
   - title: Apparaten
     icon: mdi:washing-machine
 
-
     cards:
       - type: entities
         title: Washok
@@ -320,3 +319,15 @@ views:
             label: Verbruik
 
           - sensor.plug_01_power
+
+  - title: Wekker
+    icon: mdi:alarm
+
+    cards:
+      - type: entities
+        title: Wekker
+        show_header_toggle: false
+        entities:
+          - input_boolean.wakeup_enabled
+          - input_boolean.wakeup_weekend
+          - input_datetime.wakeup_time
