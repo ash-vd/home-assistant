@@ -1,9 +1,9 @@
 - alias: Media - Bedroom - Mute
   trigger:
     platform: template
-    value_template: "{{state_attr('media_player.snapcast_client_woonkamer', 'is_volume_muted') == True}}"
+    value_template: "{{state_attr('media_player.snapcast_client_slaapkamer', 'is_volume_muted') == True}}"
     for:
-      seconds: 15
+      seconds: 5
 
   action:
     service: switch.turn_off
@@ -12,8 +12,8 @@
 - alias: Media - Bedroom - Unmute
   trigger:
     platform: template
-    value_template: "{{state_attr('media_player.snapcast_client_woonkamer', 'is_volume_muted') == False}}"
+    value_template: "{{state_attr('media_player.snapcast_client_slaapkamer', 'is_volume_muted') == False}}"
 
   action:
-    service: switch.turn_off
+    service: switch.turn_on
     entity_id: switch.plug_04_switch
