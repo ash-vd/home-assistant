@@ -1,6 +1,6 @@
 logs:
-  logfile: STDOUT
-  errorfile: STDERR
+  main_log: STDOUT
+  error_log: STDERR
 appdaemon:
   threads: 10
   plugins:
