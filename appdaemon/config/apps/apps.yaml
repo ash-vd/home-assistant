@@ -1,7 +1,7 @@
 Occupancy Simulator:
   module: occusim
   class: OccuSim
-  log: "1"
+  log_msg: "1"
   enable: input_boolean.house_vacation,true
   # test: "1"
   dump_times: "1"
