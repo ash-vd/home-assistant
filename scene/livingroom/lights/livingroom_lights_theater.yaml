@@ -1,5 +1,8 @@
 - name: livingroom_lights_theater
   entities:
+    light.shelly_01:
+      state: off
+
     light.zigbee_e14_1_light:
       state: on
       brightness: 30
