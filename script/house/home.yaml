@@ -1,7 +1,9 @@
 house_home:
   sequence:
     - service: rest_command.tado_home
+
     - service: script.turn_on
-      entity_id: script.kitchen_on
+      entity_id: script.kitchen_home
+
     - service: script.turn_on
-      entity_id: script.washroom_on
+      entity_id: script.washroom_home

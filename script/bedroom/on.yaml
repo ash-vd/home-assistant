@@ -1,0 +1,4 @@
+bedroom_home:
+  sequence:
+    - service: script.turn_on
+      entity_id: script.bedroom_multiroom_on

@@ -1,0 +1,3 @@
+- name: entrance_sleep
+  entities:
+    light.wifi_e27cwww_01: off

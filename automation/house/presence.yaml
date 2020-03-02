@@ -14,8 +14,8 @@
       entity_id: group.house_presence
       to: "off"
       for:
-        minutes: 2
+        minutes: 5
 
   action:
     - service: homeassistant.turn_on
-      entity_id: script.house_away
+      entity_id: script.house_off
