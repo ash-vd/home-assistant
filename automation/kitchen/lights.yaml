@@ -25,7 +25,7 @@
 - alias: Verlichting - Keuken - Aan (Nacht)
   trigger:
     - platform: state
-      entity_id: input_boolean.kitchen_presence
+      entity_id: binary_sensor.zigbee_occupancy_1_occupancy, input_boolean.kitchen_presence
       to: "on"
 
   condition:
