@@ -1,4 +1,4 @@
-house_home:
+house_on:
   sequence:
     - service: rest_command.tado_home
 
