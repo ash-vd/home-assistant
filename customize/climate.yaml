@@ -1,2 +1,2 @@
 climate.woonkamer:
-  precision: 1.0otifyo
+  target_temp_step: 0.5
