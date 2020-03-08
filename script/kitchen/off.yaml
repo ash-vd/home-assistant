@@ -4,8 +4,8 @@ kitchen_off:
       entity_id: light.kitchen
     - service: script.turn_on
       entity_id: script.kitchen_multiroom_off
-    - condition: state
-      entity_id: input_select.dishwasher_status
-      state: 'Klaar'
-    - service: switch.turn_off
-      entity_id: switch.plug_01_switch
+#    - condition: state
+#      entity_id: input_select.dishwasher_status
+#      state: 'Klaar'
+#    - service: switch.turn_off
+#      entity_id: switch.plug_01_switch
