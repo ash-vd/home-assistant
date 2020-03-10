@@ -1,4 +1,5 @@
 hallway_upstairs_on:
-  entities:
-    script.hallway_upstairs_multiroom_on: on
+  sequence:
+    - service: script.turn_on
+      entity_id: script.hallway_upstairs_multiroom_on
 
