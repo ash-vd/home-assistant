@@ -1,0 +1,13 @@
+hallway_upstairs_multiroom_on:
+  sequence:
+    - service: media_player.volume_mute
+      data:
+        entity_id: media_player.snapcast_client_hal
+        is_volume_muted: false
+
+hallway_upstairs_multiroom_off:
+  sequence:
+    - service: media_player.volume_mute
+      data:
+        entity_id: media_player.snapcast_client_hal
+        is_volume_muted: true

@@ -14,8 +14,8 @@ house_off:
     - service: scene.turn_on
       entity_id: scene.entrance_off
 
-    - service: scene.turn_on
-      entity_id: scene.hallway_upstairs_off
+    - service: script.turn_on
+      entity_id: script.hallway_upstairs_off
 
     - service: script.turn_on
       entity_id: script.kitchen_off
