@@ -8,26 +8,26 @@ livingroom_multiroom_on:
 livingroom_multiroom_standby:
   sequence:
     - service: media_player.volume_mute
-        data:
-          entity_id: media_player.snapcast_client_woonkamer_2
-          is_volume_muted: false
+      data:
+        entity_id: media_player.snapcast_client_woonkamer_2
+        is_volume_muted: false
 
     - service: media_player.volume_mute
-        data:
-          entity_id: media_player.snapcast_client_woonkamer
-          is_volume_muted: false
+      data:
+        entity_id: media_player.snapcast_client_woonkamer
+        is_volume_muted: false
 
 livingroom_multiroom_off:
   sequence:
     - service: media_player.volume_mute
-        data:
-          entity_id: media_player.snapcast_client_woonkamer_2
-          is_volume_muted: true
+      data:
+        entity_id: media_player.snapcast_client_woonkamer_2
+        is_volume_muted: true
 
     - service: media_player.volume_mute
-        data:
-          entity_id: media_player.snapcast_client_woonkamer
-          is_volume_muted: true
+      data:
+        entity_id: media_player.snapcast_client_woonkamer
+        is_volume_muted: true
 
     - service: remote.turn_off
       data:
