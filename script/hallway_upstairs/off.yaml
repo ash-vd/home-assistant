@@ -1,4 +1,4 @@
-- name: hallway_upstairs_off
+hallway_upstairs_off:
   entities:
     script.hallway_upstairs_multiroom_off: on
 
