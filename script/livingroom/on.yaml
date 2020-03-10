@@ -1,0 +1,4 @@
+livingroom_on:
+  sequence:
+    - service: script.turn_on
+      entity_id: script.livingroom_multiroom_standby
