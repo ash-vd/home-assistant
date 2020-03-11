@@ -5,6 +5,17 @@ livingroom_multiroom_on:
         entity_id: remote.livingroom
         activity: MultiRoom
 
+    - service: media_player.volume_mute
+        data:
+          entity_id: media_player.snapcast_client_woonkamer
+          is_volume_muted: false
+
+    - service: media_player.volume_mute
+        data:
+          entity_id: media_player.snapcast_client_woonkamer_2
+          is_volume_muted: false
+
+
 livingroom_multiroom_standby:
   sequence:
     - service: media_player.volume_mute
