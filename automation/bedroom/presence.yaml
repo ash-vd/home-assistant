@@ -19,3 +19,15 @@
   action:
     service: homeassistant.turn_off
     entity_id: input_boolean.bedroom_presence
+
+
+- alias: Presence - Bedroom - Force off
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bedroom_presence
+      to: "off"
+      for:
+        hours: 6
+
+      - service: script.turn_on
+        entity_id: script.bedroom_off
