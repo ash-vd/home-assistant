@@ -215,12 +215,12 @@ views:
           - input_select.house_mode
           - input_boolean.house_vacation
 
-      - type: custom:group-card
-        card:
-          type: entities
-          title: Woonkamer
-          show_header_toggle: false
-        group: group.sensors_livingroom
+#      - type: custom:group-card
+#        card:
+#          type: entities
+#          title: Woonkamer
+#          show_header_toggle: false
+#        group: group.sensors_livingroom
 
       - type: entities
         title: Keuken
