@@ -3,9 +3,6 @@ house_off:
     - service: rest_command.tado_away
 
     - service: script.turn_on
-      entity_id: script.bedroom_off
-
-    - service: script.turn_on
       entity_id: script.livingroom_off
 
     - service: scene.turn_on
