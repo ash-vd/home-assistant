@@ -29,5 +29,6 @@
       for:
         hours: 6
 
-      - service: script.turn_on
-        entity_id: script.bedroom_off
+  action:
+    service: script.turn_on
+    entity_id: script.bedroom_off
