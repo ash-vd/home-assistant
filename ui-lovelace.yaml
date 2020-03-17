@@ -25,6 +25,16 @@ views:
         show_header_toggle: false
 
         entities:
+          - type: section
+
+          - type: custom:mini-media-player
+            entity: media_player.spotify_ashwin_van_dijk
+            artwork: cover
+            hide_when_off: true
+            hide:
+              volume: true
+              power: true
+
           - type: custom:mini-media-player
             entity: media_player.snapcast_group_all
             source: full
@@ -75,14 +85,6 @@ views:
               power: true
               controls: true
               source: true
-
-      - type: custom:mini-media-player
-        entity: media_player.spotify_ashwin_van_dijk
-        artwork: cover
-        hide_when_off: true
-        hide:
-          volume: true
-          power: true
 
       - type: entities
         title: Woonkamer
@@ -153,10 +155,6 @@ views:
         title: Entree
         show_header_toggle: false
         entities:
-          - type: picture-entity
-            entity: camera.voordeur
-            camera_view: live
-
           - type: section
             label: Verlichting
           - type: custom:slider-entity-row
