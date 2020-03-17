@@ -31,4 +31,4 @@
 
   action:
     service: script.turn_on
-    entity_id: script.bedroom_off
+    entity_id: script.bedroom_force_off
