@@ -25,6 +25,15 @@ views:
         show_header_toggle: false
 
         entities:
+          - type: section
+          - type: custom:mini-media-player
+            entity: media_player.spotify_ashwin_van_dijk
+            artwork: cover
+            hide_when_off: true
+            hide:
+              volume: true
+              power: true
+
           - type: custom:mini-media-player
             entity: media_player.spotify_ashwin_van_dijk
             artwork: cover
