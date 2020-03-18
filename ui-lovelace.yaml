@@ -244,11 +244,11 @@ views:
 
 
       - type: entities
-          title: Werkkamer
-          show_header_toggle: false
-          entities:
-            - type: section
-            - input_boolean.workroom_presence
+        title: Werkkamer
+        show_header_toggle: false
+        entities:
+          - type: section
+          - input_boolean.workroom_presence
 
       - type: custom:group-card
         card:
