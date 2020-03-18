@@ -188,6 +188,12 @@ views:
           - type: section
           - entity: climate.werkkamer
 
+          - type: section
+            label: Verlichting
+            - type: custom:slider-entity-row
+              entity: light.zigbee_e14_2_light
+              toggle: true
+
       - type: entities
         title: Slaapkamer
         show_header_toggle: false
