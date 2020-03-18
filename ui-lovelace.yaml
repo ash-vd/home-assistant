@@ -181,6 +181,14 @@ views:
             toggle: true
 
       - type: entities
+        title: Werkkamer
+        show_header_toggle: false
+
+        entities:
+          - type: section
+          - entity: climate.werkkamer
+
+      - type: entities
         title: Slaapkamer
         show_header_toggle: false
 
