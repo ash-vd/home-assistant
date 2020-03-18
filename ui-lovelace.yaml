@@ -242,6 +242,14 @@ views:
           show_header_toggle: false
         group: group.sensors_bathroom
 
+
+      - type: entities
+          title: Werkkamer
+          show_header_toggle: false
+          entities:
+            - type: section
+            - input_boolean.workroom_presence
+
       - type: custom:group-card
         card:
           type: entities

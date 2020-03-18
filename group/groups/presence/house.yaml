@@ -4,5 +4,5 @@ house_presence:
     - input_boolean.entrance_presence
     - input_boolean.kitchen_presence
     - input_boolean.bathroom_presence
-
-    - binary_sensor.bedroom_presence
+    - input_boolean.workroom_presence
+    - input_boolean.hallway_upstairs_presence

@@ -1,0 +1,3 @@
+workroom_presence:
+  name: workroom_presence
+  initial: off

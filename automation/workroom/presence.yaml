@@ -1,0 +1,21 @@
+- alias: Aanwezigheid - Werkkamer - Aan
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.zigbee_occupancy_8_occupancy
+      to: "on"
+
+  action:
+    service: homeassistant.turn_on
+    entity_id: input_boolean.hallway_upstairs_presence
+
+- alias: Aanwezigheid - Werkkamer - Uit
+  trigger:
+    platform: state
+    entity_id: binary_sensor.zigbee_occupancy_8_occupancy
+    to: "off"
+    for:
+      minutes: 8
+
+  action:
+    service: homeassistant.turn_off
+    entity_id: input_boolean.hallway_upstairs_presence
