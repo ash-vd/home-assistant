@@ -17,7 +17,53 @@ resources:
     type: module
 
 views:
-  - !include lovelace/livingroom.yaml
+  - title: new
+    icon: mdi:home-outline
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: vertical-stack
+            cards:
+              - type: markdown
+                content: >
+                  ## Werkkamer
+              - type: custom:simple-thermostat
+                entity: climate.werkkamer
+                step_layout: row
+                name: false
+                icon: false
+                control: false
+
+              - type: entities
+                entities:
+                  - type: section
+                    label: Verlichting
+
+                  - type: custom:slider-entity-row
+                    entity: light.zigbee_e14_2_light
+                    toggle: true
+
+          - type: vertical-stack
+            cards:
+              - type: markdown
+                content: >
+                  ## Slaapkamer
+              - type: custom:simple-thermostat
+                entity: climate.slaapkamer
+                step_layout: row
+                name: false
+                icon: false
+                control: false
+
+              - type: entities
+                entities:
+
+                  - switch.shelly_05
+
+                  - type: custom:slider-entity-row
+                    entity: light.bedroom_sink
+                    toggle: true
+
 
   - title: main
     icon: mdi:home-outline
@@ -199,28 +245,28 @@ views:
 
           - type: entities
             entities:
-            - type: section
-              label: Verlichting
+              - type: section
+                label: Verlichting
 
-            - type: custom:slider-entity-row
-              entity: light.zigbee_e14_2_light
-              toggle: true
+              - type: custom:slider-entity-row
+                entity: light.zigbee_e14_2_light
+                toggle: true
 
 
-#      - type: entities
-#        title: Werkkamer
-#        show_header_toggle: false
-#
-#        entities:
-#          - type: section
-#          - entity: climate.werkkamer
-#
-#          - type: section
-#            label: Verlichting
-#
-#          - type: custom:slider-entity-row
-#            entity: light.zigbee_e14_2_light
-#            toggle: true
+      #      - type: entities
+      #        title: Werkkamer
+      #        show_header_toggle: false
+      #
+      #        entities:
+      #          - type: section
+      #          - entity: climate.werkkamer
+      #
+      #          - type: section
+      #            label: Verlichting
+      #
+      #          - type: custom:slider-entity-row
+      #            entity: light.zigbee_e14_2_light
+      #            toggle: true
 
       - type: entities
         title: Slaapkamer
@@ -245,63 +291,6 @@ views:
             entity: light.bedroom_sink
             toggle: true
 
-
-  - title: Werkkamer
-    icon: mdi:home-outline
-    cards:
-
-      - type: vertical-stack
-        cards:
-          - type: markdown
-            content: >
-              ## Werkkamer
-          - type: custom:simple-thermostat
-            entity: climate.werkkamer
-            step_layout: row
-            name: false
-            icon: false
-            control: false
-
-          - type: entities
-            entities:
-
-              - type: custom:slider-entity-row
-                entity: light.zigbee_e14_2_light
-                toggle: true
-
-          - type: entities
-            entities:
-              - input_boolean.workroom_presence
-              - binary_sensor.zigbee_occupancy_8_occupancy
-              - sensor.zigbee_occupancy_8_illuminance
-
-  - title: Slaapkamer
-    icon: mdi:home-outline
-    cards:
-
-      - type: vertical-stack
-        cards:
-          - type: markdown
-            content: >
-              ## Slaapkamer
-          - type: custom:simple-thermostat
-            entity: climate.slaapkamer
-            step_layout: row
-            name: false
-            icon: false
-            control: false
-
-          - type: entities
-            entities:
-
-              - light.shelly_05
-
-              - type: custom:slider-entity-row
-                entity: light.bedroom_sink
-                toggle: true
-
-
-
   - title: Sensoren
     icon: mdi:cogs
     cards:
@@ -312,12 +301,12 @@ views:
           - input_select.house_mode
           - input_boolean.house_vacation
 
-#      - type: custom:group-card
-#        card:
-#          type: entities
-#          title: Woonkamer
-#          show_header_toggle: false
-#        group: group.sensors_livingroom
+      #      - type: custom:group-card
+      #        card:
+      #          type: entities
+      #          title: Woonkamer
+      #          show_header_toggle: false
+      #        group: group.sensors_livingroom
 
       - type: entities
         title: Keuken
