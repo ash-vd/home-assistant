@@ -3,6 +3,12 @@ title: Woonkamer
 icon: mdi:home-outline
 cards:
 
+  - type: custom:simple-thermostat
+      entity: climate.woonkamer
+      step_layout: row
+      name: false
+      icon: false
+      control: false
 
   - type: conditional
     conditions:
@@ -14,14 +20,11 @@ cards:
       type: media-control
       entity: media_player.chromecast_livingroom
 
+
   - type: entities
     title: Woonkamer
     show_header_toggle: false
     entities:
-      - type: section
-
-      - entity: climate.woonkamer
-
       - type: section
 
       - input_select.livingroom_scene
