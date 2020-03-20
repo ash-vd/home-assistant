@@ -17,9 +17,6 @@ resources:
     type: module
 
 views:
-  - !include lovelace/livingroom.yaml
-
-
   - title: main
     icon: mdi:home-outline
     cards:
@@ -245,6 +242,10 @@ views:
           - type: custom:slider-entity-row
             entity: light.bedroom_sink
             toggle: true
+
+
+  - !include lovelace/livingroom.yaml
+
 
   - title: Sensoren
     icon: mdi:cogs
