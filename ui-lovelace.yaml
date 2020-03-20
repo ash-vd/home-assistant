@@ -182,13 +182,16 @@ views:
             entity: light.zigbee_e27c_4_light
             toggle: true
 
-      - type: entities
-        title: Werkkamer
-        show_header_toggle: false
 
-        entities:
-          - type: section
-          - entity: climate.werkkamer
+      - type: vertical-stack
+        cards:
+          - type: custom:simple-thermostat
+            entity: climate.living_room
+            step_layout: row
+            name: false
+            icon: false
+            control: false
+
 
           - type: section
             label: Verlichting
@@ -196,6 +199,22 @@ views:
           - type: custom:slider-entity-row
             entity: light.zigbee_e14_2_light
             toggle: true
+
+
+#      - type: entities
+#        title: Werkkamer
+#        show_header_toggle: false
+#
+#        entities:
+#          - type: section
+#          - entity: climate.werkkamer
+#
+#          - type: section
+#            label: Verlichting
+#
+#          - type: custom:slider-entity-row
+#            entity: light.zigbee_e14_2_light
+#            toggle: true
 
       - type: entities
         title: Slaapkamer
