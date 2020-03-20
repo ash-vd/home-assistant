@@ -3,6 +3,9 @@ title: Stue / Gang
 icon: mdi:sofa
 cards:
 
+  - type: media-control
+    entity: media_player.chromecast_livingroom
+
   - type: entities
     title: Woonkamer
     show_header_toggle: false
@@ -15,11 +18,6 @@ cards:
 
       - input_select.livingroom_scene
       - input_select.livingroom_remote
-
-      - type: media-control
-        entity: media_player.chromecast_livingroom
-        group: true
-        artwork: cover
 
       - type: section
         label: Verlichting
