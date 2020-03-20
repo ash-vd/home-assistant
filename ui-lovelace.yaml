@@ -19,7 +19,6 @@ resources:
 views:
   - title: new
     icon: mdi:home-outline
-    panel: true
     cards:
       - type: horizontal-stack
         cards:
