@@ -19,6 +19,7 @@ resources:
 views:
   - title: new
     icon: mdi:home-outline
+    panel: true
     cards:
       - type: horizontal-stack
         cards:
@@ -61,7 +62,7 @@ views:
                   - switch.shelly_05
 
                   - type: custom:slider-entity-row
-                    entity: light.wastafel
+                    entity: light.bedroom_sink
                     toggle: true
 
 
