@@ -186,7 +186,7 @@ views:
       - type: vertical-stack
         cards:
           - type: custom:simple-thermostat
-            entity: climate.living_room
+            entity: climate.werkkamer
             step_layout: row
             name: false
             icon: false
