@@ -17,6 +17,7 @@ resources:
     type: module
 
 views:
+  - !include lovelace/livingroom.yaml
 
   - title: main
     icon: mdi:home-outline
@@ -245,6 +246,31 @@ views:
             toggle: true
 
 
+  - title: Woonkamer
+      icon: mdi:home-outline
+      cards:
+
+        - type: vertical-stack
+          cards:
+            - type: markdown
+              content: >
+                ## Woonkamer
+            - type: custom:simple-thermostat
+              entity: climate.woonkamer
+              step_layout: row
+              name: false
+              icon: false
+              control: false
+
+            - type: entities
+              entities:
+
+                - light.shelly_05
+
+                - type: custom:slider-entity-row
+                  entity: light.bedroom_sink
+                  toggle: true
+
   - title: Werkkamer
     icon: mdi:home-outline
     cards:
@@ -298,6 +324,7 @@ views:
               - type: custom:slider-entity-row
                 entity: light.bedroom_sink
                 toggle: true
+
 
 
   - title: Sensoren
