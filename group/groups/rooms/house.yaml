@@ -1,6 +1,5 @@
 house:
   name: Huis
-  control: hidden
   entities:
     - input_select.house_mode
     - scene.house_off

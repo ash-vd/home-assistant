@@ -1,6 +1,5 @@
 livingroom:
   name: Woonkamer
-  control: hidden
   entities:
     - climate.woonkamer
     - input_select.livingroom_scene

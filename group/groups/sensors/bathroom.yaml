@@ -1,6 +1,5 @@
 sensors_bathroom:
   name: Badkamer
-  control: hidden
   entities:
     - input_boolean.bathroom_presence
     - binary_sensor.zigbee_contact_5_contact

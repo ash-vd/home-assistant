@@ -1,6 +1,5 @@
 bedroom:
   name: Slaapkamer
-  control: hidden
   entities:
     - climate.slaapkamer
     - light.shelly_02

@@ -1,5 +1,4 @@
 bathroom:
   name: Badkamer
-  control: hidden
   entities:
     - binary_sensor.bathroom_presence

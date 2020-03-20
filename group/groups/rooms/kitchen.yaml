@@ -1,5 +1,4 @@
 kitchen:
   name: Keuken
-  control: hidden
   entities:
     - light.kitchen

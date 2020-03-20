@@ -1,6 +1,5 @@
 sensors_hallway_upstairs:
   name: Gang (boven)
-  control: hidden
   entities:
     - input_boolean.hallway_upstairs_presence
     - sensor.zigbee_occupancy_7_illuminance

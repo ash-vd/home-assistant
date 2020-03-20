@@ -1,5 +1,4 @@
 hallway:
   name: Gang
-  control: hidden
   entities:
     - switch.sonoff_02

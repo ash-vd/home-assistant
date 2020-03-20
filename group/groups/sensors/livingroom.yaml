@@ -1,6 +1,5 @@
 sensors_livingroom:
   name: Woonkamer
-  control: hidden
   entities:
     - input_boolean.livingroom_presence
     - input_boolean.livingroom_auto

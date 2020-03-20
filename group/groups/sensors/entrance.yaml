@@ -1,6 +1,5 @@
 sensors_entrance:
   name: Entree
-  control: hidden
   entities:
     - input_boolean.entrance_presence
     - binary_sensor.zigbee_occupancy_3_occupancy
