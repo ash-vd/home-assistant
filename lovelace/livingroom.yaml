@@ -1,6 +1,6 @@
 path: livingroom
-title: Stue / Gang
-icon: mdi:sofa
+title: Woonkamer
+icon: mdi:home-outline
 cards:
 
   - type: media-control
