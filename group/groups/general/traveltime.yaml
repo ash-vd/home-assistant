@@ -1,6 +1,5 @@
 traveltime:
   name: Reistijden
-  control: hidden
   entities:
     - sensor.ashwin_naar_ashwin_s_huis
     - sensor.ashwin_s_huis_naar_hbr
