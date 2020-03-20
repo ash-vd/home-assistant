@@ -3,8 +3,16 @@ title: Woonkamer
 icon: mdi:home-outline
 cards:
 
-  - type: media-control
-    entity: media_player.chromecast_livingroom
+
+  - type: conditional
+    conditions:
+      - entity: media_player.chromecast_livingroom
+        state_not: "off"
+      - entity: media_player.chromecast_livingroom
+        state_not: "unavailable"
+    card:
+      type: media-control
+      entity: media_player.chromecast_livingroom
 
   - type: entities
     title: Woonkamer
