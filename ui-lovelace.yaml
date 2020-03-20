@@ -27,7 +27,7 @@ views:
         entities:
           - type: section
 
-          - type: custom:mini-media-player
+          - type: media-control
             entity: media_player.spotify_ashwin_van_dijk
             artwork: cover
             hide_when_off: true
@@ -99,7 +99,7 @@ views:
           - input_select.livingroom_scene
           - input_select.livingroom_remote
 
-          - type: custom:mini-media-player
+          - type: media-control
             entity: media_player.chromecast_livingroom
             group: true
             artwork: cover
@@ -204,7 +204,7 @@ views:
 
           - entity: climate.slaapkamer
 
-          - type: custom:mini-media-player
+          - type: media-control
             entity: media_player.chromecast_bedroom
             group: true
             artwork: cover
