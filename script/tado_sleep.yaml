@@ -2,5 +2,5 @@ tado_sleep:
   sequence:
     - service: climate.set_temperature
       data:
-        entity_id: climate.woonkamer, climate.slaapkamer
+        entity_id: climate.woonkamer, climate.slaapkamer, climate.werkkamer
         temperature: 14

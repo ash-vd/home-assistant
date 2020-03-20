@@ -1,0 +1,4 @@
+workroom_off:
+  sequence:
+    - service: homeassistant.turn_off
+      entity_id: light.zigbee_e14_2_light
