@@ -17,6 +17,29 @@ resources:
     type: module
 
 views:
+  - title: Werkkamer
+    icon: mdi:home-outline
+    cards:
+
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: >
+              ## Werkkamer
+          - type: custom:simple-thermostat
+            entity: climate.werkkamer
+            step_layout: row
+            name: false
+            icon: false
+            control: false
+
+          - type: entities
+            entities:
+
+              - type: custom:slider-entity-row
+                entity: light.zigbee_e14_2_light
+                toggle: true
+
   - title: Slaapkamer
     icon: mdi:home-outline
     cards:
@@ -36,7 +59,7 @@ views:
           - type: entities
             entities:
 
-              - switch.shelly_05
+              - light.shelly_05
 
               - type: custom:slider-entity-row
                 entity: light.bedroom_sink
