@@ -17,54 +17,6 @@ resources:
     type: module
 
 views:
-  - title: Werkkamer
-    icon: mdi:home-outline
-    cards:
-
-      - type: vertical-stack
-        cards:
-          - type: markdown
-            content: >
-              ## Werkkamer
-          - type: custom:simple-thermostat
-            entity: climate.werkkamer
-            step_layout: row
-            name: false
-            icon: false
-            control: false
-
-          - type: entities
-            entities:
-
-              - type: custom:slider-entity-row
-                entity: light.zigbee_e14_2_light
-                toggle: true
-
-  - title: Slaapkamer
-    icon: mdi:home-outline
-    cards:
-
-      - type: vertical-stack
-        cards:
-          - type: markdown
-            content: >
-              ## Slaapkamer
-          - type: custom:simple-thermostat
-            entity: climate.slaapkamer
-            step_layout: row
-            name: false
-            icon: false
-            control: false
-
-          - type: entities
-            entities:
-
-              - light.shelly_05
-
-              - type: custom:slider-entity-row
-                entity: light.bedroom_sink
-                toggle: true
-
 
   - title: main
     icon: mdi:home-outline
@@ -291,6 +243,62 @@ views:
           - type: custom:slider-entity-row
             entity: light.bedroom_sink
             toggle: true
+
+
+  - title: Werkkamer
+      icon: mdi:home-outline
+      cards:
+
+        - type: vertical-stack
+          cards:
+            - type: markdown
+              content: >
+                ## Werkkamer
+            - type: custom:simple-thermostat
+              entity: climate.werkkamer
+              step_layout: row
+              name: false
+              icon: false
+              control: false
+
+            - type: entities
+              entities:
+
+                - type: custom:slider-entity-row
+                  entity: light.zigbee_e14_2_light
+                  toggle: true
+
+            - type: entities
+              entities:
+                - input_boolean.workroom_presence
+                - binary_sensor.zigbee_occupancy_8_occupancy
+                - sensor.zigbee_occupancy_8_illuminance
+
+        - title: Slaapkamer
+          icon: mdi:home-outline
+          cards:
+
+            - type: vertical-stack
+              cards:
+                - type: markdown
+                  content: >
+                    ## Slaapkamer
+                - type: custom:simple-thermostat
+                  entity: climate.slaapkamer
+                  step_layout: row
+                  name: false
+                  icon: false
+                  control: false
+
+                - type: entities
+                  entities:
+
+                    - light.shelly_05
+
+                    - type: custom:slider-entity-row
+                      entity: light.bedroom_sink
+                      toggle: true
+
 
   - title: Sensoren
     icon: mdi:cogs
