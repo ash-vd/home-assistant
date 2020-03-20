@@ -274,30 +274,30 @@ views:
               - binary_sensor.zigbee_occupancy_8_occupancy
               - sensor.zigbee_occupancy_8_illuminance
 
-        - title: Slaapkamer
-          icon: mdi:home-outline
-          cards:
+  - title: Slaapkamer
+    icon: mdi:home-outline
+    cards:
 
-            - type: vertical-stack
-              cards:
-                - type: markdown
-                  content: >
-                    ## Slaapkamer
-                - type: custom:simple-thermostat
-                  entity: climate.slaapkamer
-                  step_layout: row
-                  name: false
-                  icon: false
-                  control: false
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: >
+              ## Slaapkamer
+          - type: custom:simple-thermostat
+            entity: climate.slaapkamer
+            step_layout: row
+            name: false
+            icon: false
+            control: false
 
-                - type: entities
-                  entities:
+          - type: entities
+            entities:
 
-                    - light.shelly_05
+              - light.shelly_05
 
-                    - type: custom:slider-entity-row
-                      entity: light.bedroom_sink
-                      toggle: true
+              - type: custom:slider-entity-row
+                entity: light.bedroom_sink
+                toggle: true
 
 
   - title: Sensoren
