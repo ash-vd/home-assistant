@@ -29,11 +29,6 @@ views:
 
           - type: media-control
             entity: media_player.spotify_ashwin_van_dijk
-            artwork: cover
-            hide_when_off: true
-            hide:
-              volume: true
-              power: true
 
           - type: custom:mini-media-player
             entity: media_player.snapcast_group_all
