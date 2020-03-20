@@ -20,15 +20,14 @@ views:
   - title: main
     icon: mdi:home-outline
     cards:
+      - type: media-control
+        entity: media_player.spotify_ashwin_van_dijk
       - type: entities
         title: MultiRoom
         show_header_toggle: false
 
         entities:
           - type: section
-
-          - type: media-control
-            entity: media_player.spotify_ashwin_van_dijk
 
           - type: custom:mini-media-player
             entity: media_player.snapcast_group_all
