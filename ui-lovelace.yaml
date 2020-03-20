@@ -185,6 +185,9 @@ views:
 
       - type: vertical-stack
         cards:
+          - type: markdown
+            content: >
+              ## Werkkamer
           - type: custom:simple-thermostat
             entity: climate.werkkamer
             step_layout: row
