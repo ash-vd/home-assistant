@@ -17,6 +17,32 @@ resources:
     type: module
 
 views:
+  - title: new
+    icon: mdi:home-outline
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: vertical-stack
+            cards:
+              - type: markdown
+                content: >
+                  ## Werkkamer
+                - type: custom:simple-thermostat
+                  entity: climate.werkkamer
+                  step_layout: row
+                  name: false
+                  icon: false
+                  control: false
+
+                - type: entities
+                  entities:
+                    - type: section
+                      label: Verlichting
+
+                    - type: custom:slider-entity-row
+                      entity: light.zigbee_e14_2_light
+                      toggle: true
+
   - title: main
     icon: mdi:home-outline
     cards:
