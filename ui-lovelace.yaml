@@ -160,7 +160,7 @@ views:
           - type: section
             label: Verlichting
           - type: custom:slider-entity-row
-            entity: light.wifi_e27cwww_01
+            entity: light.zigbee_e14_2_light
             toggle: true
 
       - type: entities
@@ -199,11 +199,6 @@ views:
             entities:
               - type: section
                 label: Verlichting
-
-              - type: custom:slider-entity-row
-                entity: light.zigbee_e14_2_light
-                toggle: true
-
 
       #      - type: entities
       #        title: Werkkamer

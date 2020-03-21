@@ -11,10 +11,9 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.wifi_e27cwww_01
+      entity_id: light.zigbee_e14_2_light
       data:
         brightness: 200
-        color_temp: 180
 
 - alias: Verlichting - Entree - Aan (Nacht)
   trigger:
@@ -29,10 +28,9 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.wifi_e27cwww_01
+      entity_id: light.zigbee_e14_2_light
       data:
         brightness: 80
-        color_temp: 180
 
 - alias: Verlichting - Entree - Standby
   trigger:
@@ -47,10 +45,9 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.wifi_e27cwww_01
+      entity_id: light.zigbee_e14_2_light
       data:
         brightness: 80
-        color_temp: 180
         transition: 30
 
 - alias: Verlichting - Entree - Uit
@@ -63,6 +60,6 @@
 
   action:
     - service: homeassistant.turn_off
-      entity_id: light.wifi_e27cwww_01
+      entity_id: light.zigbee_e14_2_light
       data:
         transition: 30
