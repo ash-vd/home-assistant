@@ -4,11 +4,11 @@ icon: mdi:home-outline
 cards:
 
   - type: custom:simple-thermostat
-      entity: climate.woonkamer
-      step_layout: row
-      name: false
-      icon: false
-      control: false
+    entity: climate.woonkamer
+    step_layout: row
+    name: false
+    icon: false
+    control: false
 
   - type: conditional
     conditions:
