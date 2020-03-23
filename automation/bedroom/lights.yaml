@@ -1,8 +1,14 @@
 - alias: Lightning - Bedroom - On
   trigger:
     - platform: state
-      entity_id: input_boolean.bedroom_presence
+      entity_id: binary_sensor.zigbee_occupancy_6_occupancy, input_boolean.bedroom_presence
       to: "on"
+
+    - platform: numeric_state
+        entity_id: sensor.zigbee_occupancy_7_illuminance
+        below: 80
+        for:
+          minutes: 1
 
   condition:
     condition: and
@@ -14,6 +20,10 @@
       - condition: template
         value_template: "{{ states.input_select.house_mode.state != 'Nacht' }}"
 
+      - condition: numeric_state
+        entity_id: sensor.zigbee_occupancy_6_illuminance
+        below: 80
+
   action:
     - service: homeassistant.turn_on
       entity_id: light.shelly_05
@@ -23,6 +33,12 @@
     - platform: state
       entity_id: input_boolean.bedroom_presence
       to: "off"
+
+    - platform: numeric_state
+        entity_id: sensor.zigbee_occupancy_6_illuminance
+        above: 70
+        for:
+          minutes: 3
 
   action:
     - service: homeassistant.turn_off
