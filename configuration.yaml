@@ -196,6 +196,7 @@ entity_controller:
     entity: light.zigbee_e14_2_light
 
   washroom:
+    sensor_type: duration
     delay: 5
     sensor_resets_timer: True
     sensor:
