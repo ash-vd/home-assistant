@@ -199,7 +199,7 @@ entity_controller:
   washroom:
     delay: 15
     sensor:
-      - binary_sensor.zigbee_contact_3_contact
+       - binary_sensor.zigbee_contact_3_contact
        - binary_sensor.zigbee_occupancy_7_occupancy
     entity: light.zigbee_e27c_4_light
     service_data:
