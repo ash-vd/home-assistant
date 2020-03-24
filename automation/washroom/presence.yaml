@@ -1,0 +1,15 @@
+- alias: Aanwezigheid - Washok - Backup
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.zigbee_contact_3_contact
+      to: "off"
+
+    - platform: state
+      entity_id: entity_.washroom_presence
+      to: "active_timer"
+      for:
+        minutes: 10
+
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.zigbee_e27c_4_light
