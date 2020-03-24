@@ -203,13 +203,13 @@ entity_controller:
       brightness: 100
       kelvin: 2800
 
-  living_room:
-    sensor:
-      - sensor.zigbee_occupancy_2_occupancy
-      - sensor.zigbee_occupancy_4_occupancy
-      - sensor.zigbee_occupancy_5_occupancy
-    entity_on: scene.livingroom_lights_normal
-    entity_off: scene.livingroom_lights_off
-    delay: 300
-    backoff_factor: 1.1
-    backoff_max: 900
+#  living_room:
+#    sensor:
+#      - sensor.zigbee_occupancy_2_occupancy
+#      - sensor.zigbee_occupancy_4_occupancy
+#      - sensor.zigbee_occupancy_5_occupancy
+#    entity_on: scene.livingroom_lights_normal
+#    entity_off: scene.livingroom_lights_off
+#    delay: 300
+#    backoff_factor: 1.1
+#    backoff_max: 900
