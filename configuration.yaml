@@ -192,13 +192,12 @@ rest_command:
 entity_controller:
   entrance:
     sensor:
+      - binary_sensor.zigbee_contact_6_contact
       - binary_sensor.zigbee_occupancy_3_occupancy
     entity: light.zigbee_e14_2_light
 
   washroom:
-    sensor_type: duration
     delay: 60
-    sensor_resets_timer: True
     sensor:
       - binary_sensor.zigbee_contact_3_contact
     entity: light.zigbee_e27c_4_light
