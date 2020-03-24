@@ -199,7 +199,7 @@ entity_controller:
     sensor_type: duration
     delay: 5
     backoff: true
-    sensor_resets_timer: True
+    sensor_resets_timer: true
     sensor:
       - binary_sensor.zigbee_contact_3_contact
     entity: light.zigbee_e27c_4_light
