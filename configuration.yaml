@@ -215,10 +215,11 @@ entity_controller:
 
   living_room:
     sensor:
-      - sensor.zigbee_occupancy_2_occupancy
-      - sensor.zigbee_occupancy_4_occupancy
-      - sensor.zigbee_occupancy_5_occupancy
-    entity: scene.livingroom_lights_normal
+      - binary_sensor.zigbee_occupancy_2_occupancy
+      - binary_sensor.zigbee_occupancy_4_occupancy
+      - binary_sensor.zigbee_occupancy_5_occupancy
+    trigger_on_activate: scene.livingroom_lights_normal
+    trigger_on_deactivate: scene.livingroom_lights_off
     delay: 300
     backoff_factor: 1.1
     backoff_max: 900
