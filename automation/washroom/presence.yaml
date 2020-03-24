@@ -1,8 +1,8 @@
 - alias: Aanwezigheid - Washok - Backup
   trigger:
-    - platform: state
-      entity_id: binary_sensor.zigbee_contact_3_contact
-      to: "off"
+#    - platform: state
+#      entity_id: binary_sensor.zigbee_contact_3_contact
+#      to: "off"
 
     - platform: state
       entity_id: entity_controller.washroom_presence
