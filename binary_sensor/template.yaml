@@ -1,5 +1,9 @@
 - platform: template
   sensors:
+    is_night:
+      value_template: >-
+        {{ states('input_select.house_mode') == 'Nacht' }}
+
     livingroom_media_on:
       value_template: >-
         {{ states('sensor.livingroom_remote') != "PowerOff" }}

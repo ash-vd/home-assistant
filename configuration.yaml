@@ -195,23 +195,31 @@ entity_controller:
       - binary_sensor.zigbee_contact_6_contact
       - binary_sensor.zigbee_occupancy_3_occupancy
     entity: light.zigbee_e14_2_light
+    service_data:
+      brightness_pct: 100
+      kelvin: 2800
 
   washroom:
-    delay: 15
+    delay: 5
     sensor:
        - binary_sensor.zigbee_contact_3_contact
     entity: light.zigbee_e27c_4_light
     service_data:
       brightness_pct: 100
       kelvin: 2800
+    night_mode:
+      service_data:
+        brightness_pct: 20
+      start_time: '23:00:00'
+      end_time: '06:30:00'
 
-#  living_room:
-#    sensor:
-#      - sensor.zigbee_occupancy_2_occupancy
-#      - sensor.zigbee_occupancy_4_occupancy
-#      - sensor.zigbee_occupancy_5_occupancy
-#    entity_on: scene.livingroom_lights_normal
-#    entity_off: scene.livingroom_lights_off
-#    delay: 300
-#    backoff_factor: 1.1
-#    backoff_max: 900
+  living_room:
+    sensor:
+      - sensor.zigbee_occupancy_2_occupancy
+      - sensor.zigbee_occupancy_4_occupancy
+      - sensor.zigbee_occupancy_5_occupancy
+    trigger_on_activate: scene.livingroom_lights_normal
+    trigger_on_deactivate: scene.livingroom_lights_off
+    delay: 300
+    backoff_factor: 1.1
+    backoff_max: 900
