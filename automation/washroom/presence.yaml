@@ -5,7 +5,7 @@
       to: "off"
 
     - platform: state
-      entity_id: entity_.washroom_presence
+      entity_id: entity_controller.washroom_presence
       to: "active_timer"
       for:
         minutes: 10
