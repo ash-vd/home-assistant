@@ -200,8 +200,8 @@ entity_controller:
       kelvin: 2800
 
   washroom:
+    sensor_type: duration
     delay: 5
-    block_timeout: 5
     sensor:
        - binary_sensor.zigbee_contact_3_contact
     entity: light.zigbee_e27c_4_light
