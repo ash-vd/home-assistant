@@ -214,14 +214,14 @@ entity_controller:
       start_time: '23:00:00'
       end_time: '06:30:00'
 
-  living_room:
-    sensor:
-      - binary_sensor.zigbee_occupancy_2_occupancy
-      - binary_sensor.zigbee_occupancy_4_occupancy
-      - binary_sensor.zigbee_occupancy_5_occupancy
-    trigger_on_activate: scene.livingroom_lights_normal
-    trigger_on_deactivate: scene.livingroom_lights_off
-    delay: 60
-    backoff: true
-    backoff_factor: 1.25
-    backoff_max: 900
+#  living_room:
+#    sensor:
+#      - binary_sensor.zigbee_occupancy_2_occupancy
+#      - binary_sensor.zigbee_occupancy_4_occupancy
+#      - binary_sensor.zigbee_occupancy_5_occupancy
+#    trigger_on_activate: scene.livingroom_lights_normal
+#    trigger_on_deactivate: scene.livingroom_lights_off
+#    delay: 120
+#    backoff: true
+#    backoff_factor: 1.25
+#    backoff_max: 900
