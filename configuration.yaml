@@ -190,14 +190,14 @@ rest_command:
     content_type: "application/json; charset=utf-8"
 
 entity_controller:
-  entrance:
-    sensor:
-      - binary_sensor.zigbee_contact_6_contact
-      - binary_sensor.zigbee_occupancy_3_occupancy
-    entity: light.zigbee_e14_2_light
-    service_data:
-      brightness_pct: 100
-      kelvin: 2800
+#  entrance:
+#    sensor:
+#      - binary_sensor.zigbee_contact_6_contact
+#      - binary_sensor.zigbee_occupancy_3_occupancy
+#    entity: light.zigbee_e14_2_light
+#    service_data:
+#      brightness_pct: 100
+#      kelvin: 2800
 
   washroom:
     sensor_type: duration

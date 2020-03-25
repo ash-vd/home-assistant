@@ -1,6 +1,6 @@
 - name: livingroom_lights_night
   entities:
-    light.zigbee_e14_1_light:
+    light.zigbee_e14_3_light:
       state: on
       brightness: 20
       transition: 2

@@ -6,7 +6,7 @@ livingroom:
     - input_select.livingroom_remote
     - media_player.chromecast_livingroom
     - light.shelly_01
-    - light.zigbee_e14_1_light
+    - light.zigbee_e14_3_light
     - light.zigbee_e27c_1_light
     - light.zigbee_e27c_2_light
     - light.zigbee_e27c_3_light
