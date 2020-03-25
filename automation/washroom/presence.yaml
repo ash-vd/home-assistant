@@ -4,7 +4,7 @@
       entity_id: light.zigbee_e27c_4_light
       to: "on"
       for:
-        minutes: 1
+        minutes: 10
 
   action:
     service: light.turn_off
