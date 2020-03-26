@@ -30,18 +30,13 @@
     - service: homeassistant.turn_on
       entity_id: light.zigbee_e14_2_light
       data:
-        brightness: 80
+        brightness_pct: 60
 
 - alias: Verlichting - Entree - Standby
   trigger:
     - platform: state
       entity_id: input_boolean.entrance_presence
       to: "off"
-
-  condition:
-    - condition: state
-      entity_id: input_select.house_mode
-      state: "Normaal"
 
   action:
     - service: homeassistant.turn_on
@@ -56,10 +51,10 @@
       entity_id: input_boolean.entrance_presence
       to: "off"
       for:
-        minutes: 5
+        minutes: 2
 
   action:
-    - service: homeassistant.turn_off
+    - service: light.turn_off
       entity_id: light.zigbee_e14_2_light
       data:
         transition: 30
