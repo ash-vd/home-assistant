@@ -14,4 +14,4 @@
 
     livingroom_dark:
       value_template: >-
-        {{ states('sensor.livingroom_dark') | float < 45 }}
+        {{ states('sensor.livingroom_illuminance') | float < 45 }}

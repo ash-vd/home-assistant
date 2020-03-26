@@ -2,6 +2,9 @@ path: livingroom
 title: Woonkamer
 icon: mdi:home-outline
 cards:
+  - type: custom:mini-graph-card
+    entities:
+      - sensor.livingroom_illuminance
 
   - type: custom:simple-thermostat
     entity: climate.woonkamer
