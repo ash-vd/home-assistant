@@ -83,51 +83,6 @@ views:
               source: true
 
       - type: entities
-        title: Woonkamer
-        show_header_toggle: false
-        entities:
-          - type: section
-
-          - entity: climate.woonkamer
-
-          - type: section
-
-          - input_select.livingroom_scene
-          - input_select.livingroom_remote
-
-          - type: media-control
-            entity: media_player.chromecast_livingroom
-            group: true
-            artwork: cover
-
-          - type: section
-            label: Verlichting
-
-          - light.shelly_01
-
-          - type: custom:slider-entity-row
-            entity: light.zigbee_e14_3_light
-            toggle: true
-
-          - type: custom:slider-entity-row
-            entity: light.zigbee_e27c_1_light
-            toggle: true
-
-          - type: custom:slider-entity-row
-            entity: light.zigbee_e27c_2_light
-            toggle: true
-
-          - type: custom:slider-entity-row
-            entity: light.zigbee_e27c_3_light
-            toggle: true
-
-          - type: custom:slider-entity-row
-            entity: light.wifi_e27cwww_02
-            toggle: true
-
-          - switch.sonoff_03
-
-      - type: entities
         title: Keuken
         show_header_toggle: false
         entities:
