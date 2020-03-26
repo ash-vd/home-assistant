@@ -4,7 +4,7 @@ resources:
   - url: /local/community/lovelace-slider-entity-row/slider-entity-row.js
     type: module
   - url: /local/community/mini-graph-card/mini-graph-card.js
-      type: module
+    type: module
 
   - url: /local/mini-media-player-bundle.js
     type: js
