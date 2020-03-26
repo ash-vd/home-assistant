@@ -4,12 +4,11 @@ icon: mdi:home-outline
 cards:
 
   - type: custom:simple-thermostat
-      entity: climate.woonkamer
-      step_layout: row
-      name: false
-      icon: false
-      step_size: 1
-      control: false
+    entity: climate.woonkamer
+    step_layout: row
+    name: false
+    icon: false
+    control: false
 
   - type: conditional
     conditions:
@@ -20,7 +19,6 @@ cards:
     card:
       type: media-control
       entity: media_player.chromecast_livingroom
-
 
   - type: entities
     title: Verlichting
