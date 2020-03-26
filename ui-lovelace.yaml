@@ -1,14 +1,8 @@
 resources:
   - url: /local/mini-media-player-bundle.js
     type: js
-  - url: /local/slider-entity-row.js
-    type: js
   - url: /local/group-card.js
     type: js
-  - url: /local/simple-thermostat.js
-    type: module
-  - url: /community_plugin/zigbee2mqtt-networkmap/zigbee2mqtt-networkmap.js
-    type: module
   - url: /local/button-card.js
     type: module
   - url: /local/bignumber-card.js
