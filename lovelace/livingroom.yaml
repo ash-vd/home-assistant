@@ -5,6 +5,8 @@ cards:
   - type: custom:mini-graph-card
     entities:
       - sensor.livingroom_illuminance
+    hours_to_show: 2
+    points_per_hour: 4
 
   - type: custom:simple-thermostat
     entity: climate.woonkamer
