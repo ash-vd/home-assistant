@@ -1,7 +1,9 @@
 - alias: Verlichting - Keuken - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_occupancy_1_occupancy, input_boolean.kitchen_presence
+      entity_id:
+        - binary_sensor.zigbee_occupancy_1_occupancy
+        - input_boolean.kitchen_presence
       to: "on"
 
   condition:
@@ -25,7 +27,9 @@
 - alias: Verlichting - Keuken - Aan (Nacht)
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_occupancy_1_occupancy, input_boolean.kitchen_presence
+      entity_id:
+        - binary_sensor.zigbee_occupancy_1_occupancy
+        - input_boolean.kitchen_presence
       to: "on"
 
   condition:
@@ -37,7 +41,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_occupancy_1_illuminance
-        below: 80
+        below: 70
 
   action:
     - service: homeassistant.turn_on
@@ -74,7 +78,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_1_illuminance
-      above: 80
+      above: 90
       for:
         minutes: 4
 
