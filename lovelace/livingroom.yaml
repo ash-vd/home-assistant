@@ -4,11 +4,12 @@ icon: mdi:home-outline
 cards:
 
   - type: custom:simple-thermostat
-    entity: climate.woonkamer
-    step_layout: row
-    name: false
-    icon: false
-    control: false
+      entity: climate.woonkamer
+      step_layout: row
+      name: false
+      icon: false
+      step_size: 1
+      control: false
 
   - type: conditional
     conditions:
@@ -22,21 +23,14 @@ cards:
 
 
   - type: entities
-    title: Woonkamer
+    title: Verlichting
     show_header_toggle: false
     entities:
-      - type: section
-
-      - input_select.livingroom_scene
-      - input_select.livingroom_remote
-
-      - type: section
-        label: Verlichting
 
       - light.shelly_01
 
       - type: custom:slider-entity-row
-        entity: light.zigbee_e14_3_light
+        entity: light.zigbee_e14_1_light
         toggle: true
 
       - type: custom:slider-entity-row
