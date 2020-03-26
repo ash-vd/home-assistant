@@ -2,7 +2,7 @@ path: livingroom
 title: Woonkamer
 icon: mdi:home-outline
 cards:
-  - type: climate
+  - type: thermostat
     entity: climate.woonkamer
 
   - type: custom:mini-graph-card
