@@ -17,4 +17,5 @@
   command_topic: "zigbee/workroom_light/set"
   state_topic: "zigbee/workroom_light/set"
   brightness: true
+  color_temp: true
   schema: json
