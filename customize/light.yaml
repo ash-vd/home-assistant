@@ -19,6 +19,9 @@ light.bedroom_sink:
 light.kitchen:
   friendly_name: Licht
 
+light.workroom_light:
+  friendly_name: Licht
+
 light.shelly_01:
   friendly_name: Plafond
   icon: mdi:lightbulb
