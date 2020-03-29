@@ -11,3 +11,10 @@
   state_topic: "zigbee/bedroom_sink/set"
   brightness: true
   schema: json
+
+- platform: mqtt
+  name: workroom_light
+  command_topic: "zigbee/workroom_light/set"
+  state_topic: "zigbee/workroom_light/set"
+  brightness: true
+  schema: json
