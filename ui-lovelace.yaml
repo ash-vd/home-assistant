@@ -201,7 +201,7 @@ views:
 
           - type: entities
             entities:
-              - switch.plug_02
+              - switch.plug_02_switch
 
               - type: section
                 label: Verlichting
