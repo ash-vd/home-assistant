@@ -6,5 +6,5 @@ switch.sonoff_03:
   friendly_name: Staand
   icon: mdi:lightbulb
 
-switch.plug_02_switch:
+switch.plug_02:
   friendly_name: Speakers
