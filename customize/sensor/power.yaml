@@ -1,7 +1,7 @@
 sensor.plug_01_power:
   friendly_name: Vaatwasser
 
-sensor.plug_02_power:
+sensor.plug_05_power:
   friendly_name: Wasmachine
 
 sensor.plug_03_power:

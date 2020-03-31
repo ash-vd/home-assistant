@@ -173,7 +173,7 @@ views:
         entities:
           - type: section
 
-          - switch.sonoff_02
+          - switch.plug_06
 
       - type: entities
         title: Washok
@@ -339,7 +339,7 @@ views:
 
           - input_boolean.washroom_presence
           - binary_sensor.zigbee_contact_3_contact
-          - sensor.plug_02_power
+          - sensor.plug_05_power
           - sensor.plug_03_power
 
   - title: Apparaten
@@ -355,7 +355,7 @@ views:
 
           - input_select.washingmachine_status
           - sensor.washingmachine_on_time
-          - sensor.plug_02_power
+          - sensor.plug_05_power
 
           - type: section
             label: Droger

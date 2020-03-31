@@ -125,7 +125,7 @@ homekit:
       - light.wifi_e27cwww_02
       - light.zigbee_e27c_3_light
       - light.bedroom_sink
-      - switch.sonoff_02
+      - switch.plug_06
       - input_boolean.bedroom_in_bed
       - input_boolean.wakeup_enabled
   entity_config:
@@ -137,7 +137,7 @@ homekit:
       name: Woonkamer
     light.wifi_e27cwww_02:
       name: Lamp op het kastje
-    switch.sonoff_02:
+    switch.plug_06:
       name: Gang
     input_boolean.bedroom_in_bed:
       name: In bed

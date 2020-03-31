@@ -23,7 +23,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: switch.sonoff_02
+      entity_id: switch.plug_06
 
 - alias: Verlichting - Gang (boven) - Uit
   trigger:
@@ -39,4 +39,4 @@
 
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.sonoff_02
+      entity_id: switch.plug_06

@@ -4,4 +4,4 @@ washroom_tumbledryer_off:
       entity_id: input_select.tumbledryer_status
       state: 'Klaar'
     - service: switch.turn_off
-      entity_id: switch.plug_03_switch
+      entity_id: switch.plug_03
