@@ -200,6 +200,7 @@ views:
             control: false
 
           - type: entities
+            show_header_toggle: false
             entities:
               - switch.plug_02_switch
 
