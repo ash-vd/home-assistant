@@ -18,6 +18,11 @@
     for:
       minutes: 2
 
+  condition:
+    - condition: state
+      entity_id: binary_sensor.zigbee_contact_6_contact
+      state: "off"
+
   action:
     service: homeassistant.turn_off
     entity_id: input_boolean.entrance_presence
