@@ -22,7 +22,7 @@
         below: 100
 
   action:
-    - service: homeassistant.turn_on
+    - service: light.turn_on
       entity_id: light.shelly_dimmer_01
       data:
         brightness_pct: 80
@@ -39,7 +39,7 @@
     state: "on"
 
   action:
-    - service: homeassistant.turn_on
+    - service: light.turn_on
       entity_id: light.shelly_dimmer_01
       data:
         brightness_pct: 25
@@ -54,7 +54,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 100
+      above: 130
       for:
         minutes: 3
 
