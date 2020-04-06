@@ -19,3 +19,6 @@ house_off:
 
     - service: script.turn_on
       entity_id: script.washroom_off
+
+    - service: script.turn_on
+      entity_id: script.workroom_off
