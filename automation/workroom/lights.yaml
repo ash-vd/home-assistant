@@ -41,7 +41,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.kitchen
+      entity_id: light.shelly_dimmer_01
       data:
         brightness_pct: 25
         transition: 1
