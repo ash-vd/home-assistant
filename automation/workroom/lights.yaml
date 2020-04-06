@@ -6,7 +6,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      below: 60
+      below: 150
       for:
         minutes: 1
 
@@ -19,13 +19,16 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_occupancy_8_illuminance
-        below: 60
+        below: 150
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.zigbee_e14_2_light
+      entity_id: light.shelly_dimmer_01
+      data:
+        brightness_pct: 25
+        transition: 1
 
-- alias: Verlichting - Werkkamer - Uit
+- alias: Verlichting - Werkkamer - Standby
   trigger:
     - platform: state
       entity_id: input_boolean.workroom_presence
@@ -33,10 +36,33 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 60
+      above: 150
+      for:
+        minutes: 3
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.kitchen
+      data:
+        brightness_pct: 25
+        transition: 1
+
+- alias: Verlichting - Werkkamer - Uit
+  trigger:
+    - platform: state
+      entity_id: input_boolean.workroom_presence
+      to: "off"
+      for:
+        minutes: 3
+
+    - platform: numeric_state
+      entity_id: sensor.zigbee_occupancy_8_illuminance
+      above: 150
       for:
         minutes: 3
 
   action:
     - service: homeassistant.turn_off
-      entity_id: light.zigbee_e14_2_light
+      entity_id: light.shelly_dimmer_01
+      data:
+        transition: 30
