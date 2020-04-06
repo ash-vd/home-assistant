@@ -1,0 +1,11 @@
+- alias: "Shelly turn off and then on quickly, any switch"
+  trigger:
+    platform: event
+    event_type: shelly_switch_click
+    event_data:
+      click_cnt: 4
+      entity_id: binary_sensor.shelly_dimmer_01_switch
+
+  action:
+    - service: switch.toggle
+      entity_id: switch.plug_02
