@@ -141,13 +141,6 @@ homekit:
       name: Gang
     input_boolean.bedroom_in_bed:
       name: In bed
-    input_boolean.wakeup_enabled:
-      name: Wekker
-
-timer:
-  zigbee_permit_join:
-    name: Time remaining
-    duration: 300
 
 tado:
   username: !secret tado_user
@@ -158,6 +151,12 @@ emulated_roku:
     - name: HASS
       listen_port: 8060
       host_ip: 10.10.1.1
+
+shelly:
+  sensors:
+    - 'switch'
+  discover_by_ip:
+    - '10.10.1.136'
 
 automation: !include_dir_merge_list automation
 binary_sensor: !include_dir_merge_list binary_sensor

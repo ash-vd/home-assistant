@@ -1,0 +1,7 @@
+- alias: "Shelly turn off and then on quickly, any switch"
+  trigger:
+    platform: event
+    event_type: shelly_switch_click
+    event_data:
+      click_cnt: 2
+      state: True
