@@ -1,4 +1,7 @@
 workroom_off:
   sequence:
     - service: homeassistant.turn_off
-      entity_id: light.zigbee_e14_2_light
+      entity_id:
+        - light.shelly_dimmer_01
+        - switch.plug_02
+
