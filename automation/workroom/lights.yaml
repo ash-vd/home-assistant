@@ -6,7 +6,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      below: 150
+      below: 200
       for:
         minutes: 1
 
@@ -19,7 +19,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_occupancy_8_illuminance
-        below: 150
+        below: 200
 
   action:
     - service: light.turn_on
@@ -35,7 +35,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 200
+      above: 250
       for:
         minutes: 3
 
@@ -60,9 +60,9 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 200
+      above: 250
       for:
-        minutes: 5
+        minutes: 7
 
   action:
     - service: light.turn_off
