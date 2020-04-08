@@ -54,9 +54,9 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 130
+      above: 150
       for:
-        minutes: 3
+        minutes: 5
 
   action:
     - service: light.turn_off
