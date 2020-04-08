@@ -6,7 +6,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      below: 100
+      below: 150
       for:
         minutes: 1
 
@@ -19,7 +19,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_occupancy_8_illuminance
-        below: 100
+        below: 150
 
   action:
     - service: light.turn_on
@@ -33,6 +33,12 @@
       entity_id: input_boolean.workroom_presence
       to: "off"
 
+    - platform: numeric_state
+      entity_id: sensor.zigbee_occupancy_8_illuminance
+      above: 200
+      for:
+        minutes: 3
+
   condition:
     condition: state
     entity_id: light.shelly_dimmer_01
@@ -42,7 +48,7 @@
     - service: light.turn_on
       entity_id: light.shelly_dimmer_01
       data:
-        brightness_pct: 25
+        brightness_pct: 30
 
 - alias: Verlichting - Werkkamer - Uit
   trigger:
@@ -54,7 +60,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 150
+      above: 200
       for:
         minutes: 5
 
