@@ -11,4 +11,4 @@ livingroom:
     - light.zigbee_e27c_2_light
     - light.zigbee_e27c_3_light
     - light.wifi_e27cwww_02
-    - switch.plug_07
+    - switch.sonoff_03

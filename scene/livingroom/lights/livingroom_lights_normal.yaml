@@ -31,7 +31,7 @@
       brightness: 180
       kelvin: 3200
 
-    switch.plug_07: on
+    switch.sonoff_03: on
 
     input_boolean.homekit_livingroom: on
 

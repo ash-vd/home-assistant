@@ -134,7 +134,7 @@ views:
             entity: light.wifi_e27cwww_02
             toggle: true
 
-          - switch.plug_07
+          - switch.sonoff_03
 
       - type: entities
         title: Keuken

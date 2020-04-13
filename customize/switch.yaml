@@ -2,7 +2,7 @@ switch.plug_06:
   friendly_name: Licht
   icon: mdi:lightbulb
 
-switch.plug_07:
+switch.sonoff_03:
   friendly_name: Staand
   icon: mdi:lightbulb
 
