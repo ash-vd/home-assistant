@@ -5,7 +5,6 @@ cards:
   - type: glance
     title: Scene
     show_state: false
-    show_icon: false
     column_width: 25%
     entities:
       - entity: scene.livingroom_lights_off
