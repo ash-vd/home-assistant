@@ -1,4 +1,4 @@
-- name: livingroom_lights_theater
+- name: livingroom_lights_dimmed
   entities:
     light.shelly_01:
       state: off

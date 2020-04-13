@@ -1,4 +1,4 @@
-- name: livingroom_lights_full
+- name: livingroom_lights_focus
   entities:
     light.shelly_01:
       state: on

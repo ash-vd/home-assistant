@@ -5,20 +5,40 @@ cards:
   - type: glance
     title: Scene
     show_state: false
-    column_width: 33%
+    show_icon: false
+    column_width: 25%
     entities:
       - entity: scene.livingroom_lights_off
+        name: Uit
         tap_action:
           action: call-service
           service: scene.turn_on
           service_data:
-            entity_id: scene.livingroom_lights_normal
+            entity_id: scene.livingroom_lights_off
+
       - entity: scene.livingroom_lights_normal
+        name: Normaal
         tap_action:
           action: call-service
           service: scene.turn_on
           service_data:
             entity_id: scene.livingroom_lights_normal
+
+      - entity: scene.livingroom_lights_focus
+          name: Normaal
+          tap_action:
+            action: call-service
+            service: scene.turn_on
+            service_data:
+              entity_id: scene.livingroom_lights_focus
+
+      - entity: scene.livingroom_lights_dimmed
+          name: Gedimd
+          tap_action:
+            action: call-service
+            service: scene.turn_on
+            service_data:
+              entity_id: scene.livingroom_lights_dimmed
 
   - type: thermostat
     entity: climate.woonkamer

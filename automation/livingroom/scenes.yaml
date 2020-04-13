@@ -9,11 +9,11 @@
       data_template:
         entity_id: >
           {% if is_state("input_select.livingroom_scene", "Aan") %}
-            scene.livingroom_lights_full
+            scene.livingroom_lights_focus
           {% elif is_state("input_select.livingroom_scene", "Normaal") %}
             scene.livingroom_lights_normal
           {% elif is_state("input_select.livingroom_scene", "Theater") %}
-            scene.livingroom_lights_theater
+            scene.livingroom_lights_dimmed
           {% elif is_state("input_select.livingroom_scene", "Nacht") %}
             scene.livingroom_lights_night
           {% elif is_state("input_select.livingroom_scene", "Uit") %}
