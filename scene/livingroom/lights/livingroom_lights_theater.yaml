@@ -10,22 +10,22 @@
     light.zigbee_e27c_1_light:
       state: on
       brightness: 45
-      color_brightness: 550
+      color_temp: 550
 
     light.zigbee_e27c_2_light:
       state: on
       brightness: 160
-      color_brightness: 550
+      color_temp: 550
 
     light.zigbee_e27c_3_light:
       state: on
       brightness: 45
-      color_brightness: 550
+      color_temp: 550
 
     light.wifi_e27cwww_02:
       state: on
       brightness: 80,
-      color_brightness: 350
+      color_temp: 350
 
     switch.plug_07: off
 
