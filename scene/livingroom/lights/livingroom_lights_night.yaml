@@ -28,5 +28,7 @@
       brightness: 90
       kelvin: 2350
 
+    switch.plug_07: off
+
     input_select.livingroom_scene:
       state: "Nacht"
