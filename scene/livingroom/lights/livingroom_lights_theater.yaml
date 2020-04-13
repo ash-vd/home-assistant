@@ -6,30 +6,26 @@
     light.zigbee_e14_3_light:
       state: on
       brightness: 30
-      transition: 6
 
     light.zigbee_e27c_1_light:
       state: on
       brightness: 45
-      kelvin: 1750
-      transition: 5
+      color_brightness: 550
 
     light.zigbee_e27c_2_light:
       state: on
       brightness: 160
-      kelvin: 1750
-      transition: 5
+      color_brightness: 550
 
     light.zigbee_e27c_3_light:
       state: on
       brightness: 45
-      kelvin: 1750
-      transition: 5
+      color_brightness: 550
 
     light.wifi_e27cwww_02:
       state: on
       brightness: 80,
-      kelvin: 3000
+      color_brightness: 350
 
     switch.plug_07: off
 
