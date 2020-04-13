@@ -25,20 +25,20 @@ cards:
             entity_id: scene.livingroom_lights_normal
 
       - entity: scene.livingroom_lights_focus
-          name: Normaal
-          tap_action:
-            action: call-service
-            service: scene.turn_on
-            service_data:
-              entity_id: scene.livingroom_lights_focus
+        name: Normaal
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.livingroom_lights_focus
 
       - entity: scene.livingroom_lights_dimmed
-          name: Gedimd
-          tap_action:
-            action: call-service
-            service: scene.turn_on
-            service_data:
-              entity_id: scene.livingroom_lights_dimmed
+        name: Gedimd
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.livingroom_lights_dimmed
 
   - type: thermostat
     entity: climate.woonkamer
