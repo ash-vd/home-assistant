@@ -65,4 +65,4 @@ cards:
         entity: light.wifi_e27cwww_02
         toggle: true
 
-      - switch.sonoff_03
+      - switch.plug_07

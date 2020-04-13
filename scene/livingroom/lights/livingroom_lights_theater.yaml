@@ -31,7 +31,7 @@
       brightness: 80,
       kelvin: 3000
 
-    switch.sonoff_03: off
+    switch.plug_07: off
 
     input_select.livingroom_scene:
       state: "Theater"

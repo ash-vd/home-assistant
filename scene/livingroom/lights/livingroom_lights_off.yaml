@@ -6,7 +6,7 @@
     light.zigbee_e27c_2_light: off
     light.zigbee_e27c_3_light: off
     light.wifi_e27cwww_02: off
-    switch.sonoff_03: off
+    switch.plug_07: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:
       state: "Uit"
