@@ -2,6 +2,24 @@ path: livingroom
 title: Woonkamer
 icon: mdi:home-outline
 cards:
+  - type: glance
+    title: Scene
+    show_state: false
+    column_width: 33%
+    entities:
+      - entity: scene.livingroom_lights_off
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.livingroom_lights_normal
+      - entity: scene.livingroom_lights_normal
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.livingroom_lights_normal
+
   - type: thermostat
     entity: climate.woonkamer
 

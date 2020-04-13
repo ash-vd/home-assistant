@@ -16,10 +16,6 @@
       for:
         minutes: 1
 
-    # - platform: state
-    #   entity_id: binary_sensor.livingroom_tv_on
-    #   to: "off"
-
   condition:
     condition: and
     conditions:
@@ -38,10 +34,6 @@
       - condition: state
         entity_id: input_boolean.livingroom_auto
         state: "on"
-
-      # - condition: state
-      #   entity_id: binary_sensor.livingroom_tv_on
-      #   state: "off"
 
   action:
     - service: homeassistant.turn_on
