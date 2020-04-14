@@ -252,7 +252,7 @@ views:
 
   - !include lovelace/livingroom.yaml
 
-  - !include lovelace/sensors.yaml
+  - !include lovelace/workroom.yaml
 
   - title: SensorenOld
     icon: mdi:cogs
