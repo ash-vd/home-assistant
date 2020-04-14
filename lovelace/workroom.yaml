@@ -5,6 +5,7 @@ cards:
 
   - type: sensor
     entity: sensor.zigbee_occupancy_8_illuminance
+    graph: line
     hours_to_show: 2
     detail: 2
 
