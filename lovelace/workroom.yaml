@@ -3,12 +3,6 @@ title: Werkkamer
 icon: mdi:home-outline
 cards:
 
-  - type: entities
-    entities:
-      - sensor.zigbee_occupancy_8_illuminance
-      - binary_sensor.zigbee_occupancy_8_occupancy
-      - input_boolean.workroom_presence
-
   - type: custom:simple-thermostat
     entity: climate.werkkamer
     step_layout: row
@@ -17,9 +11,16 @@ cards:
     control: false
 
   - type: entities
+      title: Sensoren
+      entities:
+        - sensor.zigbee_occupancy_8_illuminance
+        - binary_sensor.zigbee_occupancy_8_occupancy
+        - input_boolean.workroom_presence
+
+  - type: entities
     show_header_toggle: false
     entities:
-      - climate.werkkamer
+#      - climate.werkkamer
 
       - switch.plug_02
 
