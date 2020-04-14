@@ -1,5 +1,5 @@
 hallway_upstairs_off:
   sequence:
-    - service: script.turn_on
-      entity_id: script.hallway_upstairs_multiroom_off
+    - service: switch.turn_off
+      entity_id: switch.plug_06
 

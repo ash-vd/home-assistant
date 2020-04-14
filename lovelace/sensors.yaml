@@ -1,0 +1,12 @@
+path: sensors
+title: Presence
+icon: mdi:home-outline
+cards:
+  - type: entities
+    title: Sensoren
+    entities:
+      - input_boolean.livingroom_presence
+      - input_boolean.livingroom_auto
+      - binary_sensor.zigbee_contact_1_contact
+      - group.livingroom_presence
+      - group.livingroom_dark_display

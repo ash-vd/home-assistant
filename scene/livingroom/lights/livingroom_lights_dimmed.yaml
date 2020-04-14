@@ -24,7 +24,7 @@
 
     light.wifi_e27cwww_02:
       state: on
-      brightness: 80,
+      brightness: 80
       color_temp: 350
 
     switch.plug_07: off

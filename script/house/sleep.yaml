@@ -9,5 +9,10 @@ house_sleep:
       data:
         temperature: 15
 
+    - service: climate.set_temperature
+      entity_id: climate.werkkamer
+      data:
+        temperature: 15
+
     - service: script.turn_on
       entity_id: script.house_off

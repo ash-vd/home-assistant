@@ -252,8 +252,9 @@ views:
 
   - !include lovelace/livingroom.yaml
 
+  - !include lovelace/sensors.yaml
 
-  - title: Sensoren
+  - title: SensorenOld
     icon: mdi:cogs
     cards:
       - type: entities

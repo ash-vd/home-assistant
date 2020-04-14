@@ -1,0 +1,22 @@
+path: livingroom
+title: Werkkamer
+icon: mdi:home-outline
+cards:
+
+  - type: sensor
+    entities: sensor.zigbee_occupancy_8_illuminance
+#    hours_to_show: 2
+#    points_per_hour: 8
+
+  - type: custom:simple-thermostat
+    entity: climate.werkkamer
+    step_layout: row
+    name: false
+    icon: false
+    control: false
+
+  - type: light
+    entity: light.light.shelly_dimmer_01
+
+  - type: entity
+    entity: switch.plug_02

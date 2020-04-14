@@ -24,7 +24,7 @@ cards:
             entity_id: scene.livingroom_lights_normal
 
       - entity: scene.livingroom_lights_focus
-        name: Normaal
+        name: Focus
         tap_action:
           action: call-service
           service: scene.turn_on
@@ -38,9 +38,6 @@ cards:
           service: scene.turn_on
           service_data:
             entity_id: scene.livingroom_lights_dimmed
-
-  - type: thermostat
-    entity: climate.woonkamer
 
   - type: custom:mini-graph-card
     entities:
@@ -64,16 +61,6 @@ cards:
     card:
       type: media-control
       entity: media_player.chromecast_livingroom
-
-  - type: glance
-    title: Sensoren
-    entities:
-      - input_boolean.livingroom_presence
-      - input_boolean.livingroom_auto
-      - binary_sensor.zigbee_contact_1_contact
-      - group.livingroom_presence
-      - group.livingroom_dark_display
-      - binary_sensor.zigbee_smoke_1
 
   - type: entities
     title: Verlichting

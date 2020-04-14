@@ -27,7 +27,7 @@
       data:
         brightness_pct: 75
 
-- alias: Verlichting - Werkkamer - Standby - 1
+- alias: Verlichting - Werkkamer - Standby
   trigger:
     - platform: state
       entity_id: input_boolean.workroom_presence
@@ -49,31 +49,6 @@
       entity_id: light.shelly_dimmer_01
       data:
         brightness_pct: 40
-
-- alias: Verlichting - Werkkamer - Standby - 2
-  trigger:
-    - platform: state
-      entity_id: input_boolean.workroom_presence
-      to: "off"
-      for:
-        minutes: 1
-
-    - platform: numeric_state
-      entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 250
-      for:
-        minutes: 4
-
-  condition:
-    condition: state
-    entity_id: light.shelly_dimmer_01
-    state: "on"
-
-  action:
-    - service: light.turn_on
-      entity_id: light.shelly_dimmer_01
-      data:
-        brightness_pct: 20
 
 - alias: Verlichting - Werkkamer - Uit
   trigger:
