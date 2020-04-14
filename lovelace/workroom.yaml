@@ -3,11 +3,11 @@ title: Werkkamer
 icon: mdi:home-outline
 cards:
 
-  - type: sensor
-    entity: sensor.zigbee_occupancy_8_illuminance
-    graph: line
-    hours_to_show: 2
-    detail: 2
+  - type: entities
+    entities:
+      - sensor.zigbee_occupancy_8_illuminance
+      - binary_sensor.zigbee_occupancy_8_occupancy
+      - input_boolean.workroom_presence
 
   - type: custom:simple-thermostat
     entity: climate.werkkamer
