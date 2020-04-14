@@ -21,3 +21,5 @@ cards:
 
   - type: entity
     entity: switch.plug_02
+    tap_action:
+      action: toggle
