@@ -100,11 +100,8 @@ stream:
 camera:
   - platform: generic
     name: Voordeur
-    authentication: digest
     still_image_url: !secret camera1_stream
     stream_source: !secret camera1_stream
-    username: !secret camera1_username
-    password: !secret camera1_password
 
 cast:
   media_player:
