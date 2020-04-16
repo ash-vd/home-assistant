@@ -1,5 +1,0 @@
-- platform: group
-  name: all_devices
-  services:
-    - service: ashwiphone
-    - service: sm_g960f

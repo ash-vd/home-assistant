@@ -189,3 +189,10 @@ rest_command:
 
 shell_command:
   doorbell_snapshot: !secret shell_doorbell_snapshot
+
+notify:
+  - name: all_devices
+    platform: group
+    services:
+      - service: mobile_app_ashwiphone
+      - service: mobile_app_sm_g960f
