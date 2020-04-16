@@ -11,11 +11,11 @@ cards:
     control: false
 
   - type: entities
-      title: Sensoren
-      entities:
-        - sensor.zigbee_occupancy_8_illuminance
-        - binary_sensor.zigbee_occupancy_8_occupancy
-        - input_boolean.workroom_presence
+    title: Sensoren
+    entities:
+      - sensor.zigbee_occupancy_8_illuminance
+      - binary_sensor.zigbee_occupancy_8_occupancy
+      - input_boolean.workroom_presence
 
   - type: entities
     show_header_toggle: false
