@@ -1,0 +1,21 @@
+- alias: Deurbel - Entree
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.zigbee_contact_4_contact
+      to: "on"
+
+  condition:
+    - condition: template
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.brievenbus_entree.attributes.last_triggered)) / 60) | int > 2 }}"
+
+  action:
+    - service: shell_command.doorbell_snapshot
+    - service: notify.mobile_app_ashwiphone
+      data:
+        message: "Er is post!"
+        data:
+          attachment:
+            url: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
+            content-type: jpeg
+            hide-thumbnail: false
+
