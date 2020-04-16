@@ -12,7 +12,7 @@
     - service: shell_command.doorbell_snapshot
     - service: notify.all_devices
       data:
-        title: "Er is post!"
+        message: "Er is post!"
         data:
           image: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
           attachment:
