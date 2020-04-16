@@ -185,3 +185,7 @@ rest_command:
       accept: "application/json, text/html"
     payload: '{"geolocation":{"latitude": 24.626895, "longitude": -77.938657 },"timestamp":"{{ now().isoformat() }}","accuracy":32}'
     content_type: "application/json; charset=utf-8"
+
+
+shell_command:
+  doorbell_snapshot: !secret shell_doorbell_snapshot
