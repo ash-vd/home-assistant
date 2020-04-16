@@ -1,5 +1,4 @@
 - alias: Brievenbus - Entree
-  initial_state: 'false'
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_contact_4_contact
@@ -7,9 +6,17 @@
 
   condition:
     - condition: template
-      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.brievenbus_entree.attributes.last_triggered)) / 60) | int > 2 }}"
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.deurbel_entree.attributes.last_triggered)) / 60) | int > 2 }}"
 
   action:
-    service: notify.mobile_app_ashwiphone
-    data:
-      message: "Er is post!"
+    - service: shell_command.doorbell_snapshot
+    - service: notify.all_devices
+      data:
+        title: "Er is post!"
+        data:
+          image: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
+          attachment:
+            url: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
+            content-type: jpeg
+            hide-thumbnail: false
+
