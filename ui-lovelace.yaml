@@ -134,7 +134,9 @@ views:
             entity: light.wifi_e27cwww_02
             toggle: true
 
-          - switch.plug_07
+          - type: custom:slider-entity-row
+            entity: light.shelly_dimmer_02
+            toggle: true
 
       - type: entities
         title: Keuken
