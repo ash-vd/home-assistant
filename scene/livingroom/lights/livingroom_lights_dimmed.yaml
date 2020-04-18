@@ -27,7 +27,7 @@
       brightness: 80
       color_temp: 350
 
-    entity_id: light.shelly_dimmer_02
+    light.shelly_dimmer_02:
       state: on
       brightness: 10
 

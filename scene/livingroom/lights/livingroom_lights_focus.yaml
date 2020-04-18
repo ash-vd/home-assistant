@@ -27,7 +27,7 @@
       brightness: 255
       kelvin: 6000
 
-    entity_id: light.shelly_dimmer_02
+    light.shelly_dimmer_02:
       state: on
       brightness: 100
 
