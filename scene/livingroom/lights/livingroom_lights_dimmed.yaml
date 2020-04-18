@@ -29,7 +29,7 @@
 
     light.shelly_dimmer_02:
       state: on
-      brightness: 10
+      brightness: 25
 
     input_select.livingroom_scene:
       state: "Gedimd"

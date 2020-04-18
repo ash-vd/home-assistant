@@ -29,7 +29,7 @@
 
     light.shelly_dimmer_02:
       state: on
-      brightness: 100
+      brightness: 255
 
     input_select.livingroom_scene:
       state: "Focus"

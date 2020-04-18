@@ -29,7 +29,7 @@
 
     light.shelly_dimmer_02:
       state: on
-      brightness: 60
+      brightness: 160
 
     input_boolean.homekit_livingroom: on
 
