@@ -155,6 +155,7 @@ shelly:
     - 'switch'
   discover_by_ip:
     - '10.10.1.135'
+    - '10.10.1.136'
 
 automation: !include_dir_merge_list automation
 binary_sensor: !include_dir_merge_list binary_sensor

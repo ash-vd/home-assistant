@@ -27,7 +27,9 @@
       brightness: 255
       kelvin: 6000
 
-    switch.plug_07: on
+    entity_id: light.shelly_dimmer_02
+      state: on
+      brightness: 100
 
     input_select.livingroom_scene:
-      state: "Aan"
+      state: "Focus"
