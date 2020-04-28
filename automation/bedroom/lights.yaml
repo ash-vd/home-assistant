@@ -26,7 +26,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.shelly_05
+      entity_id: light.shelly_02
 
 - alias: Lightning - Bedroom - Off
   trigger:
@@ -42,4 +42,4 @@
 
   action:
     - service: homeassistant.turn_off
-      entity_id: light.shelly_05
+      entity_id: light.shelly_02

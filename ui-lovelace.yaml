@@ -245,7 +245,7 @@ views:
           - type: section
             label: Verlichting
 
-          - light.shelly_05
+          - light.shelly_02
 
           - type: custom:slider-entity-row
             entity: light.bedroom_sink
