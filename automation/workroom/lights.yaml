@@ -37,7 +37,7 @@
       entity_id: sensor.zigbee_occupancy_8_illuminance
       above: 300
       for:
-        minutes: 3
+        minutes: 5
 
   condition:
     condition: state
@@ -62,7 +62,7 @@
       entity_id: sensor.zigbee_occupancy_8_illuminance
       above: 300
       for:
-        minutes: 7
+        minutes: 9
 
   action:
     - service: light.turn_off
