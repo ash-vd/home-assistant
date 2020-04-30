@@ -35,7 +35,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 250
+      above: 300
       for:
         minutes: 3
 
@@ -60,7 +60,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_occupancy_8_illuminance
-      above: 250
+      above: 300
       for:
         minutes: 7
 
