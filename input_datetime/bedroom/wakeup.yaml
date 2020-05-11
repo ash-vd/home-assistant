@@ -1,5 +1,0 @@
-wakeup_time:
-  name: "Start at"
-  has_time: true
-  has_date: false
-  initial: "06:30"
