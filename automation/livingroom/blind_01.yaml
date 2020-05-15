@@ -3,6 +3,6 @@
     platform: state
     entity_id: input_number.blind_01
   action:
-    - service: esphome.blind_01
+    - service: esphome.blind_01_control_stepper
       data_template:
         target: '{{ trigger.to_state.state | int }}'
