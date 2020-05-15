@@ -163,6 +163,7 @@ binary_sensor: !include_dir_merge_list binary_sensor
 group: !include_dir_merge_named group
 input_boolean: !include_dir_merge_named input_boolean
 input_datetime: !include_dir_merge_named input_datetime
+input_number: !include_dir_merge_named input_number
 input_select: !include_dir_merge_named input_select
 light: !include_dir_merge_list light
 media_player: !include_dir_merge_list media_player
