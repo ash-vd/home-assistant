@@ -1,0 +1,8 @@
+- alias: blind_01 to esp
+  trigger:
+    platform: state
+    entity_id: input_number.blind_01
+  action:
+    - service: esphome.blind_01
+      data_template:
+        target: '{{ trigger.to_state.state | int }}'
