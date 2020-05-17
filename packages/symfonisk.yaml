@@ -23,7 +23,7 @@ script:
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_keuken
         data_template:
-          volume_level: '{{ states.media_player.snapcast_client_keuken.attributes.volume_level - 0.01 }}'
+          volume_level: '{{ states.media_player.snapcast_client_keuken.attributes.volume_level - 0.02 }}'
 
       - service: script.turn_off
         entity_id: script.symfonisk_lower_volume
@@ -47,7 +47,7 @@ script:
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_keuken
         data_template:
-          volume_level: '{{ states.media_player.snapcast_client_keuken.attributes.volume_level + 0.01 }}'
+          volume_level: '{{ states.media_player.snapcast_client_keuken.attributes.volume_level + 0.02 }}'
 
       - service: script.turn_off
         entity_id: script.symfonisk_raise_volume
