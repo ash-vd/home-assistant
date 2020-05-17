@@ -14,11 +14,11 @@ script:
         entity_id: input_boolean.symfonisk_volume
         state: 'on'
 
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.symfonisk_dummy_delay
-
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.symfonisk_dummy_delay
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.symfonisk_dummy_delay
+#
+#      - service: input_boolean.turn_off
+#        entity_id: input_boolean.symfonisk_dummy_delay
 
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_keuken
@@ -38,11 +38,11 @@ script:
         entity_id: input_boolean.symfonisk_volume
         state: 'off'
 
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.symfonisk_dummy_delay
-
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.symfonisk_dummy_delay
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.symfonisk_dummy_delay
+#
+#      - service: input_boolean.turn_off
+#        entity_id: input_boolean.symfonisk_dummy_delay
 
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_keuken
