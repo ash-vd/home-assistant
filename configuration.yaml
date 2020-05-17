@@ -167,7 +167,7 @@ input_number: !include_dir_merge_named input_number
 input_select: !include_dir_merge_named input_select
 light: !include_dir_merge_list light
 media_player: !include_dir_merge_list media_player
-packages: !includ_dir_merge_named packages
+packages: !include_dir_named packages
 sensor: !include_dir_merge_list sensor
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_named script
