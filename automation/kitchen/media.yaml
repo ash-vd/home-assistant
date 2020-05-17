@@ -13,7 +13,7 @@
         volume_level: >
           {% set remote = state_attr('sensor.zigbee_remote_01_action', 'brightness') | int %}
           {% set volume = state_attr('media_player.snapcast_client_keuken', 'volume_level') | int  %}
-          {% set increment = 0.5  %}
+          {% set increment = 0.05  %}
           {% if remote > 245 %}
             {% if volume  < 1 %}
               {{ (volume + increment) }}
