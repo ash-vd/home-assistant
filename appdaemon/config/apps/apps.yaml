@@ -54,9 +54,3 @@ Occupancy Simulator:
   random_entrance_number: 2
   random_entrance_on_1: light.wifi_e27cwww_01
   random_entrance_off_1: light.wifi_e27cwww_01
-
-symfonisk:
-  module: symfonisk
-  class: SymfoniskController
-  remote_id: sensor.zigbee_remote_01_action
-  media_player_id: media_player.snapcast_client_keuken
