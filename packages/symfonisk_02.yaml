@@ -7,7 +7,7 @@ input_boolean:
     name: Symfonisk up or down
     initial: off
 
-script:symfonisk_02.yaml
+script:
   symfonisk_02_lower_volume:
     sequence:
       - condition: state
