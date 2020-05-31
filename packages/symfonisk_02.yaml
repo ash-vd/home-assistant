@@ -2,7 +2,6 @@ input_boolean:
   symfonisk_02_volume:
     name: Symfonisk Volume
     initial: off
-  symfonisk_02_dummy_delay:
   symfonisk_02_updown:
     name: Symfonisk up or down
     initial: off
@@ -14,11 +13,11 @@ script:
         entity_id: input_boolean.symfonisk_02_volume
         state: 'on'
 
-#      - service: input_boolean.turn_on
-#        entity_id: input_boolean.symfonisk_02_dummy_delay
-#
-#      - service: input_boolean.turn_off
-#        entity_id: input_boolean.symfonisk_02_dummy_delay
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.symfonisk_02_dummy_delay
+
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.symfonisk_02_dummy_delay
 
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_hal
@@ -38,11 +37,11 @@ script:
         entity_id: input_boolean.symfonisk_02_volume
         state: 'off'
 
-#      - service: input_boolean.turn_on
-#        entity_id: input_boolean.symfonisk_02_dummy_delay
-#
-#      - service: input_boolean.turn_off
-#        entity_id: input_boolean.symfonisk_02_dummy_delay
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.symfonisk_02_dummy_delay
+
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.symfonisk_02_dummy_delay
 
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_hal
