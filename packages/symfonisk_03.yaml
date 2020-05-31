@@ -59,7 +59,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee/zigbee_remote_01'
+        topic: 'zigbee/zigbee_remote_03'
     condition:
       - condition: template
         value_template: "{{ 'skip_forward' in trigger.payload }}"
@@ -71,7 +71,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee/zigbee_remote_01'
+        topic: 'zigbee/zigbee_remote_03'
     condition:
       - condition: template
         value_template: "{{ 'skip_backward' in trigger.payload }}"
@@ -83,7 +83,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee/zigbee_remote_01'
+        topic: 'zigbee/zigbee_remote_03'
     condition:
       - condition: template
         value_template: "{{ 'play_pause' in trigger.payload }}"
@@ -95,7 +95,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee/zigbee_remote_01'
+        topic: 'zigbee/zigbee_remote_03'
     condition:
       - condition: template
         value_template: "{{ 'rotate_right' in trigger.payload }}"
@@ -112,7 +112,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee/zigbee_remote_01'
+        topic: 'zigbee/zigbee_remote_03'
     condition:
       - condition: template
         value_template: "{{ 'rotate_stop' in trigger.payload }}"
@@ -128,7 +128,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee/zigbee_remote_01'
+        topic: 'zigbee/zigbee_remote_03'
     condition:
       - condition: template
         value_template: "{{ 'rotate_left' in trigger.payload }}"
@@ -145,7 +145,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee/zigbee_remote_01'
+        topic: 'zigbee/zigbee_remote_03'
     condition:
       - condition: template
         value_template: "{{ 'rotate_stop' in trigger.payload }}"
