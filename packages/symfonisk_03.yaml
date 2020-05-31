@@ -22,7 +22,7 @@ script:
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_slaapkamer
         data_template:
-          volume_level: '{{ states.media_player.snapcast_client_slaapkamer.attributes.volume_level - 0.02 }}'
+          volume_level: '{{ states.media_player.snapcast_client_slaapkamer.attributes.volume_level - 0.04 }}'
 
 #      - service: script.turn_off
 #        entity_id: script.symfonisk_03_lower_volume
@@ -46,7 +46,7 @@ script:
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_slaapkamer
         data_template:
-          volume_level: '{{ states.media_player.snapcast_client_slaapkamer.attributes.volume_level + 0.02 }}'
+          volume_level: '{{ states.media_player.snapcast_client_slaapkamer.attributes.volume_level + 0.04 }}'
 
 #      - service: script.turn_off
 #        entity_id: script.symfonisk_03_raise_volume
