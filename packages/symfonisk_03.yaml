@@ -9,50 +9,50 @@ input_boolean:
 script:
   symfonisk_03_lower_volume:
     sequence:
-      - condition: state
-        entity_id: input_boolean.symfonisk_03_volume
-        state: 'on'
-
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.symfonisk_03_dummy_delay
-
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.symfonisk_03_dummy_delay
+#      - condition: state
+#        entity_id: input_boolean.symfonisk_03_volume
+#        state: 'on'
+#
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.symfonisk_03_dummy_delay
+#
+#      - service: input_boolean.turn_off
+#        entity_id: input_boolean.symfonisk_03_dummy_delay
 
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_slaapkamer
         data_template:
           volume_level: '{{ states.media_player.snapcast_client_slaapkamer.attributes.volume_level - 0.02 }}'
 
-      - service: script.turn_off
-        entity_id: script.symfonisk_03_lower_volume
-
-      - service: script.turn_on
-        entity_id: script.symfonisk_03_lower_volume
+#      - service: script.turn_off
+#        entity_id: script.symfonisk_03_lower_volume
+#
+#      - service: script.turn_on
+#        entity_id: script.symfonisk_03_lower_volume
 
   symfonisk_03_raise_volume:
     sequence:
 
-      - condition: state
-        entity_id: input_boolean.symfonisk_03_volume
-        state: 'off'
-
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.symfonisk_03_dummy_delay
-
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.symfonisk_03_dummy_delay
+#      - condition: state
+#        entity_id: input_boolean.symfonisk_03_volume
+#        state: 'off'
+#
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.symfonisk_03_dummy_delay
+#
+#      - service: input_boolean.turn_off
+#        entity_id: input_boolean.symfonisk_03_dummy_delay
 
       - service: media_player.volume_set
         entity_id: media_player.snapcast_client_slaapkamer
         data_template:
           volume_level: '{{ states.media_player.snapcast_client_slaapkamer.attributes.volume_level + 0.02 }}'
 
-      - service: script.turn_off
-        entity_id: script.symfonisk_03_raise_volume
-
-      - service: script.turn_on
-        entity_id: script.symfonisk_03_raise_volume
+#      - service: script.turn_off
+#        entity_id: script.symfonisk_03_raise_volume
+#
+#      - service: script.turn_on
+#        entity_id: script.symfonisk_03_raise_volume
 
 automation:
   - alias: symfonisk skip forward
@@ -101,28 +101,28 @@ automation:
         value_template: "{{ 'rotate_right' in trigger.payload }}"
 
     action:
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.symfonisk_03_volume
+#      - service: input_boolean.turn_off
+#        entity_id: input_boolean.symfonisk_03_volume
       - service: script.turn_on
         entity_id: script.symfonisk_03_raise_volume
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.symfonisk_03_updown
+#      - service: input_boolean.turn_off
+#        entity_id: input_boolean.symfonisk_03_updown
 
-  - alias: symfonisk raise volume off
-    initial_state: 'on'
-    trigger:
-      - platform: mqtt
-        topic: 'zigbee/zigbee_remote_03'
-    condition:
-      - condition: template
-        value_template: "{{ 'rotate_stop' in trigger.payload }}"
-      - condition: state
-        entity_id: input_boolean.symfonisk_03_updown
-        state: 'off'
-
-    action:
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.symfonisk_03_volume
+#  - alias: symfonisk raise volume off
+#    initial_state: 'on'
+#    trigger:
+#      - platform: mqtt
+#        topic: 'zigbee/zigbee_remote_03'
+#    condition:
+#      - condition: template
+#        value_template: "{{ 'rotate_stop' in trigger.payload }}"
+#      - condition: state
+#        entity_id: input_boolean.symfonisk_03_updown
+#        state: 'off'
+#
+#    action:
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.symfonisk_03_volume
 
   - alias: symfonisk lower volume on
     initial_state: 'on'
@@ -134,25 +134,25 @@ automation:
         value_template: "{{ 'rotate_left' in trigger.payload }}"
 
     action:
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.symfonisk_03_volume
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.symfonisk_03_volume
       - service: script.turn_on
         entity_id: script.symfonisk_03_lower_volume
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.symfonisk_03_updown
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.symfonisk_03_updown
 
-  - alias: symfonisk lower volume off
-    initial_state: 'on'
-    trigger:
-      - platform: mqtt
-        topic: 'zigbee/zigbee_remote_03'
-    condition:
-      - condition: template
-        value_template: "{{ 'rotate_stop' in trigger.payload }}"
-      - condition: state
-        entity_id: input_boolean.symfonisk_03_updown
-        state: 'on'
-
-    action:
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.symfonisk_03_volume
+#  - alias: symfonisk lower volume off
+#    initial_state: 'on'
+#    trigger:
+#      - platform: mqtt
+#        topic: 'zigbee/zigbee_remote_03'
+#    condition:
+#      - condition: template
+#        value_template: "{{ 'rotate_stop' in trigger.payload }}"
+#      - condition: state
+#        entity_id: input_boolean.symfonisk_03_updown
+#        state: 'on'
+#
+#    action:
+#      - service: input_boolean.turn_off
+#        entity_id: input_boolean.symfonisk_03_volume
