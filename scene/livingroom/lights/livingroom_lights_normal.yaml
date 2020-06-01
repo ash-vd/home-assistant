@@ -31,7 +31,7 @@
       state: on
       brightness: 160
 
-    light.light.gu10_erker:
+    light.gu10_erker:
       state: on
       brightness: 160
 

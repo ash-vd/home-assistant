@@ -7,7 +7,7 @@
     light.zigbee_e27c_3_light: off
     light.wifi_e27cwww_02: off
     light.shelly_dimmer_02: off
-    light.light.gu10_erker: off
+    light.gu10_erker: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:
       state: "Uit"
