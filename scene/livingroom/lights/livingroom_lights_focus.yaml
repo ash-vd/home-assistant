@@ -31,5 +31,9 @@
       state: on
       brightness: 255
 
+    light.light.gu10_erker:
+      state: on
+      brightness: 255
+
     input_select.livingroom_scene:
       state: "Focus"

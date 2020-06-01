@@ -138,6 +138,10 @@ views:
             entity: light.shelly_dimmer_02
             toggle: true
 
+          - type: custom:slider-entity-row
+              entity: light.gu10_erker
+              toggle: true
+
       - type: entities
         title: Keuken
         show_header_toggle: false

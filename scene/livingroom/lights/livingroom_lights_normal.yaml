@@ -31,6 +31,10 @@
       state: on
       brightness: 160
 
+    light.light.gu10_erker:
+      state: on
+      brightness: 160
+
     input_boolean.homekit_livingroom: on
 
     input_select.livingroom_scene:

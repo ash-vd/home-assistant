@@ -31,5 +31,9 @@
       state: on
       brightness: 25
 
+    light.light.gu10_erker:
+      state: on
+      brightness: 25
+
     input_select.livingroom_scene:
       state: "Gedimd"
