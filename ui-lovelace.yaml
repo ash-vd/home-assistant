@@ -306,7 +306,7 @@ views:
         entities:
           - type: section
           - input_boolean.workroom_presence
-          - binary_sensor.zigbee_occupancy_8_occupancy
+          - binary_sensor.movement_workroom
           - sensor.zigbee_occupancy_8_illuminance
 
       - type: custom:group-card
