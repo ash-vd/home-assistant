@@ -306,8 +306,8 @@ views:
         entities:
           - type: section
           - input_boolean.workroom_presence
-          - binary_sensor.movement_workroom
-          - sensor.illuminance_workroom
+          - binary_sensor.sensor_workroom_occupancy
+          - sensor.sensor_workroom_illuminance
 
       - type: custom:group-card
         card:
