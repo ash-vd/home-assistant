@@ -29,7 +29,7 @@ sensor.zigbee_occupancy_7_illuminance:
   device_class: illuminance
   unit_of_measurement: lux
 
-sensor.zigbee_occupancy_8_illuminance:
+sensor.illuminance_workroom:
   friendly_name: Lichtsterkte
   device_class: illuminance
   unit_of_measurement: lux

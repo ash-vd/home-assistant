@@ -307,7 +307,7 @@ views:
           - type: section
           - input_boolean.workroom_presence
           - binary_sensor.movement_workroom
-          - sensor.zigbee_occupancy_8_illuminance
+          - sensor.illuminance_workroom
 
       - type: custom:group-card
         card:

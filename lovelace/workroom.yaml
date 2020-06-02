@@ -13,7 +13,7 @@ cards:
   - type: entities
     title: Sensoren
     entities:
-      - sensor.zigbee_occupancy_8_illuminance
+      - sensor.illuminance_workroom
       - binary_sensor.movement_workroom
       - input_boolean.workroom_presence
 
