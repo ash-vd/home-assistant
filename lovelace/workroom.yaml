@@ -13,7 +13,7 @@ cards:
   - type: entities
     title: Sensoren
     entities:
-      - sensor.sensor_workroom_illuminance
+      - sensor.occupancy_workroom_illuminance
       - binary_sensor.sensor_workroom_occupancy
       - input_boolean.workroom_presence
 

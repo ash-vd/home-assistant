@@ -1,7 +1,7 @@
 - alias: Aanwezigheid - Werkkamer - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.sensor_workroom_occupancy
+      entity_id: binary_sensor.occupancy_workroom_occupancy
       to: "on"
 
   action:
@@ -11,7 +11,7 @@
 - alias: Aanwezigheid - Werkkamer - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.sensor_workroom_occupancy
+    entity_id: binary_sensor.occupancy_workroom_occupancy
     to: "off"
     for:
       minutes: 3
