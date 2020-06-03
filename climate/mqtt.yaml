@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: "Werkkamer"
+  name: "airco_werkkamer"
   current_temperature_topic: "hisense_ac/f_temp_in/status"
   fan_mode_command_topic: "hisense_ac/t_fan_speed/command"
   fan_mode_state_topic: "hisense_ac/t_fan_speed/status"
