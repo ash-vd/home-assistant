@@ -206,10 +206,12 @@ views:
             control: false
 
 
+          - type: thermostat
+            entity: climate.airco_werkkamer
+
           - type: entities
             show_header_toggle: false
             entities:
-              - climate.airco_werkkamer
               - switch.plug_02
 
               - type: section

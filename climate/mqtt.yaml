@@ -24,5 +24,5 @@
   swing_mode_state_topic: "airco_werkkamer/t_fan_power/status"
   temperature_command_topic: "airco_werkkamer/t_temp/command"
   temperature_state_topic: "airco_werkkamer/t_temp/status"
-  temperature_unit: "F"
+  temperature_unit: "C"
   precision: 1.0
