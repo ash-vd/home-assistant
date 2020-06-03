@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: "aircon_werkkamer"
+  name: "airco_werkkamer"
   current_temperature_topic: "aircon_werkkamer/f_temp_in/status"
   fan_mode_command_topic: "aircon_werkkamer/t_fan_speed/command"
   fan_mode_state_topic: "aircon_werkkamer/t_fan_speed/status"

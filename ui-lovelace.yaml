@@ -209,7 +209,7 @@ views:
           - type: entities
             show_header_toggle: false
             entities:
-              - climate.
+              - climate.airco_werkkamer
               - switch.plug_02
 
               - type: section
