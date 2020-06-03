@@ -205,9 +205,11 @@ views:
             icon: false
             control: false
 
+
           - type: entities
             show_header_toggle: false
             entities:
+              - climate.
               - switch.plug_02
 
               - type: section
