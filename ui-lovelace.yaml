@@ -33,6 +33,18 @@ views:
           type: media-control
           entity: media_player.spotify_ashwin_van_dijk
 
+      - type: conditional
+        conditions:
+          - entity: media_player.spotify_kim_vermeer
+            state_not: "idle"
+          - entity: media_player.spotify_kim_vermeer
+            state_not: "unavailable"
+        card:
+          type: media-control
+          entity: media_player.spotify_kim_vermeer
+
+
+
       - type: entities
         title: MultiRoom
         show_header_toggle: false
