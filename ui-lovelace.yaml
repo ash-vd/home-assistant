@@ -103,9 +103,7 @@ views:
           - type: section
             label: Rolgordijnen
 
-          - type: custom:slider-entity-row
-            entity: cover.blind_01
-            toggle: true
+          - cover.blind_01
 
           - type: section
             label: Verlichting
