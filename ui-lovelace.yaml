@@ -103,7 +103,7 @@ views:
           - type: section
             label: Rolgordijnen
 
-          - cover.blind_01
+          - cover.blind_02
 
           - type: section
             label: Verlichting
