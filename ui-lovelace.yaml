@@ -101,6 +101,13 @@ views:
             artwork: cover
 
           - type: section
+            label: Rolgordijnen
+
+          - type: custom:slider-entity-row
+            entity: cover.blind_01
+            toggle: true
+
+          - type: section
             label: Verlichting
 
           - light.shelly_01
