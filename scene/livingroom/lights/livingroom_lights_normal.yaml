@@ -36,6 +36,7 @@
       brightness: 255
       white_value: 60
       color_temp: 320
+      rgb_color: [255, 255, 255]
 
     input_boolean.homekit_livingroom: on
 
