@@ -106,7 +106,7 @@ views:
           - cover.blind_02
 
           - type: section
-            label: Rolgordijnen
+            label: Vensterbanken
 
           - light.window_sill_02
 
