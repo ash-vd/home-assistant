@@ -8,6 +8,7 @@
     light.wifi_e27cwww_02: off
     light.shelly_dimmer_02: off
     light.gu10_erker: off
+    light.window_sill_03: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:
       state: "Uit"
