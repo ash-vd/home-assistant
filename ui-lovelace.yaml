@@ -108,7 +108,7 @@ views:
           - type: section
             label: Vensterbanken
 
-          - light.window_sill_02
+          - light.window_sill_03
 
           - type: section
             label: Verlichting
