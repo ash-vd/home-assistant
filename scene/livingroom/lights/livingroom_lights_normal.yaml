@@ -31,12 +31,9 @@
       state: on
       brightness: 160
 
-    light.erker_gu10:
+    light.erker_gu10_cwww:
       state: on
-      brightness: 255
-      white_value: 60
-      color_temp: 320
-      rgb_color: [255, 255, 255]
+      brightness: 60
 
     input_boolean.homekit_livingroom: on
 

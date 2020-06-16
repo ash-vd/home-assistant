@@ -141,7 +141,7 @@ views:
             toggle: true
 
           - type: custom:slider-entity-row
-            entity: light.erker_gu10
+            entity: light.erker_gu10_cwww
             toggle: true
 
       - type: entities
