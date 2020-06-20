@@ -110,6 +110,7 @@ views:
 
           - light.window_sill_02
           - light.window_sill_03
+          - light.window_sill_04
 
           - type: section
             label: Verlichting

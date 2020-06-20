@@ -10,6 +10,7 @@
     light.erker_gu10_cwww: off
     light.window_sill_02: off
     light.window_sill_03: off
+    light.window_sill_04: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:
       state: "Uit"
