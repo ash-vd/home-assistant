@@ -1,0 +1,5 @@
+- platform: wunderground
+    api_key: !secret wu_api_key
+    pws_id: IROTTE20
+    monitored_conditions:
+      - temp_c
