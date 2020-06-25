@@ -32,17 +32,6 @@ views:
           - type: section
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_group_all
-            source: full
-            group: true
-            name: Bron
-            hide:
-              icon: true
-              power: true
-              controls: true
-              volume: true
-
-          - type: custom:mini-media-player
             entity: media_player.snapcast_client_woonkamer
             group: true
             hide:
