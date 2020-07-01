@@ -1,5 +1,9 @@
 logs:
 appdaemon:
+  time_zone: Europe/Amsterdam
+  latitude: 51.9225
+  longitude: 4.47917
+  elevation: 0
   threads: 10
   plugins:
     HASS:
