@@ -58,10 +58,10 @@
 
 hallway_remote:
   module: controllerx
-  class: E1744MediaPlayerController
+  class: E1744LightController
   controller: sensor.zigbee_remote_02_action
   integration: z2m
-  media_player: media_player.snapcast_client_hal
+  media_player: light.shelly_dimmer_01
 
 bedroom_remote:
   module: controllerx
