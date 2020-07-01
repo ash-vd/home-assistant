@@ -59,8 +59,8 @@
 hallway_remote:
   module: controllerx
   class: E1744MediaPlayerController
-  controller: zigbee/zigbee_remote_02_action
-  integration: mqtt
+  controller: sensor.zigbee_remote_02_action
+  integration: z2m
   media_player: media_player.snapcast_client_hal
 
 bedroom_remote:
