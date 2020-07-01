@@ -8,4 +8,4 @@ appdaemon:
     HASS:
       type: hass
       ha_url: "https://home.ashwinvandijk.nl"
-      token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNjE1NGRiZTk1ZTU0ZWI3YmQ1NTI5ODk1OGYwNTM4MyIsImlhdCI6MTU5MzYwNTEwMCwiZXhwIjoxOTA4OTY1MTAwfQ._pDiz8DQuMkQyDsNRl13ZdKlLeW4zeuyK9aHEASrXzk"
+      token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjNGE0ZDZlNjM3YTU0M2VkOWY4NjNjZTczYWNiNDM4MyIsImlhdCI6MTU5MzYwNTkwNiwiZXhwIjoxOTA4OTY1OTA2fQ.zgme2O44jBgyJk0kXVfzyDQ4XhekTZE9NifjQB_tizU"
