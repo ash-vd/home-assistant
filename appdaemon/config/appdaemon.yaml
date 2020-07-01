@@ -1,4 +1,6 @@
-logs:
+log:
+  logfile: STDOUT
+  errorfile: STDERR
 appdaemon:
   time_zone: Europe/Amsterdam
   latitude: 51.9225
