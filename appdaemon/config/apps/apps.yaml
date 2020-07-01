@@ -54,3 +54,10 @@ Occupancy Simulator:
   random_entrance_number: 2
   random_entrance_on_1: light.wifi_e27cwww_01
   random_entrance_off_1: light.wifi_e27cwww_01
+
+bedroom_remote:
+  module: controllerx
+  class: E1744MediaPlayerController
+  controller: zigbee_remote_03
+  integration: z2m
+  media_player: media_player.snapcast_client_slaapkamer
