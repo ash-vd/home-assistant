@@ -61,7 +61,7 @@ kitchen_remote:
   class: E1744MediaPlayerController
   controller: zigbee/zigbee_remote_01/action
   integration: mqtt
-  media_player: media_player.snapcast_client_keuken
+  media_player: media_player.chromecast_livingroom
 
 hallway_remote:
   module: controllerx
