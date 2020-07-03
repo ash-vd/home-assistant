@@ -59,7 +59,7 @@ occusim:
 kitchen_remote:
   module: controllerx
   class: E1744MediaPlayerController
-  controller: sensor.zigbee_remote_01/action
+  controller: sensor.zigbee_remote_01_action
   integration: z2m
   media_player: media_player.snapcast_client_keuken
 
