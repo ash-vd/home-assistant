@@ -8,4 +8,4 @@ appdaemon:
     HASS:
       type: hass
       ha_url: "https://home.ashwinvandijk.nl"
-      token: !secrets HASS_token
+      token: !secret HASS_token
