@@ -6,10 +6,12 @@ Occupancy Simulator:
   # test: "1"
   dump_times: "1"
 
-#  step_evening_on_name: Evening On
+  step_evening_on_name: Evening On
 #  step_evening_on_start: "sunset + 01:15:00"
+  step_evening_on_start: "21:00"
+  step_evening_on_end: "22:00"
 #  step_evening_on_end: "sunset + 03:00:00"
-#  step_evening_on_on_1: scene.livingroom_lights_normal
+  step_evening_on_on_1: scene.livingroom_lights_normal
 #
 #  step_evening_off_name: Evening Off
 #  step_evening_off_relative: Night On
@@ -28,14 +30,14 @@ Occupancy Simulator:
 #  step_night_off_end_offset: "00:14:00"
 #  step_night_off_off_1: light.bedroom_sink
 #
-  random_kitchen_name: Kitchen
-  random_kitchen_start: Evening On
-  random_kitchen_end: Evening Off
-  random_kitchen_minduration: 00:01:00
-  random_kitchen_maxduration: 00:20:00
-  random_kitchen_number: 2
-  random_kitchen_on_1: light.kitchen
-  random_kitchen_off_1: light.kitchen
+#  random_kitchen_name: Kitchen
+#  random_kitchen_start: Evening On
+#  random_kitchen_end: Evening Off
+#  random_kitchen_minduration: 00:01:00
+#  random_kitchen_maxduration: 00:20:00
+#  random_kitchen_number: 2
+#  random_kitchen_on_1: light.kitchen
+#  random_kitchen_off_1: light.kitchen
 #
 #  random_bathroom_name: Bathroom
 #  random_bathroom_start: Evening On
