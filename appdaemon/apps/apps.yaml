@@ -62,7 +62,7 @@ kitchen_remote:
   controller: zigbee/zigbee_remote_01/action
   integration: mqtt
   media_player: media_player.snapcast_client_keuken
-  delay: 350
+  delay: 500
 
 hallway_remote:
   module: controllerx
