@@ -7,5 +7,9 @@ appdaemon:
   plugins:
     HASS:
       type: hass
-      ha_url: "https://home.ashwinvandijk.nl"
+      ha_url: !secret HASS_url
       token: !secret HASS_token
+    MQTT:
+      type: mqtt
+      namespace: mqtt
+      client_host: !secret MQTT_host
