@@ -16,44 +16,44 @@ Occupancy Simulator:
   step_evening_off_start_offset: 00:01:00
   step_evening_off_end_offset: 00:03:00
   step_evening_off_off_1: scene.livingroom_lights_off
-
-  step_night_on_name: Night On
-  step_night_on_start: "22:20:00"
-  step_night_on_end: "23:55:00"
-  step_night_on_on_1: light.bedroom_sink
-
-  step_night_off_name: Night Off
-  step_night_off_relative: Night On
-  step_night_off_start_offset: "00:03:00"
-  step_night_off_end_offset: "00:14:00"
-  step_night_off_off_1: light.bedroom_sink
-
-  random_kitchen_name: Kitchen
-  random_kitchen_start: Evening On
-  random_kitchen_end: Evening Off
-  random_kitchen_minduration: 00:01:00
-  random_kitchen_maxduration: 00:20:00
-  random_kitchen_number: 2
-  random_kitchen_on_1: light.kitchen
-  random_kitchen_off_1: light.kitchen
-
-  random_bathroom_name: Bathroom
-  random_bathroom_start: Evening On
-  random_bathroom_end: Evening Off
-  random_bathroom_minduration: 00:01:00
-  random_bathroom_maxduration: 00:15:00
-  random_bathroom_number: 1
-  random_bathroom_on_1: light.shelly_04
-  random_bathroom_off_1: light.shelly_04
-
-  random_entrance_name: Entrance
-  random_entrance_start: Evening On
-  random_entrance_end: Evening Off
-  random_entrance_minduration: 00:02:00
-  random_entrance_maxduration: 00:15:00
-  random_entrance_number: 2
-  random_entrance_on_1: light.wifi_e27cwww_01
-  random_entrance_off_1: light.wifi_e27cwww_01
+#
+#  step_night_on_name: Night On
+#  step_night_on_start: "22:20:00"
+#  step_night_on_end: "23:55:00"
+#  step_night_on_on_1: light.bedroom_sink
+#
+#  step_night_off_name: Night Off
+#  step_night_off_relative: Night On
+#  step_night_off_start_offset: "00:03:00"
+#  step_night_off_end_offset: "00:14:00"
+#  step_night_off_off_1: light.bedroom_sink
+#
+#  random_kitchen_name: Kitchen
+#  random_kitchen_start: Evening On
+#  random_kitchen_end: Evening Off
+#  random_kitchen_minduration: 00:01:00
+#  random_kitchen_maxduration: 00:20:00
+#  random_kitchen_number: 2
+#  random_kitchen_on_1: light.kitchen
+#  random_kitchen_off_1: light.kitchen
+#
+#  random_bathroom_name: Bathroom
+#  random_bathroom_start: Evening On
+#  random_bathroom_end: Evening Off
+#  random_bathroom_minduration: 00:01:00
+#  random_bathroom_maxduration: 00:15:00
+#  random_bathroom_number: 1
+#  random_bathroom_on_1: light.shelly_04
+#  random_bathroom_off_1: light.shelly_04
+#
+#  random_entrance_name: Entrance
+#  random_entrance_start: Evening On
+#  random_entrance_end: Evening Off
+#  random_entrance_minduration: 00:02:00
+#  random_entrance_maxduration: 00:15:00
+#  random_entrance_number: 2
+#  random_entrance_on_1: light.wifi_e27cwww_01
+#  random_entrance_off_1: light.wifi_e27cwww_01
 
 
 kitchen_remote:
