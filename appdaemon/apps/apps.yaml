@@ -7,10 +7,8 @@ Occupancy Simulator:
   dump_times: "1"
 
   step_evening_on_name: Evening On
-#  step_evening_on_start: "sunset + 01:15:00"
-  step_evening_on_start: "21:00:00"
-  step_evening_on_end: "22:00:00"
-#  step_evening_on_end: "sunset + 03:00:00"
+  step_evening_on_start: "sunset + 01:15:00"
+  step_evening_on_end: "23:59:00"
   step_evening_on_on_1: scene.livingroom_lights_normal
 #
 #  step_evening_off_name: Evening Off
