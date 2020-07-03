@@ -18,7 +18,7 @@ Occupancy Simulator:
   step_evening_off_off_1: scene.livingroom_lights_off
 
   step_night_on_name: Night On
-  step_night_on_start: "23:40:00"
+  step_night_on_start: "23:30:00"
   step_night_on_end: "23:55:00"
   step_night_on_on_1: light.bedroom_sink
 
