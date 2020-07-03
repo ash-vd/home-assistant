@@ -62,6 +62,8 @@ kitchen_remote:
   controller: sensor.zigbee_remote_01_action
   integration: z2m
   media_player: media_player.snapcast_client_keuken
+  delay: 250
+  automatic_steps: 50
 
 hallway_remote:
   module: controllerx
