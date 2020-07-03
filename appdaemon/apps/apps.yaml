@@ -67,14 +67,14 @@ kitchen_remote:
 hallway_remote:
   module: controllerx
   class: E1744MediaPlayerController
-  controller: sensor.zigbee_remote_02_action
-  integration: z2m
+  controller: zigbee/zigbee_remote_02/action
+  integration: mqtt
   media_player: media_player.snapcast_client_hal
 
 bedroom_remote:
   module: controllerx
   class: E1744MediaPlayerController
-  controller: sensor.zigbee_remote_03_action
-  integration: z2m
+  controller: zigbee/zigbee_remote_03/action
+  integration: mqtt
   media_player: media_player.snapcast_client_slaapkamer
 
