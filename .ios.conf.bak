@@ -1,0 +1,115 @@
+{
+    "devices": {
+        "ashwiphone": {
+            "app": {
+                "buildNumber": 4,
+                "bundleIdentifer": "io.robbie.HomeAssistant",
+                "versionNumber": "1.5.1"
+            },
+            "battery": {
+                "level": 97,
+                "state": "Unplugged"
+            },
+            "device": {
+                "localizedModel": "iPhone",
+                "model": "iPhone",
+                "name": "AshwiPhone",
+                "permanentID": "BBC93259-CDA9-45E2-8075-E3D735C30764",
+                "systemName": "iOS",
+                "systemVersion": "13.1",
+                "type": "iPhone X"
+            },
+            "deviceId": "ashwiphone",
+            "lastSeenAt": "2019-09-13T10:40:02.190282",
+            "permissions": [
+                "notifications"
+            ],
+            "pushId": "c6e68eab-c4a4-346f-ae9b-67e73fc4ba3e",
+            "pushSounds": [],
+            "pushToken": "This space intentionally left blank"
+        },
+        "ashwiphone_beta": {
+            "app": {
+                "buildNumber": 35,
+                "bundleIdentifer": "io.robbie.HomeAssistant.beta",
+                "versionNumber": "2.0.0"
+            },
+            "battery": {
+                "level": 74,
+                "state": "Unplugged"
+            },
+            "device": {
+                "localizedModel": "iPhone",
+                "model": "iPhone",
+                "name": "AshwiPhone",
+                "permanentID": "50498DDF-6C3B-4A43-A006-83F1CB989954",
+                "systemName": "iOS",
+                "systemVersion": "12.1.4",
+                "type": "iPhone X"
+            },
+            "deviceId": "ashwiphone_beta",
+            "lastSeenAt": "2019-03-25T15:53:16.156394",
+            "permissions": [
+                "notifications",
+                "location"
+            ],
+            "pushSounds": [],
+            "pushToken": "This space intentionally left blank"
+        },
+        "lilphone": {
+            "app": {
+                "buildNumber": 34,
+                "bundleIdentifer": "io.robbie.HomeAssistant",
+                "versionNumber": "1.5.0"
+            },
+            "battery": {
+                "level": 96,
+                "state": "Unplugged"
+            },
+            "device": {
+                "localizedModel": "iPhone",
+                "model": "iPhone",
+                "name": "lilPhone",
+                "permanentID": "5AB2E097-5E5B-48BD-8DA0-6BBA2358A548",
+                "systemName": "iOS",
+                "systemVersion": "12.1.4",
+                "type": "iPhone11,2"
+            },
+            "deviceId": "lilphone",
+            "lastSeenAt": "2019-03-28T15:20:06.607663",
+            "permissions": [
+                "notifications",
+                "location"
+            ],
+            "pushId": "a487b78d-4cf0-364c-b307-ab3d5029118e",
+            "pushSounds": [],
+            "pushToken": "This space intentionally left blank"
+        }
+    },
+    "push": {
+        "categories": [
+            {
+                "actions": [
+                    {
+                        "activationMode": "background",
+                        "authenticationRequired": false,
+                        "behavior": "default",
+                        "destructive": false,
+                        "identifier": "AWAKE",
+                        "title": "Good Morning"
+                    },
+                    {
+                        "activationMode": "background",
+                        "authenticationRequired": false,
+                        "behavior": "default",
+                        "destructive": false,
+                        "identifier": "SNOOZE",
+                        "title": "Snooze"
+                    }
+                ],
+                "identifier": "alarmclock",
+                "name": "Alarm Clock"
+            }
+        ]
+    }
+}
