@@ -63,6 +63,10 @@ kitchen_remote:
   integration: mqtt
   media_player: media_player.snapcast_client_keuken
   delay: 500
+  excluded_actions:
+    - play_pause
+    - next_track
+    - previous_track
 
 hallway_remote:
   module: controllerx
@@ -70,6 +74,11 @@ hallway_remote:
   controller: zigbee/zigbee_remote_02/action
   integration: mqtt
   media_player: media_player.snapcast_client_hal
+  delay: 500
+  excluded_actions:
+    - play_pause
+    - next_track
+    - previous_track
 
 bedroom_remote:
   module: controllerx
@@ -77,4 +86,9 @@ bedroom_remote:
   controller: zigbee/zigbee_remote_03/action
   integration: mqtt
   media_player: media_player.snapcast_client_slaapkamer
+  delay: 500
+  excluded_actions:
+    - play_pause
+    - next_track
+    - previous_track
 
