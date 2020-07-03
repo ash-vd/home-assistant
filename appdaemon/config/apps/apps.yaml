@@ -61,7 +61,7 @@ kitchen_remote:
   class: E1744MediaPlayerController
   controller: zigbee/zigbee_remote_01/action
   integration: mqtt
-  media_player: media_player.chromecast_livingroom
+  media_player: media_player.snapcast_client_keuken
 
 hallway_remote:
   module: controllerx
@@ -76,3 +76,13 @@ bedroom_remote:
   controller: sensor.zigbee_remote_03_action
   integration: z2m
   media_player: media_player.snapcast_client_slaapkamer
+
+
+INFO AppDaemon: App 'kitchen_remote' added,
+INFO HASS: Evaluating startup conditions,
+INFO AppDaemon: Starting Apps with 1 workers and 1 pins,
+INFO AppDaemon: Found 1 total apps,
+INFO AppDaemon: Got initial state from namespace default,
+INFO AppDaemon: Scheduler running in realtime,
+INFO AppDaemon: Adding /conf/apps to module import path,
+INFO AppDaemon: App initialization complete
