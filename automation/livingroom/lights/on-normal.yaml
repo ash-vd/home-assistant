@@ -35,6 +35,10 @@
         entity_id: input_boolean.livingroom_auto
         state: "on"
 
+      - condition: state
+        entity_id: input_select.livingroom_scene
+        state_not: "Normaal"
+
   action:
     - service: homeassistant.turn_on
       entity_id: scene.livingroom_lights_normal

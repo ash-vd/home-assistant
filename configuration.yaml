@@ -223,12 +223,12 @@ notify:
       - service: mobile_app_sm_g960f
 
 
-entity_controller:
-  livingroom:
-    sensor:
-      - binary_sensor.zigbee_occupancy_2_occupancy
-      - binary_sensor.zigbee_occupancy_4_occupancy
-      - binary_sensor.zigbee_occupancy_5_occupancy
-    entities:
-      - light.shelly_dimmer_02
-    delay: 300
+#entity_controller:
+#  livingroom:
+#    sensor:
+#      - binary_sensor.zigbee_occupancy_2_occupancy
+#      - binary_sensor.zigbee_occupancy_4_occupancy
+#      - binary_sensor.zigbee_occupancy_5_occupancy
+#    entities:
+#      - light.shelly_dimmer_02
+#    delay: 300
