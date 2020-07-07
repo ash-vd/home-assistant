@@ -224,7 +224,7 @@ notify:
 
 
 entity_controller:
-  livingroom:
+  livingroom_motion:
     sensor:
       - binary_sensor.zigbee_occupancy_2_occupancy
       - binary_sensor.zigbee_occupancy_4_occupancy
