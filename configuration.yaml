@@ -229,7 +229,7 @@ entity_controller:
       - binary_sensor.zigbee_occupancy_2_occupancy
       - binary_sensor.zigbee_occupancy_4_occupancy
       - binary_sensor.zigbee_occupancy_5_occupancy
-    entities:
+    control_entities:
       - scene.livingroom_lights_test
     state_entities:
       - light.shelly_dimmer_02
