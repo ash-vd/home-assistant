@@ -35,9 +35,8 @@
         entity_id: input_boolean.livingroom_auto
         state: "on"
 
-      - condition: state
-        entity_id: input_select.livingroom_scene
-        state_not: "Normaal"
+      - condition: template
+        value_template: '{{ states("input_select.livingroom_scene") != "Normaal" }}'
 
   action:
     - service: homeassistant.turn_on
