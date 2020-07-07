@@ -40,3 +40,9 @@
 
     input_select.livingroom_scene:
       state: "Normaal"
+
+- name: livingroom_lights_test
+  entities:
+    light.shelly_dimmer_02:
+      state: on
+      brightness: 160
