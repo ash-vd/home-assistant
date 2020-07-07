@@ -231,4 +231,4 @@ entity_controller:
       - binary_sensor.zigbee_occupancy_5_occupancy
     entities:
       - light.shelly_dimmer_02
-    delay: 10
+    delay: 300
