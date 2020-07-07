@@ -230,14 +230,5 @@ entity_controller:
       - binary_sensor.zigbee_occupancy_4_occupancy
       - binary_sensor.zigbee_occupancy_5_occupancy
     entities:
-      - scene.livingroom_lights_test
-    state_entities:
       - light.shelly_dimmer_02
-#      - light.shelly_01
-#      - light.zigbee_e14_3_light
-#      - light.zigbee_e27c_1_light
-#      - light.zigbee_e27c_2_light
-#      - light.zigbee_e27c_3_light
-#      - light.wifi_e27cwww_02
-#      - light.erker_gu10_cwww
     delay: 10
