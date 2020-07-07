@@ -221,3 +221,13 @@ notify:
     services:
       - service: mobile_app_ashwiphone
       - service: mobile_app_sm_g960f
+
+
+entity_controller:
+  livingroom:
+    sensor:
+      - binary_sensor.zigbee_occupancy_2_occupancy
+      - binary_sensor.zigbee_occupancy_4_occupancy
+      - binary_sensor.zigbee_occupancy_5_occupancy
+    entity: light.shelly_dimmer_02
+    delay: 300
