@@ -234,5 +234,6 @@ entity_controller:
       - light.zigbee_e14_3_light
 
     service_data:
-      brightness: 20
+      - brightness: 100
+      - brightness: 20
     delay: 10
