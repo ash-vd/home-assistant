@@ -229,8 +229,8 @@ entity_controller:
       - binary_sensor.zigbee_occupancy_2_occupancy
       - binary_sensor.zigbee_occupancy_4_occupancy
       - binary_sensor.zigbee_occupancy_5_occupancy
-    trigger_on_activate: scene.livingroom_lights_normal
-    trigger_on_deactivate: scene.livingroom_lights_off
+    entities:
+      - scene.livingroom_lights_normal
     state_entities:
       - light.shelly_dimmer_02
       - light.shelly_01
