@@ -3,6 +3,6 @@ livingroom_dark_display:
   entities:
     - binary_sensor.livingroom_dark
     - sensor.livingroom_illuminance
-    - sensor.zigbee_occupancy_2_illuminance
+    - sensor.zigbee_sensor_livingroom_1_illuminance
     - sensor.zigbee_occupancy_4_illuminance
     - sensor.zigbee_occupancy_5_illuminance
