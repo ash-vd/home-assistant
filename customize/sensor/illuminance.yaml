@@ -2,7 +2,7 @@ sensor.zigbee_occupancy_1_illuminance:
   friendly_name: Lichtsterkte
   unit_of_measurement: lux
 
-sensor.zigbee_sensor_livingroom_1_illuminance:
+sensor.zigbee_sensor_livingroom_01_illuminance:
   friendly_name: Lichtsterkte (Meterkast)
   unit_of_measurement: lux
 

@@ -1,5 +1,5 @@
 livingroom_presence:
   entities:
-    - binary_sensor.zigbee_sensor_livingroom_1_occupancy
+    - binary_sensor.zigbee_sensor_livingroom_01_occupancy
     - binary_sensor.zigbee_occupancy_4_occupancy
     - binary_sensor.zigbee_occupancy_5_occupancy
