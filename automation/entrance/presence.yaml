@@ -13,7 +13,9 @@
 - alias: Aanwezigheid - Entree - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.zigbee_sensor_entrance_occupancy
+    entity_id:
+      - binary_sensor.zigbee_sensor_entrance_occupancy
+      - binary_sensor.zigbee_door_entrance_contact
     to: "off"
     for:
       minutes: 2
