@@ -108,7 +108,7 @@ views:
           - light.shelly_01
 
           - type: custom:slider-entity-row
-            entity: light.zigbee_e14_3_light
+            entity: light.zigbee_e14_livingroom_1_light
             toggle: true
 
           - type: custom:slider-entity-row

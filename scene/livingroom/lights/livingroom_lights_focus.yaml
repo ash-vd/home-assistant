@@ -3,7 +3,7 @@
     light.shelly_01:
       state: on
 
-    light.zigbee_e14_3_light:
+    light.zigbee_e14_livingroom_1_light:
       state: on
       brightness: 255
 
