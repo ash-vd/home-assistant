@@ -1,4 +1,4 @@
 entrance:
   name: Entree
   entities:
-    - binary_sensor.zigbee_contact_4_contact
+    - binary_sensor.zigbee_door_mailbox_contact

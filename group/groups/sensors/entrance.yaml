@@ -4,4 +4,4 @@ sensors_entrance:
     - input_boolean.entrance_presence
     - binary_sensor.zigbee_sensor_entrance_occupancy
     - binary_sensor.zigbee_door_entrance_contact
-    - binary_sensor.zigbee_contact_4_contact
+    - binary_sensor.zigbee_door_mailbox_contact

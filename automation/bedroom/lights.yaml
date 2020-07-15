@@ -1,7 +1,7 @@
 - alias: Lightning - Bedroom - On
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_occupancy_6_occupancy, input_boolean.bedroom_presence
+      entity_id: binary_sensor.zigbee_sensor_bedroom_occupancy, input_boolean.bedroom_presence
       to: "on"
 
     - platform: numeric_state

@@ -3,9 +3,9 @@
     - platform: state
       entity_id:
         - binary_sensor.zigbee_door_livingroom_contact
-        - binary_sensor.zigbee_occupancy_2_occupancy
-        - binary_sensor.zigbee_occupancy_4_occupancy
-        - binary_sensor.zigbee_occupancy_5_occupancy
+        - binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy
+        - binary_sensor.zigbee_sensor_livingroom_closet_occupancy
+        - binary_sensor.zigbee_sensor_livingroom_tv_occupancy
         - input_boolean.livingroom_presence
         - input_boolean.livingroom_auto
       to: "on"

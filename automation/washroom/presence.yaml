@@ -1,7 +1,7 @@
 - alias: Aanwezigheid - Washok - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_3_contact
+      entity_id: binary_sensor.zigbee_door_washroom_contact
       to: "on"
 
   action:
@@ -11,7 +11,7 @@
 - alias: Aanwezigheid - Washok - Uit
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_3_contact
+      entity_id: binary_sensor.zigbee_door_washroom_contact
       to: "off"
 
     - platform: state

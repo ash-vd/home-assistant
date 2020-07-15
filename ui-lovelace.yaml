@@ -329,8 +329,8 @@ views:
           - type: section
 
           - input_boolean.bedroom_presence
-          - binary_sensor.zigbee_occupancy_6_occupancy
-          - binary_sensor.zigbee_contact_2_contact
+          - binary_sensor.zigbee_sensor_bedroom_occupancy
+          - binary_sensor.zigbee_door_bedroom_contact
           - sensor.zigbee_climate_1_temperature
           - sensor.zigbee_climate_1_humidity
           - sensor.zigbee_climate_1_pressure
@@ -342,7 +342,7 @@ views:
           - type: section
 
           - input_boolean.washroom_presence
-          - binary_sensor.zigbee_contact_3_contact
+          - binary_sensor.zigbee_door_washroom_contact
           - sensor.plug_05_power
           - sensor.plug_03_power
 

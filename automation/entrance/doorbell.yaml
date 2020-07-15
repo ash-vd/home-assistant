@@ -2,7 +2,7 @@
   initial_state: 'false'
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_4_contact
+      entity_id: binary_sensor.zigbee_door_mailbox_contact
       to: "on"
 
   condition:

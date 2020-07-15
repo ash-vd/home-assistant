@@ -1,13 +1,13 @@
 binary_sensor.zigbee_door_livingroom_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_2_contact:
+binary_sensor.zigbee_door_bedroom_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_3_contact:
+binary_sensor.zigbee_door_washroom_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_4_contact:
+binary_sensor.zigbee_door_mailbox_contact:
   friendly_name: Brievenbus
   icon: mdi:email-outline
 
@@ -20,19 +20,19 @@ binary_sensor.zigbee_door_entrance_contact:
 binary_sensor.zigbee_sensor_kitchen_occupancy:
   friendly_name: Beweging
 
-binary_sensor.zigbee_occupancy_2_occupancy:
+binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy:
   friendly_name: Beweging (Meterkast)
 
 binary_sensor.zigbee_sensor_entrance_occupancy:
   friendly_name: Beweging
 
-binary_sensor.zigbee_occupancy_4_occupancy:
+binary_sensor.zigbee_sensor_livingroom_tv_occupancy:
   friendly_name: Beweging (TV)
 
-binary_sensor.zigbee_occupancy_5_occupancy:
+binary_sensor.zigbee_sensor_livingroom_closet_occupancy:
   friendly_name: Beweging (Raam)
 
-binary_sensor.zigbee_occupancy_6_occupancy:
+binary_sensor.zigbee_sensor_bedroom_occupancy:
   friendly_name: Beweging
 
 binary_sensor.zigbee_sensor_hallway_upstairs_occupancy:
@@ -41,10 +41,6 @@ binary_sensor.zigbee_sensor_hallway_upstairs_occupancy:
 binary_sensor.sensor_workroom_occupancy:
   friendly_name: Beweging
 
-binary_sensor.neo_coolcam_battery_powered_pir_sensor_sensor_3:
-  friendly_name: Beweging
-  device_class: motion
-
 binary_sensor.multi_01_movement:
   friendly_name: Beweging
   device_class: motion
@@ -52,5 +48,5 @@ binary_sensor.multi_01_movement:
 binary_sensor.livingroom_dark:
   friendly_name: Donker
 
-binary_sensor.zigbee_smoke_1:
+binary_sensor.zigbee_smoke_livingroom:
   friendly_name: Rookmelder
