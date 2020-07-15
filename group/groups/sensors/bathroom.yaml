@@ -2,5 +2,5 @@ sensors_bathroom:
   name: Badkamer
   entities:
     - input_boolean.bathroom_presence
-    - binary_sensor.zigbee_contact_5_contact
+    - binary_sensor.zigbee_door_bathroom_contact
     - binary_sensor.multi_01_movement

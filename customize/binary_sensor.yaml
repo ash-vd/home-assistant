@@ -1,4 +1,4 @@
-binary_sensor.zigbee_contact_1_contact:
+binary_sensor.zigbee_door_livingroom_contact:
   friendly_name: Deur
 
 binary_sensor.zigbee_contact_2_contact:
@@ -11,10 +11,10 @@ binary_sensor.zigbee_contact_4_contact:
   friendly_name: Brievenbus
   icon: mdi:email-outline
 
-binary_sensor.zigbee_contact_5_contact:
+binary_sensor.zigbee_door_bathroom_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_contact_6_contact:
+binary_sensor.binary_sensor.zigbee_door_entrance_contact:
   friendly_name: Deur
 
 binary_sensor.zigbee_sensor_kitchen_occupancy:

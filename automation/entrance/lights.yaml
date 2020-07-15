@@ -1,7 +1,7 @@
 - alias: Verlichting - Entree - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_6_contact, input_boolean.entrance_presence
+      entity_id: binary_sensor.binary_sensor.zigbee_door_entrance_contact, input_boolean.entrance_presence
       to: "on"
 
   condition:
@@ -18,7 +18,7 @@
 - alias: Verlichting - Entree - Aan (Nacht)
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_6_contact, input_boolean.entrance_presence
+      entity_id: binary_sensor.binary_sensor.zigbee_door_entrance_contact, input_boolean.entrance_presence
       to: "on"
 
   condition:

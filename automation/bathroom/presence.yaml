@@ -1,7 +1,7 @@
 - alias: Aanwezigheid - Badkamer - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_contact_5_contact, binary_sensor.multi_01_movement
+      entity_id: binary_sensor.zigbee_door_bathroom_contact, binary_sensor.multi_01_movement
       to: "on"
 
   action:

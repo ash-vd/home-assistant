@@ -2,7 +2,7 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_contact_6_contact
+        - binary_sensor.binary_sensor.zigbee_door_entrance_contact
         - binary_sensor.zigbee_sensor_entrance_occupancy
       to: "on"
 
@@ -20,7 +20,7 @@
 
   condition:
     - condition: state
-      entity_id: binary_sensor.zigbee_contact_6_contact
+      entity_id: binary_sensor.binary_sensor.zigbee_door_entrance_contact
       state: "off"
 
   action:

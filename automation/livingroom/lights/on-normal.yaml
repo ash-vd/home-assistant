@@ -2,7 +2,7 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_contact_1_contact
+        - binary_sensor.zigbee_door_livingroom_contact
         - binary_sensor.zigbee_occupancy_2_occupancy
         - binary_sensor.zigbee_occupancy_4_occupancy
         - binary_sensor.zigbee_occupancy_5_occupancy
