@@ -14,7 +14,7 @@ binary_sensor.zigbee_contact_4_contact:
 binary_sensor.zigbee_door_bathroom_contact:
   friendly_name: Deur
 
-binary_sensor.binary_sensor.zigbee_door_entrance_contact:
+binary_sensor.zigbee_door_entrance_contact:
   friendly_name: Deur
 
 binary_sensor.zigbee_sensor_kitchen_occupancy:
