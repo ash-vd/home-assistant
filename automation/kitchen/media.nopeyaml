@@ -1,7 +1,7 @@
 - alias: 'Kitchen - Media control'
   trigger:
     platform: mqtt
-    topic: 'zigbee/zigbee_remote_01'
+    topic: 'zigbee2mqtt/zigbee_remote_01'
 #  condition:
 #    - condition: state
 #      entity_id: light.bad_01

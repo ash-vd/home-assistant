@@ -1,3 +1,0 @@
-sensor.zigbee2mqtt_bridge_state:
-  friendly_name: Bridge
-  icon: mdi:router-wireless

@@ -1,6 +1,6 @@
 - platform: mqtt
   name: kitchen
-  command_topic: "zigbee/kitchen_light/set"
-  state_topic: "zigbee/kitchen_light/set"
+  command_topic: "zigbee2mqtt/kitchen_light/set"
+  state_topic: "zigbee2mqtt/kitchen_light/set"
   brightness: true
   schema: json
