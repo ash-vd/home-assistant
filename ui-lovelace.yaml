@@ -162,7 +162,7 @@ views:
           - type: section
             label: Verlichting
           - type: custom:slider-entity-row
-            entity: light.zigbee_e14_2_light
+            entity: light.zigbee_e14_entrance_light
             toggle: true
 
       - type: entities
@@ -226,7 +226,7 @@ views:
       #            label: Verlichting
       #
       #          - type: custom:slider-entity-row
-      #            entity: light.zigbee_e14_2_light
+      #            entity: light.zigbee_e14_entrance_light
       #            toggle: true
 
       - type: entities

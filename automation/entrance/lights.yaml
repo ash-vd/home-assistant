@@ -11,7 +11,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.zigbee_e14_2_light
+      entity_id: light.zigbee_e14_entrance_light
       data:
         brightness_pct: 100
 
@@ -28,7 +28,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.zigbee_e14_2_light
+      entity_id: light.zigbee_e14_entrance_light
       data:
         brightness_pct: 60
 
@@ -40,7 +40,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.zigbee_e14_2_light
+      entity_id: light.zigbee_e14_entrance_light
       data:
         brightness_pct: 30
         transition: 30
@@ -55,6 +55,6 @@
 
   action:
     - service: light.turn_off
-      entity_id: light.zigbee_e14_2_light
+      entity_id: light.zigbee_e14_entrance_light
       data:
         transition: 30
