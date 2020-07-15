@@ -2,7 +2,7 @@ sensor.zigbee_occupancy_1_illuminance:
   friendly_name: Lichtsterkte
   unit_of_measurement: lux
 
-sensor.zigbee_sensor_livingroom_01_illuminance:
+sensor.zigbee_sensor_livingroom_fusebox_illuminance:
   friendly_name: Lichtsterkte (Meterkast)
   unit_of_measurement: lux
 
@@ -10,12 +10,12 @@ sensor.zigbee_occupancy_3_illuminance:
   friendly_name: Lichtsterkte
   unit_of_measurement: lux
 
-sensor.zigbee_occupancy_4_illuminance:
+sensor.zigbee_sensor_livingroom_tv_illuminance:
   friendly_name: Lichtsterkte (TV)
   unit_of_measurement: lux
 
-sensor.zigbee_occupancy_5_illuminance:
-  friendly_name: Lichtsterkte (Raam)
+sensor.zigbee_sensor_livingroom_closet_illuminance:
+  friendly_name: Lichtsterkte (Kast)
   device_class: illuminance
   unit_of_measurement: lux
 
@@ -24,12 +24,12 @@ sensor.zigbee_occupancy_6_illuminance:
   device_class: illuminance
   unit_of_measurement: lux
 
-sensor.zigbee_occupancy_7_illuminance:
+sensor.zigbee_sensor_hallway_upstairs_illuminance:
   friendly_name: Lichtsterkte
   device_class: illuminance
   unit_of_measurement: lux
 
-sensor.occupancy_workroom_illuminance:
+sensor.zigbee_sensor_workroom_illuminance:
   friendly_name: Lichtsterkte
   device_class: illuminance
   unit_of_measurement: lux

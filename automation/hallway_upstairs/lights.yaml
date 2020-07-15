@@ -5,7 +5,7 @@
       to: "on"
 
     - platform: numeric_state
-      entity_id: sensor.zigbee_occupancy_7_illuminance
+      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
       below: 70
 
   condition:
@@ -16,7 +16,7 @@
         state: "on"
 
       - condition: numeric_state
-        entity_id: sensor.zigbee_occupancy_7_illuminance
+        entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
         below: 70
 
   action:
@@ -30,7 +30,7 @@
       to: "off"
 
     - platform: numeric_state
-      entity_id: sensor.zigbee_occupancy_7_illuminance
+      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
       above: 70
       for:
         minutes: 3

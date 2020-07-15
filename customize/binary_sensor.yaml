@@ -35,7 +35,7 @@ binary_sensor.zigbee_occupancy_5_occupancy:
 binary_sensor.zigbee_occupancy_6_occupancy:
   friendly_name: Beweging
 
-binary_sensor.zigbee_occupancy_7_occupancy:
+binary_sensor.zigbee_sensor_hallway_upstairs_occupancy:
   friendly_name: Beweging
 
 binary_sensor.sensor_workroom_occupancy:

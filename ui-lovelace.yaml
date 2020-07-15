@@ -304,7 +304,7 @@ views:
           - type: section
           - input_boolean.workroom_presence
           - binary_sensor.sensor_workroom_occupancy
-          - sensor.occupancy_workroom_illuminance
+          - sensor.zigbee_sensor_workroom_illuminance
 
       - type: custom:group-card
         card:
@@ -319,8 +319,8 @@ views:
         entities:
           - type: section
           - input_boolean.hallway_upstairs_presence
-          - sensor.zigbee_occupancy_7_illuminance
-          - binary_sensor.zigbee_occupancy_7_occupancy
+          - sensor.zigbee_sensor_hallway_upstairs_illuminance
+          - binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
 
       - type: entities
         title: Slaapkamer

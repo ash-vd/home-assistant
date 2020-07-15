@@ -5,7 +5,7 @@
       to: "on"
 
     - platform: numeric_state
-      entity_id: sensor.zigbee_occupancy_7_illuminance
+      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
       below: 80
       for:
         minutes: 1
