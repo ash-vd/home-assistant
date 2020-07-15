@@ -1,7 +1,7 @@
 - alias: Aanwezigheid - Keuken - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_occupancy_1_occupancy
+      entity_id: binary_sensor.zigbee_sensor_kitchen_occupancy
       to: "on"
 
   action:
@@ -11,7 +11,7 @@
 - alias: Aanwezigheid - Keuken - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.zigbee_occupancy_1_occupancy
+    entity_id: binary_sensor.zigbee_sensor_kitchen_occupancy
     to: "off"
     for:
       minutes: 2

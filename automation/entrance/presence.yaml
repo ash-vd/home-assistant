@@ -3,7 +3,7 @@
     - platform: state
       entity_id:
         - binary_sensor.zigbee_contact_6_contact
-        - binary_sensor.zigbee_occupancy_3_occupancy
+        - binary_sensor.zigbee_sensor_entrance_occupancy
       to: "on"
 
   action:
@@ -13,7 +13,7 @@
 - alias: Aanwezigheid - Entree - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.zigbee_occupancy_3_occupancy
+    entity_id: binary_sensor.zigbee_sensor_entrance_occupancy
     to: "off"
     for:
       minutes: 2

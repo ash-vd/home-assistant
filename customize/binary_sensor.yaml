@@ -17,13 +17,13 @@ binary_sensor.zigbee_contact_5_contact:
 binary_sensor.zigbee_contact_6_contact:
   friendly_name: Deur
 
-binary_sensor.zigbee_occupancy_1_occupancy:
+binary_sensor.zigbee_sensor_kitchen_occupancy:
   friendly_name: Beweging
 
 binary_sensor.zigbee_occupancy_2_occupancy:
   friendly_name: Beweging (Meterkast)
 
-binary_sensor.zigbee_occupancy_3_occupancy:
+binary_sensor.zigbee_sensor_entrance_occupancy:
   friendly_name: Beweging
 
 binary_sensor.zigbee_occupancy_4_occupancy:

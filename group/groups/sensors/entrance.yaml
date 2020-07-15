@@ -2,6 +2,6 @@ sensors_entrance:
   name: Entree
   entities:
     - input_boolean.entrance_presence
-    - binary_sensor.zigbee_occupancy_3_occupancy
+    - binary_sensor.zigbee_sensor_entrance_occupancy
     - binary_sensor.zigbee_contact_6_contact
     - binary_sensor.zigbee_contact_4_contact

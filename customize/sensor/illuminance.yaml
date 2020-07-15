@@ -1,4 +1,4 @@
-sensor.zigbee_occupancy_1_illuminance:
+sensor.zigbee_sensor_kitchen_illuminance:
   friendly_name: Lichtsterkte
   unit_of_measurement: lux
 

@@ -281,8 +281,8 @@ views:
           - type: section
 
           - input_boolean.kitchen_presence
-          - binary_sensor.zigbee_occupancy_1_occupancy
-          - sensor.zigbee_occupancy_1_illuminance
+          - binary_sensor.zigbee_sensor_kitchen_occupancy
+          - sensor.zigbee_sensor_kitchen_illuminance
           - sensor.plug_01_power
           - sensor.zigbee_climate_3_temperature
           - sensor.zigbee_climate_3_humidity

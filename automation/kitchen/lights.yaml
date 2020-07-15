@@ -2,7 +2,7 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_occupancy_1_occupancy
+        - binary_sensor.zigbee_sensor_kitchen_occupancy
         - input_boolean.kitchen_presence
       to: "on"
 
@@ -14,7 +14,7 @@
         state: "Normaal"
 
       - condition: numeric_state
-        entity_id: sensor.zigbee_occupancy_1_illuminance
+        entity_id: sensor.zigbee_sensor_kitchen_illuminance
         below: 70
 
   action:
@@ -28,7 +28,7 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_occupancy_1_occupancy
+        - binary_sensor.zigbee_sensor_kitchen_occupancy
         - input_boolean.kitchen_presence
       to: "on"
 
@@ -40,7 +40,7 @@
         state: "Nacht"
 
       - condition: numeric_state
-        entity_id: sensor.zigbee_occupancy_1_illuminance
+        entity_id: sensor.zigbee_sensor_kitchen_illuminance
         below: 70
 
   action:
@@ -77,7 +77,7 @@
         minutes: 10
 
     - platform: numeric_state
-      entity_id: sensor.zigbee_occupancy_1_illuminance
+      entity_id: sensor.zigbee_sensor_kitchen_illuminance
       above: 90
       for:
         minutes: 4
