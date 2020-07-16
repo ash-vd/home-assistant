@@ -4,10 +4,6 @@
       value_template: >-
         {{ states('input_select.house_mode') == 'Nacht' }}
 
-    livingroom_media_on:
-      value_template: >-
-        {{ states('sensor.livingroom_remote') != "PowerOff" }}
-
     livingroom_tv_on:
       value_template: >-
         {{ states('media_player.chromecast_livingroom') == 'playing' and (state_attr('media_player.chromecast_livingroom', 'media_content_type') == "movie" or state_attr('media_player.chromecast_livingroom', 'media_content_type') == "tvshow") }}

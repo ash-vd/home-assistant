@@ -1,11 +1,7 @@
 - alias: Aanwezigheid - Woonkamer - Aan
   trigger:
     - platform: state
-      entity_id:
-        - binary_sensor.zigbee_door_livingroom_contact
-        - binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy
-        - binary_sensor.zigbee_sensor_livingroom_closet_occupancy
-        - binary_sensor.zigbee_sensor_livingroom_tv_occupancy
+      entity_id: group.livingroom_presence
       to: "on"
 
   action:
@@ -18,7 +14,7 @@
     entity_id: group.livingroom_presence
     to: "off"
     for:
-      minutes: 10
+      minutes: 15
 
   action:
     service: homeassistant.turn_off
