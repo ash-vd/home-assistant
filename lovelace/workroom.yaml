@@ -22,7 +22,7 @@ cards:
     entities:
 #      - climate.werkkamer
 
-      - switch.plug_02
+      - switch.plug_workroom_speakers_switch
 
       - type: section
         label: Verlichting

@@ -1,7 +1,7 @@
 - alias: "Appliances - Washing Room - Washing machine - Running"
   trigger:
     - platform: numeric_state
-      entity_id: sensor.plug_05_power
+      entity_id: sensor.plug_washing_machine_power
       above: 5
       for:
         minutes: 1
@@ -25,7 +25,7 @@
 - alias: "Appliances - Washing Room - Washing machine - Done"
   trigger:
     - platform: numeric_state
-      entity_id: sensor.plug_05_power
+      entity_id: sensor.plug_washing_machine_power
       below: 5
       for:
         minutes: 2
@@ -44,7 +44,7 @@
 - alias: "Appliances - Washing Room - Tumble dryer - Running"
   trigger:
     - platform: numeric_state
-      entity_id: sensor.plug_03_power
+      entity_id: sensor.plug_tumble_dryer_power
       above: 15
       for:
         minutes: 1
@@ -68,7 +68,7 @@
 - alias: "Appliances - Washing Room - Tumble dryer - Done"
   trigger:
     - platform: numeric_state
-      entity_id: sensor.plug_03_power
+      entity_id: sensor.plug_tumble_dryer_power
       below: 5
       for:
         minutes: 2

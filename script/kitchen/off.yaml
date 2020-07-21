@@ -8,4 +8,4 @@ kitchen_off:
 #      entity_id: input_select.dishwasher_status
 #      state: 'Klaar'
 #    - service: switch.turn_off
-#      entity_id: switch.plug_01
+#      entity_id: switch.plug_dishwasher

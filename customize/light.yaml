@@ -33,7 +33,3 @@ light.shelly_02:
 light.shelly_04:
   friendly_name: Licht
   icon: mdi:lightbulb
-
-switch.plug_07:
-  friendly_name: plug_07
-  icon: mdi:lightbulb

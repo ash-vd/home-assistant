@@ -4,4 +4,4 @@ washroom_washingmachine_off:
       entity_id: input_select.washingmachine_status
       state: 'Klaar'
     - service: switch.turn_off
-      entity_id: switch.plug_05
+      entity_id: switch.plug_washing_machine

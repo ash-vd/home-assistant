@@ -1,5 +1,5 @@
 hallway_upstairs_off:
   sequence:
     - service: switch.turn_off
-      entity_id: switch.plug_06
+      entity_id: switch.plug_hallway_upstairs_switch
 

@@ -172,7 +172,7 @@ views:
         entities:
           - type: section
 
-          - switch.plug_06
+          - switch.plug_hallway_upstairs_switch
 
       - type: entities
         title: Washok
@@ -205,7 +205,7 @@ views:
           - type: entities
             show_header_toggle: false
             entities:
-              - switch.plug_02
+              - switch.plug_workroom_speakers_switch
 
               - type: section
                 label: Verlichting
@@ -283,7 +283,7 @@ views:
           - input_boolean.kitchen_presence
           - binary_sensor.zigbee_sensor_kitchen_occupancy
           - sensor.zigbee_sensor_kitchen_illuminance
-          - sensor.plug_01_power
+          - sensor.plug_dishwasher_power
           - sensor.zigbee_climate_3_temperature
           - sensor.zigbee_climate_3_humidity
           - sensor.zigbee_climate_3_pressure
@@ -343,8 +343,8 @@ views:
 
           - input_boolean.washroom_presence
           - binary_sensor.zigbee_door_washroom_contact
-          - sensor.plug_05_power
-          - sensor.plug_03_power
+          - sensor.plug_washing_machine_power
+          - sensor.plug_tumble_dryer_power
 
   - title: Apparaten
     icon: mdi:washing-machine
@@ -359,14 +359,14 @@ views:
 
           - input_select.washingmachine_status
           - sensor.washingmachine_on_time
-          - sensor.plug_05_power
+          - sensor.plug_washing_machine_power
 
           - type: section
             label: Droger
 
           - input_select.tumbledryer_status
           - sensor.tumbledryer_on_time
-          - sensor.plug_03_power
+          - sensor.plug_tumble_dryer_power
 
       - type: entities
         title: Keuken
@@ -380,4 +380,4 @@ views:
           - type: section
             label: Verbruik
 
-          - sensor.plug_01_power
+          - sensor.plug_dishwasher_power

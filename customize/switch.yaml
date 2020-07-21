@@ -1,10 +1,6 @@
-switch.plug_06:
+switch.plug_hallway_upstairs_switch:
   friendly_name: Licht
   icon: mdi:lightbulb
 
-switch.plug_07:
-  friendly_name: Staand
-  icon: mdi:lightbulb
-
-switch.plug_02:
+switch.plug_workroom_speakers_switch:
   friendly_name: Speakers

@@ -1,6 +1,6 @@
 washroom_on:
   sequence:
     - service: switch.turn_on
-      entity_id: switch.plug_03
+      entity_id: switch.plug_tumble_dryer_switch
     - service: switch.turn_on
-      entity_id: switch.plug_05
+      entity_id: switch.plug_washing_machine

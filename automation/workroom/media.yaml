@@ -8,4 +8,4 @@
 
   action:
     - service: switch.toggle
-      entity_id: switch.plug_02
+      entity_id: switch.plug_workroom_speakers_switch

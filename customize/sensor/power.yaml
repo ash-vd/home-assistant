@@ -1,8 +1,8 @@
-sensor.plug_01_power:
+sensor.plug_dishwasher_power:
   friendly_name: Vaatwasser
 
-sensor.plug_05_power:
+sensor.plug_washing_machine_power:
   friendly_name: Wasmachine
 
-sensor.plug_03_power:
+sensor.plug_tumble_dryer_power:
   friendly_name: Droger

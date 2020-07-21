@@ -139,26 +139,16 @@ lovelace:
 homekit:
   filter:
     include_entities:
-      - input_boolean.homekit_livingroom
-      - light.wifi_e27cwww_02
-      - light.zigbee_e27c_3_light
       - light.bedroom_sink
-      - switch.plug_06
-      - input_boolean.bedroom_in_bed
-      - input_boolean.wakeup_enabled
+      - input_boolean.homekit_livingroom
+      - switch.plug_hallway_upstairs_switch
   entity_config:
     light.bedroom_sink:
       name: Wastafel
-    light.zigbee_e27c_3_light:
-      name: Groot
     input_boolean.homekit_livingroom:
       name: Woonkamer
-    light.wifi_e27cwww_02:
-      name: Lamp op het kastje
-    switch.plug_06:
+    switch.plug_hallway_upstairs_switch:
       name: Gang
-    input_boolean.bedroom_in_bed:
-      name: In bed
 
 tado:
   username: !secret tado_user

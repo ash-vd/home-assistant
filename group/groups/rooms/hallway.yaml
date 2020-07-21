@@ -1,4 +1,4 @@
 hallway:
   name: Gang
   entities:
-    - switch.plug_06
+    - switch.plug_hallway_upstairs_switch
