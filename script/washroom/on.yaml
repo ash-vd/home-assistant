@@ -3,4 +3,4 @@ washroom_on:
     - service: switch.turn_on
       entity_id: switch.plug_tumble_dryer_switch
     - service: switch.turn_on
-      entity_id: switch.plug_washing_machine
+      entity_id: switch.plug_washing_machine_switch
