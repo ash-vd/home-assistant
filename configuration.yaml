@@ -201,6 +201,12 @@ rest_command:
     payload: '{"geolocation":{"latitude": 24.626895, "longitude": -77.938657 },"timestamp":"{{ now().isoformat() }}","accuracy":32}'
     content_type: "application/json; charset=utf-8"
 
+  rhasspy_speak_hallway_upstairs:
+      url: '10.10.1.16:12101/api/text-to-speech'
+      method: 'POST'
+      payload: '{{ payload }}'
+      content-type: 'text/plain'
+
 
 shell_command:
   doorbell_snapshot: !secret shell_doorbell_snapshot
