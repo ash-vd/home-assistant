@@ -202,10 +202,11 @@ rest_command:
     content_type: "application/json; charset=utf-8"
 
   rhasspy_speak_hallway_upstairs:
-      url: '10.10.1.16:12101/api/text-to-speech'
+      url: 'http://10.10.1.16:12101/api/text-to-speech'
       method: 'POST'
       payload: '{{ payload }}'
-      content-type: 'text/plain'
+      headers:
+        content-type: 'text/plain'
 
 
 shell_command:
