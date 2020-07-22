@@ -219,7 +219,7 @@ notify:
       - service: mobile_app_ashwiphone
       - service: mobile_app_sm_g960f
 
-intent:
+intent_script:
   SetLightOn:
     speech:
       type: plain
