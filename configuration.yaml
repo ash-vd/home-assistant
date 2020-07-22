@@ -218,3 +218,13 @@ notify:
     services:
       - service: mobile_app_ashwiphone
       - service: mobile_app_sm_g960f
+
+intent:
+  SetLightOn:
+    speech:
+      type: plain
+      text: 'OK, het licht in de {{ room}} is nu aan.'
+#    action:
+#      - service_template: 'light.turn_{{ state }}'
+#        data_template:
+#          entity_id: '{{ light }}'
