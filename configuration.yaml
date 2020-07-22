@@ -204,7 +204,7 @@ rest_command:
   rhasspy_speak_hallway_upstairs:
       url: 'http://10.10.1.16:12101/api/text-to-speech'
       method: 'POST'
-      payload: '{{ payload }}'
+      payload: '{{ now() }}'
       headers:
         content-type: 'text/plain'
 
