@@ -40,7 +40,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-        below: 70
+        below: 50
 
   action:
     - service: homeassistant.turn_on
