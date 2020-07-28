@@ -22,7 +22,6 @@
       entity_id: light.shelly_dimmer_hallway_downstairs
       data:
         brightness_pct: 70
-        transition: 1
 
 - alias: Verlichting - Hal (beneden) - Aan (Nacht)
   trigger:
@@ -47,8 +46,7 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_hallway_downstairs
       data:
-        brightness: 25
-        transition: 1
+        brightness: 5
 
 - alias: Verlichting - Hal (beneden) - Standby
   trigger:
@@ -66,7 +64,6 @@
       entity_id: light.shelly_dimmer_hallway_downstairs
       data:
         brightness_pct: 20
-        transition: 30
 
 - alias: Verlichting - Hal (beneden) - Uit
   trigger:
