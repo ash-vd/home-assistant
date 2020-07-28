@@ -1,0 +1,89 @@
+- alias: Verlichting - Hal (beneden) - Aan
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
+        - input_boolean.hallway_downstairs_presence
+      to: "on"
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Normaal"
+
+      - condition: numeric_state
+        entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
+        below: 70
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_dimmer_hallway_downstairs
+      data:
+        brightness_pct: 70
+        transition: 1
+
+- alias: Verlichting - Hal (beneden) - Aan (Nacht)
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
+        - input_boolean.hallway_downstairs_presence
+      to: "on"
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Nacht"
+
+      - condition: numeric_state
+        entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
+        below: 70
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_dimmer_hallway_downstairs
+      data:
+        brightness: 25
+        transition: 1
+
+- alias: Verlichting - Hal (beneden) - Standby
+  trigger:
+    - platform: state
+      entity_id: input_boolean.hallway_downstairs_presence
+      to: "off"
+
+  condition:
+    condition: state
+    entity_id: light.shelly_dimmer_hallway_downstairs
+    state: "on"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_dimmer_hallway_downstairs
+      data:
+        brightness_pct: 20
+        transition: 30
+
+- alias: Verlichting - Hal (beneden) - Uit
+  trigger:
+    - platform: state
+      entity_id: input_boolean.hallway_downstairs_presence
+      to: "off"
+      for:
+        minutes: 10
+
+    - platform: numeric_state
+      entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
+      above: 90
+      for:
+        minutes: 4
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.shelly_dimmer_hallway_downstairs
+      data:
+        transition: 30
