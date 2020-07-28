@@ -146,14 +146,14 @@ views:
             toggle: true
 
       - type: entities
-          title: Hal beneden
-          show_header_toggle: false
-          entities:
-            - type: section
+        title: Hal beneden
+        show_header_toggle: false
+        entities:
+          - type: section
 
-            - type: custom:slider-entity-row
-              entity: light.shelly_dimmer_hallway_downstairs
-              toggle: true
+          - type: custom:slider-entity-row
+            entity: light.shelly_dimmer_hallway_downstairs
+            toggle: true
 
       - type: entities
         title: Badkamer
