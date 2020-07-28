@@ -1,17 +1,17 @@
 - alias: Aanwezigheid - Gang (boven) - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
+      entity_id: binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
       to: "on"
 
   action:
     service: homeassistant.turn_on
-    entity_id: input_boolean.hallway_upstairs_presence
+    entity_id: input_boolean.hallway_downstairs_presence
 
 - alias: Aanwezigheid - Gang (boven) - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
+    entity_id: binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
     to: "off"
     for:
       minutes: 10
@@ -23,12 +23,12 @@
 
   action:
     service: homeassistant.turn_off
-    entity_id: input_boolean.hallway_upstairs_presence
+    entity_id: input_boolean.hallway_downstairs_presence
 
 - alias: Aanwezigheid - Gang (boven) - Uit (Nacht)
   trigger:
     platform: state
-    entity_id: binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
+    entity_id: binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
     to: "off"
     for:
       minutes: 1
@@ -40,4 +40,4 @@
 
   action:
     service: homeassistant.turn_off
-    entity_id: input_boolean.hallway_upstairs_presence
+    entity_id: input_boolean.hallway_downstairs_presence
