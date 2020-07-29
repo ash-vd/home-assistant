@@ -240,3 +240,8 @@ intent_script:
         data_template:
           entity_id: 'light.shelly_02'
 
+  LeaveHouse:
+    speech:
+      type: plain
+      text: 'OK, de groeten aan je voeten'
+
