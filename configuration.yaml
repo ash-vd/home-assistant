@@ -228,3 +228,13 @@ intent_script:
       - service_template: 'light.turn_on'
         data_template:
           entity_id: 'light.shelly_02'
+
+  SetLightOff:
+    speech:
+      type: plain
+      text: 'OK, ik heb het licht in de {{ room }} uitgezet.'
+    action:
+      - service_template: 'light.turn_off'
+        data_template:
+          entity_id: 'light.shelly_02'
+
