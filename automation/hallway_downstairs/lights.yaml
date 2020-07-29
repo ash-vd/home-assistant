@@ -15,13 +15,13 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-        below: 70
+        below: 50
 
   action:
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_hallway_downstairs
       data:
-        brightness_pct: 70
+        brightness_pct: 50
 
 - alias: Verlichting - Hal (beneden) - Aan (Nacht)
   trigger:
@@ -75,7 +75,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-      above: 90
+      above: 70
       for:
         minutes: 4
 
