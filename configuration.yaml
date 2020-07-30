@@ -224,21 +224,20 @@ intent:
 intent_script:
   SetLightOn:
     speech:
-      type: plain
       text: 'OK, het licht in de {{ room }} is nu aan.'
     action:
-      - service_template: 'light.turn_on'
+      - service_template: 'script.turn_on'
         data_template:
-          entity_id: 'light.shelly_02'
+          entity_id: 'script.speech_{{ room }}_lights_on'
 
   SetLightOff:
     speech:
-      type: plain
-      text: 'OK, ik heb het licht in de {{ room }} uitgezet.'
+      text: {{ ["OK, ik heb het licht in de {{ room }} uitgezet.", "Uiteraard", "Klaar", "Oke"] | random }}
+
     action:
-      - service_template: 'light.turn_off'
+      - service_template: 'script.turn_on'
         data_template:
-          entity_id: 'light.shelly_02'
+          entity_id: 'script.speech_{{ room }}_lights_on'
 
   LeaveHouse:
     speech:
