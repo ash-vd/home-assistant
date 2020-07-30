@@ -224,7 +224,7 @@ intent:
 intent_script:
   SetLightOn:
     speech:
-      text: 'OK, het licht in de {{ room }} is nu aan.'
+      text: '{{ ["OK, ik heb het licht in de {{ room }} aangezet.", "OK, het licht in de {{ room }} is aan.", "Uiteraard", "Klaar", "Oke"] | random }}'
     action:
       - service_template: 'script.turn_on'
         data_template:
@@ -232,7 +232,7 @@ intent_script:
 
   SetLightOff:
     speech:
-      text: {{ ["OK, ik heb het licht in de {{ room }} uitgezet.", "Uiteraard", "Klaar", "Oke"] | random }}
+      text: '{{ ["OK, ik heb het licht in de {{ room }} uitgezet.", "OK, het licht in de {{ room }} is uit.", "Uiteraard", "Klaar", "Oke"] | random }}'
 
     action:
       - service_template: 'script.turn_on'
@@ -242,5 +242,5 @@ intent_script:
   LeaveHouse:
     speech:
       type: plain
-      text: 'OK, de groeten aan je voeten'
+      text: '{{ ["OK, de groeten aan je voeten!", "Tot later!", "Tot ziens!", "OK, doei!", "Dag hoor"] | random }}'
 
