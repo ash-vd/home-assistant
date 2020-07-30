@@ -224,7 +224,7 @@ intent:
 intent_script:
   SetLightOn:
     speech:
-      text: '{{ ["OK, ik heb het licht in de " ~ name + " aangezet.", "OK, het licht in de " ~ name + " is aan.", "Uiteraard", "Klaar", "Oke"] | random }}'
+      text: '{{ ["OK, ik heb het licht in de " ~ room + " aangezet.", "OK, het licht in de " ~ room + " is aan.", "Uiteraard", "Klaar", "Oke"] | random }}'
     action:
       - service_template: 'script.turn_on'
         data_template:
@@ -237,7 +237,7 @@ intent_script:
     action:
       - service_template: 'script.turn_on'
         data_template:
-          entity_id: 'script.speech_{{ room }}_lights_on'
+          entity_id: 'script.speech_{{ room }}_lights_off'
 
   LeaveHouse:
     speech:
