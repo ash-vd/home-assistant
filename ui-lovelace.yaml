@@ -56,12 +56,12 @@ views:
               source: true
 
           - type: custom:mini-media-player
-              entity: media_player.snapcast_client_badkamer
-              group: true
-              hide:
-                power: true
-                controls: true
-                source: true
+            entity: media_player.snapcast_client_badkamer
+            group: true
+            hide:
+              power: true
+              controls: true
+              source: true
 
           - type: custom:mini-media-player
             entity: media_player.snapcast_client_slaapkamer
