@@ -8,7 +8,7 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness: 100
+        brightness_pct: 100
 
 
 - alias: Lightning - Bathroom - Standby
@@ -21,7 +21,7 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness: 25
+        brightness_pct: 25
 
 - alias: Lightning - Bathroom - Off
   trigger:
