@@ -1,0 +1,21 @@
+- alias: Ventilation - Bathroom - On
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bathroom_presence
+      to: "on"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_04
+
+- alias: Ventilation - Bathroom - Off
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bathroom_presence
+      to: "off"
+        for:
+          minutes: 15
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.shelly_04
