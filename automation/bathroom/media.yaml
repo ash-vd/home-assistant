@@ -6,7 +6,7 @@
 
   action:
     - service: media_player.volume_mute
-      entity_id: light.shelly_dimmer_bathroom
+      entity_id: media_player.snapcast_client_badkamer
       data:
         is_volume_muted: false
 
@@ -21,6 +21,6 @@
 
   action:
     - service: media_player.volume_mute
-      entity_id: light.shelly_dimmer_bathroom
+      entity_id: media_player.snapcast_client_badkamer
       data:
         is_volume_muted: true
