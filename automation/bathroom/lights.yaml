@@ -6,7 +6,9 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.shelly_04
+      entity_id: light.shelly_dimmer_bathroom
+      data:
+        brightness: 100
 
 
 - alias: Lightning - Bathroom - Standby
