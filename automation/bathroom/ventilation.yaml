@@ -4,7 +4,7 @@
       entity_id: input_boolean.bathroom_presence
       to: "on"
       for:
-        minutes: 2
+        minutes: 3
 
   action:
     - service: homeassistant.turn_on
