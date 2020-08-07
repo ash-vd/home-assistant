@@ -171,6 +171,9 @@ views:
           - entity: climate.badkamer
 
           - type: section
+          - type: custom:slider-entity-row
+            entity: light.shelly_dimmer_hallway_bathroom
+            toggle: true
           - light.shelly_04
 
       - type: entities

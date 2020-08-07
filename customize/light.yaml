@@ -31,5 +31,5 @@ light.shelly_02:
   icon: mdi:lightbulb
 
 light.shelly_04:
-  friendly_name: Licht
-  icon: mdi:lightbulb
+  friendly_name: Ventilatie
+  icon: mdi:fan
