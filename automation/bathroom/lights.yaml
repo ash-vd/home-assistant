@@ -37,7 +37,7 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness: 25
+        brightness: 100
 
 
 
@@ -56,7 +56,7 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness: 25
+        brightness: 100
 
 - alias: Verlichting - Keuken - Uit
   trigger:
