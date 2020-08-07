@@ -1,0 +1,36 @@
+- alias: Media - Bathroom - On
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bathroom_presence
+      to: "on"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_dimmer_bathroom
+      data:
+        brightness_pct: 100
+
+
+- alias: Media - Bathroom - Standby
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bathroom_presence
+      to: "off"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_dimmer_bathroom
+      data:
+        brightness_pct: 35
+
+- alias: Media - Bathroom - Off
+  trigger:
+    - platform: state
+      entity_id: input_boolean.bathroom_presence
+      to: "off"
+      for:
+        minutes: 5
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.shelly_dimmer_bathroom

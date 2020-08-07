@@ -1,29 +1,64 @@
-- alias: Lightning - Bathroom - On
+- alias: Verlichting - Badkamer - Aan
   trigger:
     - platform: state
-      entity_id: input_boolean.bathroom_presence
+      entity_id:
+        - binary_sensor.zigbee_door_bathroom_contact
+        - binary_sensor.multi_01_movement
+        - input_boolean.bathroom_presence
       to: "on"
+
+  condition:
+    - condition: state
+      entity_id: input_select.house_mode
+      state: "Normaal"
 
   action:
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness_pct: 100
+        brightness: 255
+        transition: 1
+
+- alias: Verlichting - Badkamer - Aan (Nacht)
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.zigbee_door_bathroom_contact
+        - binary_sensor.multi_01_movement
+        - input_boolean.bathroom_presence
+      to: "on"
+
+  condition:
+    - condition: state
+      entity_id: input_select.house_mode
+      state: "Nacht"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.shelly_dimmer_bathroom
+      data:
+        brightness: 25
 
 
-- alias: Lightning - Bathroom - Standby
+
+- alias: Verlichting - Badkamer - Standby
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence
       to: "off"
 
+  condition:
+    condition: state
+    entity_id: light.shelly_dimmer_bathroom
+    state: "on"
+
   action:
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness_pct: 35
+        brightness: 25
 
-- alias: Lightning - Bathroom - Off
+- alias: Verlichting - Keuken - Uit
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence
