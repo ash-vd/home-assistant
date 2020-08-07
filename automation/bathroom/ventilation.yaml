@@ -13,8 +13,8 @@
     - platform: state
       entity_id: input_boolean.bathroom_presence
       to: "off"
-        for:
-          minutes: 15
+      for:
+        minutes: 15
 
   action:
     - service: homeassistant.turn_off
