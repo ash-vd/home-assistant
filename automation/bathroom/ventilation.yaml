@@ -3,6 +3,8 @@
     - platform: state
       entity_id: input_boolean.bathroom_presence
       to: "on"
+      for:
+        minutes: 2
 
   action:
     - service: homeassistant.turn_on
