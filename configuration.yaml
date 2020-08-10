@@ -150,6 +150,25 @@ homekit:
     switch.plug_hallway_upstairs_switch:
       name: Gang
 
+google_assistant:
+  project_id: secret-index-265114
+  service_account:
+    - private_key: !secret google_private_key
+    - client_email: !secret google_client_email
+  report_state: true
+  exposed_domains:
+    - switch
+    - light
+#  entity_config:
+#    switch.kitchen:
+#      name: CUSTOM_NAME_FOR_GOOGLE_ASSISTANT
+#      aliases:
+#        - BRIGHT_LIGHTS
+#        - ENTRY_LIGHTS
+#    light.living_room:
+#      expose: false
+#      room: LIVING_ROOM
+
 tado:
   username: !secret tado_user
   password: !secret tado_password
