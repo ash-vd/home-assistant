@@ -1,0 +1,8 @@
+- platform: trend
+    sensors:
+      bathroom_humidity_rising:
+        entity_id: sensor.zigbee_climate_bathroom_humidity
+        sample_duration: 7200
+        max_samples: 120
+        min_gradient: -0.0008
+        device_class: cold

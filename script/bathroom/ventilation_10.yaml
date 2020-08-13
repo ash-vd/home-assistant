@@ -1,0 +1,8 @@
+bathroom_ventilation_10_minutes_on:
+  sequence:
+    - service: light.turn_on
+      entity_id: light.shelly_04
+    - delay: 00:10:00
+    - service: light.turn_off
+      entity_id: light.shelly_04
+

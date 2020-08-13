@@ -1,4 +1,4 @@
-- alias: Ventilation - Bathroom - On
+- alias: Ventilation - Bathroom - On (number 2)
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence
@@ -8,16 +8,14 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.shelly_04
+      entity_id: script.bathroom_ventilation_10_minutes_on
 
-- alias: Ventilation - Bathroom - Off
+- alias: Ventilation - Bathroom - On (humidity)
   trigger:
     - platform: state
-      entity_id: input_boolean.bathroom_presence
-      to: "off"
-      for:
-        minutes: 20
+      entity_id: binary_sensor.bathroom_humidity_rising
+      to: "on"
 
   action:
-    - service: homeassistant.turn_off
-      entity_id: light.shelly_04
+    - service: homeassistant.turn_on
+      entity_id: script.bathroom_ventilation_30_minutes_on
