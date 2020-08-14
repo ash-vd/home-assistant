@@ -1,3 +1,4 @@
 - name: hallway_upstairs_off
   entities:
     switch.plug_hallway_upstairs_switch: off
+    light.shelly_terrace_lights: off
