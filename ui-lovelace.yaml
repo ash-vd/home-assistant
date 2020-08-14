@@ -192,7 +192,7 @@ views:
 
         entities:
           - type: section
-
+          - light.shelly_terrace_lights
           - switch.plug_hallway_upstairs_switch
 
       - type: entities
