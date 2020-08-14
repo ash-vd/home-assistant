@@ -5,4 +5,4 @@
       sample_duration: 7200
       max_samples: 120
       min_gradient: 0.001
-      device_class: humidity
+      device_class: moisture
