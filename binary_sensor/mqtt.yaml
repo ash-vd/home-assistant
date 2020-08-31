@@ -1,5 +1,4 @@
 - platform: mqtt
-  sensors:
     name: "Voordeur Button"
     state_topic: 'DahuaVTO/BackKeyLight/Event'
     value_template: '{{ value_json.Data.State }}'
