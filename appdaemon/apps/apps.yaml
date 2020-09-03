@@ -56,7 +56,7 @@ Occupancy Simulator:
   random_entrance_off_1: light.wifi_e27cwww_01
 
 
-kitchen_remote:
+remote_kitchen:
   module: controllerx
   class: E1744MediaPlayerController
   controller: zigbee2mqtt/zigbee_remote_kitchen/action
@@ -68,7 +68,7 @@ kitchen_remote:
     - next_track
     - previous_track
 
-hallway_remote:
+remote_hallway_upstairs:
   module: controllerx
   class: E1744MediaPlayerController
   controller: zigbee2mqtt/zigbee_remote_hallway_upstairs/action
@@ -80,7 +80,7 @@ hallway_remote:
     - next_track
     - previous_track
 
-bedroom_remote:
+remote_bedroom:
   module: controllerx
   class: E1744MediaPlayerController
   controller: zigbee2mqtt/zigbee_remote_bedroom/action
