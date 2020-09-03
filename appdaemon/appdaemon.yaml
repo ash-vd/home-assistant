@@ -8,3 +8,7 @@ appdaemon:
       type: hass
       ha_url: !secret HASS_url
       token: !secret HASS_token
+    MQTT:
+      type: mqtt
+      namespace: mqtt # This is important
+      client_host: MQTT_host
