@@ -11,4 +11,4 @@ appdaemon:
     MQTT:
       type: mqtt
       namespace: mqtt # This is important
-      client_host: MQTT_host
+      client_host: !secret MQTT_host
