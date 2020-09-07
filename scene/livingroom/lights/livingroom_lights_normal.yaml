@@ -38,31 +38,31 @@
 
     light.window_sill_01:
       state: on
-      brightness_pct: 20
+      brightness_pct: 5
       rgb_color: [255, 159, 0]
       effect: Solid
-      white_value: 110
+      white_value: 140
 
     light.window_sill_02:
       state: on
-      brightness_pct: 20
+      brightness_pct: 5
       rgb_color: [255, 159, 0]
       effect: Solid
-      white_value: 110
+      white_value: 140
 
     light.window_sill_03:
       state: on
-      brightness_pct: 20
+      brightness_pct: 5
       rgb_color: [255, 159, 0]
       effect: Solid
-      white_value: 110
+      white_value: 140
 
     light.window_sill_04:
       state: on
-      brightness_pct: 20
+      brightness_pct: 5
       rgb_color: [255, 159, 0]
       effect: Solid
-      white_value: 110
+      white_value: 140
 
     input_boolean.homekit_livingroom: on
 
