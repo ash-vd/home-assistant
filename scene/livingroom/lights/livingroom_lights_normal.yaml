@@ -36,13 +36,36 @@
       brightness: 80
       color_temp: 400
 
+    light.window_sill_01:
+      state: on
+      brightnes_pct: 20
+      rgb_color: 255, 159, 0
+      effect: Solid
+      white_value: 110
+
+    light.window_sill_02:
+      state: on
+      brightnes_pct: 20
+      rgb_color: 255, 159, 0
+      effect: Solid
+      white_value: 110
+
+    light.window_sill_03:
+      state: on
+      brightnes_pct: 20
+      rgb_color: 255, 159, 0
+      effect: Solid
+      white_value: 110
+
+    light.window_sill_04:
+      state: on
+      brightnes_pct: 20
+      rgb_color: 255, 159, 0
+      effect: Solid
+      white_value: 110
+
     input_boolean.homekit_livingroom: on
 
     input_select.livingroom_scene:
       state: "Normaal"
 
-- name: livingroom_lights_test
-  entities:
-    light.shelly_dimmer_02:
-      state: on
-      brightness: 160

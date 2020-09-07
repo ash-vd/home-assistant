@@ -8,6 +8,7 @@
     light.wifi_e27cwww_02: off
     light.shelly_dimmer_02: off
     light.erker_gu10_cwww: off
+    light.window_sill_01: off
     light.window_sill_02: off
     light.window_sill_03: off
     light.window_sill_04: off
