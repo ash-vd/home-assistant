@@ -38,29 +38,29 @@
 
     light.window_sill_01:
       state: on
-      brightnes_pct: 20
-      rgb_color: 255, 159, 0
+      brightness_pct: 20
+      rgb_color: [255, 159, 0]
       effect: Solid
       white_value: 110
 
     light.window_sill_02:
       state: on
-      brightnes_pct: 20
-      rgb_color: 255, 159, 0
+      brightness_pct: 20
+      rgb_color: [255, 159, 0]
       effect: Solid
       white_value: 110
 
     light.window_sill_03:
       state: on
-      brightnes_pct: 20
-      rgb_color: 255, 159, 0
+      brightness_pct: 20
+      rgb_color: [255, 159, 0]
       effect: Solid
       white_value: 110
 
     light.window_sill_04:
       state: on
-      brightnes_pct: 20
-      rgb_color: 255, 159, 0
+      brightness_pct: 20
+      rgb_color: [255, 159, 0]
       effect: Solid
       white_value: 110
 
