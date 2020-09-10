@@ -1,4 +1,4 @@
-- name: livingroom_lights_normal
+- name: livingroom_lights_media
   entities:
     light.shelly_01:
       state: off
