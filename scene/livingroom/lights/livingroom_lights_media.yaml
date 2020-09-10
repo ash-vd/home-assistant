@@ -1,0 +1,59 @@
+- name: livingroom_lights_normal
+  entities:
+    light.shelly_01:
+      state: off
+
+    light.zigbee_e14_livingroom_1_light:
+      state: on
+      brightness_pct: 10
+
+    light.zigbee_e27c_1_light:
+      state: on
+      brightness_pct: 10
+      color_temp: 425
+
+    light.zigbee_e27c_2_light:
+      state: on
+      brightness_pct: 10
+      color_temp: 425
+
+    light.zigbee_e27c_3_light:
+      state: on
+      brightness: 120
+      color_temp: 425
+
+    light.wifi_e27cwww_02:
+      state: on
+      brightness_pct: 10
+      color_temp: 315
+
+    light.shelly_dimmer_02:
+      state: on
+      brightness: 10
+
+    light.erker_gu10_cwww:
+      state: on
+      brightness: 10
+      color_temp: 400
+
+    light.window_sill_01:
+      state: on
+      brightness_pct: 80
+
+    light.window_sill_02:
+      state: on
+      brightness_pct: 80
+
+    light.window_sill_03:
+      state: on
+      brightness_pct: 80
+
+    light.window_sill_04:
+      state: on
+      brightness_pct: 80
+
+    input_boolean.homekit_livingroom: off
+
+    input_select.livingroom_scene:
+      state: "Media"
+
