@@ -32,12 +32,12 @@ cards:
             entity_id: scene.livingroom_lights_focus
 
       - entity: scene.livingroom_lights_media
-          name: Media
-          tap_action:
-            action: call-service
-            service: scene.turn_on
-            service_data:
-              entity_id: scene.livingroom_lights_media
+        name: Media
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.livingroom_lights_media
 
       - entity: scene.livingroom_lights_dimmed
         name: Gedimd
