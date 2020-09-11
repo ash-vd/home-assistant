@@ -9,10 +9,10 @@
       value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.deurbel_entree.attributes.last_triggered)) / 60) | int > 2 }}"
 
   action:
-    - service: camera.snapshot
-      data:
-        entity_id: camera.dahua_mediaprofile_channel1_substream1
-        filename: /config/www/doorbell.jpg
+#    - service: camera.snapshot
+#      data:
+#        entity_id: camera.dahua_mediaprofile_channel1_substream1
+#        filename: /config/www/doorbell.jpg
     - service: notify.all_devices
       data:
         title: "Ding dong!"
