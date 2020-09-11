@@ -18,9 +18,9 @@
         title: "Ding dong!"
         message: "Er is iemand aan de deur"
         data:
-          image: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
           attachment:
-            url: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
             content-type: jpeg
-            hide-thumbnail: false
+          push:
+            category: camera
+          entity_id: camera.dahua_mediaprofile_channel1_substream1
 
