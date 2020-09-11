@@ -9,11 +9,11 @@
       value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.deurbel_entree.attributes.last_triggered)) / 60) | int > 2 }}"
 
   action:
-#    - service: camera.snapshot
-#      data:
-#        entity_id: camera.dahua_mediaprofile_channel1_substream1
-#        filename: /config/www/doorbell.jpg
-    - service: notify.all_devices
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dahua_mediaprofile_channel1_substream1
+        filename: /config/www/doorbell.jpg
+    - service: notify.mobile_app_ashwiphone
       data:
         title: "Ding dong!"
         message: "Er is iemand aan de deur"
@@ -23,4 +23,13 @@
           push:
             category: camera
           entity_id: camera.dahua_mediaprofile_channel1_substream1
+    - service: notify.mobile_app_sm_g981b
+        data:
+          title: "Ding dong!"
+          message: "Er is iemand aan de deur"
+          data:
+            image: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
+            attachment:
+              url: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
+              content-type: jpeg
 
