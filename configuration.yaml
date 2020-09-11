@@ -97,12 +97,6 @@ hue:
 
 stream:
 
-camera:
-  - platform: generic
-    name: Voordeur
-    still_image_url: !secret camera1_stream
-    stream_source: !secret camera1_stream
-
 cast:
   media_player:
     - host: 10.10.1.11
@@ -235,7 +229,7 @@ notify:
     platform: group
     services:
       - service: mobile_app_ashwiphone
-      - service: mobile_app_sm_g960f
+      - service: mobile_app_sm_g981b
 
 intent:
 

@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: "Voordeur Button"
+  name: "Deurbel"
   state_topic: 'DahuaVTO/BackKeyLight/Event'
   value_template: '{{ value_json.Data.State }}'
   payload_on: "1"

@@ -1,8 +1,7 @@
 - alias: Deurbel - Entree
-  initial_state: 'false'
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_door_mailbox_contact
+      entity_id: binary_sensor.deurbel
       to: "on"
 
   condition:
@@ -10,7 +9,10 @@
       value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.deurbel_entree.attributes.last_triggered)) / 60) | int > 2 }}"
 
   action:
-    - service: shell_command.doorbell_snapshot
+    - service: camera.snapshot
+      data:
+        entity_id: camera.dahua_mediaprofile_channel1_substream1
+        filename: /config/www/doorbell.jpg
     - service: notify.all_devices
       data:
         title: "Ding dong!"
