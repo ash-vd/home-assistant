@@ -1,7 +1,7 @@
 - alias: Brievenbus - Entree
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_mailbox
+      entity_id: binary_sensor.zigbee_mailbox_contact
       to: "on"
 
   condition:
