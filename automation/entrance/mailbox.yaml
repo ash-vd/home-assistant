@@ -6,7 +6,7 @@
 
   condition:
     - condition: template
-      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.brievenbus_entree.attributes.last_triggered)) / 60) | int > 2 }}"
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.brievenbus_entree.attributes.last_triggered)) / 60) | int > 1 }}"
 
   action:
     - service: camera.snapshot
@@ -15,8 +15,7 @@
         filename: /config/www/doorbell.jpg
     - service: notify.mobile_app_ashwiphone
       data:
-        title: "Ding dong!"
-        message: "Er is iemand aan de deur"
+        message: "Er is post!"
         data:
           attachment:
             content-type: jpeg
@@ -25,8 +24,7 @@
           entity_id: camera.dahua_mediaprofile_channel1_substream1
     - service: notify.mobile_app_sm_g981b
       data:
-        title: "Ding dong!"
-        message: "Er is iemand aan de deur"
+        message: "Er is post!"
         data:
           image: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
           attachment:
