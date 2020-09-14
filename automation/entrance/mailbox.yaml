@@ -1,7 +1,7 @@
 - alias: Brievenbus - Entree
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_door_mailbox_contact
+      entity_id: binary_sensor.zigbee_mailbox
       to: "on"
 
   condition:
@@ -9,14 +9,27 @@
       value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.brievenbus_entree.attributes.last_triggered)) / 60) | int > 2 }}"
 
   action:
-    - service: shell_command.doorbell_snapshot
-    - service: notify.all_devices
+    - service: camera.snapshot
       data:
-        message: "Er is post!"
+        entity_id: camera.dahua_mediaprofile_channel1_substream1
+        filename: /config/www/doorbell.jpg
+    - service: notify.mobile_app_ashwiphone
+      data:
+        title: "Ding dong!"
+        message: "Er is iemand aan de deur"
+        data:
+          attachment:
+            content-type: jpeg
+          push:
+            category: camera
+          entity_id: camera.dahua_mediaprofile_channel1_substream1
+    - service: notify.mobile_app_sm_g981b
+      data:
+        title: "Ding dong!"
+        message: "Er is iemand aan de deur"
         data:
           image: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
           attachment:
             url: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
             content-type: jpeg
-            hide-thumbnail: false
 
