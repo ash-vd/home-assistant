@@ -1,7 +1,7 @@
 - alias: Deurbel - Entree
   trigger:
     - platform: state
-      entity_id: binary_sensor.deurbel
+      entity_id: binary_sensor.doorbell
       to: "on"
 
   condition:

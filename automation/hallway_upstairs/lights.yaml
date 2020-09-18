@@ -38,3 +38,14 @@
   action:
     - service: homeassistant.turn_off
       entity_id: switch.plug_hallway_upstairs_switch
+
+- alias: Verlichting - Dakterras
+  trigger:
+    - platform: mqtt
+      topic: 'zigbee2mqtt/zigbee_button_terrace'
+  condition:
+    condition: template
+    value_template: "{{ 'single' == trigger.payload_json.click }}"
+  action:
+    service: light.toggle
+    entity_id: light.shelly_terrace_lights

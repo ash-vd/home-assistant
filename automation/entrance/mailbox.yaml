@@ -13,16 +13,7 @@
       data:
         entity_id: camera.dahua_mediaprofile_channel1_substream1
         filename: /config/www/doorbell.jpg
-    - service: notify.mobile_app_ashwiphone
-      data:
-        message: "Er is post!"
-        data:
-          attachment:
-            content-type: jpeg
-          push:
-            category: camera
-          entity_id: camera.dahua_mediaprofile_channel1_substream1
-    - service: notify.mobile_app_sm_g981b
+    - service: notify.all_devices
       data:
         message: "Er is post!"
         data:
