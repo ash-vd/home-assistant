@@ -1,0 +1,3 @@
+doorbell:
+  name: doorbell
+  initial: off
