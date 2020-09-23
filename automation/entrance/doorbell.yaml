@@ -6,7 +6,7 @@
 
   condition:
     - condition: template
-      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.deurbel_entree.attributes.last_triggered)) / 60) | int > 2 }}"
+      value_template: "{{((as_timestamp(now()) - as_timestamp(states.automation.deurbel_entree.attributes.last_triggered))) | int > 10 }}"
 
   action:
     - service: camera.snapshot
