@@ -34,6 +34,8 @@
     - condition: state
       entity_id: input_select.washingmachine_status
       state: "Draait"
+      for:
+        minutes: 14
 
   action:
     - service: input_select.select_option
