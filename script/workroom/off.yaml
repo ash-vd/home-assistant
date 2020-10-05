@@ -2,6 +2,6 @@ workroom_off:
   sequence:
     - service: homeassistant.turn_off
       entity_id:
-        - light.shelly_dimmer_01
+        - light.shelly_dimmer_workroom
         - switch.plug_workroom_speakers_switch
 

@@ -23,7 +23,7 @@
 
   action:
     - service: light.turn_on
-      entity_id: light.shelly_dimmer_01
+      entity_id: light.shelly_dimmer_workroom
       data:
         brightness_pct: 75
 
@@ -41,12 +41,12 @@
 
   condition:
     condition: state
-    entity_id: light.shelly_dimmer_01
+    entity_id: light.shelly_dimmer_workroom
     state: "on"
 
   action:
     - service: light.turn_on
-      entity_id: light.shelly_dimmer_01
+      entity_id: light.shelly_dimmer_workroom
       data:
         brightness_pct: 40
 
@@ -66,4 +66,4 @@
 
   action:
     - service: light.turn_off
-      entity_id: light.shelly_dimmer_01
+      entity_id: light.shelly_dimmer_workroom

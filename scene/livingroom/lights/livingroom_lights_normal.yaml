@@ -39,28 +39,35 @@
     light.window_sill_01:
       state: on
       brightness_pct: 3
-      rgb_color: [255, 150, 0]
+      rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255
 
     light.window_sill_02:
       state: on
       brightness_pct: 3
-      rgb_color: [255, 150, 0]
+      rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255
 
     light.window_sill_03:
       state: on
       brightness_pct: 3
-      rgb_color: [255, 150, 0]
+      rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255
 
     light.window_sill_04:
       state: on
       brightness_pct: 3
-      rgb_color: [255, 150, 0]
+      rgb_color: [200, 150, 0]
+      effect: Solid
+      white_value: 255
+
+    light.tv_bottom:
+      state: on
+      brightness_pct: 3
+      rgb_color: [ 200, 150, 0 ]
       effect: Solid
       white_value: 255
 

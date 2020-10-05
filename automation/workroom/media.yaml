@@ -4,7 +4,7 @@
     event_type: shelly_switch_click
     event_data:
       click_cnt: 4
-      entity_id: binary_sensor.shelly_dimmer_01_switch
+      entity_id: binary_sensor.shelly_dimmer_workroom_switch
 
   action:
     - service: switch.toggle
