@@ -404,8 +404,26 @@ views:
 
           - sensor.plug_dishwasher_power
 
-      - type: entities
-        title: Woonkamer
-        show_header_toggle: false
-        entities:
-          - vacuum.s5max
+      - type: 'custom:vacuum-card'
+        entity: vacuum.s5max
+        stats:
+          default:
+            - attribute: filter_left
+              unit: hours
+              subtitle: Filter
+            - attribute: side_brush_left
+              unit: hours
+              subtitle: Side brush
+            - attribute: main_brush_left
+              unit: hours
+              subtitle: Main brush
+            - attribute: sensor_dirty_left
+              unit: hours
+              subtitle: Sensors
+          cleaning:
+            - attribute: cleaned_area
+              unit: m2
+              subtitle: Cleaning area
+            - attribute: cleaning_time
+              unit: minutes
+              subtitle: Cleaning time
