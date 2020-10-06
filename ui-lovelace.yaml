@@ -405,7 +405,7 @@ views:
           - sensor.plug_dishwasher_power
 
       - type: entities
-          title: Woonkamer
-          show_header_toggle: false
-          entities:
-            - vacuum.s5max
+        title: Woonkamer
+        show_header_toggle: false
+        entities:
+          - vacuum.s5max
