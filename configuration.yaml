@@ -181,6 +181,12 @@ shelly:
     - '10.10.1.138'
     - '10.10.1.139'
 
+vacuum:
+  - platform: xiaomi_miio
+    name: Consuela
+    host: 10.10.1.9
+    token: !secret roborock_token
+
 automation: !include_dir_merge_list automation
 binary_sensor: !include_dir_merge_list binary_sensor
 climate: !include_dir_merge_list climate
