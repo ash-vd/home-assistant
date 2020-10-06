@@ -183,7 +183,7 @@ shelly:
 
 vacuum:
   - platform: xiaomi_miio
-    name: Consuela
+    name: s5max
     host: 10.10.1.9
     token: !secret roborock_token
 
