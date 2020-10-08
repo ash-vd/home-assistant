@@ -116,6 +116,8 @@ lovelace:
       type: module
     - url: /local/community/mini-graph-card/mini-graph-card-bundle.js
       type: module
+    - url: /local/community/vacuum-card.js
+      type: module
 
     - url: /local/mini-media-player-bundle.js
       type: js
@@ -129,8 +131,7 @@ lovelace:
       type: module
     - url: /local/vertical-style-card.js
       type: module
-    - url: /local/vacuum-card.js
-      type: module
+
 
 homekit:
   filter:
