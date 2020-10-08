@@ -130,7 +130,7 @@ lovelace:
     - url: /local/vertical-style-card.js
       type: module
     - url: /local/vacuum-card.js
-        type: module
+      type: module
 
 homekit:
   filter:
