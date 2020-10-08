@@ -116,7 +116,7 @@ lovelace:
       type: module
     - url: /local/community/mini-graph-card/mini-graph-card-bundle.js
       type: module
-    - url: /local/community/vacuum-card.js
+    - url: /local/community/vacuum-card/vacuum-card.js
       type: module
 
     - url: /local/mini-media-player-bundle.js
