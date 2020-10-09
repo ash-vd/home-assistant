@@ -102,6 +102,9 @@ views:
 
           - cover.blind_01
           - cover.blind_02
+          - cover.blind_03
+          - cover.blind_04
+          - cover.blind_05
 
           - type: section
             label: Vensterbanken
