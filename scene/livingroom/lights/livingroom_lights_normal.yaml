@@ -22,6 +22,11 @@
       brightness: 120
       color_temp: 425
 
+    light.closet:
+      state: on
+      brightness_pct: 40
+      color_temp: 315
+
     light.wifi_e27cwww_02:
       state: on
       brightness: 180
@@ -38,28 +43,28 @@
 
     light.window_sill_01:
       state: on
-      brightness_pct: 3
+      brightness_pct: 2
       rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255
 
     light.window_sill_02:
       state: on
-      brightness_pct: 3
+      brightness_pct: 2
       rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255
 
     light.window_sill_03:
       state: on
-      brightness_pct: 3
+      brightness_pct: 2
       rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255
 
     light.window_sill_04:
       state: on
-      brightness_pct: 3
+      brightness_pct: 2
       rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255

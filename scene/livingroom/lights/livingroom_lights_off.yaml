@@ -6,6 +6,7 @@
     light.zigbee_e27c_2_light: off
     light.zigbee_e27c_3_light: off
     light.wifi_e27cwww_02: off
+    light.closet: off
     light.shelly_dimmer_02: off
     light.erker_gu10_cwww: off
     light.window_sill_01: off

@@ -5,35 +5,40 @@
 
     light.zigbee_e14_livingroom_1_light:
       state: on
-      brightness: 255
+      brightness_pct: 100
 
     light.zigbee_e27c_1_light:
       state: on
-      brightness: 255
+      brightness_pct: 100
       kelvin: 2350
 
     light.zigbee_e27c_2_light:
       state: on
-      brightness: 255
+      brightness_pct: 100
       kelvin: 2350
 
     light.zigbee_e27c_3_light:
       state: on
-      brightness: 255
+      brightness_pct: 100
       kelvin: 2350
+
+    light.closet:
+      state: on
+      brightness_pct: 100
+      kelvin: 6000
 
     light.wifi_e27cwww_02:
       state: on
-      brightness: 255
+      brightness_pct: 100
       kelvin: 6000
 
     light.shelly_dimmer_02:
       state: on
-      brightness: 255
+      brightness_pct: 100
 
     light.erker_gu10_cwww:
       state: on
-      brightness: 255
+      brightness_pct: 100
 
     input_select.livingroom_scene:
       state: "Focus"
