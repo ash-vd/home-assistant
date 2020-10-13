@@ -3,6 +3,7 @@
     - platform: state
       entity_id:
         - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
+        - binary_sensor.zigbee_sensor_hallway_downstairs_2_occupancy
         - input_boolean.hallway_downstairs_presence
       to: "on"
 
@@ -28,6 +29,7 @@
     - platform: state
       entity_id:
         - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
+        - binary_sensor.zigbee_sensor_hallway_downstairs_2_occupancy
         - input_boolean.hallway_downstairs_presence
       to: "on"
 
@@ -82,5 +84,3 @@
   action:
     - service: homeassistant.turn_off
       entity_id: light.shelly_dimmer_hallway_downstairs
-      data:
-        transition: 30

@@ -1,7 +1,7 @@
 - alias: Aanwezigheid - Gang beneden - Aan
   trigger:
     - platform: state
-      entity_id: binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
+      entity_id: group.hallway_downstairs_presence
       to: "on"
 
   action:
@@ -11,7 +11,7 @@
 - alias: Aanwezigheid - Gang beneden - Uit
   trigger:
     platform: state
-    entity_id: binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
+    entity_id: group.hallway_downstairs_presence
     to: "off"
     for:
       minutes: 5
