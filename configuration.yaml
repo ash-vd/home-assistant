@@ -233,6 +233,9 @@ rest_command:
 shell_command:
   doorbell_snapshot: !secret shell_doorbell_snapshot
 
+opentherm_gw:
+  device: socket://10.10.1.21:23
+
 notify:
   - name: all_devices
     platform: group
