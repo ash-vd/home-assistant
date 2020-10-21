@@ -28,6 +28,21 @@
       entity_id: binary_sensor.bathroom_humidity_rising
       to: "on"
 
+  condition:
+    - condition: state
+      entity_id: binary_sensor.bathroom_humidity_rising
+      state: "off"
+
   action:
     - service: homeassistant.turn_on
-      entity_id: script.bathroom_ventilation_30_minutes_on
+      entity_id: light.shelly_04
+
+- alias: Ventilation - Bathroom - Off (humidity)
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.bathroom_humidity_rising
+      to: "on"
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.shelly_04

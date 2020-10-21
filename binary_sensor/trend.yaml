@@ -4,5 +4,5 @@
       entity_id: sensor.zigbee_climate_bathroom_humidity
       sample_duration: 7200
       max_samples: 120
-      min_gradient: 0.001
+      min_gradient: 0.002
       device_class: moisture
