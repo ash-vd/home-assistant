@@ -24,7 +24,7 @@
 
     light.closet:
       state: on
-      brightness_pct: 40
+      brightness_pct: 20
       color_temp: 315
 
     light.wifi_e27cwww_02:

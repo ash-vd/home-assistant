@@ -27,6 +27,11 @@
       brightness_pct: 10
       color_temp: 315
 
+    light.closet:
+      state: on
+      brightness_pct: 20
+      color_temp: 315
+
     light.shelly_dimmer_02:
       state: on
       brightness: 10
