@@ -190,6 +190,8 @@ vacuum:
     host: 10.10.1.9
     token: !secret roborock_token
 
+
+
 automation: !include_dir_merge_list automation
 binary_sensor: !include_dir_merge_list binary_sensor
 climate: !include_dir_merge_list climate
@@ -229,12 +231,10 @@ rest_command:
       headers:
         content-type: 'text/plain'
 
-
-shell_command:
-  doorbell_snapshot: !secret shell_doorbell_snapshot
-
 opentherm_gw:
-  device: socket://10.10.1.21:23
+  otgw:
+    device: socket://10.10.1.21:23
+    name: "OTGW"
 
 notify:
   - name: all_devices
