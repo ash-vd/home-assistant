@@ -1,4 +1,4 @@
-Occupancy Simulator:
+  Occupancy Simulator:
   module: occusim
   class: OccuSim
   log_msg: "1"
@@ -59,10 +59,10 @@ Occupancy Simulator:
 remote_kitchen:
   module: controllerx
   class: E1744MediaPlayerController
-  controller: zigbee2mqtt/zigbee_remote_kitchen/action
-  integration: mqtt
+  controller: sensor.zigbee_remote_kitchen_action
+  integration: z2m
   media_player: media_player.snapcast_client_keuken
-  delay: 500
+  delay: 200
   excluded_actions:
     - play_pause
     - next_track

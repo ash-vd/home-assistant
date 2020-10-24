@@ -10,5 +10,5 @@ appdaemon:
       token: !secret HASS_token
     MQTT:
       type: mqtt
-      namespace: mqtt # This is important
+      namespace: mqtt
       client_host: !secret MQTT_host
