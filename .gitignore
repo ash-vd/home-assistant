@@ -17,3 +17,5 @@ zwcfg*.xml
 
 .vscode
 .idea
+
+appdaemon/apps/**

@@ -60,7 +60,7 @@ remote_kitchen:
   module: controllerx
   class: E1744MediaPlayerController
   controller: zigbee2mqtt/zigbee_remote_kitchen/action
-  integration: z2m
+  integration: mqtt
   media_player: media_player.snapcast_client_keuken
   delay: 500
   excluded_actions:
