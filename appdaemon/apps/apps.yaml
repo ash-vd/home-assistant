@@ -1,4 +1,4 @@
-  Occupancy Simulator:
+Occupancy Simulator:
   module: occusim
   class: OccuSim
   log_msg: "1"
