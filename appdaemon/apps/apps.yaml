@@ -58,8 +58,8 @@ Occupancy Simulator:
 remote_kitchen:
   module: controllerx
   class: E1744MediaPlayerController
-  controller: zigbee2mqtt/zigbee_remote_kitchen/action
-  integration: mqtt
+  controller: sensor.zigbee_remote_kitchen
+  integration: z2m
   media_player: media_player.snapcast_client_keuken
   delay: 500
   excluded_actions:
@@ -73,7 +73,7 @@ remote_hallway_upstairs:
   controller: zigbee2mqtt/zigbee_remote_hallway_upstairs/action
   integration: mqtt
   media_player: media_player.snapcast_client_hal
-  delay: 500
+  delay: 200
   excluded_actions:
     - play_pause
     - next_track
@@ -85,7 +85,7 @@ remote_bedroom:
   controller: zigbee2mqtt/zigbee_remote_bedroom/action
   integration: mqtt
   media_player: media_player.snapcast_client_slaapkamer
-  delay: 500
+  delay: 200
   excluded_actions:
     - play_pause
     - next_track
