@@ -7,7 +7,7 @@ automation:
         topic: 'zigbee2mqtt/zigbee_remote_kitchen'
     condition:
       - condition: template
-        value_template: "{{ 'skip_forward' in trigger.payload }}"
+        value_template: "{{ 'brightness_step_up' in trigger.payload }}"
     action:
       - service: media_player.media_next_track
         entity_id: media_player.spotify_ashwin_van_dijk
@@ -19,7 +19,7 @@ automation:
         topic: 'zigbee2mqtt/zigbee_remote_kitchen'
     condition:
       - condition: template
-        value_template: "{{ 'skip_backward' in trigger.payload }}"
+        value_template: "{{ 'brightness_step_down' in trigger.payload }}"
     action:
       - service: media_player.media_previous_track
         entity_id: media_player.spotify_ashwin_van_dijk
@@ -31,7 +31,7 @@ automation:
         topic: 'zigbee2mqtt/zigbee_remote_kitchen'
     condition:
       - condition: template
-        value_template: "{{ 'play_pause' in trigger.payload }}"
+        value_template: "{{ 'toggle' in trigger.payload }}"
     action:
       - service: media_player.media_play_pause
         entity_id: media_player.spotify_ashwin_van_dijk
