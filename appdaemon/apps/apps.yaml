@@ -61,7 +61,7 @@ remote_kitchen:
   controller: sensor.zigbee_remote_kitchen_action
   integration: z2m
   media_player: media_player.snapcast_client_keuken
-#  action_delay: 200
+  delay: 200
   excluded_actions:
     - play_pause
     - next_track
@@ -73,7 +73,7 @@ remote_hallway_upstairs:
   controller: sensor.zigbee_remote_hallway_upstairs_action
   integration: z2m
   media_player: media_player.snapcast_client_hal
-#  delay: 200
+  delay: 200
   excluded_actions:
     - play_pause
     - next_track
@@ -85,7 +85,7 @@ remote_bedroom:
   controller: sensor.zigbee_remote_bedroom_action
   integration: z2m
   media_player: media_player.snapcast_client_slaapkamer
-#  action_delay: 200
+  delay: 200
   excluded_actions:
     - play_pause
     - next_track
