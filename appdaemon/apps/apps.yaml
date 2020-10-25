@@ -55,7 +55,6 @@
   random_entrance_on_1: light.wifi_e27cwww_01
   random_entrance_off_1: light.wifi_e27cwww_01
 
-
 remote_kitchen:
   module: controllerx
   class: E1744MediaPlayerController
