@@ -3,7 +3,7 @@
     - platform: state
       entity_id:
         - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
-        - binary_sensor.zigbee_sensor_hallway_downstairs_2_occupancy
+        - binary_sensor.zigbee_sensor_hallway_downstairs_coatrack_occupancy
         - input_boolean.hallway_downstairs_presence
       to: "on"
 
@@ -29,7 +29,7 @@
     - platform: state
       entity_id:
         - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
-        - binary_sensor.zigbee_sensor_hallway_downstairs_2_occupancy
+        - binary_sensor.zigbee_sensor_hallway_downstairs_coatrack_occupancy
         - input_boolean.hallway_downstairs_presence
       to: "on"
 
