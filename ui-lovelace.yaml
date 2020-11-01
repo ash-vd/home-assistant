@@ -325,7 +325,7 @@ views:
         entities:
           - type: section
           - input_boolean.workroom_presence
-          - binary_sensor.sensor_workroom_occupancy
+          - binary_sensor.zigbee_sensor_workroom_occupancy
           - sensor.zigbee_sensor_workroom_illuminance
 
       - type: entities
