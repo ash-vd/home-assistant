@@ -334,7 +334,7 @@ views:
         entities:
           - type: section
           - input_boolean.entrance_presence
-          - binary_sensor.sensor_entrance_occupancy
+          - binary_sensor.zigbee_sensor_entrance_occupancy
 
       - type: entities
         title: Gang (boven)
