@@ -34,7 +34,7 @@
 
     light.shelly_dimmer_02:
       state: on
-      brightness: 160
+      brightness_pct: 25
 
     light.erker_gu10_cwww:
       state: on
