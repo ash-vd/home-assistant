@@ -302,12 +302,12 @@ views:
           - sensor.zigbee_sensor_kitchen_illuminance
 
       - type: entities
-          title: Badkamer
-          show_header_toggle: false
-          entities:
-            - type: section
-            - input_boolean.bathroom_presence
-            - binary_sensor.multi_01_movement
+        title: Badkamer
+        show_header_toggle: false
+        entities:
+          - type: section
+          - input_boolean.bathroom_presence
+          - binary_sensor.multi_01_movement
 
       - type: entities
         title: Werkkamer
@@ -319,12 +319,12 @@ views:
           - sensor.zigbee_sensor_workroom_illuminance
 
       - type: entities
-          title: Entree
-          show_header_toggle: false
-          entities:
-            - type: section
-            - input_boolean.entrance_presence
-            - binary_sensor.sensor_entrance_occupancy
+        title: Entree
+        show_header_toggle: false
+        entities:
+          - type: section
+          - input_boolean.entrance_presence
+          - binary_sensor.sensor_entrance_occupancy
 
       - type: entities
         title: Gang (boven)
