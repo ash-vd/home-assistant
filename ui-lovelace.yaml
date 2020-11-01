@@ -282,7 +282,7 @@ views:
 
   - !include lovelace/workroom.yaml
 
-  - title: SensorenOld
+  - title: Sensoren
     icon: mdi:cogs
     cards:
       - type: entities
@@ -292,35 +292,22 @@ views:
           - input_select.house_mode
           - input_boolean.house_vacation
 
-      #      - type: custom:group-card
-      #        card:
-      #          type: entities
-      #          title: Woonkamer
-      #          show_header_toggle: false
-      #        group: group.sensors_livingroom
-
       - type: entities
         title: Keuken
         show_header_toggle: false
         entities:
           - type: section
-
           - input_boolean.kitchen_presence
           - binary_sensor.zigbee_sensor_kitchen_occupancy
           - sensor.zigbee_sensor_kitchen_illuminance
-          - sensor.plug_dishwasher_power
-          - sensor.zigbee_climate_3_temperature
-          - sensor.zigbee_climate_3_humidity
-          - sensor.zigbee_climate_3_pressure
-          - sensor.zigbee_climate_2_temperature
 
-      - type: custom:group-card
-        card:
-          type: entities
+      - type: entities
           title: Badkamer
           show_header_toggle: false
-        group: group.sensors_bathroom
-
+          entities:
+            - type: section
+            - input_boolean.bathroom_presence
+            - binary_sensor.multi_01_movement
 
       - type: entities
         title: Werkkamer
@@ -331,12 +318,13 @@ views:
           - binary_sensor.sensor_workroom_occupancy
           - sensor.zigbee_sensor_workroom_illuminance
 
-      - type: custom:group-card
-        card:
-          type: entities
+      - type: entities
           title: Entree
           show_header_toggle: false
-        group: group.sensors_entrance
+          entities:
+            - type: section
+            - input_boolean.entrance_presence
+            - binary_sensor.sensor_entrance_occupancy
 
       - type: entities
         title: Gang (boven)
@@ -356,20 +344,14 @@ views:
           - input_boolean.bedroom_presence
           - binary_sensor.zigbee_sensor_bedroom_occupancy
           - binary_sensor.zigbee_door_bedroom_contact
-          - sensor.zigbee_climate_1_temperature
-          - sensor.zigbee_climate_1_humidity
-          - sensor.zigbee_climate_1_pressure
 
       - type: entities
         title: Washok
         show_header_toggle: false
         entities:
           - type: section
-
           - input_boolean.washroom_presence
           - binary_sensor.zigbee_door_washroom_contact
-          - sensor.plug_washing_machine_power
-          - sensor.plug_tumble_dryer_power
 
   - title: Apparaten
     icon: mdi:washing-machine
