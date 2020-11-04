@@ -320,14 +320,14 @@ views:
           - binary_sensor.multi_01_movement
 
       - type: entities
-          title: Gang (beneden)
-          show_header_toggle: false
-          entities:
-            - type: section
-            - input_boolean.hallway_downstairs_presence
-            - sensor.zigbee_sensor_hallway_downstairs_illuminance
-            - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
-            - binary_sensor.zigbee_sensor_hallway_downstairs_coatrack_occupancy
+        title: Gang (beneden)
+        show_header_toggle: false
+        entities:
+          - type: section
+          - input_boolean.hallway_downstairs_presence
+          - sensor.zigbee_sensor_hallway_downstairs_illuminance
+          - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
+          - binary_sensor.zigbee_sensor_hallway_downstairs_coatrack_occupancy
 
       - type: entities
         title: Werkkamer
