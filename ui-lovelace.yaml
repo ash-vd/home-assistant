@@ -92,10 +92,7 @@ views:
           - input_select.livingroom_scene
           - input_select.livingroom_remote
 
-          - type: media-control
-            entity: media_player.chromecast_livingroom
-            group: true
-            artwork: cover
+          -  media_player.chromecast_livingroom
 
           - type: section
             label: Rolgordijnen
@@ -263,10 +260,7 @@ views:
 
           - entity: climate.slaapkamer
 
-          - type: media-control
-            entity: media_player.chromecast_bedroom
-            group: true
-            artwork: cover
+          - media_player.chromecast_bedroom
 
           - type: section
             label: Verlichting
@@ -301,6 +295,7 @@ views:
           - binary_sensor.zigbee_sensor_livingroom_tv_occupancy
           - binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy
           - binary_sensor.zigbee_sensor_livingroom_closet_occupancy
+          - binary_sensor.zigbee_door_livingroom
 
       - type: entities
         title: Keuken
@@ -318,6 +313,7 @@ views:
           - type: section
           - input_boolean.bathroom_presence
           - binary_sensor.multi_01_movement
+          - binary_sensor.zigbee_door_bathroom
 
       - type: entities
         title: Gang (beneden)
