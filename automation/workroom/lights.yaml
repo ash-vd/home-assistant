@@ -19,7 +19,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_workroom_illuminance
-        below: 200
+        below: 250
 
   action:
     - service: light.turn_on
@@ -35,7 +35,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_workroom_illuminance
-      above: 300
+      above: 350
       for:
         minutes: 5
 
@@ -60,9 +60,9 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_workroom_illuminance
-      above: 300
+      above: 350
       for:
-        minutes: 9
+        minutes: 10
 
   action:
     - service: light.turn_off

@@ -1,7 +1,9 @@
 - alias: Verlichting - Gang (boven) - Aan
   trigger:
     - platform: state
-      entity_id: input_boolean.hallway_upstairs_presence
+      entity_id:
+        - binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
+        - input_boolean.hallway_upstairs_presence
       to: "on"
 
     - platform: numeric_state
