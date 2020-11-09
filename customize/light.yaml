@@ -4,13 +4,13 @@ light.zigbee_e14_livingroom_1_light:
 light.zigbee_washroom_light:
   friendly_name: Licht
 
-light.zigbee_e27c_1_light:
+light.zigbee_livingroom_corner_light:
   friendly_name: Bol (Hoek)
 
-light.zigbee_e27c_2_light:
+light.zigbee_livingroom_window_light:
   friendly_name: Bol (Raam)
 
-light.zigbee_e27c_3_light:
+light.zigbee_livingroom_big_light:
   friendly_name: Groot
 
 light.bedroom_sink:

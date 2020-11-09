@@ -7,17 +7,17 @@
       state: on
       brightness_pct: 10
 
-    light.zigbee_e27c_1_light:
+    light.zigbee_livingroom_corner_light:
       state: on
       brightness_pct: 10
       color_temp: 425
 
-    light.zigbee_e27c_2_light:
+    light.zigbee_livingroom_window_light:
       state: on
       brightness_pct: 10
       color_temp: 425
 
-    light.zigbee_e27c_3_light:
+    light.zigbee_livingroom_big_light:
       state: on
       brightness: 120
       color_temp: 425
