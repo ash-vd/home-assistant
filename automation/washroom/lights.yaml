@@ -6,7 +6,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: light.zigbee_e27c_4_light
+      entity_id: light.zigbee_washroom_light
       data:
         brightness: 255
         kelvin: 2800
@@ -21,4 +21,4 @@
 
   action:
     - service: homeassistant.turn_off
-      entity_id: light.zigbee_e27c_4_light
+      entity_id: light.zigbee_washroom_light
