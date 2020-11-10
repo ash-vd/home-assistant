@@ -33,10 +33,9 @@
     event: sunrise
     offset: "00:30:00"
 
-    action:
-      service: light.turn_off
-      entity_id: light.outside
-
+  action:
+    service: light.turn_off
+    entity_id: light.outside
 
 
 - alias: Deurbel - WLED outside
