@@ -295,7 +295,7 @@ views:
           - binary_sensor.zigbee_sensor_livingroom_tv_occupancy
           - binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy
           - binary_sensor.zigbee_sensor_livingroom_closet_occupancy
-          - binary_sensor.zigbee_door_livingroom
+          - binary_sensor.zigbee_door_livingroom_contact
 
       - type: entities
         title: Keuken
@@ -313,7 +313,7 @@ views:
           - type: section
           - input_boolean.bathroom_presence
           - binary_sensor.multi_01_movement
-          - binary_sensor.zigbee_door_bathroom
+          - binary_sensor.zigbee_door_bathroom_contact
 
       - type: entities
         title: Gang (beneden)
