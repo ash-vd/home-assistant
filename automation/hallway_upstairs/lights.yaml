@@ -21,9 +21,48 @@
         entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
         below: 70
 
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Normaal"
+
   action:
-    - service: homeassistant.turn_on
+    - service: light.turn_on
       entity_id: light.hallway_upstairs
+      data:
+        brightness_pct: 100
+
+- alias: Verlichting - Gang (boven) - Aan - Nacht
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
+        - input_boolean.hallway_upstairs_presence
+      to: "on"
+
+    - platform: numeric_state
+      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+      below: 70
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.hallway_upstairs_presence
+        state: "on"
+
+      - condition: numeric_state
+        entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+        below: 70
+
+      - condition: state
+        entity_id: input_select.house_mode
+        state: "Nacht"
+
+  action:
+    - service: light.turn_on
+      entity_id: light.hallway_upstairs
+      data:
+        brightness_pct: 30
 
 - alias: Verlichting - Gang (boven) - Uit
   trigger:
@@ -33,12 +72,12 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
-      above: 70
+      above: 200
       for:
         minutes: 3
 
   action:
-    - service: homeassistant.turn_off
+    - service: light.turn_off
       entity_id: light.hallway_upstairs
 
 - alias: Verlichting - Dakterras

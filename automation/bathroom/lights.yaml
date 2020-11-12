@@ -17,7 +17,6 @@
       entity_id: light.shelly_dimmer_bathroom
       data:
         brightness: 255
-        transition: 1
 
 - alias: Verlichting - Badkamer - Aan (Nacht)
   trigger:
