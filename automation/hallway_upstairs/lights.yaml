@@ -23,7 +23,7 @@
 
   action:
     - service: homeassistant.turn_on
-      entity_id: switch.plug_hallway_upstairs_switch
+      entity_id: light.hallway_upstairs
 
 - alias: Verlichting - Gang (boven) - Uit
   trigger:
@@ -39,7 +39,7 @@
 
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.plug_hallway_upstairs_switch
+      entity_id: light.hallway_upstairs
 
 - alias: Verlichting - Dakterras
   trigger:
