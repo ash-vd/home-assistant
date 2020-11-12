@@ -4,3 +4,10 @@
   state_topic: "zigbee2mqtt/kitchen_light/set"
   brightness: true
   schema: json
+
+- platform: mqtt
+  name: hallway_upstairs
+  command_topic: "zigbee2mqtt/hallway_upstairs_light/set"
+  state_topic: "zigbee2mqtt/hallway_upstairs_light/set"
+  brightness: true
+  schema: json
