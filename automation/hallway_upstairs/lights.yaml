@@ -8,7 +8,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
-      below: 70
+      below: 100
 
   condition:
     condition: and
@@ -19,7 +19,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
-        below: 70
+        below: 100
 
       - condition: state
         entity_id: input_select.house_mode
@@ -29,7 +29,7 @@
     - service: light.turn_on
       entity_id: light.hallway_upstairs
       data:
-        brightness_pct: 100
+        brightness_pct: 50
 
 - alias: Verlichting - Gang (boven) - Aan - Nacht
   trigger:
@@ -41,7 +41,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
-      below: 70
+      below: 100
 
   condition:
     condition: and
@@ -52,7 +52,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
-        below: 70
+        below: 100
 
       - condition: state
         entity_id: input_select.house_mode
@@ -62,7 +62,7 @@
     - service: light.turn_on
       entity_id: light.hallway_upstairs
       data:
-        brightness_pct: 30
+        brightness_pct: 1
 
 - alias: Verlichting - Gang (boven) - Uit
   trigger:
