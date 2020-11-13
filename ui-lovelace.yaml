@@ -145,8 +145,8 @@ views:
             toggle: true
 
           - type: custom:slider-entity-row
-              entity: light.closet
-              toggle: true
+            entity: light.closet
+            toggle: true
 
       - type: entities
         title: Keuken
