@@ -144,6 +144,10 @@ views:
             entity: light.erker_gu10_cwww
             toggle: true
 
+          - type: custom:slider-entity-row
+              entity: light.closet
+              toggle: true
+
       - type: entities
         title: Keuken
         show_header_toggle: false
