@@ -48,20 +48,20 @@
     entity_id: light.outside
     state: "on"
   action:
-    - data:
+    - service: scene.create
+      data:
         scene_id: doorbell_wled_revert
         snapshot_entities: 'light.outside'
-      service: scene.create
-    - data:
+    - service: light.turn_on
+      data:
         brightness: 255
         entity_id: light.outside
-      service: light.turn_on
-    - data:
+    - service: wled.effect
+      entity_id: light.outside
+      data:
         effect: 'Colorloop'
         speed: 225
-      entity_id: light.outside
-      service: wled.effect
     - delay: 00:00:15
-    - data:
+    - service: scene.turn_on
+      data:
         entity_id: scene.doorbell_wled_revert
-      service: scene.turn_on

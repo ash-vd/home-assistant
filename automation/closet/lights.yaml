@@ -1,0 +1,42 @@
+- alias: Verlichting - Inloopkast - Aan
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.zigbee_sensor_closet
+      to: "on"
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: light.closet
+        state: "on"
+
+  action:
+    - service: scene.create
+      data:
+        scene_id: light_closet_revert
+        snapshot_entities: 'light.closet'
+    - service: light.turn_on
+      entity_id: light.closet
+      data:
+        brightness_pct: 70
+
+- alias: Verlichting - Inloopkast - Uit
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.zigbee_sensor_closet
+      to: "off"
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: light.closet
+        state: "on"
+
+  action:
+    - service: scene.turn_on
+      data:
+        entity_id: scene.light_closet_revert
