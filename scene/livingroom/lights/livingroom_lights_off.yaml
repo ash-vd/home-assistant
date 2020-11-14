@@ -1,7 +1,7 @@
 - name: livingroom_lights_off
   entities:
     light.shelly_01: off
-    light.zigbee_e14_livingroom_1_light: off
+    light.zigbee_tv_light: off
     light.zigbee_livingroom_corner_light: off
     light.zigbee_livingroom_window_light: off
     light.zigbee_livingroom_big_light: off

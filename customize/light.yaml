@@ -1,4 +1,4 @@
-light.zigbee_e14_livingroom_1_light:
+light.zigbee_tv_light:
   friendly_name: TV
 
 light.zigbee_washroom_light:

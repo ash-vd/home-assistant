@@ -117,7 +117,7 @@ views:
           - light.shelly_01
 
           - type: custom:slider-entity-row
-            entity: light.zigbee_e14_livingroom_1_light
+            entity: light.zigbee_tv_light
             toggle: true
 
           - type: custom:slider-entity-row
@@ -300,6 +300,14 @@ views:
           - binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy
           - binary_sensor.zigbee_sensor_livingroom_closet_occupancy
           - binary_sensor.zigbee_door_livingroom_contact
+
+      - type: entities
+        title: Inloopkast
+        show_header_toggle: false
+        entities:
+          - type: section
+          - binary_sensor.zigbee_sensor_closet_occupancy
+          - binary_sensor.zigbee_sensor_closet_illuminance
 
       - type: entities
         title: Keuken
