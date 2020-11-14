@@ -307,7 +307,7 @@ views:
         entities:
           - type: section
           - binary_sensor.zigbee_sensor_closet_occupancy
-          - binary_sensor.zigbee_sensor_closet_illuminance
+          - sensor.zigbee_sensor_closet_illuminance
 
       - type: entities
         title: Keuken
