@@ -2,7 +2,7 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_sensor_closet
+        - binary_sensor.zigbee_sensor_closet_occupancy
       to: "on"
 
   condition:
@@ -26,7 +26,7 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_sensor_closet
+        - binary_sensor.zigbee_sensor_closet_occupancy
       to: "off"
 
   condition:
