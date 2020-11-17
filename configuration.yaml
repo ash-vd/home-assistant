@@ -99,8 +99,8 @@ stream:
 
 cast:
   media_player:
-    - host: 10.10.1.11
-    - host: 10.10.1.12
+    - uuid: 391b0b111c92e425968074d8c985ba62
+    - uuid: 9366df16e5a8aa0c279d75fce548e746
 
 remote:
   - platform: harmony
