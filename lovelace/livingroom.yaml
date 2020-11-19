@@ -98,5 +98,5 @@ cards:
         toggle: true
 
       - type: custom:slider-entity-row
-        entity: light.shelly_dimmer_02
+        entity: light.shelly_dimmer_livingroom_standing
         toggle: true

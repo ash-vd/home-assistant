@@ -32,7 +32,7 @@
       brightness_pct: 100
       kelvin: 6000
 
-    light.shelly_dimmer_02:
+    light.shelly_dimmer_livingroom_standing:
       state: on
       brightness_pct: 100
 

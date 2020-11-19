@@ -7,7 +7,7 @@
     light.zigbee_livingroom_big_light: off
     light.wifi_e27cwww_02: off
     light.closet: off
-    light.shelly_dimmer_02: off
+    light.shelly_dimmer_livingroom_standing: off
     light.erker_gu10_cwww: off
     light.window_sill_01: off
     light.window_sill_02: off

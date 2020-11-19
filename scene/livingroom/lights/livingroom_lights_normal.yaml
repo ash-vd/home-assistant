@@ -32,7 +32,7 @@
       brightness: 180
       color_temp: 315
 
-    light.shelly_dimmer_02:
+    light.shelly_dimmer_livingroom_standing:
       state: on
       brightness_pct: 25
 
