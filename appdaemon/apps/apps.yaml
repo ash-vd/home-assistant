@@ -20,13 +20,13 @@ Occupancy Simulator:
   step_night_on_name: Night On
   step_night_on_start: "22:35:00"
   step_night_on_end: "23:45:00"
-  step_night_on_on_1: light.bedroom_sink
+  step_night_on_on_1: light.shelly_dimmer_bedroom_sink
 
   step_night_off_name: Night Off
   step_night_off_relative: Night On
   step_night_off_start_offset: "00:03:00"
   step_night_off_end_offset: "00:14:00"
-  step_night_off_off_1: light.bedroom_sink
+  step_night_off_off_1: light.shelly_dimmer_bedroom_sink
 
   random_kitchen_name: Kitchen
   random_kitchen_start: Evening On

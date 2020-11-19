@@ -5,5 +5,5 @@ bedroom_off:
 #      state: "off"
     - service: light.turn_off
       entity_id:
-        - light.bedroom_sink
+        - light.shelly_dimmer_bedroom_sink
         - light.shelly_02

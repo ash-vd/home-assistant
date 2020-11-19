@@ -136,11 +136,11 @@ lovelace:
 homekit:
   filter:
     include_entities:
-      - light.bedroom_sink
+      - light.shelly_dimmer_bedroom_sink
       - input_boolean.homekit_livingroom
       - switch.plug_hallway_upstairs_switch
   entity_config:
-    light.bedroom_sink:
+    light.shelly_dimmer_bedroom_sink:
       name: Wastafel
     input_boolean.homekit_livingroom:
       name: Woonkamer

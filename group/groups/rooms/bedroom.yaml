@@ -3,4 +3,4 @@ bedroom:
   entities:
     - climate.slaapkamer
     - light.shelly_02
-    - light.bedroom_sink
+    - light.shelly_dimmer_bedroom_sink

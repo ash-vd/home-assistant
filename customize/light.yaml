@@ -13,7 +13,7 @@ light.zigbee_livingroom_window_light:
 light.zigbee_livingroom_big_light:
   friendly_name: Groot
 
-light.bedroom_sink:
+light.shelly_dimmer_bedroom_sink:
   friendly_name: Wastafel
 
 light.kitchen:
