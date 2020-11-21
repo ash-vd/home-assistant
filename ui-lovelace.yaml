@@ -97,11 +97,8 @@ views:
           - type: section
             label: Rolgordijnen
 
-          - cover.blind_01
-          - cover.blind_02
           - cover.blind_03
-          - cover.blind_04
-          - cover.blind_05
+          - cover.blind_06
 
           - type: section
             label: Vensterbanken
@@ -115,10 +112,6 @@ views:
             label: Verlichting
 
           - light.shelly_01
-
-          - type: custom:slider-entity-row
-            entity: light.zigbee_tv_light
-            toggle: true
 
           - type: custom:slider-entity-row
             entity: light.zigbee_livingroom_corner_light
