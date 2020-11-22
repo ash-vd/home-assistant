@@ -91,3 +91,14 @@ remote_bedroom:
     - next_track
     - previous_track
 
+remote_bathroom:
+  module: controllerx
+  class: E1744MediaPlayerController
+  controller: sensor.zigbee_remote_bathroom_action
+  integration: z2m
+  media_player: media_player.snapcast_client_badkamer
+  delay: 200
+  excluded_actions:
+    - play_pause
+    - next_track
+    - previous_track
