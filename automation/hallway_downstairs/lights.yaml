@@ -4,6 +4,7 @@
       entity_id:
         - binary_sensor.zigbee_sensor_hallway_downstairs_occupancy
         - binary_sensor.zigbee_sensor_hallway_downstairs_coatrack_occupancy
+        - binary_sensor.zigbee_sensor_entrance_occupancy
         - input_boolean.hallway_downstairs_presence
       to: "on"
 
@@ -16,7 +17,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-        below: 35
+        below: 30
 
   action:
     - service: homeassistant.turn_on
@@ -42,7 +43,7 @@
 
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-        below: 35
+        below: 30
 
   action:
     - service: homeassistant.turn_on
@@ -77,7 +78,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-      above: 70
+      above: 60
       for:
         minutes: 4
 
