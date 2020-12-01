@@ -23,6 +23,7 @@ views:
           entity: media_player.spotify_kim_vermeer
 
 
+      - light.christmas_tree
 
       - type: entities
         title: MultiRoom
