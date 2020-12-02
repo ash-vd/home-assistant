@@ -44,5 +44,8 @@
     - delay: 00:00:15
     - service: scene.turn_on
       data:
-        speed: 70
         entity_id: scene.doorbell_wled_tree_revert
+    - service: wled.effect
+        entity_id: light.christmas_tree
+        data:
+          speed: 70
