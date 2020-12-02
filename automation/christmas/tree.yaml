@@ -48,4 +48,4 @@
     - service: wled.effect
       entity_id: light.christmas_tree
       data:
-        speed: 70
+        speed: 90
