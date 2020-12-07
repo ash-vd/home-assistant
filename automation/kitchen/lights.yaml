@@ -6,6 +6,10 @@
         - input_boolean.kitchen_presence
       to: "on"
 
+    - platform: numeric_state
+      entity_id: sensor.zigbee_sensor_kitchen_illuminance
+      below: 70
+
   condition:
     condition: and
     conditions:
@@ -16,6 +20,11 @@
       - condition: numeric_state
         entity_id: sensor.zigbee_sensor_kitchen_illuminance
         below: 70
+
+      - condition: state
+        entity_id: input_boolean.kitchen_presence
+        state: "on"
+
 
   action:
     - service: homeassistant.turn_on
