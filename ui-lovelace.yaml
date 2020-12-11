@@ -26,6 +26,7 @@ views:
         show_header_toggle: false
         entities:
           - light.christmas_tree
+          - switch.plug_tree_outside_switch
 
       - type: entities
         title: MultiRoom
