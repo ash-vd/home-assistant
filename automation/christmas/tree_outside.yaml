@@ -6,7 +6,7 @@
 
   action:
     service: light.turn_on
-    entity_id: light.outside
+    entity_id: switch.plug_tree_outside_switch
 
 - alias: Tree outside - OFF evening
   trigger:
@@ -15,7 +15,7 @@
 
   action:
     service: light.turn_off
-    entity_id: light.outside
+    entity_id: switch.plug_tree_outside_switch
 
 - alias: Tree outside - ON morning
   trigger:
@@ -24,7 +24,7 @@
 
   action:
     service: light.turn_on
-    entity_id: light.outside
+    entity_id: switch.plug_tree_outside_switch
 
 - alias: Tree outside - OFF morning
   trigger:
@@ -34,4 +34,4 @@
 
   action:
     service: light.turn_off
-    entity_id: light.outside
+    entity_id: switch.plug_tree_outside_switch
