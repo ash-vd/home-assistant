@@ -5,7 +5,7 @@
     offset: "-01:00:00"
 
   action:
-    service: light.turn_on
+    service: switch.turn_on
     entity_id: switch.plug_tree_outside_switch
 
 - alias: Tree outside - OFF evening
@@ -14,7 +14,7 @@
     at: "23:45:00"
 
   action:
-    service: light.turn_off
+    service: switch.turn_off
     entity_id: switch.plug_tree_outside_switch
 
 - alias: Tree outside - ON morning
@@ -23,7 +23,7 @@
     at: "06:00:00"
 
   action:
-    service: light.turn_on
+    service: switch.turn_on
     entity_id: switch.plug_tree_outside_switch
 
 - alias: Tree outside - OFF morning
@@ -33,5 +33,5 @@
     offset: "01:00:00"
 
   action:
-    service: light.turn_off
+    service: switch.turn_off
     entity_id: switch.plug_tree_outside_switch
