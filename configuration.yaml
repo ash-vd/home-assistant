@@ -132,6 +132,10 @@ lovelace:
     - url: /local/vertical-style-card.js
       type: module
 
+hisense_aehw4a1:
+  ip_address:
+    - 10.10.1.6
+    - 10.10.1.7
 
 homekit:
   filter:
