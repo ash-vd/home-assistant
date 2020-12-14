@@ -3,7 +3,6 @@
     - platform: state
       entity_id:
         - group.livingroom_presence
-        - binary_sensor.zigbee_door_livingroom_contact
       to: "on"
 
   action:
