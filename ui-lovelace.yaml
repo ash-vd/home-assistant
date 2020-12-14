@@ -221,10 +221,6 @@ views:
             icon: false
             control: false
 
-
-          - type: thermostat
-            entity: climate.airco_werkkamer
-
           - type: entities
             show_header_toggle: false
             entities:
