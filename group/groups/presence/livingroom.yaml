@@ -3,4 +3,3 @@ livingroom_presence:
     - binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy
     - binary_sensor.zigbee_sensor_livingroom_closet_occupancy
     - binary_sensor.zigbee_sensor_livingroom_tv_occupancy
-    - binary_sensor.zigbee_door_livingroom_contact
