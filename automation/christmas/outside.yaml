@@ -65,3 +65,7 @@
     - service: scene.turn_on
       data:
         entity_id: scene.doorbell_wled_revert
+    - service: wled.effect
+      entity_id: light.christmas_tree
+      data:
+        speed: 90
