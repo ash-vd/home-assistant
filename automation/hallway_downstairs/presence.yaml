@@ -14,7 +14,7 @@
     entity_id: group.hallway_downstairs_presence
     to: "off"
     for:
-      minutes: 5
+      minutes: 2
 
   action:
     service: homeassistant.turn_off
