@@ -74,12 +74,9 @@ cards:
     title: Verlichting
     show_header_toggle: false
     entities:
+      - input_boolean.livingroom_auto
 
       - light.shelly_01
-
-      - type: custom:slider-entity-row
-        entity: light.zigbee_tv_light
-        toggle: true
 
       - type: custom:slider-entity-row
         entity: light.zigbee_livingroom_corner_light
