@@ -282,6 +282,7 @@ views:
         entities:
           - input_select.house_mode
           - input_boolean.house_vacation
+          - input_boolean.livingroom_auto
 
       - type: entities
         title: Woonkamer
