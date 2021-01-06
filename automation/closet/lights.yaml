@@ -3,6 +3,7 @@
     - platform: state
       entity_id:
         - binary_sensor.zigbee_sensor_closet_occupancy
+        - input_boolean.closet_presence
       to: "on"
 
   condition:
@@ -20,13 +21,12 @@
     - service: light.turn_on
       entity_id: light.closet
       data:
-        brightness_pct: 70
+        brightness_pct: 75
 
 - alias: Verlichting - Inloopkast - Uit
   trigger:
     - platform: state
-      entity_id:
-        - binary_sensor.zigbee_sensor_closet_occupancy
+      entity_id: input_boolean.closet_presence
       to: "off"
 
   condition:
