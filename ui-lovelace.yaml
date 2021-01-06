@@ -300,6 +300,7 @@ views:
         show_header_toggle: false
         entities:
           - type: section
+          - input_boolean.closet_presence
           - binary_sensor.zigbee_sensor_closet_occupancy
           - sensor.zigbee_sensor_closet_illuminance
 
