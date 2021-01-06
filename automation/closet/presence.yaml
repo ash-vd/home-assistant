@@ -15,7 +15,7 @@
     entity_id: binary_sensor.zigbee_sensor_closet_occupancy
     to: "off"
     for:
-      seconds: 5
+      seconds: 6
 
   action:
     service: homeassistant.turn_off

@@ -2,7 +2,6 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_sensor_closet_occupancy
         - input_boolean.closet_presence
       to: "on"
 
