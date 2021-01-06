@@ -2,6 +2,7 @@
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_door_bathroom_contact, binary_sensor.multi_01_movement
+      from: "off"
       to: "on"
 
   action:
