@@ -14,16 +14,20 @@
       - condition: state
         entity_id: input_select.house_mode
         state: "Normaal"
-
-      - condition: numeric_state
-        entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-        below: 30
+      - condition: or
+        conditions:
+          - condition: numeric_state
+            entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
+            below: 30
+          - condition: numeric_state
+            entity_id: sensor.zigbee_sensor_hallway_downstairs_coatrack_illuminance
+            below: 40
 
   action:
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_hallway_downstairs
       data:
-        brightness_pct: 50
+        brightness_pct: 60
 
 - alias: Verlichting - Hal (beneden) - Aan (Nacht)
   trigger:
@@ -40,10 +44,14 @@
       - condition: state
         entity_id: input_select.house_mode
         state: "Nacht"
-
-      - condition: numeric_state
-        entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
-        below: 30
+      - condition: or
+        conditions:
+          - condition: numeric_state
+            entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
+            below: 30
+          - condition: numeric_state
+            entity_id: sensor.zigbee_sensor_hallway_downstairs_coatrack_illuminance
+            below: 40
 
   action:
     - service: homeassistant.turn_on
@@ -80,7 +88,7 @@
       entity_id: sensor.zigbee_sensor_hallway_downstairs_illuminance
       above: 60
       for:
-        minutes: 4
+        minutes: 3
 
   action:
     - service: homeassistant.turn_off
