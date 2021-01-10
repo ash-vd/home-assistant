@@ -28,5 +28,8 @@ input_boolean.workroom_presence:
 input_boolean.hallway_downstairs_presence:
   friendly_name: Aanwezig
 
+input_boolean.closet_presence:
+  friendly_name: Aanwezig
+
 input_boolean.house_vacation:
   friendly_name: Vakantie
