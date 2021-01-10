@@ -8,6 +8,7 @@
         - binary_sensor.zigbee_sensor_livingroom_tv_occupancy
         - input_boolean.livingroom_presence
         - input_boolean.livingroom_auto
+      from: "off"
       to: "on"
 
     - platform: state
