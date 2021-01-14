@@ -1,0 +1,14 @@
+trigger:
+  - platform: state
+    entity_id: media_player.snapcast_client_woonkamer
+condition:
+  - condition: template
+    value_template:>
+    {% set from = trigger.from_state.attributes.volume_level | float%}
+    {% set to = trigger.to_state.attributes.volume_level | float %}
+    {{ to > from }}
+action:
+  - service: media_player.volume_set
+    entity_id: media_player.snapcast_client_woonkamer_2
+    data:
+      volume_level: {{trigger.to_state.attributes.volume_level | float}}
