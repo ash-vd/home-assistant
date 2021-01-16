@@ -13,4 +13,5 @@
     - service: media_player.volume_set
       entity_id: media_player.snapcast_client_woonkamer_2
       data:
-        volume_level: {{trigger.to_state.attributes.volume_level | float}}
+        volume_level: >
+          {{trigger.to_state.attributes.volume_level | float}}
