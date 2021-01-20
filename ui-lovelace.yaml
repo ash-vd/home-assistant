@@ -95,8 +95,7 @@ views:
           - type: section
             label: Rolgordijnen
 
-          - cover.blind_03
-          - cover.blind_6
+          - cover.blind_08
 
           - type: section
             label: Vensterbanken

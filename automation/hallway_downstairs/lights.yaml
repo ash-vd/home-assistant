@@ -57,7 +57,7 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_hallway_downstairs
       data:
-        brightness: 15
+        brightness_pct: 15
 
 - alias: Verlichting - Hal (beneden) - Standby
   trigger:
