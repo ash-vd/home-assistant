@@ -95,6 +95,7 @@ views:
           - type: section
             label: Rolgordijnen
 
+          - cover.blind_04
           - cover.blind_08
 
           - type: section
