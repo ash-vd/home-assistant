@@ -39,7 +39,7 @@ automation:
     initial_state: 'on'
     trigger:
       - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_hallway_upstairs'
+        topic: 'zigbee2mqtt/zigbee_remote_hallway_upstairs/action'
     condition:
       - condition: template
         value_template: "{{ 'brightness_move_up' in trigger.payload }}"
