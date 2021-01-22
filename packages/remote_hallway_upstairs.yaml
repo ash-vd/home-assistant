@@ -42,9 +42,17 @@ automation:
         topic: 'zigbee2mqtt/zigbee_remote_hallway_upstairs/action'
     condition:
       - condition: template
+        value_template: "{{ state_attr('media_player.snapcast_client_hal', 'is_volume_muted') }}"
+      - condition: template
         value_template: "{{ 'brightness_move_up' in trigger.payload }}"
     action:
+      - service: media_player.volume_set
+        data:
+          entity_id: media_player.snapcast_client_hal
+          volume_level: 0
       - service: media_player.volume_mute
         data:
           entity_id: media_player.snapcast_client_hal
           is_volume_muted: false
+
+
