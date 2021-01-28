@@ -62,7 +62,7 @@ views:
               source: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_slaapkamer
+            entity: media_player.snapcast_client_hal
             group: true
             hide:
               power: true
@@ -70,12 +70,20 @@ views:
               source: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_hal
-            group: true
-            hide:
-              power: true
-              controls: true
-              source: true
+              entity: media_player.snapcast_client_werkkamer
+              group: true
+              hide:
+                power: true
+                controls: true
+                source: true
+
+          - type: custom:mini-media-player
+              entity: media_player.snapcast_client_slaapkamer
+              group: true
+              hide:
+                power: true
+                controls: true
+                source: true
 
       - type: entities
         title: Woonkamer
