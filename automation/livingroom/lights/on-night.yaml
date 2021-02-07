@@ -47,13 +47,3 @@
   action:
     - service: homeassistant.turn_on
       entity_id: scene.livingroom_lights_dimmed
-
-
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=NL
-
-network={
-  ssid="Ash-IoT"
-  psk="sm@rth0me"
-}
