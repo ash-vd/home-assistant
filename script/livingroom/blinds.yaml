@@ -1,0 +1,8 @@
+livingroom_blinds_open:
+  sequence:
+    - service: cover.open_cover
+      target:
+        entity_id:
+          - cover.blind_02
+          - cover.blind_04
+          - cover.blind_08
