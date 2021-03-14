@@ -3,6 +3,11 @@ livingroom_blinds_open:
     - service: cover.open_cover
       target:
         entity_id:
+          - cover.blind_01
           - cover.blind_02
+          - cover.blind_03
           - cover.blind_04
+          - cover.blind_05
+          - cover.blind_06
+          - cover.blind_07
           - cover.blind_08
