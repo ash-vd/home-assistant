@@ -15,7 +15,7 @@
         filename: /config/www/doorbell.jpg
     - service: notify.mobile_app_ashwiphone
       data:
-        title: "Ding dong!"
+        title: "Ding fuckin' dong!"
         message: "Er is iemand aan de deur"
         data:
           attachment:
@@ -25,7 +25,7 @@
           entity_id: camera.dahua_mediaprofile_channel1_substream1
     - service: notify.mobile_app_sm_g981b
       data:
-        title: "Ding dong!"
+        title: "Ding fuckin' dong!"
         message: "Er is iemand aan de deur"
         data:
           image: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
