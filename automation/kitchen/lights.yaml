@@ -31,7 +31,6 @@
       entity_id: light.kitchen
       data:
         brightness: 255
-        transition: 1
 
 - alias: Verlichting - Keuken - Aan (Nacht)
   trigger:
@@ -57,7 +56,6 @@
       entity_id: light.kitchen
       data:
         brightness: 25
-        transition: 1
 
 - alias: Verlichting - Keuken - Standby
   trigger:
