@@ -1,0 +1,12 @@
+- alias: Watering
+  trigger:
+    - platform: time_pattern
+      hours: /8
+
+  action:
+  - service: homeassistant.turn_on
+    entity_id: switch.plug_workroom_speakers_switch
+  - delay: 00:00:30
+  - service: homeassistant.turn_off
+    entity_id: switch.plug_workroom_speakers_switch
+
