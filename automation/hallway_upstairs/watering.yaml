@@ -1,10 +1,11 @@
 - alias: Watering
   trigger:
     - platform: time
-      at:
-        - "8:30:00"
-        - "14:30:00"
-        - "20:30:00"
+        at: '8:30:00'
+    - platform: time
+      at: '14:30:00'
+    - platform: time
+        at: '20:30:00'
 
   action:
   - service: homeassistant.turn_on
