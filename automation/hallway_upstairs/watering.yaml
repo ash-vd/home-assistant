@@ -1,7 +1,7 @@
 - alias: Watering
   trigger:
     - platform: time
-        at: '8:30:00'
+      at: '8:30:00'
     - platform: time
       at: '14:30:00'
     - platform: time
