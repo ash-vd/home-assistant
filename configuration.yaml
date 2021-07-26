@@ -22,15 +22,14 @@ frontend:
 # Enables configuration UI
 config:
 
-
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
- http:
-   base_url: !secret base_url
-   use_x_forwarded_for: true
-   trusted_proxies:
-     - 172.17.0.0/20
-     - 127.0.0.1
-     - 10.10.0.0/20
+http:
+ base_url: !secret base_url
+ use_x_forwarded_for: true
+ trusted_proxies:
+   - 172.17.0.0/20
+#   - 127.0.0.1
+#   - 10.10.0.0/20
 
 # Checks for available updates
 # Note: This component will send some information about your system to
