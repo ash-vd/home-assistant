@@ -30,6 +30,7 @@ config:
    trusted_proxies:
      - 172.17.0.0/20
      - 127.0.0.1
+     - 10.10.0.0/20
 
 # Checks for available updates
 # Note: This component will send some information about your system to
