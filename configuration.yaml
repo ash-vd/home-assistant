@@ -28,7 +28,7 @@ config:
    base_url: !secret base_url
    use_x_forwarded_for: true
    trusted_proxies:
-     - 172.17.0.0/24
+     - 172.17.0.5
 
 # Checks for available updates
 # Note: This component will send some information about your system to
