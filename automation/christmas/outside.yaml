@@ -54,7 +54,7 @@
         snapshot_entities: 'light.outside'
     - service: light.turn_on
       data:
-        brightness: 255
+        brightness: 100
         entity_id: light.outside
     - service: wled.effect
       entity_id: light.outside
