@@ -36,7 +36,6 @@
     service: light.turn_off
     entity_id: light.outside
 
-
 - alias: Deurbel - WLED outside
   trigger:
     - platform: state
@@ -51,15 +50,15 @@
     - service: scene.create
       data:
         scene_id: doorbell_wled_revert
-        snapshot_entities: 'light.outside'
+        snapshot_entities: "light.outside"
     - service: light.turn_on
       data:
-        brightness: 100
+        brightness: 50
         entity_id: light.outside
     - service: wled.effect
       entity_id: light.outside
       data:
-        effect: 'Colorloop'
+        effect: "Colorloop"
         speed: 225
     - delay: 00:00:15
     - service: scene.turn_on
