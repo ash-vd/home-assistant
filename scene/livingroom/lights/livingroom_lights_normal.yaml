@@ -38,7 +38,7 @@
 
     light.erker_gu10_cwww:
       state: on
-      brightness: 80
+      brightness: 20
       color_temp: 400
 
     light.window_sill_01:
@@ -72,7 +72,7 @@
     light.tv_bottom:
       state: on
       brightness_pct: 3
-      rgb_color: [ 200, 150, 0 ]
+      rgb_color: [200, 150, 0]
       effect: Solid
       white_value: 255
 
@@ -80,4 +80,3 @@
 
     input_select.livingroom_scene:
       state: "Normaal"
-
