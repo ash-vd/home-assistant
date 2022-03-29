@@ -1,10 +1,9 @@
-
 automation:
   - alias: symfonisk skip forward
-    initial_state: 'on'
+    initial_state: "on"
     trigger:
       - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_bedroom'
+        topic: "zigbee2mqtt/zigbee_remote_bedroom"
     condition:
       - condition: template
         value_template: "{{ 'brightness_step_up' in trigger.payload }}"
@@ -13,10 +12,10 @@ automation:
         entity_id: media_player.spotify_ashwin_van_dijk
 
   - alias: symfonisk skip backward
-    initial_state: 'on'
+    initial_state: "on"
     trigger:
       - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_bedroom'
+        topic: "zigbee2mqtt/zigbee_remote_bedroom"
     condition:
       - condition: template
         value_template: "{{ 'brightness_step_down' in trigger.payload }}"
@@ -25,10 +24,10 @@ automation:
         entity_id: media_player.spotify_ashwin_van_dijk
 
   - alias: symfonisk play/pause
-    initial_state: 'on'
+    initial_state: "on"
     trigger:
       - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_bedroom'
+        topic: "zigbee2mqtt/zigbee_remote_bedroom"
     condition:
       - condition: template
         value_template: "{{ 'toggle' in trigger.payload }}"
@@ -36,22 +35,20 @@ automation:
       - service: media_player.media_play_pause
         entity_id: media_player.spotify_ashwin_van_dijk
 
-  - alias: symfonisk volume
-    initial_state: 'on'
-    trigger:
-      - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_bedroom/action'
-    condition:
-      - condition: template
-        value_template: "{{ 'brightness_move_up' in trigger.payload }}"
-      - condition: template
-        value_template: "{{ 'brightness_move_up' in trigger.payload }}"
-    action:
-      - service: media_player.volume_set
-        data:
-          entity_id: media_player.snapcast_client_slaapkamer
-          volume_level: 0
-      - service: media_player.volume_mute
-        data:
-          entity_id: media_player.snapcast_client_slaapkamer
-          is_volume_muted: false
+  # - alias: symfonisk volume
+  #  initial_state: "on"
+  #  trigger:
+  #    - platform: mqtt
+  #      topic: "zigbee2mqtt/zigbee_remote_bedroom/action"
+  #  condition:
+  #    - condition: template
+  #      value_template: "{{ 'brightness_move_up' in trigger.payload }}"
+  #  action:
+  #    - service: media_player.volume_set
+  #      data:
+  #        entity_id: media_player.snapcast_client_slaapkamer
+  #        volume_level: 0
+  #    - service: media_player.volume_mute
+  #      data:
+  #        entity_id: media_player.snapcast_client_slaapkamer
+  #        is_volume_muted: false
