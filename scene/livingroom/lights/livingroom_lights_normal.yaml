@@ -38,7 +38,7 @@
 
     light.erker_gu10_cwww:
       state: on
-      brightness: 30
+      brightness_pct: 20
       color_temp: 400
 
     light.window_sill_01:
