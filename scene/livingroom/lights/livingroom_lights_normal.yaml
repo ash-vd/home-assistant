@@ -34,47 +34,47 @@
 
     light.shelly_dimmer_livingroom_standing:
       state: on
-      brightness_pct: 25
+      brightness_pct: 22
 
     light.erker_gu10_cwww:
       state: on
       brightness: 20
       color_temp: 400
 
-    # light.window_sill_01:
-    #   state: on
-    #   brightness_pct: 2
-    #   rgb_color: [200, 150, 0]
-    #   effect: Solid
-    #   white_value: 255
+    light.window_sill_01:
+      state: on
+      brightness_pct: 4
+      rgb_color: [200, 150, 0]
+      effect: Solid
+      white_value: 255
 
-    # light.window_sill_02:
-    #   state: on
-    #   brightness_pct: 2
-    #   rgb_color: [200, 150, 0]
-    #   effect: Solid
-    #   white_value: 255
+    light.window_sill_02:
+      state: on
+      brightness_pct: 4
+      rgb_color: [200, 150, 0]
+      effect: Solid
+      white_value: 255
 
-    # light.window_sill_03:
-    #   state: on
-    #   brightness_pct: 2
-    #   rgb_color: [200, 150, 0]
-    #   effect: Solid
-    #   white_value: 255
+    light.window_sill_03:
+      state: on
+      brightness_pct: 4
+      rgb_color: [200, 150, 0]
+      effect: Solid
+      white_value: 255
 
-    # light.window_sill_04:
-    #   state: on
-    #   brightness_pct: 2
-    #   rgb_color: [200, 150, 0]
-    #   effect: Solid
-    #   white_value: 255
+    light.window_sill_04:
+      state: on
+      brightness_pct: 4
+      rgb_color: [200, 150, 0]
+      effect: Solid
+      white_value: 255
 
-    # light.tv_bottom:
-    #   state: on
-    #   brightness_pct: 3
-    #   rgb_color: [200, 150, 0]
-    #   effect: Solid
-    #   white_value: 255
+    light.tv_bottom:
+      state: on
+      brightness_pct: 3
+      rgb_color: [200, 150, 0]
+      effect: Solid
+      white_value: 255
 
     input_boolean.homekit_livingroom: on
 
