@@ -6,8 +6,8 @@
         - input_boolean.hallway_upstairs_presence
       to: "on"
 
-    - platform: numeric_state
-      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+    - platform: template
+      value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
       below: 100
 
   condition:
@@ -17,8 +17,8 @@
         entity_id: input_boolean.hallway_upstairs_presence
         state: "on"
 
-      - condition: numeric_state
-        entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+      - condition: template
+        value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
         below: 100
 
       - condition: state
@@ -39,8 +39,8 @@
         - input_boolean.hallway_upstairs_presence
       to: "on"
 
-    - platform: numeric_state
-      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+    - platform: template
+      value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
       below: 100
 
   condition:
@@ -50,8 +50,8 @@
         entity_id: input_boolean.hallway_upstairs_presence
         state: "on"
 
-      - condition: numeric_state
-        entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+      - condition: template
+        value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
         below: 100
 
       - condition: state
@@ -70,8 +70,8 @@
       entity_id: input_boolean.hallway_upstairs_presence
       to: "off"
 
-    - platform: numeric_state
-      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+    - platform: template
+      value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
       above: 200
       for:
         minutes: 3
@@ -83,7 +83,7 @@
 - alias: Verlichting - Dakterras
   trigger:
     - platform: mqtt
-      topic: 'zigbee2mqtt/zigbee_button_terrace'
+      topic: "zigbee2mqtt/zigbee_button_terrace"
   condition:
     condition: template
     value_template: "{{ 'single' == trigger.payload_json.click }}"

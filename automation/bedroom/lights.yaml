@@ -4,8 +4,8 @@
       entity_id: binary_sensor.zigbee_sensor_bedroom_occupancy, input_boolean.bedroom_presence
       to: "on"
 
-    - platform: numeric_state
-      entity_id: sensor.zigbee_sensor_hallway_upstairs_illuminance
+    - platform: template
+      value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
       below: 80
       for:
         minutes: 1

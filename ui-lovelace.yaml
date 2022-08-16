@@ -98,7 +98,7 @@ views:
           - input_select.livingroom_scene
           - input_select.livingroom_remote
 
-          -  media_player.chromecast_livingroom
+          - media_player.chromecast_livingroom
 
           - type: section
             label: Rolgordijnen
@@ -215,7 +215,6 @@ views:
             entity: light.zigbee_washroom_light
             toggle: true
 
-
       - type: vertical-stack
         cards:
           - type: markdown
@@ -275,7 +274,6 @@ views:
           - type: custom:slider-entity-row
             entity: light.shelly_dimmer_bedroom_sink
             toggle: true
-
 
   - !include lovelace/livingroom.yaml
 
@@ -365,7 +363,6 @@ views:
         entities:
           - type: section
           - input_boolean.hallway_upstairs_presence
-          - sensor.zigbee_sensor_hallway_upstairs_illuminance
           - binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
 
       - type: entities
@@ -422,7 +419,7 @@ views:
 
           - sensor.plug_dishwasher_power
 
-      - type: 'custom:vacuum-card'
+      - type: "custom:vacuum-card"
         entity: vacuum.s5max
         stats:
           default:
