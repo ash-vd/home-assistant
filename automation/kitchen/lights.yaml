@@ -7,8 +7,7 @@
       to: "on"
 
     - platform: template
-      value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance') }}"
-      below: 800
+      value_template: "{{ state_attr('binary_sensor.zigbee_sensor_kitchen_occupancy','illuminance') < 800 }}"
 
   condition:
     condition: and
@@ -18,8 +17,7 @@
         state: "Normaal"
 
       - condition: template
-        value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance') }}"
-        below: 800
+        value_template: "{{ state_attr('binary_sensor.zigbee_sensor_kitchen_occupancy','illuminance') < 800 }}"
 
       - condition: state
         entity_id: input_boolean.kitchen_presence
@@ -48,8 +46,7 @@
         state: "Nacht"
 
       - condition: template
-        value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance') }}"
-        below: 800
+        value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen_occupancy','illuminance') < 800 }}"
 
   action:
     - service: homeassistant.turn_on
@@ -85,8 +82,7 @@
         minutes: 10
 
     - platform: template
-      value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance')  }}"
-      above: 820
+      value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen_occupancy','illuminance') > 850 }}"
       for:
         minutes: 4
 
