@@ -6,9 +6,9 @@
         - input_boolean.kitchen_presence
       to: "on"
 
-    - platform: numeric_state
-      entity_id: sensor.zigbee_sensor_kitchen_illuminance
-      below: 80
+    - platform: template
+      value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance') }}"
+      below: 800
 
   condition:
     condition: and
@@ -17,14 +17,13 @@
         entity_id: input_select.house_mode
         state: "Normaal"
 
-      - condition: numeric_state
-        entity_id: sensor.zigbee_sensor_kitchen_illuminance
-        below: 80
+      - condition: template
+        value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance') }}"
+        below: 800
 
       - condition: state
         entity_id: input_boolean.kitchen_presence
         state: "on"
-
 
   action:
     - service: homeassistant.turn_on
@@ -48,9 +47,9 @@
         entity_id: input_select.house_mode
         state: "Nacht"
 
-      - condition: numeric_state
-        entity_id: sensor.zigbee_sensor_kitchen_illuminance
-        below: 80
+      - condition: template
+        value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance') }}"
+        below: 800
 
   action:
     - service: homeassistant.turn_on
@@ -85,9 +84,9 @@
       for:
         minutes: 10
 
-    - platform: numeric_state
-      entity_id: sensor.zigbee_sensor_kitchen_illuminance
-      above: 140
+    - platform: template
+      value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen','illuminance')  }}"
+      above: 820
       for:
         minutes: 4
 
