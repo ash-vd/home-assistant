@@ -8,7 +8,7 @@
 
     - platform: template
       value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
-      below: 100
+      below: 700
 
   condition:
     condition: and
@@ -19,7 +19,7 @@
 
       - condition: template
         value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
-        below: 100
+        below: 700
 
       - condition: state
         entity_id: input_select.house_mode
@@ -41,7 +41,7 @@
 
     - platform: template
       value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
-      below: 100
+      below: 700
 
   condition:
     condition: and
@@ -52,7 +52,7 @@
 
       - condition: template
         value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
-        below: 100
+        below: 700
 
       - condition: state
         entity_id: input_select.house_mode
@@ -72,7 +72,7 @@
 
     - platform: template
       value_template: "{{ state_attr('sensor.zigbee_sensor_hallway_upstairs','illuminance')  }}"
-      above: 200
+      above: 750
       for:
         minutes: 3
 
