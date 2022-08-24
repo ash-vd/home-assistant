@@ -7,7 +7,7 @@
       to: "on"
 
     - platform: template
-      value_template: "{{ state_attr('binary_sensor.binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'Illuminance') < 700 }}"
+      value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'Illuminance') < 700 }}"
 
   condition:
     condition: and
@@ -17,7 +17,7 @@
         state: "on"
 
       - condition: template
-        value_template: "{{ state_attr('binary_sensor.binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') < 700 }}"
+        value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') < 700 }}"
 
       - condition: state
         entity_id: input_select.house_mode
@@ -38,7 +38,7 @@
       to: "on"
 
     - platform: template
-      value_template: "{{ state_attr('binary_sensor.binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') < 700 }}"
+      value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') < 700 }}"
 
   condition:
     condition: and
@@ -48,7 +48,7 @@
         state: "on"
 
       - condition: template
-        value_template: "{{ state_attr('binary_sensor.binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') < 700  }}"
+        value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') < 700  }}"
 
       - condition: state
         entity_id: input_select.house_mode
@@ -67,7 +67,7 @@
       to: "off"
 
     - platform: template
-      value_template: "{{ state_attr('binary_sensor.binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') > 750 }}"
+      value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') > 750 }}"
       for:
         minutes: 3
 
