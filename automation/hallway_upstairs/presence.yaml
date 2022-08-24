@@ -14,7 +14,7 @@
     entity_id: binary_sensor.zigbee_sensor_hallway_upstairs_occupancy
     to: "off"
     for:
-      minutes: 10
+      minutes: 7
 
   condition:
     - condition: state
