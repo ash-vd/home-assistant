@@ -46,7 +46,7 @@
         state: "Nacht"
 
       - condition: template
-        value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen_occupancy','illuminance') < 800 }}"
+        value_template: "{{ state_attr('binary_sensor.zigbee_sensor_kitchen_occupancy','illuminance') < 800 }}"
 
   action:
     - service: homeassistant.turn_on
