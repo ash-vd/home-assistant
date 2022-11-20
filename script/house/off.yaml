@@ -1,6 +1,6 @@
 house_off:
   sequence:
-    - service: rest_command.tado_away
+    # - service: rest_command.tado_away
 
     - service: script.turn_on
       entity_id: script.livingroom_off
