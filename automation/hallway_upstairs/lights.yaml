@@ -69,7 +69,7 @@
     - platform: template
       value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') > 750 }}"
       for:
-        minutes: 3
+        minutes: 1
 
   action:
     - service: light.turn_off

@@ -28,17 +28,6 @@ http:
  use_x_forwarded_for: true
  trusted_proxies:
    - 172.17.0.0/20
-#   - 127.0.0.1
-#   - 10.10.0.0/20
-
-# Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  include_used_components: true
 
 
 sensor:
@@ -153,13 +142,13 @@ homekit:
     include_entities:
       - light.shelly_dimmer_bedroom_sink
       - input_boolean.homekit_livingroom
-      - switch.plug_hallway_upstairs_switch
+      - light.hallway_upstairs
   entity_config:
     light.shelly_dimmer_bedroom_sink:
       name: Wastafel
     input_boolean.homekit_livingroom:
       name: Woonkamer
-    switch.plug_hallway_upstairs_switch:
+    light.hallway_upstairs:
       name: Gang
 
 google_assistant:
@@ -190,8 +179,6 @@ emulated_roku:
       host_ip: 10.10.1.1
 
 shelly:
-  sensors:
-    - 'switch'
   discover_by_ip:
     - '10.10.1.135'
     - '10.10.1.136'
@@ -217,10 +204,33 @@ input_number: !include_dir_merge_named input_number
 input_select: !include_dir_merge_named input_select
 light: !include_dir_merge_list light
 media_player: !include_dir_merge_list media_player
+# mqtt: !include_dir_merge_list mqtt
 sensor: !include_dir_merge_list sensor
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_named script
 zone: !include_dir_merge_list zone
+
+mqtt:
+  light:
+    - name: kitchen
+      command_topic: "zigbee2mqtt/kitchen_light/set"
+      state_topic: "zigbee2mqtt/kitchen_light/set"
+      brightness: true
+      schema: json
+
+    - name: hallway_upstairs
+      command_topic: "zigbee2mqtt/hallway_upstairs_light/set"
+      state_topic: "zigbee2mqtt/hallway_upstairs_light/set"
+      brightness: true
+      schema: json
+  
+  binary_sensor:
+    - name: "Doorbell"
+      state_topic: 'DahuaVTO/BackKeyLight/Event'
+      value_template: '{{ value_json.Data.State }}'
+      payload_on: "1"
+      payload_off: "0"
+
 
 rest_command:
   tado_home:
@@ -245,11 +255,6 @@ rest_command:
       payload: 'De wasmachine is klaar'
       headers:
         content-type: 'text/plain'
-
-opentherm_gw:
-  otgw:
-    device: socket://10.10.1.21:23
-    name: "OTGW"
 
 notify:
   - name: all_devices
