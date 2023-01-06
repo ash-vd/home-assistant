@@ -60,11 +60,31 @@
       data:
         brightness_pct: 1
 
+- alias: Verlichting - Hal boven - Standby
+  trigger:
+    - platform: state
+      entity_id: input_boolean.hallway_upstairs_presence
+      to: "off"
+
+  condition:
+    condition: state
+    entity_id: light.hallway_upstairs
+    state: "on"
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.hallway_upstairs
+      data:
+        brightness: 1
+        transition: 10
+
 - alias: Verlichting - Gang (boven) - Uit
   trigger:
     - platform: state
       entity_id: input_boolean.hallway_upstairs_presence
       to: "off"
+      for:
+        minutes: 1
 
     - platform: template
       value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') > 750 }}"
