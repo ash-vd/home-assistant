@@ -44,30 +44,26 @@
     light.window_sill_01:
       state: on
       brightness_pct: 4
-      rgb_color: [200, 150, 0]
+      rgbw_color: [0, 0, 0, 255]
       effect: Solid
-      white_value: 255
 
     light.window_sill_02:
       state: on
       brightness_pct: 4
-      rgb_color: [200, 150, 0]
+      rgbw_color: [0, 0, 0, 255]
       effect: Solid
-      white_value: 255
 
     light.window_sill_03:
       state: on
       brightness_pct: 4
-      rgb_color: [200, 150, 0]
+      rgbw_color: [0, 0, 0, 255]
       effect: Solid
-      white_value: 255
 
     light.window_sill_04:
       state: on
       brightness_pct: 4
-      rgb_color: [200, 150, 0]
+      rgbw_color: [0, 0, 0, 255]
       effect: Solid
-      white_value: 255
 
     light.tv_bottom:
       state: on
