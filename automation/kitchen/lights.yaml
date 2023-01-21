@@ -45,8 +45,9 @@
         entity_id: input_select.house_mode
         state: "Nacht"
 
-      - condition: template
-        value_template: "{{ state_attr('binary_sensor.zigbee_sensor_kitchen_occupancy','illuminance') < 800 }}"
+      - condition: numeric_state
+        entity_id: sensor.zigbee_sensor_kitchen_illuminance_lux
+        below: 30
 
   action:
     - service: homeassistant.turn_on
@@ -81,8 +82,9 @@
       for:
         minutes: 10
 
-    - platform: template
-      value_template: "{{ state_attr('sensor.zigbee_sensor_kitchen_occupancy','illuminance') > 850 }}"
+    - condition: numeric_state
+      entity_id: sensor.zigbee_sensor_kitchen_illuminance_lux
+      above: 30
       for:
         minutes: 4
 
