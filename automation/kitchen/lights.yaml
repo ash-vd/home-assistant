@@ -84,7 +84,7 @@
 
     - platform: numeric_state
       entity_id: sensor.zigbee_sensor_kitchen_illuminance_lux
-      above: 30
+      above: 75
       for:
         minutes: 4
 
