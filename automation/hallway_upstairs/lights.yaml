@@ -76,7 +76,7 @@
       entity_id: light.hallway_upstairs
       data:
         brightness: 1
-        transition: 10
+        transition: 5
 
 - alias: Verlichting - Gang (boven) - Uit
   trigger:
@@ -84,7 +84,7 @@
       entity_id: input_boolean.hallway_upstairs_presence
       to: "off"
       for:
-        minutes: 1
+        seconds: 30
 
     - platform: template
       value_template: "{{ state_attr('binary_sensor.zigbee_sensor_hallway_upstairs_occupancy', 'illuminance') > 750 }}"

@@ -88,7 +88,7 @@ mqtt:
   discovery_prefix: homeassistant
 
 recorder:
-  purge_keep_days: 4
+  purge_keep_days: 14
   db_url: !secret recorder_url
 
 #hue:
