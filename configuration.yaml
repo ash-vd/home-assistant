@@ -261,7 +261,7 @@ notify:
     platform: group
     services:
       - service: mobile_app_ashwiphone
-      - service: mobile_app_sm_g981b
+      - service: mobile_app_sm_s911b
 
 intent:
 

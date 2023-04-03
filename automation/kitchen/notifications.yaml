@@ -6,6 +6,6 @@
       to: "Klaar"
 
   action:
-    service: notify.mobile_app_ashwiphone
+    service: notify.all_devices
     data:
       message: "De vaatwasser is klaar"

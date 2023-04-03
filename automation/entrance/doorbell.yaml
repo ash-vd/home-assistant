@@ -23,7 +23,7 @@
           push:
             category: camera
           entity_id: camera.dahua_mediaprofile_channel1_substream1
-    - service: notify.mobile_app_sm_g981b
+    - service: notify.mobile_app_sm_s911b
       data:
         title: "Ding fuckin' dong!"
         message: "Er is iemand aan de deur"
@@ -32,4 +32,3 @@
           attachment:
             url: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
             content-type: jpeg
-
