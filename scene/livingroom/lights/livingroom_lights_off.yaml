@@ -14,6 +14,7 @@
     light.window_sill_03: off
     light.window_sill_04: off
     light.tv_bottom: off
+    switch.plug_brandgrens_switch: off
     input_boolean.homekit_livingroom: off
     input_select.livingroom_scene:
       state: "Uit"

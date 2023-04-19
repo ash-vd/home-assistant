@@ -1,6 +1,3 @@
-sensor.plug_dishwasher_power:
-  friendly_name: Vaatwasser
-
 sensor.plug_washing_machine_power:
   friendly_name: Wasmachine
 

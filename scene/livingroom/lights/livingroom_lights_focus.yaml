@@ -40,5 +40,7 @@
       state: on
       brightness_pct: 100
 
+    switch.plug_brandgrens_switch: on
+
     input_select.livingroom_scene:
       state: "Focus"

@@ -153,6 +153,8 @@ views:
             entity: light.closet
             toggle: true
 
+          - switch.plug_brandgrens_switch
+
       - type: entities
         title: Keuken
         show_header_toggle: false
@@ -404,20 +406,6 @@ views:
           - input_select.tumbledryer_status
           - sensor.tumbledryer_on_time
           - sensor.plug_tumble_dryer_power
-
-      - type: entities
-        title: Keuken
-        show_header_toggle: false
-        entities:
-          - type: section
-            label: Status
-
-          - input_select.dishwasher_status
-
-          - type: section
-            label: Verbruik
-
-          - sensor.plug_dishwasher_power
 
       - type: "custom:vacuum-card"
         entity: vacuum.s5max
