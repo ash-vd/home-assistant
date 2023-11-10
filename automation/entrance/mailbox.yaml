@@ -2,6 +2,7 @@
   trigger:
     - platform: state
       entity_id: binary_sensor.zigbee_mailbox_contact
+      from: "off"
       to: "on"
 
   condition:
@@ -21,4 +22,3 @@
           attachment:
             url: "https://home.ashwinvandijk.nl/local/doorbell.jpg"
             content-type: jpeg
-
