@@ -54,9 +54,8 @@
     - service: light.turn_on
       entity_id: light.outside
       data:
-        effect: "Colorloop"
-        speed: 225
-    - delay: 00:00:15
+        effect: "Chase Rainbow"
+    - delay: 00:00:20
     - service: scene.turn_on
       data:
         entity_id: scene.doorbell_wled_revert
