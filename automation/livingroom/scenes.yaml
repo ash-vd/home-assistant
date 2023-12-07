@@ -14,6 +14,8 @@
             scene.livingroom_lights_normal
           {% elif is_state("input_select.livingroom_scene", "Gedimd") %}
             scene.livingroom_lights_dimmed
+          {% elif is_state("input_select.livingroom_scene", "Chill") %}
+            scene.livingroom_lights_chill
           {% elif is_state("input_select.livingroom_scene", "Uit") %}
             scene.livingroom_lights_off
           {% endif %}

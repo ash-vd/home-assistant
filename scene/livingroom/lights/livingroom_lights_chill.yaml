@@ -1,16 +1,12 @@
-- name: livingroom_lights_normal
+- name: livingroom_lights_chill
   entities:
     light.shelly_01:
       state: off
 
-    light.zigbee_tv_light:
-      state: on
-      brightness: 140
-
     light.zigbee_livingroom_corner_light:
       state: on
-      brightness: 180
-      color_temp: 425
+      brightness_pct: 30
+      rgb_color: [86, 137, 255]
 
     light.zigbee_livingroom_window_light:
       state: on
@@ -19,8 +15,8 @@
 
     light.zigbee_livingroom_big_light:
       state: on
-      brightness: 120
-      color_temp: 425
+      brightness_pct: 20
+      rgb_color: [255, 89, 89]
 
     light.closet:
       state: on
@@ -29,48 +25,36 @@
 
     light.wifi_e27cwww_02:
       state: on
-      brightness: 180
+      brightness: 20
       color_temp: 315
 
     light.shelly_dimmer_livingroom_standing:
-      state: on
-      brightness_pct: 22
+      state: off
 
     light.erker_gu10_cwww:
       state: on
-      brightness_pct: 25
+      brightness_pct: 15
       color_temp: 400
 
     light.window_sill_01:
       state: on
-      brightness_pct: 3
-      rgbw_color: [0, 0, 0, 255]
-      effect: Solid
+      brightness_pct: 30
+      effect: Twinklefox
 
     light.window_sill_02:
       state: on
-      brightness_pct: 3
-      rgbw_color: [0, 0, 0, 255]
-      effect: Solid
+      brightness_pct: 30
+      effect: Twinklefox
 
     light.window_sill_03:
       state: on
-      brightness_pct: 3
-      rgbw_color: [0, 0, 0, 255]
-      effect: Solid
+      brightness_pct: 30
+      effect: Twinklefox
 
     light.window_sill_04:
       state: on
-      brightness_pct: 3
-      rgbw_color: [0, 0, 0, 255]
-      effect: Solid
-
-    light.tv_bottom:
-      state: on
-      brightness_pct: 3
-      rgb_color: [200, 150, 0]
-      effect: Solid
-      white_value: 255
+      brightness_pct: 30
+      effect: Twinklefox
 
     switch.plug_brandgrens_switch: on
 
@@ -79,4 +63,4 @@
     input_boolean.homekit_livingroom: on
 
     input_select.livingroom_scene:
-      state: "Normaal"
+      state: "Chill"

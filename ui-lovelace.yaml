@@ -155,6 +155,10 @@ views:
 
           - switch.plug_brandgrens_switch
 
+          - switch.xooon_closet
+
+          - light.christmas_tree
+
       - type: entities
         title: Keuken
         show_header_toggle: false
