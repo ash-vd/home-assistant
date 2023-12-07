@@ -5,7 +5,7 @@
 
     light.zigbee_livingroom_corner_light:
       state: on
-      brightness_pct: 30
+      brightness: 24
       rgb_color: [86, 137, 255]
 
     light.zigbee_livingroom_window_light:
@@ -38,22 +38,22 @@
 
     light.window_sill_01:
       state: on
-      brightness_pct: 30
+      brightness: 24
       effect: Twinklefox
 
     light.window_sill_02:
       state: on
-      brightness_pct: 30
+      brightness: 24
       effect: Twinklefox
 
     light.window_sill_03:
       state: on
-      brightness_pct: 30
+      brightness: 24
       effect: Twinklefox
 
     light.window_sill_04:
       state: on
-      brightness_pct: 30
+      brightness: 24
       effect: Twinklefox
 
     switch.plug_brandgrens_switch: on
