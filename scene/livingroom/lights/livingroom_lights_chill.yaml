@@ -25,7 +25,7 @@
 
     light.wifi_e27cwww_02:
       state: on
-      brightness: 60
+      brightness: 120
       color_temp: 315
 
     light.shelly_dimmer_livingroom_standing:
