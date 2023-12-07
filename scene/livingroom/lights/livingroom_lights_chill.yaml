@@ -20,12 +20,12 @@
 
     light.closet:
       state: on
-      brightness_pct: 20
+      brightness: 24
       color_temp: 315
 
     light.wifi_e27cwww_02:
       state: on
-      brightness: 20
+      brightness: 60
       color_temp: 315
 
     light.shelly_dimmer_livingroom_standing:
@@ -58,7 +58,7 @@
 
     switch.plug_brandgrens_switch: on
 
-    switch.xooon_closet: on
+    switch.xooon_closet: off
 
     input_boolean.homekit_livingroom: on
 
