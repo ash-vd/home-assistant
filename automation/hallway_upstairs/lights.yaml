@@ -104,4 +104,4 @@
     value_template: "{{ 'single' == trigger.payload_json.click }}"
   action:
     service: light.toggle
-    entity_id: light.shelly_terrace_lights
+    entity_id: light.roofterrace
