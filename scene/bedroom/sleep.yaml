@@ -1,6 +1,6 @@
 - name: bedroom_sleep
   entities:
     light.shelly_02: off
-    light.shelly_dimmer_bedroom_sink:
+    light.0x70ac08fffeb7720b:
       state: on
       brightness: 40

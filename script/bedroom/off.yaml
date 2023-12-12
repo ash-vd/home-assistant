@@ -1,9 +1,9 @@
 bedroom_off:
   sequence:
-#    - condition: state
-#      entity_id: input_boolean.bedroom_in_bed
-#      state: "off"
+    #    - condition: state
+    #      entity_id: input_boolean.bedroom_in_bed
+    #      state: "off"
     - service: light.turn_off
       entity_id:
-        - light.shelly_dimmer_bedroom_sink
+        - light.0x70ac08fffeb7720b
         - light.shelly_02

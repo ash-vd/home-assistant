@@ -278,7 +278,7 @@ views:
           - light.shelly_02
 
           - type: custom:slider-entity-row
-            entity: light.shelly_dimmer_bedroom_sink
+            entity: light.0x70ac08fffeb7720b
             toggle: true
 
   - !include lovelace/livingroom.yaml

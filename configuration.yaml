@@ -140,11 +140,11 @@ hisense_aehw4a1:
 homekit:
   filter:
     include_entities:
-      - light.shelly_dimmer_bedroom_sink
+      - light.0x70ac08fffeb7720b
       - input_boolean.homekit_livingroom
       - light.hallway_upstairs
   entity_config:
-    light.shelly_dimmer_bedroom_sink:
+    light.0x70ac08fffeb7720b:
       name: Wastafel
     input_boolean.homekit_livingroom:
       name: Woonkamer
