@@ -5,5 +5,5 @@ bedroom_off:
     #      state: "off"
     - service: light.turn_off
       entity_id:
-        - light.0x70ac08fffeb7720b
+        - light.0x385cfbfffea392ab
         - light.shelly_02

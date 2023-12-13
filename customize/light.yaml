@@ -13,7 +13,7 @@ light.zigbee_livingroom_window_light:
 light.zigbee_livingroom_big_light:
   friendly_name: Groot
 
-light.0x70ac08fffeb7720b:
+light.0x385cfbfffea392ab:
   friendly_name: Wastafel
 
 light.kitchen:

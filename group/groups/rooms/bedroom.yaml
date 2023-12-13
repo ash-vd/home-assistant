@@ -3,4 +3,4 @@ bedroom:
   entities:
     - climate.slaapkamer
     - light.shelly_02
-    - light.0x70ac08fffeb7720b
+    - light.0x385cfbfffea392ab

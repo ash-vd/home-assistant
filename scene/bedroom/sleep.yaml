@@ -1,6 +1,6 @@
 - name: bedroom_sleep
   entities:
     light.shelly_02: off
-    light.0x70ac08fffeb7720b:
+    light.0x385cfbfffea392ab:
       state: on
       brightness: 40
