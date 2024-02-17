@@ -58,3 +58,22 @@
       entity_id: light.zigbee_entrance_light
       data:
         transition: 30
+
+- alias: Verlichting - Entree - Trap (beneden)
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.zigbee_door_entrance_contact
+      to: "on"
+
+  action:
+    - service: rest_command.wled_stairs_groundlevel_on_bottom
+
+- alias: Verlichting - Entree - Trap (boven)
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.zigbee_sensor_entrance_occupancy
+      to: "on"
+
+  action:
+    - service: rest_command.wled_stairs_groundlevel_on_top

@@ -250,11 +250,25 @@ rest_command:
     content_type: "application/json; charset=utf-8"
 
   rhasspy_speak_hallway_upstairs:
-      url: 'http://10.10.1.16:12101/api/text-to-speech'
-      method: 'POST'
-      payload: 'De wasmachine is klaar'
-      headers:
-        content-type: 'text/plain'
+    url: 'http://10.10.1.16:12101/api/text-to-speech'
+    method: 'POST'
+    payload: 'De wasmachine is klaar'
+    headers:
+      content-type: 'text/plain'
+
+  wled_stairs_groundlevel_on_bottom:
+    url: 'http://10.10.1.230/json/state'
+    method: 'POST'
+    payload: '{"staircase":{"top-sensor":true}}'
+    headers:
+      content_type: "application/json"
+
+  wled_stairs_groundlevel_on_top:
+    url: 'http://10.10.1.230/json/state'
+    method: 'POST'
+    payload: '{"staircase":{"bottom-sensor":true}}'
+    headers:
+      content_type: "application/json"
 
 notify:
   - name: all_devices
