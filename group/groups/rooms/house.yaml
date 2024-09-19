@@ -1,6 +1,0 @@
-house:
-  name: Huis
-  entities:
-    - input_select.house_mode
-    - scene.house_off
-    - scene.house_sleep
