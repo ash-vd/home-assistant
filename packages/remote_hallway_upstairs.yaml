@@ -1,9 +1,9 @@
 automation:
   - alias: symfonisk skip forward
-    initial_state: 'on'
+    initial_state: "on"
     trigger:
       - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_hallway_upstairs'
+        topic: "zigbee2mqtt/zigbee_remote_hallway_upstairs"
     condition:
       - condition: template
         value_template: "{{ 'brightness_step_up' in trigger.payload }}"
@@ -12,10 +12,10 @@ automation:
         entity_id: media_player.spotify_ashwin_van_dijk
 
   - alias: symfonisk skip backward
-    initial_state: 'on'
+    initial_state: "on"
     trigger:
       - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_hallway_upstairs'
+        topic: "zigbee2mqtt/zigbee_remote_hallway_upstairs"
     condition:
       - condition: template
         value_template: "{{ 'brightness_step_down' in trigger.payload }}"
@@ -24,35 +24,13 @@ automation:
         entity_id: media_player.spotify_ashwin_van_dijk
 
   - alias: symfonisk play/pause
-    initial_state: 'on'
+    initial_state: "on"
     trigger:
       - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_hallway_upstairs'
+        topic: "zigbee2mqtt/zigbee_remote_hallway_upstairs"
     condition:
       - condition: template
         value_template: "{{ 'toggle' in trigger.payload }}"
     action:
       - service: media_player.media_play_pause
         entity_id: media_player.spotify_ashwin_van_dijk
-
-  - alias: symfonisk volume
-    initial_state: 'on'
-    trigger:
-      - platform: mqtt
-        topic: 'zigbee2mqtt/zigbee_remote_hallway_upstairs/action'
-    condition:
-      - condition: template
-        value_template: "{{ state_attr('media_player.snapcast_client_hal', 'is_volume_muted') }}"
-      - condition: template
-        value_template: "{{ 'brightness_move_up' in trigger.payload }}"
-    action:
-      - service: media_player.volume_set
-        data:
-          entity_id: media_player.snapcast_client_hal
-          volume_level: 0
-      - service: media_player.volume_mute
-        data:
-          entity_id: media_player.snapcast_client_hal
-          is_volume_muted: false
-
-

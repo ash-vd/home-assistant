@@ -1,67 +1,67 @@
-Occupancy Simulator:
-  module: occusim
-  class: OccuSim
-  log_msg: "1"
-  enable: input_boolean.house_vacation,true
-  # test: "1"
-  dump_times: "1"
+# Occupancy Simulator:
+#   module: occusim
+#   class: OccuSim
+#   log_msg: "1"
+#   enable: input_boolean.house_vacation,true
+#   # test: "1"
+#   dump_times: "1"
 
-  step_evening_on_name: Evening On
-  step_evening_on_start: "sunset + 00:15:00"
-  step_evening_on_end: "23:59:00"
-  step_evening_on_on_1: scene.livingroom_lights_normal
+#   step_evening_on_name: Evening On
+#   step_evening_on_start: "sunset + 00:15:00"
+#   step_evening_on_end: "23:59:00"
+#   step_evening_on_on_1: scene.livingroom_lights_normal
 
-  step_evening_off_name: Evening Off
-  step_evening_off_relative: Night On
-  step_evening_off_start_offset: 00:01:00
-  step_evening_off_end_offset: 00:03:00
-  step_evening_off_off_1: scene.livingroom_lights_off
+#   step_evening_off_name: Evening Off
+#   step_evening_off_relative: Night On
+#   step_evening_off_start_offset: 00:01:00
+#   step_evening_off_end_offset: 00:03:00
+#   step_evening_off_off_1: scene.livingroom_lights_off
 
-  step_night_on_name: Night On
-  step_night_on_start: "22:35:00"
-  step_night_on_end: "23:45:00"
-  step_night_on_on_1: light.shelly_dimmer_bedroom_sink
+#   step_night_on_name: Night On
+#   step_night_on_start: "22:35:00"
+#   step_night_on_end: "23:45:00"
+#   step_night_on_on_1: light.shelly_dimmer_bedroom_sink
 
-  step_night_off_name: Night Off
-  step_night_off_relative: Night On
-  step_night_off_start_offset: "00:03:00"
-  step_night_off_end_offset: "00:14:00"
-  step_night_off_off_1: light.shelly_dimmer_bedroom_sink
+#   step_night_off_name: Night Off
+#   step_night_off_relative: Night On
+#   step_night_off_start_offset: "00:03:00"
+#   step_night_off_end_offset: "00:14:00"
+#   step_night_off_off_1: light.shelly_dimmer_bedroom_sink
 
-  random_kitchen_name: Kitchen
-  random_kitchen_start: Evening On
-  random_kitchen_end: Night Off
-  random_kitchen_minduration: 00:01:00
-  random_kitchen_maxduration: 00:20:00
-  random_kitchen_number: 2
-  random_kitchen_on_1: light.kitchen
-  random_kitchen_off_1: light.kitchen
+#   random_kitchen_name: Kitchen
+#   random_kitchen_start: Evening On
+#   random_kitchen_end: Night Off
+#   random_kitchen_minduration: 00:01:00
+#   random_kitchen_maxduration: 00:20:00
+#   random_kitchen_number: 2
+#   random_kitchen_on_1: light.kitchen
+#   random_kitchen_off_1: light.kitchen
 
-  random_bathroom_name: Bathroom
-  random_bathroom_start: Evening On
-  random_bathroom_end: Night Off
-  random_bathroom_minduration: 00:01:00
-  random_bathroom_maxduration: 00:15:00
-  random_bathroom_number: 1
-  random_bathroom_on_1: light.shelly_04
-  random_bathroom_off_1: light.shelly_04
+#   random_bathroom_name: Bathroom
+#   random_bathroom_start: Evening On
+#   random_bathroom_end: Night Off
+#   random_bathroom_minduration: 00:01:00
+#   random_bathroom_maxduration: 00:15:00
+#   random_bathroom_number: 1
+#   random_bathroom_on_1: light.shelly_04
+#   random_bathroom_off_1: light.shelly_04
 
-  random_entrance_name: Entrance
-  random_entrance_start: Evening On
-  random_entrance_end: Night Off
-  random_entrance_minduration: 00:02:00
-  random_entrance_maxduration: 00:15:00
-  random_entrance_number: 2
-  random_entrance_on_1: light.wifi_e27cwww_01
-  random_entrance_off_1: light.wifi_e27cwww_01
+#   random_entrance_name: Entrance
+#   random_entrance_start: Evening On
+#   random_entrance_end: Night Off
+#   random_entrance_minduration: 00:02:00
+#   random_entrance_maxduration: 00:15:00
+#   random_entrance_number: 2
+#   random_entrance_on_1: light.wifi_e27cwww_01
+#   random_entrance_off_1: light.wifi_e27cwww_01
 
 remote_kitchen:
   module: controllerx
   class: E1744MediaPlayerController
   controller: sensor.zigbee_remote_kitchen_action
   integration: z2m
-  media_player: media_player.snapcast_client_keuken
   delay: 200
+  media_player: media_player.snapcast_client_keuken
   excluded_actions:
     - play_pause
     - next_track
@@ -72,8 +72,8 @@ remote_hallway_upstairs:
   class: E1744MediaPlayerController
   controller: sensor.zigbee_remote_hallway_upstairs_action
   integration: z2m
-  media_player: media_player.snapcast_client_hal
   delay: 200
+  media_player: media_player.snapcast_client_hal
   excluded_actions:
     - play_pause
     - next_track
@@ -84,8 +84,8 @@ remote_bedroom:
   class: E1744MediaPlayerController
   controller: sensor.zigbee_remote_bedroom_action
   integration: z2m
-  media_player: media_player.snapcast_client_slaapkamer
   delay: 200
+  media_player: media_player.snapcast_client_slaapkamer
   excluded_actions:
     - play_pause
     - next_track
@@ -96,8 +96,8 @@ remote_bathroom:
   class: E1744MediaPlayerController
   controller: sensor.zigbee_remote_bathroom_action
   integration: z2m
-  media_player: media_player.snapcast_client_badkamer
   delay: 200
+  media_player: media_player.snapcast_client_badkamer
   excluded_actions:
     - play_pause
     - next_track

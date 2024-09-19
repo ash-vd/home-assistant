@@ -34,17 +34,3 @@ automation:
     action:
       - service: media_player.media_play_pause
         entity_id: media_player.spotify_ashwin_van_dijk
-
-  - alias: bedroom remote volume sync
-    initial_state: "on"
-    trigger:
-      - platform: mqtt
-        topic: "zigbee2mqtt/zigbee_remote_bedroom"
-    condition:
-      - condition: template
-        value_template: "{{ 'brightness_move' in trigger.payload }}"
-    action:
-      - service: media_player.volume_set
-        data_template:
-          entity_id: media_player.snapcast_client_slaapkamer
-          volume_level: "{{ trigger.payload_json.brightness / 254 }}"
