@@ -1,0 +1,68 @@
+automation:
+  - alias: symfonisk skip forward
+    initial_state: "on"
+    trigger:
+      - platform: mqtt
+        topic: "zigbee2mqtt/zigbee_remote_bathroom"
+    condition:
+      - condition: template
+        value_template: "{{ 'brightness_step_up' in trigger.payload }}"
+    action:
+      - service: media_player.media_next_track
+        entity_id: media_player.spotify_ashwin_van_dijk
+
+  - alias: symfonisk skip backward
+    initial_state: "on"
+    trigger:
+      - platform: mqtt
+        topic: "zigbee2mqtt/zigbee_remote_bathroom"
+    condition:
+      - condition: template
+        value_template: "{{ 'brightness_step_down' in trigger.payload }}"
+    action:
+      - service: media_player.media_previous_track
+        entity_id: media_player.spotify_ashwin_van_dijk
+
+  - alias: symfonisk play/pause
+    initial_state: "on"
+    trigger:
+      - platform: mqtt
+        topic: "zigbee2mqtt/zigbee_remote_bathroom"
+    condition:
+      - condition: template
+        value_template: "{{ 'toggle' in trigger.payload }}"
+    action:
+      - service: media_player.media_play_pause
+        entity_id: media_player.spotify_ashwin_van_dijk
+
+  - alias: bathroom remote volume up
+    initial_state: "on"
+    trigger:
+      - platform: mqtt
+        topic: "zigbee2mqtt/zigbee_remote_bathroom"
+    condition:
+      - condition: template
+        value_template: "{{ 'brightness_move_up' in trigger.payload }}"
+    action:
+      - service: media_player.volume_set
+        data_template:
+          entity_id: media_player.snapcast_client_badkamer
+          volume_level: >
+            {% set current_volume = state_attr('media_player.snapcast_client_badkamer', 'volume_level') | float %}
+            {{ (current_volume * 1.2) | min(1) }}
+
+  - alias: bathroom remote volume down
+    initial_state: "on"
+    trigger:
+      - platform: mqtt
+        topic: "zigbee2mqtt/zigbee_remote_bathroom"
+    condition:
+      - condition: template
+        value_template: "{{ 'brightness_move_down' in trigger.payload }}"
+    action:
+      - service: media_player.volume_set
+        data_template:
+          entity_id: media_player.snapcast_client_badkamer
+          volume_level: >
+            {% set current_volume = state_attr('media_player.snapcast_client_badkamer', 'volume_level') | float %}
+            {{ (current_volume * 0.8) | max(0) }}
