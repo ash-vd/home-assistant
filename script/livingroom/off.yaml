@@ -1,6 +1,0 @@
-livingroom_off:
-  sequence:
-    - service: scene.turn_on
-      entity_id: scene.livingroom_lights_off
-    - service: script.turn_on
-      entity_id: script.livingroom_multiroom_off

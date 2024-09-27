@@ -41,11 +41,11 @@
       brightness_pct: 25
       color_temp: 400
 
-    # light.window_sill_01:
-    #   state: on
-    #   brightness: 8
-    #   rgbw_color: [0, 0, 0, 255]
-    #   effect: Solid
+    light.window_sill_01:
+      state: on
+      brightness: 8
+      rgbw_color: [0, 0, 0, 255]
+      effect: Solid
 
     light.window_sill_02:
       state: on

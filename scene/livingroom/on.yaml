@@ -1,4 +1,0 @@
-- name: livingroom_on
-  entities:
-    script.livingroom_multiroom_standby: on
-

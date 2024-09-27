@@ -2,11 +2,7 @@
   trigger:
     - platform: state
       entity_id:
-        - binary_sensor.zigbee_door_livingroom_contact
-        - binary_sensor.zigbee_sensor_livingroom_fusebox_occupancy
-        - binary_sensor.zigbee_sensor_livingroom_closet_occupancy
-        - binary_sensor.zigbee_sensor_livingroom_tv_occupancy
-        - input_boolean.livingroom_presence
+        - binary_sensor.presence_sensor_fp2_4947_presence_sensor_1
         - input_boolean.livingroom_auto
       from: "off"
       to: "on"
@@ -21,12 +17,12 @@
     condition: and
     conditions:
       - condition: state
-        entity_id: input_select.house_mode
-        state: "Normaal"
+        entity_id: binary_sensor.presence_sensor_fp2_4947_presence_sensor_1
+        state: "on"
 
       - condition: state
-        entity_id: input_boolean.livingroom_presence
-        state: "on"
+        entity_id: input_select.house_mode
+        state: "Normaal"
 
       - condition: state
         entity_id: binary_sensor.livingroom_dark
@@ -37,7 +33,7 @@
         state: "on"
 
       - condition: template
-        value_template: '{{ states("input_select.livingroom_scene") != "Normaal" }}'
+        value_template: '{{ states("input_select.livingroom_scene") == "Uit" }}'
 
   action:
     - service: homeassistant.turn_on

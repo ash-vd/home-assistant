@@ -5,11 +5,10 @@
       to: "on"
 
   action:
-    - service: media_player.volume_mute
+    - service: media_player.volume_set
       entity_id: media_player.snapcast_client_badkamer
       data:
-        is_volume_muted: false
-
+        volume_level: 0.25
 
 - alias: Media - Bathroom - Off
   trigger:
@@ -20,7 +19,7 @@
         minutes: 1
 
   action:
-    - service: media_player.volume_mute
+    - service: media_player.volume_set
       entity_id: media_player.snapcast_client_badkamer
       data:
-        is_volume_muted: true
+        volume_level: 0.1

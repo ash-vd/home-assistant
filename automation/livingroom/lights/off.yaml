@@ -4,17 +4,13 @@
       entity_id: binary_sensor.livingroom_dark
       to: "off"
       for:
-        minutes: 15
+        minutes: 10
 
     - platform: state
-      entity_id: input_boolean.livingroom_presence
+      entity_id: binary_sensor.presence_sensor_fp2_4947_presence_sensor_1
       to: "off"
-
-#    - plaform: state
-#      entity_id: remote.livingroom
-#      to: "off"
-#        for:
-#          minutes: 2
+      for:
+        minutes: 10
 
   condition:
     condition: and
@@ -23,20 +19,19 @@
         entity_id: input_boolean.livingroom_auto
         state: "on"
 
-#      - condition: state
-#        entity_id: remote.livingroom
-#        state: "off"
-
       - condition: or
         conditions:
           - condition: state
-            entity_id: input_boolean.livingroom_presence
+            entity_id: binary_sensor.presence_sensor_fp2_4947_presence_sensor_1
             state: "off"
+            for:
+              minutes: 10
+
           - condition: state
             entity_id: binary_sensor.livingroom_dark
             state: "off"
             for:
-              minutes: 15
+              minutes: 10
 
   action:
     - service: homeassistant.turn_on
