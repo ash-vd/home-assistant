@@ -61,11 +61,6 @@ tts:
   - platform: google_translate
     service_name: google_say
 
-# Cloud
-#cloud:
-
-# mobile_app:
-
 system_health:
 
 spotify:

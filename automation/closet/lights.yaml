@@ -2,7 +2,7 @@
   trigger:
     - platform: state
       entity_id:
-        - input_boolean.closet_presence
+        - binary_sensor.presence_sensor_fp2_4947_presence_sensor_2
       to: "on"
 
   condition:
@@ -16,7 +16,7 @@
     - service: scene.create
       data:
         scene_id: light_closet_revert
-        snapshot_entities: 'light.closet'
+        snapshot_entities: "light.closet"
     - service: light.turn_on
       entity_id: light.closet
       data:
@@ -25,7 +25,7 @@
 - alias: Verlichting - Inloopkast - Uit
   trigger:
     - platform: state
-      entity_id: input_boolean.closet_presence
+      entity_id: binary_sensor.presence_sensor_fp2_4947_presence_sensor_2
       to: "off"
 
   condition:
