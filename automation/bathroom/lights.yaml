@@ -16,7 +16,7 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness: 255
+        brightness_pct: 70
 
 - alias: Verlichting - Badkamer - Aan (Nacht)
   trigger:
@@ -36,11 +36,10 @@
     - service: homeassistant.turn_on
       entity_id: light.shelly_dimmer_bathroom
       data:
-        brightness: 100
-
-
+        brightness_pct: 80
 
 - alias: Verlichting - Badkamer - Standby
+  initial: off
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence

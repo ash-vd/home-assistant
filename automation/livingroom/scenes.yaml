@@ -12,6 +12,8 @@
             scene.livingroom_lights_focus
           {% elif is_state("input_select.livingroom_scene", "Normaal") %}
             scene.livingroom_lights_normal
+          {% elif is_state("input_select.livingroom_scene", "NYE") %}
+            scene.livingroom_lights_nye
           {% elif is_state("input_select.livingroom_scene", "Gedimd") %}
             scene.livingroom_lights_dimmed
           {% elif is_state("input_select.livingroom_scene", "Chill") %}

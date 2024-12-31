@@ -38,7 +38,7 @@ views:
               source: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_woonkamer_2
+            entity: media_player.piwoonkamer_2_snapcast_client
             group: true
             hide:
               power: true
@@ -62,7 +62,7 @@ views:
               source: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_hal
+            entity: media_player.pihal_snapcast_client
             group: true
             hide:
               power: true
@@ -70,7 +70,7 @@ views:
               source: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_werkkamer
+            entity: media_player.ashs_mbp_azaleastraat_snapcast_client
             group: true
             hide:
               power: true
@@ -78,7 +78,7 @@ views:
               source: true
 
           - type: custom:mini-media-player
-            entity: media_player.snapcast_client_slaapkamer
+            entity: media_player.pibedroom_snapcast_client
             group: true
             hide:
               power: true

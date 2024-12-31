@@ -1,4 +1,5 @@
 - alias: Media - Bathroom - On
+  initial: off
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence
@@ -11,6 +12,7 @@
         volume_level: 0.25
 
 - alias: Media - Bathroom - Off
+  initial: off
   trigger:
     - platform: state
       entity_id: input_boolean.bathroom_presence

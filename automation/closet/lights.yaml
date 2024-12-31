@@ -1,4 +1,5 @@
 - alias: Verlichting - Inloopkast - Aan
+  initial: off
   trigger:
     - platform: state
       entity_id:
@@ -23,6 +24,7 @@
         brightness_pct: 75
 
 - alias: Verlichting - Inloopkast - Uit
+  initial: off
   trigger:
     - platform: state
       entity_id: binary_sensor.presence_sensor_fp2_4947_presence_sensor_2

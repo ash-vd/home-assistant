@@ -1,0 +1,81 @@
+- name: livingroom_lights_nye
+  entities:
+    light.shelly_01:
+      state: off
+
+    light.zigbee_livingroom_corner_light:
+      state: on
+      brightness_pct: 50
+      rgb_color: [255, 159, 242]
+
+    light.zigbee_livingroom_window_light:
+      state: on
+      brightness_pct: 20
+      color_temp: 425
+
+    light.zigbee_livingroom_big_light:
+      state: on
+      brightness_pct: 40
+      color_temp: 425
+
+    light.closet:
+      state: on
+      brightness_pct: 10
+      color_temp: 315
+
+    light.wifi_e27cwww_02:
+      state: on
+      brightness: 180
+      color_temp: 315
+
+    light.shelly_dimmer_livingroom_standing:
+      state: on
+      brightness_pct: 22
+
+    light.erker_gu10_cwww:
+      state: on
+      brightness_pct: 28
+      color_temp: 400
+
+    light.window_sill_01:
+      state: on
+      brightness: 150
+      rgbw_color: [0, 0, 0, 255]
+      effect: Solid
+
+    light.window_sill_02:
+      state: on
+      brightness: 150
+      rgbw_color: [0, 0, 0, 255]
+      effect: Solid
+
+    light.window_sill_03:
+      state: on
+      brightness: 150
+      rgbw_color: [0, 0, 0, 255]
+      effect: Solid
+
+    light.window_sill_04:
+      state: on
+      brightness: 150
+      rgbw_color: [0, 0, 0, 255]
+      effect: Solid
+
+    light.tv_bottom:
+      state: on
+      brightness: 150
+      rgb_color: [200, 150, 0]
+
+    switch.plug_brandgrens_switch: on
+
+    light.closet:
+      state: on
+      brightness_pct: 10
+      color_temp: 315
+
+    switch.xooon_closet: on
+
+    input_boolean.homekit_livingroom: on
+
+    input_select.livingroom_scene:
+      state: "NYE"
