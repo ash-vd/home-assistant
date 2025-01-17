@@ -311,7 +311,7 @@ views:
           - type: section
           - input_boolean.kitchen_presence
           - binary_sensor.zigbee_sensor_kitchen_occupancy
-          - sensor.zigbee_sensor_kitchen_illuminance_lux
+          - sensor.zigbee_sensor_kitchen_illuminance
 
       - type: entities
         title: Badkamer

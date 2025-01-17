@@ -46,7 +46,7 @@
         state: "Nacht"
 
       - condition: numeric_state
-        entity_id: sensor.zigbee_sensor_kitchen_illuminance_lux
+        entity_id: sensor.zigbee_sensor_kitchen_illuminance
         below: 30
 
   action:
@@ -83,7 +83,7 @@
         minutes: 10
 
     - platform: numeric_state
-      entity_id: sensor.zigbee_sensor_kitchen_illuminance_lux
+      entity_id: sensor.zigbee_sensor_kitchen_illuminance
       above: 75
       for:
         minutes: 4

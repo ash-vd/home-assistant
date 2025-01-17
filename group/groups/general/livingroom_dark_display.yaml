@@ -1,8 +1,0 @@
-livingroom_dark_display:
-  name: Donker
-  entities:
-    - binary_sensor.livingroom_dark
-    - sensor.livingroom_illuminance
-    - sensor.zigbee_sensor_livingroom_fusebox_illuminance
-    - sensor.zigbee_sensor_livingroom_closet_illuminance
-    - sensor.zigbee_sensor_livingroom_tv_illuminance

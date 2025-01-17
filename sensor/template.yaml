@@ -1,8 +1,5 @@
 - platform: template
   sensors:
-    livingroom_remote:
-      value_template: "{{ state_attr('remote.livingroom', 'current_activity') }}"
-
     livingroom_illuminance:
       value_template: "{{ ((states('sensor.zigbee_sensor_livingroom_fusebox_illuminance') | float + states('sensor.zigbee_sensor_livingroom_closet_illuminance') | float + states('sensor.zigbee_sensor_livingroom_tv_illuminance') | float) / 3) | round() }}"
 
